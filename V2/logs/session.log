@@ -1,0 +1,715 @@
+2025-11-26 11:28:59,782 - WARNING - No target files found
+2025-11-26 11:29:13,762 - WARNING - Camera 0 started successfully
+2025-11-26 11:30:17,732 - WARNING - Initiating graceful shutdown...
+2025-11-26 11:30:18,101 - WARNING - Shutdown complete
+2025-11-26 11:30:32,415 - WARNING - No target files found
+2025-11-26 11:30:57,990 - WARNING - Camera 2 started successfully
+2025-11-26 11:32:43,264 - WARNING - Loaded 1 guards
+2025-11-26 11:34:39,561 - WARNING - Loaded 2 guards
+2025-11-26 11:34:55,719 - WARNING - Initiating graceful shutdown...
+2025-11-26 11:34:56,083 - WARNING - Shutdown complete
+2025-11-26 11:35:05,134 - WARNING - Loaded 2 guards
+2025-11-26 11:35:20,886 - WARNING - Camera 0 started successfully
+2025-11-26 11:35:35,033 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 11:35:36,957 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-11-26 11:35:42,103 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=60, dy=25, size_change=9) - pose_quality:1.00
+2025-11-26 11:36:11,039 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=69, dy=3, size_change=6) - pose_quality:1.00
+2025-11-26 11:36:15,878 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=60, dy=22, size_change=0) - pose_quality:1.00
+2025-11-26 11:36:47,062 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:36:49,634 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:37:01,865 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=60, dy=19, size_change=1) - pose_quality:1.00
+2025-11-26 11:37:36,776 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=31, dy=63, size_change=2) - pose_quality:0.76
+2025-11-26 11:37:55,639 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=72, dy=51, size_change=1) - pose_quality:1.00
+2025-11-26 11:38:33,734 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:35,558 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:36,254 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:37,428 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:38,611 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:39,303 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:39,995 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:40,689 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:41,993 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:42,691 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:43,491 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:46,859 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:38:59,708 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:39:00,403 - WARNING - [TRACK ENDED] Krunal: No face for 60 frames - guard likely left frame
+2025-11-26 11:39:21,757 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=30, dy=54, size_change=0) - pose_quality:1.00
+2025-11-26 11:39:30,930 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=49, dy=98, size_change=1) - pose_quality:0.82
+2025-11-26 11:39:33,849 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=51, dy=74, size_change=5) - pose_quality:1.00
+2025-11-26 11:40:33,307 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=78, dy=16, size_change=0) - pose_quality:1.00
+2025-11-26 11:40:53,027 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=66, dy=4, size_change=0) - pose_quality:0.76
+2025-11-26 11:41:04,751 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=68, dy=49, size_change=1) - pose_quality:1.00
+2025-11-26 11:41:16,358 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=84, dy=1, size_change=3) - pose_quality:1.00
+2025-11-26 11:41:18,767 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=104, dy=24, size_change=0) - pose_quality:1.00
+2025-11-26 11:41:52,069 - WARNING - [TRACKER LOST] Krunal: Extreme movement detected (dx=83, dy=34, size_change=1) - pose_quality:1.00
+2025-11-26 11:42:12,670 - WARNING - Initiating graceful shutdown...
+2025-11-26 11:42:13,030 - WARNING - Shutdown complete
+2025-11-26 12:05:26,561 - WARNING - Loaded 2 guards
+2025-11-26 12:05:45,706 - WARNING - Camera 0 started successfully
+2025-11-26 12:05:58,096 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 12:06:00,350 - WARNING - [TRACKING START] Identifying and tracking: rudra | Action: Hands Up
+2025-11-26 12:06:04,850 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=77, dy=27, size_change=2) - pose_quality:0.85
+2025-11-26 12:06:13,227 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=99, dy=22, size_change=1) - pose_quality:0.73
+2025-11-26 12:06:25,008 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=79, dy=1, size_change=2) - pose_quality:0.73
+2025-11-26 12:06:27,049 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=92, dy=12, size_change=0) - pose_quality:0.73
+2025-11-26 12:06:46,116 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=82, dy=22, size_change=0) - pose_quality:0.73
+2025-11-26 12:06:50,151 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=68, dy=3, size_change=5) - pose_quality:0.73
+2025-11-26 12:07:14,306 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=80, dy=8, size_change=0) - pose_quality:0.82
+2025-11-26 12:07:24,121 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=8, dy=99, size_change=3) - pose_quality:0.82
+2025-11-26 12:07:46,823 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=67, dy=22, size_change=1) - pose_quality:0.82
+2025-11-26 12:08:32,232 - WARNING - [TRACK ENDED] rudra: No face for 60 frames - guard likely left frame
+2025-11-26 12:08:41,572 - WARNING - [TRACKER LOST] rudra: Extreme movement detected (dx=82, dy=3, size_change=1) - pose_quality:0.73
+2025-11-26 12:09:04,042 - WARNING - [TRACKING STOP] Stopped monitoring: rudra
+2025-11-26 12:09:20,468 - WARNING - Loaded 1 guards
+2025-11-26 12:09:20,472 - WARNING - Guard removed: rudra (Face image (profiles))
+2025-11-26 12:11:36,088 - WARNING - Loaded 2 guards
+2025-11-26 12:11:51,599 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 12:11:54,168 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 12:11:55,677 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=69, dy=7, size_change=2) - pose_quality:0.76
+2025-11-26 12:11:59,462 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=75, dy=25, size_change=2) - pose_quality:0.76
+2025-11-26 12:12:18,494 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=87, dy=9, size_change=2) - pose_quality:0.73
+2025-11-26 12:12:19,772 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=90, dy=2, size_change=0) - pose_quality:0.76
+2025-11-26 12:12:20,608 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=81, dy=35, size_change=2) - pose_quality:0.85
+2025-11-26 12:12:24,257 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=79, dy=6, size_change=3) - pose_quality:0.73
+2025-11-26 12:12:34,659 - WARNING - Initiating graceful shutdown...
+2025-11-26 12:12:35,011 - WARNING - Shutdown complete
+2025-11-26 12:37:45,594 - WARNING - Loaded 2 guards
+2025-11-26 12:38:01,230 - WARNING - Camera 0 started successfully
+2025-11-26 12:38:20,132 - WARNING - Loaded 1 guards
+2025-11-26 12:38:20,135 - WARNING - Guard removed: Krunal (Face image (profiles))
+2025-11-26 12:38:23,771 - WARNING - Fugitive Removed
+2025-11-26 12:38:32,671 - WARNING - No target files found
+2025-11-26 12:38:32,673 - WARNING - Guard removed: Rudra (Face image (profiles))
+2025-11-26 12:39:05,363 - WARNING - Initiating graceful shutdown...
+2025-11-26 12:39:05,728 - WARNING - Shutdown complete
+2025-11-26 12:39:29,644 - WARNING - No target files found
+2025-11-26 12:39:48,060 - WARNING - Camera 2 started successfully
+2025-11-26 12:42:48,120 - WARNING - Loaded 1 guards
+2025-11-26 12:45:02,603 - WARNING - Loaded 2 guards
+2025-11-26 12:45:19,259 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 12:45:24,110 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 12:45:39,299 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:45:44,523 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:45:46,581 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=112, dy=30, size_change=0) - pose_quality:0.42
+2025-11-26 12:45:50,129 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:45:57,474 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:46:02,842 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:46:04,894 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:46:06,964 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 12:46:27,227 - WARNING - Initiating graceful shutdown...
+2025-11-26 12:46:27,584 - WARNING - Shutdown complete
+2025-11-26 12:46:37,795 - WARNING - Loaded 2 guards
+2025-11-26 12:46:54,913 - WARNING - Camera 0 started successfully
+2025-11-26 12:47:02,524 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 12:47:07,658 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 12:47:33,897 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=82, dy=17, size_change=1) - pose_quality:0.91
+2025-11-26 12:48:06,480 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=84, dy=42, size_change=0) - pose_quality:0.79
+2025-11-26 12:48:57,102 - WARNING - [TRACKING STOP] Stopped monitoring: Rudra
+2025-11-26 12:49:48,953 - WARNING - Initiating graceful shutdown...
+2025-11-26 12:49:49,315 - WARNING - Shutdown complete
+2025-11-26 12:59:26,027 - WARNING - Loaded 2 guards
+2025-11-26 12:59:41,501 - WARNING - Camera 0 started successfully
+2025-11-26 12:59:51,532 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 12:59:54,124 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 12:59:59,541 - WARNING - [GHOST REMOVED] Rudra: Tracked but failed body validation - no_body_box, pose_low(0.00), keypts_low(0), out_of_frame
+2025-11-26 13:00:59,158 - WARNING - Initiating graceful shutdown...
+2025-11-26 13:00:59,524 - WARNING - Shutdown complete
+2025-11-26 13:03:32,322 - WARNING - Loaded 2 guards
+2025-11-26 13:03:47,116 - WARNING - Camera 0 started successfully
+2025-11-26 13:04:02,655 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 13:04:06,097 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 13:04:15,109 - WARNING - [DETECTED] Rudra identified & tracking (confidence: 0.439, distance: 0.561, bbox: 28x28 px)
+2025-11-26 13:04:21,190 - WARNING - [GHOST REMOVED] Rudra: Tracked but failed body validation - no_body_box, pose_low(0.00), keypts_low(0), out_of_frame
+2025-11-26 13:04:25,246 - WARNING - [DETECTED] Rudra identified & tracking (confidence: 0.382, distance: 0.618, bbox: 22x21 px)
+2025-11-26 13:05:46,033 - WARNING - Initiating graceful shutdown...
+2025-11-26 13:05:46,398 - WARNING - Shutdown complete
+2025-11-26 13:06:26,605 - WARNING - Loaded 2 guards
+2025-11-26 13:06:50,187 - WARNING - Camera 0 started successfully
+2025-11-26 13:09:20,654 - WARNING - Initiating graceful shutdown...
+2025-11-26 13:09:21,001 - WARNING - Shutdown complete
+2025-11-26 13:20:59,850 - WARNING - Loaded 2 guards
+2025-11-26 13:21:17,820 - WARNING - Camera 0 started successfully
+2025-11-26 13:21:31,156 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 13:21:33,433 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 13:22:55,458 - WARNING - Initiating graceful shutdown...
+2025-11-26 13:22:55,827 - WARNING - Shutdown complete
+2025-11-26 14:11:12,227 - WARNING - Loaded 2 guards
+2025-11-26 14:11:31,168 - WARNING - Camera 0 started successfully
+2025-11-26 14:11:46,739 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:11:48,615 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:12:09,968 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-11-26 14:12:25,026 - WARNING - Day Mode - Face: BlazeFace | Pose: MoveNet Lightning/BlazePose | Tracking: ByteTrack
+2025-11-26 14:13:13,680 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:13:14,035 - WARNING - Shutdown complete
+2025-11-26 14:14:05,031 - WARNING - Loaded 2 guards
+2025-11-26 14:14:19,601 - WARNING - Camera 0 started successfully
+2025-11-26 14:14:28,249 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:14:29,764 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:15:10,370 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:15:10,738 - WARNING - Shutdown complete
+2025-11-26 14:17:00,146 - WARNING - Loaded 2 guards
+2025-11-26 14:17:16,225 - WARNING - Camera 0 started successfully
+2025-11-26 14:17:22,551 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:17:24,122 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:17:27,597 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.661, distance: 0.339, bbox: 36x36 px)
+2025-11-26 14:17:27,865 - WARNING - [GHOST REMOVED] Rudra: Tracked but failed body validation - no_body_box, pose_low(0.00), keypts_low(0), out_of_frame
+2025-11-26 14:17:30,603 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.404, distance: 0.596, bbox: 36x36 px)
+2025-11-26 14:17:35,769 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=4, dy=62, size_change=0) - pose_quality:0.82
+2025-11-26 14:17:39,982 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.477, distance: 0.523, bbox: 36x36 px)
+2025-11-26 14:17:48,493 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=15, dy=77, size_change=2) - pose_quality:0.70
+2025-11-26 14:17:50,533 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.564, distance: 0.436, bbox: 36x36 px)
+2025-11-26 14:18:20,042 - WARNING - [TRACK ENDED] Rudra: No face for 60 frames - guard likely left frame
+2025-11-26 14:18:21,968 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.491, distance: 0.509, bbox: 36x36 px)
+2025-11-26 14:18:22,178 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=68, dy=12, size_change=0) - pose_quality:0.70
+2025-11-26 14:18:22,770 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.434, distance: 0.566, bbox: 36x36 px)
+2025-11-26 14:18:25,378 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=71, dy=8, size_change=1) - pose_quality:1.00
+2025-11-26 14:18:29,561 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.383, distance: 0.617, bbox: 36x36 px)
+2025-11-26 14:18:34,515 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:18:34,877 - WARNING - Shutdown complete
+2025-11-26 14:24:22,259 - WARNING - Loaded 2 guards
+2025-11-26 14:24:35,752 - WARNING - Camera 0 started successfully
+2025-11-26 14:25:02,051 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:25:02,418 - WARNING - Shutdown complete
+2025-11-26 14:25:12,188 - WARNING - Loaded 2 guards
+2025-11-26 14:25:50,597 - WARNING - Camera 0 started successfully
+2025-11-26 14:26:04,517 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:26:06,420 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:26:09,398 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.557, distance: 0.443, bbox: 36x36 px)
+2025-11-26 14:26:14,750 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=64, dy=7, size_change=1) - pose_quality:0.64
+2025-11-26 14:26:15,910 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.459, distance: 0.541, bbox: 36x36 px)
+2025-11-26 14:26:29,860 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=54, dy=62, size_change=0) - pose_quality:0.97
+2025-11-26 14:26:34,288 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.602, distance: 0.398, bbox: 36x36 px)
+2025-11-26 14:26:49,840 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=92, dy=13, size_change=1) - pose_quality:0.82
+2025-11-26 14:26:57,614 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.570, distance: 0.430, bbox: 36x36 px)
+2025-11-26 14:26:59,870 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:00,366 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.511, distance: 0.489, bbox: 43x43 px)
+2025-11-26 14:27:00,581 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:02,196 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.463, distance: 0.537, bbox: 43x43 px)
+2025-11-26 14:27:02,513 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:03,000 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.569, distance: 0.431, bbox: 43x44 px)
+2025-11-26 14:27:03,200 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:03,689 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.626, distance: 0.374, bbox: 43x44 px)
+2025-11-26 14:27:03,891 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:04,384 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.619, distance: 0.381, bbox: 43x44 px)
+2025-11-26 14:27:04,585 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:05,079 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.542, distance: 0.458, bbox: 43x44 px)
+2025-11-26 14:27:05,283 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:05,769 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.647, distance: 0.353, bbox: 43x44 px)
+2025-11-26 14:27:06,107 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:06,598 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.624, distance: 0.376, bbox: 43x44 px)
+2025-11-26 14:27:18,269 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:18,753 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.522, distance: 0.478, bbox: 43x43 px)
+2025-11-26 14:27:18,960 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:19,444 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.534, distance: 0.466, bbox: 43x43 px)
+2025-11-26 14:27:19,650 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:20,133 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.546, distance: 0.454, bbox: 43x43 px)
+2025-11-26 14:27:20,340 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:20,832 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.523, distance: 0.477, bbox: 43x43 px)
+2025-11-26 14:27:26,312 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=85, dy=7, size_change=2) - pose_quality:0.76
+2025-11-26 14:27:26,909 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.449, distance: 0.551, bbox: 43x43 px)
+2025-11-26 14:27:35,707 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=67, dy=36, size_change=1) - pose_quality:0.82
+2025-11-26 14:27:36,193 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.544, distance: 0.456, bbox: 43x43 px)
+2025-11-26 14:27:39,632 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:44,516 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.523, distance: 0.477, bbox: 43x44 px)
+2025-11-26 14:27:46,369 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=65, dy=1, size_change=2) - pose_quality:0.64
+2025-11-26 14:27:47,535 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.552, distance: 0.448, bbox: 43x43 px)
+2025-11-26 14:27:54,732 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:55,790 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.543, distance: 0.457, bbox: 36x36 px)
+2025-11-26 14:27:55,988 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:56,766 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.556, distance: 0.444, bbox: 43x44 px)
+2025-11-26 14:27:56,967 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:57,453 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.525, distance: 0.475, bbox: 43x44 px)
+2025-11-26 14:27:57,664 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:58,146 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.631, distance: 0.369, bbox: 43x44 px)
+2025-11-26 14:27:58,354 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:58,844 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.598, distance: 0.402, bbox: 43x44 px)
+2025-11-26 14:27:59,046 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:27:59,531 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.591, distance: 0.409, bbox: 43x44 px)
+2025-11-26 14:27:59,739 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:00,225 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.617, distance: 0.383, bbox: 43x44 px)
+2025-11-26 14:28:00,429 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:00,913 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.583, distance: 0.417, bbox: 43x44 px)
+2025-11-26 14:28:01,123 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:01,622 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.462, distance: 0.538, bbox: 44x44 px)
+2025-11-26 14:28:01,828 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:02,313 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.518, distance: 0.482, bbox: 44x44 px)
+2025-11-26 14:28:02,518 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:03,007 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.576, distance: 0.424, bbox: 36x36 px)
+2025-11-26 14:28:03,207 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:03,701 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.594, distance: 0.406, bbox: 44x43 px)
+2025-11-26 14:28:03,919 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:04,543 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.585, distance: 0.415, bbox: 43x43 px)
+2025-11-26 14:28:04,760 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:05,246 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.568, distance: 0.432, bbox: 43x43 px)
+2025-11-26 14:28:05,459 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:05,945 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.564, distance: 0.436, bbox: 44x44 px)
+2025-11-26 14:28:06,150 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:06,638 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.576, distance: 0.424, bbox: 44x44 px)
+2025-11-26 14:28:06,847 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:07,331 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.554, distance: 0.446, bbox: 43x43 px)
+2025-11-26 14:28:07,542 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:08,023 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.568, distance: 0.432, bbox: 36x36 px)
+2025-11-26 14:28:08,230 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:08,716 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.520, distance: 0.480, bbox: 36x36 px)
+2025-11-26 14:28:08,924 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:09,410 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.528, distance: 0.472, bbox: 36x36 px)
+2025-11-26 14:28:18,273 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:18,765 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.570, distance: 0.430, bbox: 44x44 px)
+2025-11-26 14:28:18,971 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:19,460 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.589, distance: 0.411, bbox: 43x43 px)
+2025-11-26 14:28:19,663 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:28:22,130 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.454, distance: 0.546, bbox: 36x36 px)
+2025-11-26 14:28:32,644 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=78, dy=71, size_change=3) - pose_quality:0.82
+2025-11-26 14:28:39,654 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:28:40,013 - WARNING - Shutdown complete
+2025-11-26 14:32:07,455 - WARNING - Loaded 2 guards
+2025-11-26 14:32:23,765 - WARNING - Camera 0 started successfully
+2025-11-26 14:32:36,230 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:32:37,614 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:32:42,516 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.573, distance: 0.427, bbox: 36x36 px)
+2025-11-26 14:32:51,445 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:32:53,637 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.520, distance: 0.480, bbox: 36x36 px)
+2025-11-26 14:32:53,844 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:32:54,618 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.608, distance: 0.392, bbox: 36x36 px)
+2025-11-26 14:32:54,823 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:32:55,313 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.588, distance: 0.412, bbox: 36x36 px)
+2025-11-26 14:32:55,516 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:32:56,003 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.567, distance: 0.433, bbox: 36x36 px)
+2025-11-26 14:32:56,212 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:32:56,703 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.552, distance: 0.448, bbox: 36x36 px)
+2025-11-26 14:32:56,907 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:32:57,398 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.515, distance: 0.485, bbox: 36x36 px)
+2025-11-26 14:32:57,605 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:04,190 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.633, distance: 0.367, bbox: 36x36 px)
+2025-11-26 14:33:04,395 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:04,882 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.539, distance: 0.461, bbox: 36x36 px)
+2025-11-26 14:33:05,088 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:07,859 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.615, distance: 0.385, bbox: 36x36 px)
+2025-11-26 14:33:08,062 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:08,832 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.546, distance: 0.454, bbox: 36x36 px)
+2025-11-26 14:33:09,035 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:09,803 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.569, distance: 0.431, bbox: 36x36 px)
+2025-11-26 14:33:10,156 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:12,943 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.615, distance: 0.385, bbox: 36x36 px)
+2025-11-26 14:33:13,147 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:13,638 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.589, distance: 0.411, bbox: 36x36 px)
+2025-11-26 14:33:13,946 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:17,872 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.421, distance: 0.579, bbox: 36x36 px)
+2025-11-26 14:33:18,186 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:18,670 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.598, distance: 0.402, bbox: 36x36 px)
+2025-11-26 14:33:18,882 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:19,366 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.603, distance: 0.397, bbox: 36x36 px)
+2025-11-26 14:33:19,571 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:20,055 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.577, distance: 0.423, bbox: 36x36 px)
+2025-11-26 14:33:20,259 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:20,756 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.556, distance: 0.444, bbox: 36x36 px)
+2025-11-26 14:33:20,955 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:21,440 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.615, distance: 0.385, bbox: 36x36 px)
+2025-11-26 14:33:21,649 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:22,135 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.535, distance: 0.465, bbox: 36x36 px)
+2025-11-26 14:33:22,341 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:22,826 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.553, distance: 0.447, bbox: 36x36 px)
+2025-11-26 14:33:23,036 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:23,519 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.548, distance: 0.452, bbox: 36x36 px)
+2025-11-26 14:33:23,728 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:24,219 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.605, distance: 0.395, bbox: 36x36 px)
+2025-11-26 14:33:24,427 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:24,911 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.623, distance: 0.377, bbox: 36x36 px)
+2025-11-26 14:33:25,116 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:25,606 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.568, distance: 0.432, bbox: 36x36 px)
+2025-11-26 14:33:25,810 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:26,298 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.583, distance: 0.417, bbox: 36x36 px)
+2025-11-26 14:33:26,627 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:27,112 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.560, distance: 0.440, bbox: 36x36 px)
+2025-11-26 14:33:27,319 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:27,804 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.575, distance: 0.425, bbox: 36x36 px)
+2025-11-26 14:33:28,010 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:28,494 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.577, distance: 0.423, bbox: 36x36 px)
+2025-11-26 14:33:28,704 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:29,190 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.576, distance: 0.424, bbox: 36x36 px)
+2025-11-26 14:33:29,395 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:29,883 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.550, distance: 0.450, bbox: 36x36 px)
+2025-11-26 14:33:30,087 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:30,571 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.551, distance: 0.449, bbox: 36x36 px)
+2025-11-26 14:33:30,780 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:31,266 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.527, distance: 0.473, bbox: 36x36 px)
+2025-11-26 14:33:31,473 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:31,952 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.552, distance: 0.448, bbox: 36x36 px)
+2025-11-26 14:33:32,161 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:32,648 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.556, distance: 0.444, bbox: 36x36 px)
+2025-11-26 14:33:32,856 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:33,342 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.597, distance: 0.403, bbox: 36x36 px)
+2025-11-26 14:33:33,552 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:34,030 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.617, distance: 0.383, bbox: 36x36 px)
+2025-11-26 14:33:34,238 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:34,741 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.638, distance: 0.362, bbox: 36x36 px)
+2025-11-26 14:33:34,942 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:35,720 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.575, distance: 0.425, bbox: 36x36 px)
+2025-11-26 14:33:35,921 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:36,405 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.541, distance: 0.459, bbox: 36x36 px)
+2025-11-26 14:33:36,614 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:37,098 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.577, distance: 0.423, bbox: 36x36 px)
+2025-11-26 14:33:37,302 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:37,792 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.533, distance: 0.467, bbox: 36x36 px)
+2025-11-26 14:33:37,997 - WARNING - [TRACK ENDED] Rudra: No face for 30 frames - guard likely left frame
+2025-11-26 14:33:44,612 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:33:44,969 - WARNING - Shutdown complete
+2025-11-26 14:37:39,907 - WARNING - Loaded 2 guards
+2025-11-26 14:37:55,328 - WARNING - Camera 0 started successfully
+2025-11-26 14:38:07,087 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:38:09,533 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:38:14,068 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.507, distance: 0.493, bbox: 36x36 px)
+2025-11-26 14:38:49,771 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=44, dy=68, size_change=0) - pose_quality:0.91
+2025-11-26 14:38:51,232 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.619, distance: 0.381, bbox: 43x43 px)
+2025-11-26 14:38:58,188 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=80, dy=8, size_change=0) - pose_quality:1.00
+2025-11-26 14:38:58,779 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.481, distance: 0.519, bbox: 44x44 px)
+2025-11-26 14:38:59,614 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=67, dy=50, size_change=5) - pose_quality:1.00
+2025-11-26 14:39:03,922 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.496, distance: 0.504, bbox: 51x52 px)
+2025-11-26 14:39:20,172 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=132, dy=67, size_change=1) - pose_quality:0.96
+2025-11-26 14:39:21,790 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.552, distance: 0.448, bbox: 43x43 px)
+2025-11-26 14:39:29,232 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=11, dy=80, size_change=1) - pose_quality:1.00
+2025-11-26 14:39:31,545 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.525, distance: 0.475, bbox: 52x52 px)
+2025-11-26 14:39:35,749 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=113, dy=32, size_change=3) - pose_quality:1.00
+2025-11-26 14:39:36,233 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.421, distance: 0.579, bbox: 43x43 px)
+2025-11-26 14:39:42,984 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=46, dy=64, size_change=2) - pose_quality:1.00
+2025-11-26 14:39:43,289 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.599, distance: 0.401, bbox: 36x36 px)
+2025-11-26 14:39:46,773 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=73, dy=5, size_change=2) - pose_quality:1.00
+2025-11-26 14:39:47,088 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.573, distance: 0.427, bbox: 36x36 px)
+2025-11-26 14:41:13,060 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 14:41:44,781 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.474, distance: 0.526, bbox: 36x36 px)
+2025-11-26 14:41:45,251 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 14:41:49,493 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.464, distance: 0.536, bbox: 36x36 px)
+2025-11-26 14:41:49,949 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 14:43:25,543 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:43:25,898 - WARNING - Shutdown complete
+2025-11-26 14:43:33,506 - WARNING - Loaded 2 guards
+2025-11-26 14:44:00,382 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-26 14:44:21,692 - WARNING - Loaded 2 guards
+2025-11-26 14:44:50,256 - WARNING - Camera 1 started successfully
+2025-11-26 14:45:13,408 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:45:13,810 - WARNING - Shutdown complete
+2025-11-26 14:45:23,771 - WARNING - Loaded 2 guards
+2025-11-26 14:45:43,464 - WARNING - Camera 1 started successfully
+2025-11-26 14:45:49,211 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:45:49,625 - WARNING - Shutdown complete
+2025-11-26 14:46:06,144 - WARNING - Loaded 2 guards
+2025-11-26 14:46:20,169 - WARNING - Camera 0 started successfully
+2025-11-26 14:46:44,661 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:46:46,784 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:46:51,873 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.544, distance: 0.456, bbox: 36x36 px)
+2025-11-26 14:46:57,541 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=72, dy=57, size_change=1) - pose_quality:0.82
+2025-11-26 14:46:59,293 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.524, distance: 0.476, bbox: 43x44 px)
+2025-11-26 14:48:30,534 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:48:30,909 - WARNING - Shutdown complete
+2025-11-26 14:53:25,226 - WARNING - Loaded 2 guards
+2025-11-26 14:53:40,423 - WARNING - Camera 0 started successfully
+2025-11-26 14:53:58,126 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 14:53:59,776 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 14:54:01,675 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:01,685 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.477, distance: 0.523, bbox: 36x36 px)
+2025-11-26 14:54:14,132 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=64, dy=16, size_change=0) - pose_quality:0.74
+2025-11-26 14:54:15,771 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:15,779 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.519, distance: 0.481, bbox: 36x36 px)
+2025-11-26 14:54:15,988 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=9, dy=65, size_change=2) - pose_quality:0.75
+2025-11-26 14:54:16,300 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:16,308 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.533, distance: 0.467, bbox: 36x36 px)
+2025-11-26 14:54:21,405 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=65, dy=8, size_change=3) - pose_quality:0.89
+2025-11-26 14:54:21,717 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:21,724 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.491, distance: 0.509, bbox: 36x36 px)
+2025-11-26 14:54:21,927 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=68, dy=28, size_change=0) - pose_quality:0.88
+2025-11-26 14:54:22,532 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:22,542 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.497, distance: 0.503, bbox: 43x43 px)
+2025-11-26 14:54:42,122 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 14:54:42,600 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:42,609 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.600, distance: 0.400, bbox: 43x43 px)
+2025-11-26 14:54:46,714 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=11, dy=79, size_change=2) - pose_quality:0.98
+2025-11-26 14:54:47,192 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:47,202 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.417, distance: 0.583, bbox: 43x43 px)
+2025-11-26 14:54:52,201 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=109, dy=11, size_change=2) - pose_quality:1.00
+2025-11-26 14:54:53,070 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:53,081 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.606, distance: 0.394, bbox: 43x43 px)
+2025-11-26 14:54:58,003 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=81, dy=17, size_change=2) - pose_quality:1.00
+2025-11-26 14:54:59,063 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:54:59,075 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.637, distance: 0.363, bbox: 52x51 px)
+2025-11-26 14:55:01,622 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=98, dy=22, size_change=4) - pose_quality:1.00
+2025-11-26 14:55:02,096 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:55:02,107 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.568, distance: 0.432, bbox: 52x52 px)
+2025-11-26 14:55:02,313 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=87, dy=7, size_change=2) - pose_quality:1.00
+2025-11-26 14:55:03,773 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:55:03,783 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.506, distance: 0.494, bbox: 43x43 px)
+2025-11-26 14:55:18,963 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=31, dy=137, size_change=2) - pose_quality:1.00
+2025-11-26 14:55:20,968 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:55:20,976 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.541, distance: 0.459, bbox: 36x36 px)
+2025-11-26 14:55:36,764 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 14:55:37,241 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:55:37,249 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.617, distance: 0.383, bbox: 36x36 px)
+2025-11-26 14:55:37,456 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 14:55:37,936 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:55:37,943 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.568, distance: 0.432, bbox: 36x36 px)
+2025-11-26 14:55:43,727 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=58, dy=20, size_change=0) - pose_quality:1.00
+2025-11-26 14:55:44,025 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:55:44,033 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.549, distance: 0.451, bbox: 36x36 px)
+2025-11-26 14:56:12,048 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=54, dy=0, size_change=0) - pose_quality:1.00
+2025-11-26 14:56:12,521 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:56:12,529 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.511, distance: 0.489, bbox: 36x36 px)
+2025-11-26 14:56:26,027 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=60, dy=28, size_change=0) - pose_quality:0.63
+2025-11-26 14:56:27,739 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:56:27,749 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.610, distance: 0.390, bbox: 43x43 px)
+2025-11-26 14:56:30,899 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=73, dy=35, size_change=2) - pose_quality:0.95
+2025-11-26 14:56:31,372 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 14:56:31,380 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.621, distance: 0.379, bbox: 36x36 px)
+2025-11-26 14:57:08,640 - WARNING - Initiating graceful shutdown...
+2025-11-26 14:57:09,001 - WARNING - Shutdown complete
+2025-11-26 15:03:14,009 - WARNING - Loaded 2 guards
+2025-11-26 15:03:33,016 - WARNING - Camera 0 started successfully
+2025-11-26 15:03:56,521 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:03:58,391 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:04:01,098 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:01,109 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.599, distance: 0.401, bbox: 36x36 px)
+2025-11-26 15:04:08,652 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=98, dy=67, size_change=3) - pose_quality:0.64
+2025-11-26 15:04:09,713 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:09,725 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.587, distance: 0.413, bbox: 43x43 px)
+2025-11-26 15:04:09,931 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=98, dy=16, size_change=4) - pose_quality:0.64
+2025-11-26 15:04:10,239 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:10,249 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.481, distance: 0.519, bbox: 43x43 px)
+2025-11-26 15:04:10,780 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=48, dy=75, size_change=1) - pose_quality:0.64
+2025-11-26 15:04:15,685 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:15,694 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.628, distance: 0.372, bbox: 44x43 px)
+2025-11-26 15:04:30,925 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=68, dy=34, size_change=0) - pose_quality:0.99
+2025-11-26 15:04:35,408 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:35,419 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.637, distance: 0.363, bbox: 52x52 px)
+2025-11-26 15:04:39,899 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=101, dy=4, size_change=3) - pose_quality:1.00
+2025-11-26 15:04:41,619 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:41,629 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.604, distance: 0.396, bbox: 43x43 px)
+2025-11-26 15:04:44,777 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=98, dy=15, size_change=1) - pose_quality:1.00
+2025-11-26 15:04:45,933 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:45,942 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.517, distance: 0.483, bbox: 43x44 px)
+2025-11-26 15:04:46,664 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=71, dy=15, size_change=2) - pose_quality:1.00
+2025-11-26 15:04:46,967 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:04:46,975 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.582, distance: 0.418, bbox: 36x36 px)
+2025-11-26 15:04:59,582 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=10, dy=48, size_change=0) - pose_quality:1.00
+2025-11-26 15:05:00,638 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:05:00,647 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.624, distance: 0.376, bbox: 36x36 px)
+2025-11-26 15:05:01,494 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=64, dy=13, size_change=1) - pose_quality:1.00
+2025-11-26 15:05:02,088 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:05:02,095 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.605, distance: 0.395, bbox: 36x36 px)
+2025-11-26 15:05:04,495 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=75, dy=15, size_change=4) - pose_quality:1.00
+2025-11-26 15:05:05,655 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:05:05,665 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.614, distance: 0.386, bbox: 43x44 px)
+2025-11-26 15:05:05,867 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=71, dy=15, size_change=2) - pose_quality:1.00
+2025-11-26 15:05:06,173 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:05:06,181 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.578, distance: 0.422, bbox: 36x36 px)
+2025-11-26 15:05:55,895 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=59, dy=17, size_change=2) - pose_quality:0.80
+2025-11-26 15:05:56,199 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:05:56,207 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.558, distance: 0.442, bbox: 36x36 px)
+2025-11-26 15:05:56,733 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=71, dy=1, size_change=2) - pose_quality:0.78
+2025-11-26 15:05:57,036 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:05:57,044 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.636, distance: 0.364, bbox: 36x36 px)
+2025-11-26 15:06:34,511 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:06:36,987 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:06:36,997 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.606, distance: 0.394, bbox: 43x43 px)
+2025-11-26 15:06:37,200 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:06:37,678 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:06:37,686 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.641, distance: 0.359, bbox: 36x36 px)
+2025-11-26 15:06:37,890 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:06:38,380 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:06:38,387 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.634, distance: 0.366, bbox: 36x36 px)
+2025-11-26 15:06:38,596 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:06:39,080 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:06:39,088 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.637, distance: 0.363, bbox: 36x36 px)
+2025-11-26 15:06:54,773 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:06:55,144 - WARNING - Shutdown complete
+2025-11-26 15:10:22,428 - WARNING - Loaded 2 guards
+2025-11-26 15:10:56,003 - WARNING - Camera 0 started successfully
+2025-11-26 15:11:13,094 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:11:15,014 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:11:21,740 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:11:21,750 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.536, distance: 0.464, bbox: 36x36 px)
+2025-11-26 15:12:54,060 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:12:54,407 - WARNING - Shutdown complete
+2025-11-26 15:18:19,456 - WARNING - Loaded 2 guards
+2025-11-26 15:18:34,409 - WARNING - Camera 0 started successfully
+2025-11-26 15:18:41,381 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:18:43,189 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:18:46,278 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:18:46,289 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.591, distance: 0.409, bbox: 36x36 px)
+2025-11-26 15:20:11,398 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=100, dy=28, size_change=0) - pose_quality:0.78
+2025-11-26 15:20:13,761 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:20:13,770 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.571, distance: 0.429, bbox: 36x36 px)
+2025-11-26 15:24:12,410 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:25:09,907 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:25:10,276 - WARNING - Shutdown complete
+2025-11-26 15:25:24,448 - WARNING - Loaded 2 guards
+2025-11-26 15:25:36,951 - WARNING - Camera 0 started successfully
+2025-11-26 15:25:48,993 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:25:50,431 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:25:53,867 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:25:53,877 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.570, distance: 0.430, bbox: 36x36 px)
+2025-11-26 15:26:11,547 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=106, dy=14, size_change=0) - pose_quality:1.00
+2025-11-26 15:26:13,161 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:26:13,173 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.517, distance: 0.483, bbox: 52x51 px)
+2025-11-26 15:26:16,724 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=153, dy=25, size_change=4) - pose_quality:1.00
+2025-11-26 15:26:28,040 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:26:28,061 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.635, distance: 0.365, bbox: 43x44 px)
+2025-11-26 15:26:35,788 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=137, dy=19, size_change=2) - pose_quality:0.82
+2025-11-26 15:26:36,553 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:26:36,561 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.528, distance: 0.472, bbox: 36x36 px)
+2025-11-26 15:27:44,302 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:27:44,659 - WARNING - Shutdown complete
+2025-11-26 15:31:13,544 - WARNING - Loaded 2 guards
+2025-11-26 15:31:36,871 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-26 15:32:03,452 - WARNING - Loaded 2 guards
+2025-11-26 15:32:19,050 - WARNING - Camera 0 started successfully
+2025-11-26 15:32:31,095 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:32:32,128 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:32:35,870 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:32:35,880 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.467, distance: 0.533, bbox: 36x36 px)
+2025-11-26 15:33:46,347 - WARNING - [TRACKING STOP] Stopped monitoring: Rudra
+2025-11-26 15:33:50,649 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:33:51,013 - WARNING - Shutdown complete
+2025-11-26 15:35:51,633 - WARNING - Loaded 2 guards
+2025-11-26 15:36:05,178 - WARNING - Camera 0 started successfully
+2025-11-26 15:37:53,950 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:37:55,171 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:37:57,744 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:37:57,754 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.613, distance: 0.387, bbox: 36x36 px)
+2025-11-26 15:39:02,568 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:39:02,947 - WARNING - Shutdown complete
+2025-11-26 15:43:36,842 - WARNING - Loaded 2 guards
+2025-11-26 15:43:50,615 - WARNING - Camera 0 started successfully
+2025-11-26 15:44:03,590 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:44:05,973 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:44:08,712 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:44:08,722 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.631, distance: 0.369, bbox: 36x36 px)
+2025-11-26 15:44:54,351 - WARNING - [TRACKING STOP] Stopped monitoring: Rudra
+2025-11-26 15:48:08,980 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:48:09,368 - WARNING - Shutdown complete
+2025-11-26 15:48:23,375 - WARNING - Loaded 2 guards
+2025-11-26 15:48:49,156 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-26 15:49:06,677 - WARNING - Loaded 2 guards
+2025-11-26 15:49:59,660 - WARNING - Camera 1 started successfully
+2025-11-26 15:50:02,133 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:50:02,547 - WARNING - Shutdown complete
+2025-11-26 15:50:32,753 - WARNING - Loaded 2 guards
+2025-11-26 15:51:20,689 - WARNING - Camera 1 started successfully
+2025-11-26 15:51:28,322 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:51:28,765 - WARNING - Shutdown complete
+2025-11-26 15:51:49,080 - WARNING - Loaded 2 guards
+2025-11-26 15:52:02,879 - WARNING - Camera 0 started successfully
+2025-11-26 15:52:13,744 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:52:15,626 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:52:20,203 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:52:20,213 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.544, distance: 0.456, bbox: 36x36 px)
+2025-11-26 15:55:34,840 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:55:35,788 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:35,797 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.593, distance: 0.407, bbox: 36x36 px)
+2025-11-26 15:55:36,288 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:55:37,114 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:37,114 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:2px)
+2025-11-26 15:55:37,961 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:37,961 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:2px)
+2025-11-26 15:55:38,776 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:38,789 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.644, distance: 0.356, bbox: 36x36 px)
+2025-11-26 15:55:39,049 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:55:39,847 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:39,848 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:0px)
+2025-11-26 15:55:40,654 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:40,655 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:5px)
+2025-11-26 15:55:41,362 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:41,363 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:5px)
+2025-11-26 15:55:42,137 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:42,151 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.592, distance: 0.408, bbox: 36x36 px)
+2025-11-26 15:55:42,399 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:55:43,203 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:43,203 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:4px)
+2025-11-26 15:55:44,029 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:44,030 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:4px)
+2025-11-26 15:55:44,817 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:44,818 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:4px)
+2025-11-26 15:55:46,043 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:46,054 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.604, distance: 0.396, bbox: 36x36 px)
+2025-11-26 15:55:46,324 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 15:55:47,122 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:47,123 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:1px)
+2025-11-26 15:55:47,892 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:47,893 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:1px)
+2025-11-26 15:55:48,681 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:48,681 - WARNING - [GHOST EXCLUSION] Rudra: Skipping face_0 near recent ghost location (dist:5px)
+2025-11-26 15:55:49,442 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:55:49,456 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.584, distance: 0.416, bbox: 36x36 px)
+2025-11-26 15:56:27,656 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:56:28,012 - WARNING - Shutdown complete
+2025-11-26 15:56:36,145 - WARNING - Loaded 2 guards
+2025-11-26 15:56:50,680 - WARNING - Camera 0 started successfully
+2025-11-26 15:56:58,152 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 15:56:59,934 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 15:57:02,557 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:57:02,567 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.592, distance: 0.408, bbox: 36x36 px)
+2025-11-26 15:57:04,604 - WARNING - [TRACKER LOST] Rudra: Movement exceeded threshold - dx=118/105, dy=12/105, size=0/189 (pose:0.67)
+2025-11-26 15:58:10,807 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:58:10,816 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.503, distance: 0.497, bbox: 36x36 px)
+2025-11-26 15:58:24,679 - WARNING - [TRACKER LOST] Rudra: Movement exceeded threshold - dx=160/152, dy=4/152, size=4/274 (pose:1.00)
+2025-11-26 15:58:31,113 - WARNING - [UNKNOWN DETECTED] 1 faces found but only 0 guards tracked - unknown person(s) present
+2025-11-26 15:58:31,123 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.579, distance: 0.421, bbox: 43x43 px)
+2025-11-26 15:59:33,773 - WARNING - Initiating graceful shutdown...
+2025-11-26 15:59:34,129 - WARNING - Shutdown complete
+2025-11-26 16:01:42,373 - WARNING - Loaded 2 guards
+2025-11-26 16:01:56,325 - WARNING - Camera 0 started successfully
+2025-11-26 16:02:20,674 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 16:02:22,515 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 16:02:25,229 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.418, distance: 0.582, bbox: 36x36 px)
+2025-11-26 16:02:28,576 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=64, dy=61, size_change=1) - pose_quality:0.76
+2025-11-26 16:02:29,911 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.485, distance: 0.515, bbox: 52x52 px)
+2025-11-26 16:02:34,402 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=105, dy=93, size_change=2) - pose_quality:1.00
+2025-11-26 16:02:39,895 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.586, distance: 0.414, bbox: 52x52 px)
+2025-11-26 16:02:51,821 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=89, dy=45, size_change=4) - pose_quality:0.97
+2025-11-26 16:02:53,169 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.542, distance: 0.458, bbox: 43x43 px)
+2025-11-26 16:02:54,632 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=71, dy=21, size_change=2) - pose_quality:1.00
+2025-11-26 16:02:55,234 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.584, distance: 0.416, bbox: 43x43 px)
+2025-11-26 16:02:57,017 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=74, dy=4, size_change=4) - pose_quality:0.97
+2025-11-26 16:03:02,656 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.464, distance: 0.536, bbox: 43x43 px)
+2025-11-26 16:03:05,539 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=70, dy=12, size_change=6) - pose_quality:1.00
+2025-11-26 16:03:09,569 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.438, distance: 0.562, bbox: 44x44 px)
+2025-11-26 16:03:12,251 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=86, dy=10, size_change=4) - pose_quality:1.00
+2025-11-26 16:03:16,016 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.527, distance: 0.473, bbox: 43x43 px)
+2025-11-26 16:03:16,221 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=66, dy=18, size_change=0) - pose_quality:1.00
+2025-11-26 16:03:16,530 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.541, distance: 0.459, bbox: 43x43 px)
+2025-11-26 16:03:17,362 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=49, dy=85, size_change=2) - pose_quality:1.00
+2025-11-26 16:03:25,913 - WARNING - Initiating graceful shutdown...
+2025-11-26 16:03:26,278 - WARNING - Shutdown complete
+2025-11-26 16:07:02,721 - WARNING - Loaded 2 guards
+2025-11-26 16:07:18,447 - WARNING - Camera 0 started successfully
+2025-11-26 16:07:30,330 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-26 16:07:32,116 - WARNING - [TRACKING START] Identifying and tracking: Rudra | Action: Hands Up
+2025-11-26 16:07:34,403 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.449, distance: 0.551, bbox: 36x36 px)
+2025-11-26 16:07:58,069 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=168, dy=6, size_change=0) - pose_quality:0.61
+2025-11-26 16:08:03,810 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.445, distance: 0.555, bbox: 43x43 px)
+2025-11-26 16:08:48,146 - WARNING - [TRACK ENDED] Rudra: No face for 90 frames - guard likely left frame
+2025-11-26 16:08:48,917 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.478, distance: 0.522, bbox: 36x36 px)
+2025-11-26 16:08:49,227 - WARNING - [TRACK ENDED] Rudra: No face for 90 frames - guard likely left frame
+2025-11-26 16:08:49,999 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.590, distance: 0.410, bbox: 36x36 px)
+2025-11-26 16:08:58,434 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=26, dy=161, size_change=1) - pose_quality:1.00
+2025-11-26 16:08:58,749 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.482, distance: 0.518, bbox: 43x43 px)
+2025-11-26 16:09:05,754 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=167, dy=63, size_change=2) - pose_quality:1.00
+2025-11-26 16:09:06,236 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.410, distance: 0.590, bbox: 44x44 px)
+2025-11-26 16:09:14,057 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=186, dy=31, size_change=1) - pose_quality:1.00
+2025-11-26 16:09:14,551 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.482, distance: 0.518, bbox: 44x44 px)
+2025-11-26 16:10:01,235 - WARNING - [TRACKER LOST] Rudra: Extreme movement detected (dx=21, dy=184, size_change=3) - pose_quality:1.00
+2025-11-26 16:10:02,223 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.423, distance: 0.577, bbox: 52x51 px)
+2025-11-26 16:10:20,238 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:22,431 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.476, distance: 0.524, bbox: 36x36 px)
+2025-11-26 16:10:23,266 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:23,750 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.605, distance: 0.395, bbox: 36x36 px)
+2025-11-26 16:10:24,379 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:25,146 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.452, distance: 0.548, bbox: 36x36 px)
+2025-11-26 16:10:25,457 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:25,952 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.412, distance: 0.588, bbox: 36x36 px)
+2025-11-26 16:10:26,263 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:27,608 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.441, distance: 0.559, bbox: 43x43 px)
+2025-11-26 16:10:27,920 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:31,527 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.615, distance: 0.385, bbox: 36x36 px)
+2025-11-26 16:10:31,727 - WARNING - [GHOST REMOVED] Rudra: Body detected but no face in area + low pose confidence - likely ghost
+2025-11-26 16:10:32,211 - WARNING - [DETECTED] OK Rudra identified & tracking (confidence: 0.456, distance: 0.544, bbox: 36x36 px)
+2025-11-26 16:10:43,908 - WARNING - Initiating graceful shutdown...
+2025-11-26 16:10:44,263 - WARNING - Shutdown complete

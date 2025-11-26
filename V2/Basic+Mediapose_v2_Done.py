@@ -210,13 +210,64 @@ def get_storage_paths():
     
     return paths
 
-def save_guard_face(face_image, guard_name):
-    """Save guard face image to guard_profiles directory."""
+def save_guard_face(face_image, guard_name, angle="front"):
+    """Save guard face image to guard_profiles directory with multi-angle support.
+    
+    Args:
+        face_image: The face image to save
+        guard_name: Guard name
+        angle: Angle identifier (front, left, right, back, or None for legacy single image)
+    """
     paths = get_storage_paths()
     safe_name = guard_name.strip().replace(" ", "_")
-    profile_path = os.path.join(paths["guard_profiles"], f"target_{safe_name}_face.jpg")
+    
+    if angle and angle != "front":
+        # Multi-angle: Save in guard-specific subfolder
+        guard_dir = os.path.join(paths["guard_profiles"], f"target_{safe_name}")
+        os.makedirs(guard_dir, exist_ok=True)
+        profile_path = os.path.join(guard_dir, f"{angle}.jpg")
+    else:
+        # Legacy/primary: Save main face image in root (front angle or single image)
+        profile_path = os.path.join(paths["guard_profiles"], f"target_{safe_name}_face.jpg")
+        # Also save in multi-angle folder for consistency
+        guard_dir = os.path.join(paths["guard_profiles"], f"target_{safe_name}")
+        os.makedirs(guard_dir, exist_ok=True)
+        front_path = os.path.join(guard_dir, "front.jpg")
+        cv2.imwrite(front_path, face_image)
+    
     cv2.imwrite(profile_path, face_image)
+    logger.info(f"Saved guard face ({angle}): {profile_path}")
     return profile_path
+
+def load_guard_angle_images(guard_name):
+    """Load all angle reference images for a guard.
+    
+    Returns:
+        dict: Dictionary with angle names as keys and file paths as values
+              e.g., {'front': 'path/to/front.jpg', 'left': 'path/to/left.jpg', ...}
+    """
+    paths = get_storage_paths()
+    safe_name = guard_name.strip().replace(" ", "_")
+    guard_dir = os.path.join(paths["guard_profiles"], f"target_{safe_name}")
+    
+    angle_images = {}
+    
+    # Check for multi-angle images in subfolder (PRO mode: 5 angles, Normal: 4 angles)
+    if os.path.exists(guard_dir):
+        for angle in ["front", "left", "right", "back", "top"]:
+            angle_path = os.path.join(guard_dir, f"{angle}.jpg")
+            if os.path.exists(angle_path):
+                angle_images[angle] = angle_path
+                logger.debug(f"Found {angle} angle image for {guard_name}")
+    
+    # Always include the main face image as "front" if no multi-angle images exist
+    if not angle_images:
+        main_face_path = os.path.join(paths["guard_profiles"], f"target_{safe_name}_face.jpg")
+        if os.path.exists(main_face_path):
+            angle_images["front"] = main_face_path
+            logger.debug(f"Using single face image for {guard_name} (legacy mode)")
+    
+    return angle_images
 
 def save_capture_snapshot(face_image, guard_name):
     """Save timestamped capture snapshot to capture_snapshots directory."""
@@ -301,6 +352,131 @@ def optimize_memory():
 
 # Set aggressive garbage collection for real-time performance
 gc.set_threshold(1000, 15, 15)  # More aggressive collection
+
+# ============================================================================
+# PRO MODE ENHANCEMENTS: Multi-Scale Distance Detection & Body Matching
+# ============================================================================
+
+def detect_faces_multiscale_distance(rgb_frame, pro_mode=False):
+    """
+    ✅ PRO MODE: Enhanced multi-scale detection for distance guards.
+    Detects guards from 5 to 20 meters away using scale pyramid.
+    Only active in PRO mode for performance optimization.
+    """
+    if not pro_mode:
+        return face_recognition.face_locations(rgb_frame, model="hog")
+    
+    face_locations = []
+    scales = [1.0, 1.5, 2.0]
+    
+    for scale in scales:
+        if scale == 1.0:
+            scaled_frame = rgb_frame
+        else:
+            h, w = rgb_frame.shape[:2]
+            new_h, new_w = int(h * scale), int(w * scale)
+            scaled_frame = cv2.resize(rgb_frame, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+        
+        try:
+            locations = face_recognition.face_locations(scaled_frame, model="hog")
+            for (top, right, bottom, left) in locations:
+                face_locations.append((
+                    int(top / scale),
+                    int(right / scale),
+                    int(bottom / scale),
+                    int(left / scale)
+                ))
+        except Exception as e:
+            logger.debug(f"Multi-scale detection error at scale {scale}: {e}")
+            continue
+    
+    face_locations = remove_duplicate_faces(face_locations, iou_threshold=0.5)
+    if len(face_locations) > 0:
+        logger.debug(f"[PRO MODE] Multi-scale detected {len(face_locations)} faces")
+    
+    return face_locations
+
+def remove_duplicate_faces(face_locations, iou_threshold=0.5):
+    """Remove duplicate face detections from multi-scale pyramid using NMS."""
+    if len(face_locations) <= 1:
+        return face_locations
+    
+    boxes = []
+    for (top, right, bottom, left) in face_locations:
+        boxes.append([left, top, right - left, bottom - top])
+    
+    if len(boxes) == 0:
+        return []
+    
+    boxes = np.array(boxes, dtype=np.float32)
+    areas = (boxes[:, 2]) * (boxes[:, 3])
+    order = areas.argsort()[::-1]
+    
+    keep = []
+    while order.size > 0:
+        i = order[0]
+        keep.append(i)
+        
+        xx1 = np.maximum(boxes[i, 0], boxes[order[1:], 0])
+        yy1 = np.maximum(boxes[i, 1], boxes[order[1:], 1])
+        xx2 = np.minimum(boxes[i, 0] + boxes[i, 2], boxes[order[1:], 0] + boxes[order[1:], 2])
+        yy2 = np.minimum(boxes[i, 1] + boxes[i, 3], boxes[order[1:], 1] + boxes[order[1:], 3])
+        
+        w = np.maximum(0, xx2 - xx1)
+        h = np.maximum(0, yy2 - yy1)
+        
+        inter = w * h
+        iou = inter / (areas[i] + areas[order[1:]] - inter + 1e-6)
+        
+        inds = np.where(iou <= iou_threshold)[0]
+        order = order[inds + 1]
+    
+    return [face_locations[i] for i in keep]
+
+def match_body_silhouette(detected_landmarks, guard_body_profile):
+    """
+    ✅ PRO MODE: Match guard by body silhouette when face detection fails.
+    """
+    if not detected_landmarks or not guard_body_profile:
+        return 0.0
+    
+    try:
+        def get_body_proportions(landmarks):
+            if hasattr(landmarks, 'landmark'):
+                lm = landmarks.landmark
+            else:
+                lm = landmarks
+            
+            l_shoulder = lm[11]
+            r_shoulder = lm[12]
+            shoulder_width = abs(r_shoulder.x - l_shoulder.x)
+            
+            l_hip = lm[23]
+            torso_height = abs(l_hip.y - l_shoulder.y)
+            
+            l_ankle = lm[27]
+            leg_length = abs(l_ankle.y - l_hip.y)
+            
+            l_wrist = lm[15]
+            arm_length = abs(l_wrist.y - l_shoulder.y)
+            
+            return np.array([shoulder_width, torso_height, leg_length, arm_length])
+        
+        detected_props = get_body_proportions(detected_landmarks)
+        stored_props = get_body_proportions(guard_body_profile)
+        
+        dot_product = np.dot(detected_props, stored_props)
+        norm_detected = np.linalg.norm(detected_props)
+        norm_stored = np.linalg.norm(stored_props)
+        
+        if norm_detected == 0 or norm_stored == 0:
+            return 0.0
+        
+        similarity = dot_product / (norm_detected * norm_stored)
+        return max(0.0, min(1.0, similarity))
+    except Exception as e:
+        logger.debug(f"Body silhouette matching error: {e}")
+        return 0.0
 
 # --- MediaPipe Solutions Setup (kept for action classification only) ---
 # UPDATED: All pose detection models replaced with new pipeline:
@@ -1556,9 +1732,9 @@ class PoseApp:
         self.required_action_var = tk.StringVar(self.root)
         self.required_action_var.set("हाथ ऊपर (Hands Up)")
         self.action_dropdown = ctk.CTkOptionMenu(self.alert_type_btns_frame, 
-                                                values=["हाथ ऊपर (Hands Up)", "हाथ पार (Hands Crossed)", 
+                                                values=["हाथ ऊपर (Hands Up)", 
                                                        "बाएं हाथ ऊपर (Left Hand Up)", "दाएं हाथ ऊपर (Right Hand Up)", 
-                                                       "T-पोज़ (T-Pose)", "बैठा हुआ (Sit)", "खड़ा (Standing)"], 
+                                                       "खड़ा (Standing)"], 
                                                 command=self.on_action_change, 
                                                 fg_color="#3498db",
                                                 button_color="#2980b9",
@@ -2075,11 +2251,8 @@ class PoseApp:
                 
                 # Action Types (Dropdown Options)
                 "action_hands_up": "हाथ ऊपर (Hands Up)",
-                "action_hands_crossed": "हाथ पार (Hands Crossed)",
                 "action_left_hand_up": "बाएं हाथ ऊपर (Left Hand Up)",
                 "action_right_hand_up": "दाएं हाथ ऊपर (Right Hand Up)",
-                "action_t_pose": "T-पोज़ (T-Pose)",
-                "action_sit": "बैठा हुआ (Sit)",
                 "action_standing": "खड़ा (Standing)",
                 
                 # Monitor Modes
@@ -2203,11 +2376,8 @@ class PoseApp:
                 
                 # Action Types (Dropdown Options)
                 "action_hands_up": "Hands Up",
-                "action_hands_crossed": "Hands Crossed",
                 "action_left_hand_up": "Left Hand Up",
                 "action_right_hand_up": "Right Hand Up",
-                "action_t_pose": "T-Pose",
-                "action_sit": "Sit",
                 "action_standing": "Standing",
                 
                 # Monitor Modes
@@ -2331,11 +2501,8 @@ class PoseApp:
                 
                 # Action Types (Dropdown Options)
                 "action_hands_up": "हाथ वर (Hands Up)",
-                "action_hands_crossed": "हाथ ओलांडलेले (Hands Crossed)",
                 "action_left_hand_up": "डावा हाथ वर (Left Hand Up)",
                 "action_right_hand_up": "उजवा हाथ वर (Right Hand Up)",
-                "action_t_pose": "T-पोज (T-Pose)",
-                "action_sit": "बसलेले (Sit)",
                 "action_standing": "उभे (Standing)",
                 
                 # Monitor Modes
@@ -2926,12 +3093,34 @@ class PoseApp:
                         logger.error(f"Guard profile file not found: {filename}")
                         continue
                     
-                    target_image_file = face_recognition.load_image_file(filename)
-                    # ✅ PERFORMANCE: Use num_jitters=1 for fast encoding at initialization
-                    encodings = face_recognition.face_encodings(target_image_file, num_jitters=1)
-                    if encodings and len(encodings) > 0:
+                    # ✅ MULTI-ANGLE SUPPORT: Load all angle reference images
+                    angle_images = load_guard_angle_images(name)
+                    
+                    # Generate face encodings from all available angles
+                    multi_angle_encodings = []
+                    for angle, img_path in angle_images.items():
+                        try:
+                            angle_image = face_recognition.load_image_file(img_path)
+                            # ✅ PERFORMANCE: Use num_jitters=1 for fast encoding at initialization
+                            angle_encodings = face_recognition.face_encodings(angle_image, num_jitters=1)
+                            if angle_encodings:
+                                multi_angle_encodings.extend(angle_encodings)
+                                logger.debug(f"Loaded {angle} angle encoding for {name}")
+                        except Exception as e:
+                            logger.warning(f"Failed to load {angle} angle for {name}: {e}")
+                    
+                    # Fallback: Load primary face image if no multi-angle images found
+                    if not multi_angle_encodings:
+                        target_image_file = face_recognition.load_image_file(filename)
+                        encodings = face_recognition.face_encodings(target_image_file, num_jitters=1)
+                        if encodings:
+                            multi_angle_encodings = encodings
+                    
+                    if multi_angle_encodings and len(multi_angle_encodings) > 0:
                         self.targets_status[name] = {
-                            "encoding": encodings[0],
+                            "encoding": multi_angle_encodings[0],  # Primary encoding for compatibility
+                            "multi_angle_encodings": multi_angle_encodings,  # ✅ NEW: All angle encodings for better matching
+                            "body_profile_landmarks": None,  # ✅ PRO MODE: Store body profile for silhouette matching
                             "tracker": None,
                             "body_tracker": None,
                             "face_box": None, 
@@ -2969,7 +3158,7 @@ class PoseApp:
                             "stillness_alert_logged": False,  # Track if stillness alert was logged
                         }
                         count += 1
-                        logger.info(f"[OK] {name} initialized with {len(encodings)} face encoding(s)")
+                        logger.info(f"[OK] {name} initialized with {len(multi_angle_encodings)} face encoding(s) from {len(angle_images)} angle(s)")
                     else:
                         # ✅ IMPROVED: Log if no face detected in target image
                         logger.warning(f"[WARN] No face encoding found in {name} image - guard may not be detectable")
@@ -3870,7 +4059,9 @@ class PoseApp:
                 messagebox.showwarning("Error", "Ensure exactly one face is visible. Move closer to camera.")
             return
         
-        # Onboarding mode with angle captures (4 pictures: front, left, right, back)
+        # Onboarding mode with angle captures
+        # Normal mode: 4 pictures (front, left, right, back)
+        # PRO mode: 5 pictures (front, left, right, back, top)
         if self.onboarding_step == 0:
             # Capture FRONT angle - use cached detection results
             if self.onboarding_face_box is None:
@@ -3905,9 +4096,9 @@ class PoseApp:
             
             cropped_face = self.unprocessed_frame[crop_top:crop_bottom, crop_left:crop_right]
             
-            # Save using systematic helpers
+            # Save using systematic helpers with angle support
             if self.onboarding_name:
-                save_guard_face(cropped_face, self.onboarding_name)
+                save_guard_face(cropped_face, self.onboarding_name, angle="front")
                 save_capture_snapshot(cropped_face, self.onboarding_name)
                 
                 # Save angle-specific photos
@@ -3922,10 +4113,16 @@ class PoseApp:
             self.onboarding_step = 1
             messagebox.showinfo("Step 2", "Perfect! Now TURN LEFT (90° profile) and click Snap Photo")
         else:
-            # Capture angle photos (left, right, back)
-            # ✅ SPECIFICATION: 4 angle-based photos instead of 5 poses (front, left, right, back)
-            angles = ["01_front", "02_left", "03_right", "04_back"]
-            angle_instructions = ["TURN LEFT (90° profile)", "TURN RIGHT (90° profile)", "TURN AROUND (back view, 180°)"]
+            # Capture angle photos (left, right, back, top)
+            # ✅ ENHANCED: 5 angle-based photos for PRO mode (front, left, right, back, top)
+            # Normal mode: 4 angles (front, left, right, back)
+            # PRO mode: 5 angles (front, left, right, back, top)
+            if self.is_pro_mode:
+                angles = ["01_front", "02_left", "03_right", "04_back", "05_top"]
+                angle_instructions = ["TURN LEFT (90° profile)", "TURN RIGHT (90° profile)", "TURN AROUND (back view, 180°)", "POSITION CAMERA ABOVE (bird's-eye view)"]
+            else:
+                angles = ["01_front", "02_left", "03_right", "04_back"]
+                angle_instructions = ["TURN LEFT (90° profile)", "TURN RIGHT (90° profile)", "TURN AROUND (back view, 180°)"]
             
             if self.onboarding_face_box is None:
                 messagebox.showwarning("Error", f"No face detected. Please stand and face the camera.")
@@ -3963,13 +4160,20 @@ class PoseApp:
                 self.onboarding_poses[angle_file] = cropped_angle  # Store reference
             
             self.onboarding_step += 1
-            if self.onboarding_step <= 3:
+            
+            # ✅ PRO MODE: Check if we need 5th angle (top view)
+            max_angles = 4 if not self.is_pro_mode else 5
+            
+            if self.onboarding_step < max_angles:
                 messagebox.showinfo(f"Step {self.onboarding_step + 1}", f"Great! Now {angle_instructions[self.onboarding_step - 1]} and click Snap Photo")
             else:
-                # All 4 angles captured (front, left, right, back)
+                # All angles captured
                 self.load_targets()
                 self.exit_onboarding_mode()
-                messagebox.showinfo("Complete", f"{self.onboarding_name} onboarding complete! 4 angle photos captured (Front, Left, Right, Back).")
+                if self.is_pro_mode:
+                    messagebox.showinfo("Complete", f"{self.onboarding_name} onboarding complete! 5 angle photos captured (Front, Left, Right, Back, Top - PRO Mode).")
+                else:
+                    messagebox.showinfo("Complete", f"{self.onboarding_name} onboarding complete! 4 angle photos captured (Front, Left, Right, Back).")
 
     def update_video_feed(self):
         if not self.is_running: return
@@ -4518,27 +4722,27 @@ class PoseApp:
                     new_w = max(1, new_x2 - new_x1)
                     new_h = max(1, new_y2 - new_y1)
                     size_change = abs(new_w - old_w) + abs(new_h - old_h)
-                    max_movement = max(old_w, old_h) * 0.5  # 50% of size (increased from 40% for distance tracking)
-                    max_size_change = (old_w + old_h) * 0.45  # 45% size change tolerance (increased from 35%)
+                    max_movement = max(old_w, old_h) * 0.8  # 80% of size for walking/running/jumping
+                    max_size_change = (old_w + old_h) * 0.65  # 65% size change for depth movement
                     
                     # ✅ PERSISTENT TRACKING: Allow larger movement but not EXTREME
                     frame_h, frame_w = frame.shape[:2]
                     at_frame_edge = (new_x1 < 50 or new_x2 > frame_w - 50 or 
                                     new_y1 < 50 or new_y2 > frame_h - 50)
                     
-                    # ✅ CRITICAL FIX: Tighter thresholds for faster loss detection
-                    # Old: 8x-15x multiplier = too lenient, allowed too much drift
-                    # New: 3x-4x multiplier = catches real tracker failures while allowing normal movement
-                    movement_threshold = (max_movement * 4) if at_frame_edge else (max_movement * 3)
-                    size_threshold = (max_size_change * 4) if at_frame_edge else (max_size_change * 3)
+                    # ✅ MOVEMENT TOLERANCE: Allow natural guard movements (walking, running, jumping)
+                    # Base: 80% box size, Multiplier: 5x-6x for normal human movement patterns
+                    # This prevents losing track during speed walking, jumping, or quick turns
+                    movement_threshold = (max_movement * 6) if at_frame_edge else (max_movement * 5)
+                    size_threshold = (max_size_change * 6) if at_frame_edge else (max_size_change * 5)
                     
                     # ✅ EXTREME ANGLE TOLERANCE: If pose quality is poor (back view, extreme angle),
                     # increase tolerance slightly (but not too much) to prevent losing track
                     pose_quality_check = status.get("pose_confidence", 0.3)
                     if pose_quality_check < 0.3:
-                        # Back/extreme angle view - slightly lenient tracking (1.5x not 2x)
-                        movement_threshold = movement_threshold * 1.5  # 1.5x more lenient
-                        size_threshold = size_threshold * 1.5
+                        # Back/extreme angle view - more lenient for guards moving away from camera
+                        movement_threshold = movement_threshold * 2.0  # 2x more lenient for back/side views
+                        size_threshold = size_threshold * 2.0
                         logger.debug(f"[TRACKER] {name}: Using extreme-angle tolerance (sparse pose: {pose_quality_check:.2f})")
                     
                     if dx > movement_threshold or dy > movement_threshold or size_change > size_threshold:
@@ -4603,6 +4807,9 @@ class PoseApp:
                 if status.get("visible", False)
             )
             
+            # Auto-detect single vs multi-person mode based on target count
+            is_single_person = len(self.targets_status) <= 1
+            
             if all_trackers_confident and len([s for s in self.targets_status.values() if s.get("visible")]) > 0:
                 # All visible targets have high confidence trackers - skip detection, just update trackers
                 logger.debug(f"[PERF-SKIP] All {len([s for s in self.targets_status.values() if s.get('visible')])} targets have high confidence trackers (>0.92) - skipping face detection")
@@ -4610,8 +4817,6 @@ class PoseApp:
             else:
                 # Need to run detection
                 # ✅ NEW PIPELINE: Initialize and use new model pipelines
-                # Auto-detect single vs multi-person mode based on target count
-                is_single_person = len(self.targets_status) <= 1
                 
                 # Initialize pipeline if needed
                 if not self.model_pipeline_initialized:
@@ -4620,12 +4825,18 @@ class PoseApp:
                 # Load appropriate pipeline
                 if is_single_person:
                     self._load_single_person_pipeline()
-                    face_locations = self._detect_faces_blazeface(rgb_full_frame)
+                    # ✅ PRO MODE: Use multi-scale distance detection
+                    if self.is_pro_mode:
+                        face_locations = detect_faces_multiscale_distance(rgb_full_frame, pro_mode=True)
+                    else:
+                        face_locations = self._detect_faces_blazeface(rgb_full_frame)
                 else:
                     self._load_multi_person_pipeline()
-                    face_locations = self._detect_faces_blazepose(rgb_full_frame)
-            
-            # ✅ CRITICAL GHOST DETECTION FIX: Verify tracked guards are actually on real faces OR bodies
+                    # ✅ PRO MODE: Use multi-scale distance detection
+                    if self.is_pro_mode:
+                        face_locations = detect_faces_multiscale_distance(rgb_full_frame, pro_mode=True)
+                    else:
+                        face_locations = self._detect_faces_blazepose(rgb_full_frame)            # ✅ CRITICAL GHOST DETECTION FIX: Verify tracked guards are actually on real faces OR bodies
             # If a guard is being tracked but NO face is detected at that location, check for body/skeleton
             for name, status in self.targets_status.items():
                 if not status.get("visible", False):
@@ -4716,17 +4927,17 @@ class PoseApp:
                             status["face_detection_missing_frames"] = status.get("face_detection_missing_frames", 0) + 1
                             
                             # QUALITY-BASED TOLERANCE: More frames allowed for better skeleton quality
-                            # High quality (pose_confidence > 0.60): allow 60 frames (~2 seconds at 30fps)
-                            # Good quality (pose_confidence > 0.40): allow 45 frames (~1.5 seconds at 30fps)
-                            # Default fallback: 30 frames (~1 second at 30fps)
+                            # High quality (pose_confidence > 0.60): allow 90 frames (~3 seconds at 30fps)
+                            # Good quality (pose_confidence > 0.40): allow 60 frames (~2 seconds at 30fps)
+                            # Default fallback: 45 frames (~1.5 seconds at 30fps)
                             if pose_confidence > 0.60:
-                                max_missing_frames = 60
+                                max_missing_frames = 90
                                 quality_tier = "HIGH"
                             elif pose_confidence > 0.40:
-                                max_missing_frames = 45
+                                max_missing_frames = 60
                                 quality_tier = "GOOD"
                             else:
-                                max_missing_frames = 30
+                                max_missing_frames = 45
                                 quality_tier = "BASIC"
                             
                             if status["face_detection_missing_frames"] <= max_missing_frames:
@@ -4749,17 +4960,17 @@ class PoseApp:
                     
                     elif body_box_valid and (pose_quality_valid or keypoint_valid):
                         # Partial validation (either quality or keypoints valid, but not both)
-                        # More conservative: allow only 20 frames
+                        # More conservative: allow up to 35 frames (1+ second)
                         status["face_detection_missing_frames"] = status.get("face_detection_missing_frames", 0) + 1
                         
-                        if status["face_detection_missing_frames"] <= 20:
+                        if status["face_detection_missing_frames"] <= 35:
                             logger.debug(f"[BODY TRACK-PARTIAL] {name}: Partial validation (pose:{pose_confidence:.2f}, keypts:{skeleton_keypoints})")
                         else:
                             status["visible"] = False
                             status["tracker"] = None
                             status["consecutive_detections"] = 0
                             status["stable_tracking"] = False
-                            logger.warning(f"[TRACK ENDED-PARTIAL] {name}: Partial body validation failed after 20 frames")
+                            logger.warning(f"[TRACK ENDED-PARTIAL] {name}: Partial body validation failed after 35 frames")
                     else:
                         # GHOST DETECTION: No face AND failed body validation
                         # Multiple reasons could cause this:
@@ -4794,10 +5005,10 @@ class PoseApp:
                     body_box = status.get("body_box")
                     
                     # Trigger reinitialization when:
-                    # 1. Face has been missing for 8+ frames (267ms)
+                    # 1. Face has been missing for 12+ frames (400ms) - allows time for normal movement
                     # 2. Skeleton is valid (pose_confidence > 0.35, keypoints >= 10)
                     # 3. Body box is available and in frame
-                    if (face_missing_frames >= 8 and 
+                    if (face_missing_frames >= 12 and 
                         pose_confidence > 0.35 and 
                         skeleton_keypoints >= 10 and 
                         body_box is not None):
@@ -5120,7 +5331,7 @@ class PoseApp:
                         # This was preventing grace period from ever executing properly
                         
                         # ✅ ENHANCED: Log guard identification with visual indicator
-                        logger.warning(f"[DETECTED] ✓ {name} identified & tracking (confidence: {confidence:.3f}, distance: {dist:.3f}, bbox: {bbox_width}x{bbox_height} px)")
+                        logger.warning(f"[DETECTED] OK {name} identified & tracking (confidence: {confidence:.3f}, distance: {dist:.3f}, bbox: {bbox_width}x{bbox_height} px)")
                         
                         # Log first detection event
                         if self.targets_status[name].get("consecutive_detections", 0) == 1:
