@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>निराक्षण (Niraakshan) - Installation Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-bottom: 5px solid #764ba2;
+        }
+        
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header-subtitle {
+            font-size: 1.8em;
+            font-weight: 300;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+        
+        /* Navigation */
+        .nav-section {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .nav-button {
+            padding: 15px 20px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #667eea;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .nav-button:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        .content {
+            padding: 50px 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .section h4 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        /* Info Boxes */
+        .info-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        
+        .info-box.warning {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+            border-left-color: #f39c12;
+        }
+        
+        .info-box.success {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left-color: #27ae60;
+        }
+        
+        .info-box.danger {
+            background: linear-gradient(135deg, #ffebee 0%, #ef9a9a 100%);
+            border-left-color: #e74c3c;
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin-left: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        
+        /* Code Blocks */
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            border-left: 5px solid #3498db;
+        }
+        
+        .code-block code {
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        tr:hover {
+            background: #e8f4f8;
+        }
+        
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .feature-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h4 {
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .feature-card p {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+        
+        /* System Requirements */
+        .requirement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .requirement-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+            padding: 25px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .requirement-card h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .requirement-card ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+        
+        .requirement-card li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        
+        .requirement-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        /* Step-by-step */
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+        }
+        
+        .step-list li {
+            counter-increment: step-counter;
+            margin-bottom: 25px;
+            padding-left: 0;
+            position: relative;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .step-list li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -35px;
+            top: 20px;
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .footer p {
+            margin: 10px 0;
+        }
+        
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header-subtitle {
+                font-size: 1.2em;
+            }
+            
+            .section h2 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .step-list li:before {
+                left: 10px;
+                top: 10px;
+            }
+            
+            .step-list li {
+                padding-left: 60px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .nav-section {
+                display: none;
+            }
+            
+            .section {
+                display: block !important;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🛡️ निराक्षण (Niraakshan)</h1>
+            <div class="header-subtitle">Multi-Target Guard Tracking System</div>
+            <div class="tagline">निराक्षण करे रक्षण | Observe to Protect</div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="nav-section">
+            <button class="nav-button" onclick="showSection('overview')">📋 Overview</button>
+            <button class="nav-button" onclick="showSection('requirements')">⚙️ Requirements</button>
+            <button class="nav-button" onclick="showSection('installation')">📦 Installation</button>
+            <button class="nav-button" onclick="showSection('setup')">🔧 Setup</button>
+            <button class="nav-button" onclick="showSection('usage')">🎯 Usage</button>
+            <button class="nav-button" onclick="showSection('troubleshooting')">🔧 Troubleshooting</button>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Overview Section -->
+            <div id="overview" class="section active">
+                <h2>📋 Project Overview</h2>
+                
+                <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">
+                    Niraakshan is an advanced, real-time multi-target guard tracking and monitoring system that uses pose detection, 
+                    face recognition, and AI-powered action classification to identify specific guards and monitor their poses and actions in real-time.
+                </p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👮</div>
+                        <h4>Multi-Target Tracking</h4>
+                        <p>Track multiple guards simultaneously with independent pose and action detection</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Pose Detection</h4>
+                        <p>Real-time MediaPipe pose estimation for detecting guard positions and actions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h4>Smart Alerts</h4>
+                        <p>Automatic alerts when guards perform (or fail to perform) specific actions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚨</div>
+                        <h4>Fugitive Mode</h4>
+                        <p>Real-time fugitive detection and instant 15-second audio alerts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📸</div>
+                        <h4>Snapshot Capture</h4>
+                        <p>Automatic capture of alert moments with timestamp and guard identification</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4>Performance Monitoring</h4>
+                        <p>Real-time FPS and memory usage monitoring with adaptive optimization</p>
+                    </div>
+                </div>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Real-time Multi-Guard Tracking:</strong> Independent tracking for each guard with confidence scoring</li>
+                    <li><strong>Action Classification:</strong> Recognizes Hands Up, Hands Crossed, T-Pose, Sitting, Standing, and more</li>
+                    <li><strong>Multi-Language Support:</strong> Hindi, English, Marathi, and Gujarati</li>
+                    <li><strong>Fugitive Detection:</strong> Instant detection of pre-specified persons with immediate audio alerts</li>
+                    <li><strong>Dark Mode Support:</strong> CLAHE enhancement for night/low-light tracking</li>
+                    <li><strong>CSV Event Logging:</strong> Complete event history with timestamps and confidence scores</li>
+                    <li><strong>Snapshot Management:</strong> Automatic alert snapshots with configurable retention</li>
+                </ul>
+            </div>
+            
+            <!-- System Requirements Section -->
+            <div id="requirements" class="section">
+                <h2>⚙️ Minimum System Requirements</h2>
+                
+                <h3>Hardware Requirements</h3>
+                <div class="requirement-grid">
+                    <div class="requirement-card">
+                        <h4>💻 Processor</h4>
+                        <ul>
+                            <li>Intel i5-8th Gen or better</li>
+                            <li>AMD Ryzen 5 2600 or better</li>
+                            <li>4+ cores recommended</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>🧠 RAM Memory</h4>
+                        <ul>
+                            <li>Minimum: 8 GB</li>
+                            <li>Recommended: 16 GB</li>
+                            <li>For 5+ guards: 32 GB</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>💾 Storage</h4>
+                        <ul>
+                            <li>50 GB free space</li>
+                            <li>SSD recommended</li>
+                            <li>For logs/snapshots: +100 GB</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>📷 Camera</h4>
+                        <ul>
+                            <li>USB Webcam (1080p+)</li>
+                            <li>IP Camera (RTSP)</li>
+                            <li>Integrated laptop camera</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>🖥️ GPU (Optional)</h4>
+                        <ul>
+                            <li>NVIDIA GTX 1050+</li>
+                            <li>CUDA 11.0+</li>
+                            <li>10x faster processing</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-card">
+                        <h4>🔊 Audio Device</h4>
+                        <ul>
+                            <li>Speaker system</li>
+                            <li>For alert sounds</li>
+                            <li>3.5mm jack or USB</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Software Requirements</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Version</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Python</strong></td>
+                            <td>3.8 - 3.11</td>
+                            <td>Core runtime environment</td>
+                        </tr>
+                        <tr>
+                            <td><strong>OpenCV</strong></td>
+                            <td>4.5.0+</td>
+                            <td>Image processing and video capture</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MediaPipe</strong></td>
+                            <td>0.8.9+</td>
+                            <td>Pose detection and hand tracking</td>
+                        </tr>
+                        <tr>
+                            <td><strong>face_recognition</strong></td>
+                            <td>1.3.0+</td>
+                            <td>Face detection and encoding</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TensorFlow</strong></td>
+                            <td>2.10.0+</td>
+                            <td>Deep learning framework</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PyGame</strong></td>
+                            <td>2.1.0+</td>
+                            <td>Audio alert playback</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CustomTkinter</strong></td>
+                            <td>5.0+</td>
+                            <td>Modern GUI framework</td>
+                        </tr>
+                        <tr>
+                            <td><strong>NumPy</strong></td>
+                            <td>1.21.0+</td>
+                            <td>Numerical computations</td>
+                        </tr>
+                        <tr>
+                            <td><strong>psutil</strong></td>
+                            <td>5.8.0+</td>
+                            <td>System monitoring</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Operating System Support</h3>
+                <ul>
+                    <li><strong>Windows 10/11</strong> - Primary target, fully tested</li>
+                    <li><strong>Linux (Ubuntu 20.04+)</strong> - Full support</li>
+                    <li><strong>macOS (Intel)</strong> - Partial support</li>
+                </ul>
+                
+                <div class="info-box warning">
+                    <strong>⚠️ Important:</strong> The system is optimized for Windows. Some features (like MP3 audio playback) may have limited support on other OS.
+                </div>
+            </div>
+            
+            <!-- Installation Section -->
+            <div id="installation" class="section">
+                <h2>📦 Installation Guide</h2>
+                
+                <h3>Step 1: Install Python</h3>
+                <ol class="step-list">
+                    <li>Download Python 3.10 from <a href="https://www.python.org/downloads/" target="_blank">python.org</a></li>
+                    <li>Run the installer and check "Add Python to PATH"</li>
+                    <li>Choose "Install for all users"</li>
+                    <li>Verify installation:
+                        <div class="code-block"><code>python --version</code></div>
+                    </li>
+                </ol>
+                
+                <h3>Step 2: Create Virtual Environment</h3>
+                <ol class="step-list">
+                    <li>Open Command Prompt or PowerShell</li>
+                    <li>Navigate to project directory:
+                        <div class="code-block"><code>cd D:\CUDA_Experiments\Git_HUB\Nirikhsan_Web_Cam\V2</code></div>
+                    </li>
+                    <li>Create virtual environment:
+                        <div class="code-block"><code>python -m venv venv</code></div>
+                    </li>
+                    <li>Activate virtual environment:
+                        <div class="code-block"><code># Windows<br>venv\Scripts\activate</code></div>
+                    </li>
+                    <li>Verify activation (you should see "(venv)" in the prompt)</li>
+                </ol>
+                
+                <h3>Step 3: Install Dependencies</h3>
+                <ol class="step-list">
+                    <li>Update pip:
+                        <div class="code-block"><code>pip install --upgrade pip setuptools wheel</code></div>
+                    </li>
+                    <li>Install core dependencies:
+                        <div class="code-block"><code>pip install opencv-python==4.8.1.78</code></div>
+                        <div class="code-block"><code>pip install mediapipe==0.10.3</code></div>
+                        <div class="code-block"><code>pip install face-recognition==1.3.5</code></div>
+                    </li>
+                    <li>Install deep learning frameworks:
+                        <div class="code-block"><code>pip install tensorflow==2.13.0</code></div>
+                        <div class="code-block"><code>pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</code></div>
+                    </li>
+                    <li>Install GUI and utilities:
+                        <div class="code-block"><code>pip install customtkinter==5.2.1</code></div>
+                        <div class="code-block"><code>pip install pillow==10.0.1</code></div>
+                        <div class="code-block"><code>pip install pygame==2.5.0</code></div>
+                    </li>
+                    <li>Install system utilities:
+                        <div class="code-block"><code>pip install psutil==5.9.5</code></div>
+                        <div class="code-block"><code>pip install pydub==0.25.1</code></div>
+                    </li>
+                </ol>
+                
+                <h3>Step 4: Download Project Files</h3>
+                <ol class="step-list">
+                    <li>Clone or download the repository</li>
+                    <li>Extract to your desired location</li>
+                    <li>Ensure these directories exist or will be created:
+                        <ul>
+                            <li>guard_profiles/ - Guard face images</li>
+                            <li>pose_references/ - Guard pose JSONs</li>
+                            <li>capture_snapshots/ - Captured photos</li>
+                            <li>alert_snapshots/ - Alert moment photos</li>
+                            <li>logs/ - Session and event logs</li>
+                            <li>audio_files/ - Alert audio files</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h3>Step 5: Run the Application</h3>
+                <ol class="step-list">
+                    <li>Navigate to project directory in terminal/PowerShell</li>
+                    <li>Activate virtual environment if not already done</li>
+                    <li>Run the main script:
+                        <div class="code-block"><code>python Basic+Mediapose_v2.py</code></div>
+                    </li>
+                    <li>The GUI window should open with "Camera Feed Offline"</li>
+                </ol>
+                
+                <div class="info-box success">
+                    <strong>✓ Installation Complete!</strong> You're ready to use Niraakshan. Proceed to the Setup section for configuration.
+                </div>
+            </div>
+            
+            <!-- Setup Section -->
+            <div id="setup" class="section">
+                <h2>🔧 Initial Setup & Configuration</h2>
+                
+                <h3>1. Create Configuration File (config.json)</h3>
+                <p>Create a <code>config.json</code> file in the project root with:</p>
+                <div class="code-block"><code>{
+  "detection": {
+    "min_detection_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "face_recognition_tolerance": 0.5,
+    "re_detect_interval": 8
+  },
+  "alert": {
+    "default_interval_seconds": 10,
+    "alert_cooldown_seconds": 2.5
+  },
+  "performance": {
+    "gui_refresh_ms": 30,
+    "pose_buffer_size": 12,
+    "frame_skip_interval": 2,
+    "enable_frame_skipping": true,
+    "min_buffer_for_classification": 5
+  },
+  "logging": {
+    "log_directory": "logs",
+    "max_log_size_mb": 10,
+    "auto_flush_interval": 50
+  },
+  "storage": {
+    "alert_snapshots_dir": "alert_snapshots",
+    "snapshot_retention_days": 30,
+    "guard_profiles_dir": "guard_profiles",
+    "capture_snapshots_dir": "capture_snapshots",
+    "audio_files_dir": "audio_files"
+  },
+  "monitoring": {
+    "mode": "pose",
+    "session_restart_prompt_hours": 8
+  }
+}</code></div>
+                
+                <h3>2. Camera Selection</h3>
+                <ol class="step-list">
+                    <li>Click the <strong>▶ Camera ON/OFF</strong> button</li>
+                    <li>If multiple cameras are available, select your preferred camera</li>
+                    <li>Camera feed should appear in the main window</li>
+                    <li>Verify camera quality (well-lit, minimum 1280x960 resolution)</li>
+                </ol>
+                
+                <h3>3. Add Guards (Profiles)</h3>
+                <ol class="step-list">
+                    <li>Click <strong>➕ Add Guard</strong> button</li>
+                    <li>Choose: Capture from camera OR Upload existing image</li>
+                    <li>For camera capture:
+                        <ul>
+                            <li>Stand in FRONT of camera (Step 1)</li>
+                            <li>Click "Snap Photo" when green box appears</li>
+                            <li>Repeat for LEFT angle (90°)</li>
+                            <li>Repeat for RIGHT angle (90°)</li>
+                            <li>Repeat for BACK angle (180°)</li>
+                            <li>Total: 4 angle photos captured</li>
+                        </ul>
+                    </li>
+                    <li>For upload: Select image with clear, frontal face</li>
+                </ol>
+                
+                <h3>4. Configure Alert Settings</h3>
+                <ol class="step-list">
+                    <li>Set Action Timeout:
+                        <ul>
+                            <li>Click <strong>⏱️ Timeout (HH:MM:SS)</strong></li>
+                            <li>Set hours and minutes (e.g., 0 hours, 10 minutes)</li>
+                            <li>This is how long until alert triggers if action not performed</li>
+                        </ul>
+                    </li>
+                    <li>Choose Required Action from dropdown:
+                        <ul>
+                            <li>Hands Up (default)</li>
+                            <li>Hands Crossed</li>
+                            <li>T-Pose</li>
+                            <li>Sitting</li>
+                            <li>Standing</li>
+                            <li>etc.</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h3>5. Language Selection</h3>
+                <ol class="step-list">
+                    <li>Click the title logo <strong>🛡️ निराक्षण (Niraakshan)</strong></li>
+                    <li>Select your preferred language:
+                        <ul>
+                            <li>Hindi (हिंदी)</li>
+                            <li>English</li>
+                            <li>Marathi (मराठी)</li>
+                            <li>Gujarati (ગુજરાતી)</li>
+                        </ul>
+                    </li>
+                    <li>Language changes apply immediately (no restart needed)</li>
+                </ol>
+                
+                <div class="info-box success">
+                    <strong>✓ Setup Complete!</strong> You can now start using Niraakshan for guard tracking and monitoring.
+                </div>
+            </div>
+            
+            <!-- Usage Section -->
+            <div id="usage" class="section">
+                <h2>🎯 Usage Guide</h2>
+                
+                <h3>Basic Operation</h3>
+                <ol class="step-list">
+                    <li><strong>Start Camera:</strong> Click ▶ Camera ON/OFF</li>
+                    <li><strong>Select Guards:</strong> Click ✓ Select Guard and choose which guards to track</li>
+                    <li><strong>Activate Tracking:</strong> Click 🎯 Track Guard to start monitoring</li>
+                    <li><strong>Monitor Alerts:</strong> Watch for guard action alerts in real-time</li>
+                    <li><strong>Stop:</strong> Click ⏹️ Stop Monitoring when done</li>
+                </ol>
+                
+                <h3>Guard Management</h3>
+                <h4>Adding a Guard</h4>
+                <ul>
+                    <li>Click <strong>➕ Add Guard</strong></li>
+                    <li>Enter guard name</li>
+                    <li>Capture 4 angle photos OR upload existing image</li>
+                    <li>Guard profile stored in <code>guard_profiles/</code></li>
+                </ul>
+                
+                <h4>Removing a Guard</h4>
+                <ul>
+                    <li>Click <strong>❌ Remove Guard</strong></li>
+                    <li>Select guard from list</li>
+                    <li>Confirm deletion</li>
+                    <li>All associated files deleted</li>
+                </ul>
+                
+                <h3>Alert System</h3>
+                <h4>Action Alerts</h4>
+                <ul>
+                    <li>System monitors selected guards for required action</li>
+                    <li>Alert triggers if action not performed within timeout period</li>
+                    <li>Snapshot captured automatically</li>
+                    <li>CSV log entry created with timestamp</li>
+                </ul>
+                
+                <h4>Fugitive Detection</h4>
+                <ul>
+                    <li>Click <strong>🚨 Add Fugitive</strong></li>
+                    <li>Select image of person to search for</li>
+                    <li>System runs continuous fugitive detection</li>
+                    <li>Instant 15-second audio alert when detected</li>
+                    <li>Snapshot captured automatically</li>
+                    <li>Click <strong>❌ Remove Fugitive</strong> to stop search</li>
+                </ul>
+                
+                <h3>Night Mode</h3>
+                <ul>
+                    <li>Click <strong>🌙 Night</strong> button to enable</li>
+                    <li>Automatically applies CLAHE enhancement for dark environments</li>
+                    <li>Improves face detection in low-light conditions</li>
+                    <li>Click again to return to day mode</li>
+                </ul>
+                
+                <h3>File Organization</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Directory</th>
+                            <th>Contents</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>guard_profiles/</code></td>
+                            <td>Guard face images</td>
+                            <td>Face recognition matching</td>
+                        </tr>
+                        <tr>
+                            <td><code>pose_references/</code></td>
+                            <td>Guard pose JSON files</td>
+                            <td>Pose training data</td>
+                        </tr>
+                        <tr>
+                            <td><code>capture_snapshots/</code></td>
+                            <td>Timestamped captures</td>
+                            <td>Guard verification photos</td>
+                        </tr>
+                        <tr>
+                            <td><code>alert_snapshots/</code></td>
+                            <td>Alert moment photos</td>
+                            <td>Event documentation (30-day retention)</td>
+                        </tr>
+                        <tr>
+                            <td><code>logs/</code></td>
+                            <td>CSV events + session logs</td>
+                            <td>Historical records</td>
+                        </tr>
+                        <tr>
+                            <td><code>audio_files/</code></td>
+                            <td>Alert audio (MP3)</td>
+                            <td>Alert sound playback</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>Open <code>logs/events.csv</code> to view historical records</li>
+                    <li>Columns: Timestamp, Guard Name, Action, Status, Image Path, Confidence</li>
+                    <li>Use Excel or Python Pandas to analyze patterns</li>
+                    <li>Old snapshots automatically deleted after 30 days</li>
+                </ul>
+            </div>
+            
+            <!-- Troubleshooting Section -->
+            <div id="troubleshooting" class="section">
+                <h2>🔧 Troubleshooting</h2>
+                
+                <h3>Camera Issues</h3>
+                <h4>Problem: Camera feed shows "Camera Feed Offline"</h4>
+                <ul>
+                    <li>✓ Check camera is connected and powered on</li>
+                    <li>✓ Test camera with Windows Camera app</li>
+                    <li>✓ Try different camera index if multiple cameras available</li>
+                    <li>✓ Restart application and re-select camera</li>
+                    <li>✓ Update camera drivers</li>
+                </ul>
+                
+                <h4>Problem: Camera feed is laggy/freezing</h4>
+                <ul>
+                    <li>✓ Close other applications using camera (Zoom, Teams, etc.)</li>
+                    <li>✓ Check camera USB cable connection (if USB camera)</li>
+                    <li>✓ Reduce frame skip interval in config.json (currently 2, try 3-4)</li>
+                    <li>✓ Disable night mode if enabled</li>
+                    <li>✓ Check system RAM availability (should have 4GB+ free)</li>
+                </ul>
+                
+                <h3>Face Recognition Issues</h3>
+                <h4>Problem: "Image must contain exactly one face"</h4>
+                <ul>
+                    <li>✓ Ensure only one person is visible in the image</li>
+                    <li>✓ Move background clutter out of frame</li>
+                    <li>✓ Use clear, well-lit image</li>
+                    <li>✓ Guard should face camera directly</li>
+                    <li>✓ Minimum face size: 50x50 pixels</li>
+                </ul>
+                
+                <h4>Problem: Guards not detected during tracking</h4>
+                <ul>
+                    <li>✓ Verify guard profile photos contain good quality face</li>
+                    <li>✓ Check camera lighting (minimum 300 lux recommended)</li>
+                    <li>✓ Reduce face_recognition_tolerance in config.json (e.g., 0.4 → 0.35)</li>
+                    <li>✓ Take new guard profile photos in same lighting as tracking location</li>
+                    <li>✓ Try uploading photo from tracking location itself</li>
+                </ul>
+                
+                <h3>Performance Issues</h3>
+                <h4>Problem: High CPU/Memory usage</h4>
+                <ul>
+                    <li>✓ Check FPS - should be 20-30 FPS</li>
+                    <li>✓ Reduce number of tracked guards (max 3-5 per system)</li>
+                    <li>✓ Enable frame skipping: "enable_frame_skipping": true</li>
+                    <li>✓ Increase frame_skip_interval: 2 → 3-4</li>
+                    <li>✓ Reduce camera resolution in config if supported</li>
+                    <li>✓ Close browser/media players to free memory</li>
+                    <li>✓ Install NVIDIA CUDA for GPU acceleration (10x faster)</li>
+                </ul>
+                
+                <h4>Problem: Audio alerts not playing</h4>
+                <ul>
+                    <li>✓ Check system volume and speaker connections</li>
+                    <li>✓ Verify audio file exists: <code>audio_files/siren.mp3</code></li>
+                    <li>✓ Test audio: Run <code>pygame.mixer</code> test</li>
+                    <li>✓ Install ffmpeg for MP3 support: <code>pip install pydub</code></li>
+                    <li>✓ Windows may default to winsound (beeps) if pygame fails</li>
+                </ul>
+                
+                <h3>Pose Detection Issues</h3>
+                <h4>Problem: False action alerts (guards not performing action)</h4>
+                <ul>
+                    <li>✓ Increase alert timeout to avoid false positives</li>
+                    <li>✓ Verify pose detection: check logs for confidence scores</li>
+                    <li>✓ Ensure full body is visible in camera frame</li>
+                    <li>✓ Check lighting - poor lighting reduces pose accuracy</li>
+                    <li>✓ Multiple guards: resolve overlapping bounding boxes</li>
+                </ul>
+                
+                <h4>Problem: Pose not detected (guards not recognized)</h4>
+                <ul>
+                    <li>✓ Ensure full body is visible (head to feet)</li>
+                    <li>✓ Reduce min_detection_confidence in config.json (0.5 → 0.3-0.4)</li>
+                    <li>✓ Improve lighting (500+ lux recommended)</li>
+                    <li>✓ Use night mode for low-light environments</li>
+                    <li>✓ Try different camera angle/position</li>
+                </ul>
+                
+                <h3>Software Errors</h3>
+                <h4>Problem: "ModuleNotFoundError: No module named 'mediapipe'"</h4>
+                <div class="code-block"><code>pip install mediapipe --upgrade</code></div>
+                
+                <h4>Problem: "ImportError: DLL load failed"</h4>
+                <ul>
+                    <li>✓ Update CUDA and cuDNN if using GPU</li>
+                    <li>✓ Reinstall tensorflow: <code>pip install tensorflow --upgrade</code></li>
+                    <li>✓ Update Windows: Windows Update > Check for updates</li>
+                </ul>
+                
+                <h4>Problem: "Unicode encoding error" on Windows console</h4>
+                <ul>
+                    <li>✓ App automatically converts Unicode to ASCII for console</li>
+                    <li>✓ Check logs/ directory for full Unicode logs</li>
+                    <li>✓ Not a fatal error - app continues running</li>
+                </ul>
+                
+                <h3>Configuration Issues</h3>
+                <h4>Problem: "Config load error. Using defaults."</h4>
+                <ul>
+                    <li>✓ Verify config.json exists in project root</li>
+                    <li>✓ Check JSON syntax (use JSONLint.com)</li>
+                    <li>✓ Ensure correct directory paths in config</li>
+                    <li>✓ Verify file permissions (read/write)</li>
+                </ul>
+                
+                <div class="info-box warning">
+                    <strong>⚠️ Still Having Issues?</strong> Check the logs/ directory for detailed error messages, or contact support with logs attached.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>निराक्षण (Niraakshan) - Multi-Target Guard Tracking System</strong></p>
+            <p>Advanced Real-Time Pose Detection & Action Monitoring</p>
+            <p style="color: #bdc3c7; margin-top: 20px; font-size: 0.9em;">
+                © 2024 Niraakshan Project. All Rights Reserved.
+            </p>
+            <div class="footer-links" style="margin-top: 15px;">
+                <a href="https://github.com" target="_blank">GitHub Repository</a>
+                <a href="https://github.com/issues" target="_blank">Report Issues</a>
+                <a href="https://mediapipe.dev" target="_blank">MediaPipe Docs</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey || event.metaKey) {
+                if (event.key === 'p') {
+                    event.preventDefault();
+                    window.print();
+                }
+            }
+        });
+        
+        // Initialize with overview section
+        showSection('overview');
+    </script>
+</body>
+</html>

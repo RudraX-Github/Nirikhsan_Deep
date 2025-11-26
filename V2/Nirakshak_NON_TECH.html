@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraakshan - Operator Manual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #2980b9;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header-subtitle {
+            font-size: 1.4em;
+            font-weight: 300;
+            opacity: 0.95;
+            margin-bottom: 5px;
+        }
+        
+        .role-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+        
+        /* Navigation */
+        .nav-section {
+            background: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            border-bottom: 2px solid #e9ecef;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-button {
+            padding: 12px 25px;
+            background: white;
+            border: 2px solid #3498db;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #3498db;
+            transition: all 0.3s ease;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-button:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .nav-button.active {
+            background: #3498db;
+            color: white;
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Main Content */
+        .content {
+            padding: 40px;
+            min-height: 500px;
+        }
+        
+        .section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h3 {
+            color: #2980b9;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        /* Step Cards */
+        .step-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #3498db;
+            position: relative;
+        }
+        
+        .step-number {
+            font-weight: bold;
+            color: #3498db;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .button-ref {
+            background-color: #e8f4fd;
+            border: 1px solid #b6dcfb;
+            color: #2c3e50;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: monospace;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Icon Grid for Features */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .feature-box {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        /* Troubleshooting Table */
+        .trouble-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .trouble-table th {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .trouble-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        
+        .trouble-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .problem-cell {
+            font-weight: bold;
+            color: #e74c3c;
+            width: 40%;
+        }
+        
+        .solution-cell {
+            color: #27ae60;
+        }
+
+        /* Tips */
+        .tip-box {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #f1f2f6;
+            color: #7f8c8d;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2em; }
+            .nav-button { width: 100%; justify-content: center; }
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>🛡️ Niraakshan</h1>
+        <div class="header-subtitle">Operator & Security Manager Manual</div>
+    </div>
+
+    <!-- Simplified Navigation -->
+    <div class="nav-section">
+        <button class="nav-button active" onclick="showSection('welcome', this)">👋 Welcome</button>
+        <button class="nav-button" onclick="showSection('start', this)">🚀 Start System</button>
+        <button class="nav-button" onclick="showSection('guards', this)">👮 Add Guards</button>
+        <button class="nav-button" onclick="showSection('daily', this)">📅 Daily Routine</button>
+        <button class="nav-button" onclick="showSection('features', this)">🌟 Features</button>
+        <button class="nav-button" onclick="showSection('help', this)">❓ Easy Fixes</button>
+    </div>
+
+    <div class="content">
+        
+        <!-- Welcome Section -->
+        <div id="welcome" class="section active">
+            <h2>👋 Welcome to Niraakshan</h2>
+            <p style="font-size: 1.3em; color: #34495e;">
+                This system helps you monitor security guards automatically. It uses a camera to check if guards are on duty, standing, or missing.
+            </p>
+            
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <span class="feature-icon">✅</span>
+                    <h3>No Coding</h3>
+                    <p>You don't need to know programming. Just click buttons.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-icon">👁️</span>
+                    <h3>Auto Watch</h3>
+                    <p>The camera watches for you and alerts if someone is missing.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-icon">🔊</span>
+                    <h3>Loud Alerts</h3>
+                    <p>Hear a siren if an unauthorized person enters.</p>
+                </div>
+            </div>
+
+            <div class="tip-box" style="background-color: #d4edda; border-color: #c3e6cb; color: #155724;">
+                <span style="font-size: 1.5em;">💡</span>
+                <div>
+                    <strong>Quick Tip:</strong> Make sure the room has good lighting so the camera can see faces clearly.
+                </div>
+            </div>
+        </div>
+
+        <!-- Start System -->
+        <div id="start" class="section">
+            <h2>🚀 How to Start</h2>
+            
+            <div class="step-card">
+                <span class="step-number">Step 1: Open the App</span>
+                <p>Look for the <strong>Niraakshan</strong> icon on your desktop and double-click it.</p>
+                <p><em>The window will open, but the screen might be black at first. This is normal!</em></p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Step 2: Turn on Camera</span>
+                <p>Look for the button with the Play symbol:</p>
+                <p><span class="button-ref">▶ Camera ON/OFF</span></p>
+                <p>Click it once. You should see yourself or the room on the screen.</p>
+            </div>
+
+            <div class="tip-box">
+                <span style="font-size: 1.5em;">ℹ️</span>
+                <div>
+                    <strong>Is the screen still black?</strong> 
+                    Try clicking the button again. If you have two cameras (like a laptop webcam and a USB camera), clicking the button cycles through them.
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Guards -->
+        <div id="guards" class="section">
+            <h2>👮 Adding New Guards</h2>
+            <p>You only need to do this <strong>once</strong> when a new guard joins.</p>
+
+            <div class="step-card">
+                <span class="step-number">Step 1: Open Menu</span>
+                <p>Click the <span class="button-ref">➕ Add Guard</span> button on the right side.</p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Step 2: Enter Details</span>
+                <p>Type the Guard's Name in the text box.</p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Step 3: Take 4 Photos</span>
+                <p>Ask the guard to stand in front of the camera. The system needs to see their face from different angles:</p>
+                <ol style="margin-left: 20px; margin-top: 10px; color: #555;">
+                    <li><strong>Front:</strong> Looking straight at the camera.</li>
+                    <li><strong>Left:</strong> Turn head slightly left.</li>
+                    <li><strong>Right:</strong> Turn head slightly right.</li>
+                    <li><strong>Back:</strong> Turn around (optional).</li>
+                </ol>
+                <p style="margin-top: 10px;">Click <span class="button-ref">💾 Save</span> when finished.</p>
+            </div>
+        </div>
+
+        <!-- Daily Routine -->
+        <div id="daily" class="section">
+            <h2>📅 Daily Routine (Start of Shift)</h2>
+            <p>Follow these 3 steps every day when the shift starts.</p>
+
+            <div class="step-card">
+                <span class="step-number">1. Select Who is Working</span>
+                <p>On the right side list, check the boxes <input type="checkbox" checked disabled> next to the names of guards who are on duty today.</p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">2. Start Tracking</span>
+                <p>Click the big <span class="button-ref">🎯 Track Guard</span> button.</p>
+                <p>The system will now draw boxes around the guards on the video feed.</p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">3. Monitor Status</span>
+                <p>The screen will show text like:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><span style="color: green;">● Standing</span> (Good)</li>
+                    <li><span style="color: red;">● Missing</span> (Bad - Alert will sound!)</li>
+                </ul>
+            </div>
+
+            <div class="step-card" style="border-left-color: #e74c3c;">
+                <span class="step-number" style="color: #e74c3c;">End of Shift</span>
+                <p>Click <span class="button-ref">⏹️ Stop Monitoring</span> before closing the app.</p>
+            </div>
+        </div>
+
+        <!-- Special Features -->
+        <div id="features" class="section">
+            <h2>🌟 Special Features</h2>
+
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <span class="feature-icon">🚨</span>
+                    <h3>Fugitive Alert (Blacklist)</h3>
+                    <p>Upload a photo of a banned person. If the camera sees them, a loud <strong>SIREN</strong> will play immediately.</p>
+                    <button class="button-ref" style="margin-top: 10px;">Use: Add Fugitive</button>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">🌙</span>
+                    <h3>Night Mode</h3>
+                    <p>Is the room dark? Turn this on. It makes the camera video brighter so faces can be seen at night.</p>
+                    <button class="button-ref" style="margin-top: 10px;">Use: 🌙 Night Button</button>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">🌐</span>
+                    <h3>Language</h3>
+                    <p>Change the app language to Hindi, Marathi, or Gujarati.</p>
+                    <p style="font-size: 0.9em; color: #7f8c8d; margin-top: 5px;">Click the logo at the top left to change.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div id="help" class="section">
+            <h2>❓ Easy Fixes (Troubleshooting)</h2>
+            <p>Something not working? Try these simple solutions before calling IT.</p>
+
+            <table class="trouble-table">
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="problem-cell">Screen is Black / No Video</td>
+                        <td class="solution-cell">
+                            1. Check if the camera USB wire is plugged in tight.<br>
+                            2. Click the <strong>Camera ON/OFF</strong> button again.<br>
+                            3. Restart the computer.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="problem-cell">No Sound on Alert</td>
+                        <td class="solution-cell">
+                            1. Check if computer speakers are not muted.<br>
+                            2. Turn up the volume.<br>
+                            3. Make sure speakers are plugged in.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="problem-cell">Guard is there, but says "Missing"</td>
+                        <td class="solution-cell">
+                            1. The room might be too dark. Turn on lights or use <strong>Night Mode</strong>.<br>
+                            2. The guard might be hiding their face. Ask them to look up.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="problem-cell">System is very slow</td>
+                        <td class="solution-cell">
+                            1. Close other apps like YouTube or Chrome.<br>
+                            2. Click <strong>Stop Monitoring</strong> and start again.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tip-box">
+                <span style="font-size: 1.5em;">📞</span>
+                <div>
+                    <strong>Need more help?</strong> Contact your System Administrator or IT Support if these steps don't work.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Niraakshan System</p>
+        <p>Simplified Operator Manual v1.0</p>
+    </div>
+</div>
+
+<script>
+    function showSection(sectionId, buttonElement) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        
+        // Show selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.classList.add('active');
+        }
+
+        // Update Button State
+        if (buttonElement) {
+            const buttons = document.querySelectorAll('.nav-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            buttonElement.classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
