@@ -488,6 +488,16 @@ def match_body_silhouette(detected_landmarks, guard_body_profile):
 mp_holistic = mp.solutions.holistic
 
 # --- Sound Logic ---
+def _resource_dir():
+    try:
+        return os.path.dirname(os.path.abspath(__file__))
+    except Exception:
+        return os.getcwd()
+
+def get_sound_path(filename: str) -> str:
+    """Return absolute path for a sound file placed next to this script."""
+    return os.path.join(_resource_dir(), filename)
+
 def play_siren_sound(stop_event=None, duration_seconds=30, sound_file="siren.mp3"):
     """Play alert sound looping for up to duration_seconds or until stop_event is set
     
@@ -4554,7 +4564,7 @@ class PoseApp:
                                     self.fugitive_alert_stop_event = threading.Event()
                                     self.fugitive_alert_sound_thread = play_siren_sound(
                                         stop_event=self.fugitive_alert_stop_event,
-                                        sound_file=r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Web_Cam\V2\Fugitive.mp3",
+                                        sound_file=get_sound_path("Fugitive.mp3"),
                                         duration_seconds=15  # 15 seconds for fugitive alert (immediate response)
                                     )
                                     logger.warning(f"[FUGITIVE ALERT] 🚨 FUGITIVE APPEARED INSTANTLY - {self.fugitive_name} - Playing 15s alert! (confidence: {confidence:.3f})")
@@ -5350,6 +5360,40 @@ class PoseApp:
                                 matches = guard_all_matches[name]
                                 logger.debug(f"[UNASSIGNED] {name}: best match distance={matches[0]['distance']:.3f}, confidence={matches[0]['confidence']:.3f} (below threshold)")
         
+        # ✅ HARD RESET: If a guard has been missing for > 30 seconds, clear all tracking state
+        # This prevents ghost tracking and forces a clean re-identification flow
+        for name, status in self.targets_status.items():
+            if not status.get("visible", False):
+                if status.get("missing_start_time") is None:
+                    status["missing_start_time"] = current_time
+                else:
+                    missing_duration = current_time - status["missing_start_time"]
+                    if missing_duration >= 30.0 and not status.get("hard_reset_done", False):
+                        try:
+                            status["tracker"] = None
+                            status["body_tracker"] = None
+                            status["face_box"] = None
+                            status["body_box"] = None
+                            status["visible"] = False
+                            status["stable_tracking"] = False
+                            if status.get("pose_buffer") is not None and hasattr(status["pose_buffer"], "clear"):
+                                status["pose_buffer"].clear()
+                            status["face_confidence"] = 0.0
+                            status["tracker_confidence"] = 0.0
+                            status["face_detection_missing_frames"] = 0
+                            status["missing_pose_counter"] = 0
+                            status["newly_detected"] = False
+                            status["alert_triggered_state"] = False
+                            status["target_missing_alert_logged"] = False
+                            status["hard_reset_done"] = True
+                            logger.warning(f"[RESET] {name}: Missing for {missing_duration:.1f}s — hard reset tracking to avoid ghosting")
+                        except Exception as e:
+                            logger.error(f"[RESET] Error during hard reset for {name}: {e}")
+            else:
+                # Visible again — clear missing timer and allow future resets
+                status["missing_start_time"] = None
+                status["hard_reset_done"] = False
+
         # 3. Overlap Check (OPTIMIZED: Reduce frequency for performance)
         # ✅ CRITICAL OPTIMIZATION: Only check overlaps every 5 frames (167ms) instead of every frame
         # Overlap detection is ~15-20ms per frame for multiple guards, so reducing frequency saves significant time
@@ -5633,7 +5677,7 @@ class PoseApp:
                                                 status["alert_sound_thread"] = play_siren_sound(
                                                     stop_event=status["alert_stop_event"],
                                                     duration_seconds=15,
-                                                    sound_file=r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Web_Cam\V2\siren.mp3"
+                                                    sound_file=get_sound_path("siren.mp3")
                                                 )
                                                 logger.warning(f"[ALERT] {name}: 15-second alert sound triggered for timeout")
                                         
@@ -5714,7 +5758,7 @@ class PoseApp:
                                                         status["alert_sound_thread"] = play_siren_sound(
                                                             stop_event=status["alert_stop_event"],
                                                             duration_seconds=15,
-                                                            sound_file=r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Web_Cam\V2\siren.mp3"
+                                                            sound_file=get_sound_path("siren.mp3")
                                                         )
                                                         
                                                         # Add to CSV log
@@ -5937,7 +5981,7 @@ class PoseApp:
                         status["alert_sound_thread"] = play_siren_sound(
                             stop_event=status["alert_stop_event"], 
                             duration_seconds=30,
-                            sound_file=r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Web_Cam\V2\siren.mp3"
+                            sound_file=get_sound_path("siren.mp3")
                         )
                         status["alert_cooldown"] = current_time
                         
