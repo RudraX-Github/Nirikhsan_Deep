@@ -1,1 +1,12 @@
 Timestamp,Name,Action,Status,Image_Path,Confidence
+2025-11-28 14:27:30,Guard,'Hands Up' required,TIMEOUT,alert_snapshots\alert_Guard_20251128_142730.jpg,0.82
+2025-11-28 14:27:31,Guard,Standing,ALERT TRIGGERED,N/A,0.53
+2025-11-28 14:27:33,Guard,Standing,ALERT CONTINUED,N/A,0.53
+2025-11-28 14:27:35,Guard,Standing,ALERT CONTINUED,N/A,0.53
+2025-11-28 14:27:36,Guard,'Hands Up' required,PERFORMED,N/A,0.82
+2025-11-28 14:29:36,Guard,'Hands Up' required,TIMEOUT,alert_snapshots\alert_Guard_20251128_142936.jpg,0.91
+2025-11-28 14:29:36,Guard,Standing,ALERT CONTINUED,N/A,0.69
+2025-11-28 14:29:39,Guard,Standing,ALERT CONTINUED,N/A,0.69
+2025-11-28 14:29:41,Guard,'Hands Up' required,PERFORMED,N/A,0.88
+2025-11-28 14:30:06,FUGITIVE_target_Krunal_face,FUGITIVE_DETECTED,FIRST_APPEARANCE (confidence: 0.475),alert_snapshots\alert_FUGITIVE_target_Krunal_face_APPEARED_20251128_143006.jpg,0.475
+2025-11-28 14:33:49,Guard,STILLNESS_ALERT,NO MOTION FOR 15.1 SECONDS,N/A,1.0

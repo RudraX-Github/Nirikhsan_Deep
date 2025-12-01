@@ -40,8 +40,18 @@
         
         .header h1 {
             font-size: 2.8em;
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* Reduced margin to fit slogan */
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* NEW: Slogan Style */
+        .slogan {
+            font-size: 1.2em;
+            font-weight: 500;
+            font-style: italic;
+            color: #d6eaf8; /* Lighter shade of blue for contrast */
+            margin-bottom: 15px;
+            letter-spacing: 1px;
         }
         
         .header-subtitle {
@@ -280,10 +290,10 @@
 <div class="container">
     <div class="header">
         <h1>🛡️ Niraakshan</h1>
+        <div class="slogan">"निरक्षण करें रक्षण"</div>
         <div class="header-subtitle">Operator & Security Manager Manual</div>
     </div>
 
-    <!-- Simplified Navigation -->
     <div class="nav-section">
         <button class="nav-button active" onclick="showSection('welcome', this)">👋 Welcome</button>
         <button class="nav-button" onclick="showSection('start', this)">🚀 Start System</button>
@@ -295,11 +305,10 @@
 
     <div class="content">
         
-        <!-- Welcome Section -->
         <div id="welcome" class="section active">
             <h2>👋 Welcome to Niraakshan</h2>
             <p style="font-size: 1.3em; color: #34495e;">
-                This system helps you monitor security guards automatically. It uses a camera to check if guards are on duty, standing, or missing.
+                This system helps you monitor security guards automatically. It uses a camera to check if guards are on duty, Awake/sleeping, or missing.
             </p>
             
             <div class="feature-grid">
@@ -328,7 +337,6 @@
             </div>
         </div>
 
-        <!-- Start System -->
         <div id="start" class="section">
             <h2>🚀 How to Start</h2>
             
@@ -354,7 +362,6 @@
             </div>
         </div>
 
-        <!-- Add Guards -->
         <div id="guards" class="section">
             <h2>👮 Adding New Guards</h2>
             <p>You only need to do this <strong>once</strong> when a new guard joins.</p>
@@ -382,7 +389,6 @@
             </div>
         </div>
 
-        <!-- Daily Routine -->
         <div id="daily" class="section">
             <h2>📅 Daily Routine (Start of Shift)</h2>
             <p>Follow these 3 steps every day when the shift starts.</p>
@@ -413,7 +419,6 @@
             </div>
         </div>
 
-        <!-- Special Features -->
         <div id="features" class="section">
             <h2>🌟 Special Features</h2>
 
@@ -441,7 +446,6 @@
             </div>
         </div>
 
-        <!-- Troubleshooting -->
         <div id="help" class="section">
             <h2>❓ Easy Fixes (Troubleshooting)</h2>
             <p>Something not working? Try these simple solutions before calling IT.</p>

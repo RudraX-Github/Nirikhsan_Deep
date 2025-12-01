@@ -3389,38 +3389,55 @@ class PoseApp:
         # Detect available cameras
         available_cameras = detect_available_cameras()
         
-        if not available_cameras:
-            messagebox.showerror("Camera Error", "No cameras detected!")
-            return
-        
-        if len(available_cameras) == 1:
-            messagebox.showinfo("Camera Switch", f"Only one camera detected (Camera {available_cameras[0]})")
-            return
-        
         # Create camera selection dialog
         dialog = tk.Toplevel(self.root)
         dialog.title("Switch Camera")
-        dialog.geometry("300x250")
+        dialog.geometry("400x350")
         dialog.configure(bg="#2c3e50")
         
         tk.Label(dialog, text="Select Camera:", font=('Helvetica', 14, 'bold'), 
                 bg="#2c3e50", fg="white").pack(pady=15)
         
-        selected_camera = tk.IntVar(value=self.camera_index if hasattr(self, 'camera_index') else available_cameras[0])
+        # Variable to store selection
+        # Use string var to handle both int indices and string URLs
+        current_val = str(self.camera_index) if hasattr(self, 'camera_index') else (str(available_cameras[0]) if available_cameras else "ip")
+        selected_source = tk.StringVar(value=current_val)
         
-        # Frame for radio buttons
+        # Frame for options
         radio_frame = tk.Frame(dialog, bg="#34495e")
         radio_frame.pack(pady=10, padx=20, fill="both", expand=True)
         
-        for idx in available_cameras:
-            current_label = " (Current)" if hasattr(self, 'camera_index') and idx == self.camera_index else ""
-            tk.Radiobutton(radio_frame, text=f"Camera {idx}{current_label}", variable=selected_camera,
-                          value=idx, font=('Helvetica', 11), bg="#34495e", fg="white",
-                          selectcolor="#2c3e50", activebackground="#34495e").pack(anchor="w", padx=10, pady=5)
+        # Local cameras
+        if available_cameras:
+            tk.Label(radio_frame, text="Local Cameras:", font=('Helvetica', 10, 'bold'), 
+                    bg="#34495e", fg="white", anchor="w").pack(fill="x", pady=(5,0))
+            for idx in available_cameras:
+                current_label = " (Current)" if hasattr(self, 'camera_index') and str(idx) == str(self.camera_index) else ""
+                tk.Radiobutton(radio_frame, text=f"Camera {idx}{current_label}", variable=selected_source,
+                              value=str(idx), font=('Helvetica', 11), bg="#34495e", fg="white",
+                              selectcolor="#2c3e50", activebackground="#34495e").pack(anchor="w", padx=10, pady=5)
+        
+        # IP Camera Option
+        tk.Label(radio_frame, text="IP Camera:", font=('Helvetica', 10, 'bold'), 
+                bg="#34495e", fg="white", anchor="w").pack(fill="x", pady=(10,0))
+        
+        is_ip_current = isinstance(self.camera_index, str) if hasattr(self, 'camera_index') else False
+        ip_label = " (Current)" if is_ip_current else ""
+        
+        tk.Radiobutton(radio_frame, text=f"Add New IP Camera{ip_label}", variable=selected_source,
+                      value="ip", font=('Helvetica', 11), bg="#34495e", fg="white",
+                      selectcolor="#2c3e50", activebackground="#34495e").pack(anchor="w", padx=10, pady=5)
         
         def on_switch():
-            new_camera = selected_camera.get()
-            if hasattr(self, 'camera_index') and new_camera == self.camera_index:
+            choice = selected_source.get()
+            
+            if choice == "ip":
+                dialog.destroy()
+                self.add_ip_camera_dialog() # Reuse the dialog from start_camera
+                return
+
+            # Check if switching to same camera
+            if hasattr(self, 'camera_index') and str(choice) == str(self.camera_index):
                 messagebox.showinfo("Camera Switch", "Already using this camera")
                 dialog.destroy()
                 return
@@ -3433,48 +3450,16 @@ class PoseApp:
                 self.cap.release()
                 self.cap = None
             
-            # Switch to new camera
-            self.camera_index = new_camera
-            self.cap = cv2.VideoCapture(self.camera_index)
-            
-            if not self.cap.isOpened():
-                messagebox.showerror("Camera Error", f"Failed to open camera {self.camera_index}")
-                dialog.destroy()
-                return
-            
-            # Apply camera settings
-            self.cap.set(cv2.CAP_PROP_FPS, 30)
-            self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-            self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-            self.cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
-            self.cap.set(cv2.CAP_PROP_AUTO_WB, 1)
-            self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
-            
-            # Warm up camera
-            for _ in range(10):
-                ret, _ = self.cap.read()
-                time.sleep(0.05)
-                if not ret:
-                    logger.warning("Camera warmup: frame read failed, retrying...")
-                    continue
-            
-            # Update frame dimensions for new camera
-            self.frame_w = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            self.frame_h = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            
-            # Resume if was running
-            self.is_camera_running = was_running
-            self.is_running = was_running
-            
-            if self.is_camera_running:
-                # Restart video feed update loop for new camera
-                logger.warning(f"Switched to Camera {self.camera_index} - Restarting video feed")
-                self.update_video_feed()
-            else:
-                logger.warning(f"Camera {self.camera_index} ready (feed paused)")
-            
-            messagebox.showinfo("Camera Switch", f"Switched to Camera {self.camera_index}")
             dialog.destroy()
+            
+            # Switch to new camera
+            try:
+                new_index = int(choice)
+                self.camera_index = new_index
+                self.initialize_camera(new_index)
+            except ValueError:
+                messagebox.showerror("Error", "Invalid camera selection")
+                return
         
         # Buttons
         btn_frame = tk.Frame(dialog, bg="#2c3e50")
@@ -3853,81 +3838,165 @@ class PoseApp:
                 # Detect available cameras
                 available_cameras = detect_available_cameras()
                 
-                if not available_cameras:
-                    messagebox.showerror("Camera Error", "No cameras detected!")
-                    return
+                # Create selection dialog
+                dialog = tk.Toplevel(self.root)
+                dialog.title("Select Camera Source")
+                dialog.geometry("400x350")
+                dialog.transient(self.root)
+                dialog.grab_set()
                 
-                # If multiple cameras, let user choose
-                if len(available_cameras) > 1:
-                    camera_options = [f"Camera {i}" for i in available_cameras]
-                    dialog = tk.Toplevel(self.root)
-                    dialog.title("Select Camera")
-                    dialog.geometry("300x200")
-                    dialog.transient(self.root)
-                    dialog.grab_set()
-                    
-                    tk.Label(dialog, text="Multiple cameras detected.\nSelect which camera to use:", 
-                            font=('Helvetica', 10)).pack(pady=10)
-                    
-                    selected_camera = tk.IntVar(value=available_cameras[0])
-                    
+                tk.Label(dialog, text="Select Camera Source:", font=('Helvetica', 12, 'bold')).pack(pady=10)
+                
+                # Variable to store selection: integer for local, string for IP
+                # We'll use a string var and parse it
+                selected_source = tk.StringVar(value=str(available_cameras[0]) if available_cameras else "ip")
+                
+                # Frame for options
+                options_frame = tk.Frame(dialog)
+                options_frame.pack(fill="both", expand=True, padx=20)
+                
+                # Local cameras
+                if available_cameras:
+                    tk.Label(options_frame, text="Local Cameras:", font=('Helvetica', 10, 'bold'), anchor="w").pack(fill="x", pady=(5,0))
                     for idx in available_cameras:
-                        tk.Radiobutton(dialog, text=f"Camera {idx}", variable=selected_camera, 
-                                      value=idx, font=('Helvetica', 10)).pack(anchor="w", padx=20)
-                    
-                    def on_select():
-                        self.camera_index = selected_camera.get()
-                        dialog.destroy()
-                    
-                    tk.Button(dialog, text="Select", command=on_select, bg="#27ae60", 
-                             fg="white", font=('Helvetica', 10, 'bold')).pack(pady=10)
-                    
-                    dialog.wait_window()
-                else:
-                    self.camera_index = available_cameras[0]
+                        tk.Radiobutton(options_frame, text=f"Camera {idx}", variable=selected_source, 
+                                      value=str(idx), font=('Helvetica', 10)).pack(anchor="w", padx=10)
                 
-                # Open selected camera
-                self.cap = cv2.VideoCapture(self.camera_index)
-                if not self.cap.isOpened():
-                    messagebox.showerror("Camera Error", f"Failed to open camera {self.camera_index}")
-                    return
+                # IP Camera Option
+                tk.Label(options_frame, text="IP Camera:", font=('Helvetica', 10, 'bold'), anchor="w").pack(fill="x", pady=(10,0))
+                tk.Radiobutton(options_frame, text="Add New IP Camera", variable=selected_source, 
+                              value="ip", font=('Helvetica', 10)).pack(anchor="w", padx=10)
                 
-                # ✅ OPTIMIZATION: Set camera properties for faster capture and better clarity
-                # Set frame rate to 30 FPS for smooth playback
-                self.cap.set(cv2.CAP_PROP_FPS, 30)
-                # Set resolution for optimal balance (adjust if needed)
-                self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-                self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-                # Enable auto-focus if supported
-                self.cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
-                # Set auto white balance
-                self.cap.set(cv2.CAP_PROP_AUTO_WB, 1)
-                # Reduce camera buffer to minimize latency
-                self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
-                # ✅ CRITICAL: Warm up camera with initial frames
-                # Some cameras take 100-200ms to stabilize output
-                logger.info("Warming up camera (please wait)...")
-                for _ in range(10):
-                    ret, _ = self.cap.read()
-                    time.sleep(0.05)
-                    if not ret:
-                        logger.warning("Camera warmup: frame read failed, retrying...")
-                        continue
-                logger.info("Camera ready!")
+                def on_select():
+                    choice = selected_source.get()
+                    dialog.destroy()
                     
-                self.frame_w = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-                self.frame_h = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-                self.is_running = True
-                self.is_camera_running = True
-                self.btn_camera_toggle.configure(text="🎥 Camera ON", fg_color="#27ae60")
-                self.btn_guard_toggle.configure(state="normal")
-                self.btn_alert_toggle.configure(state="normal")
-                self.btn_fugitive_toggle.configure(state="normal")
-                logger.warning(f"Camera {self.camera_index} started successfully")
-                self.update_video_feed()
+                    if choice == "ip":
+                        self.add_ip_camera_dialog()
+                    else:
+                        try:
+                            self.camera_index = int(choice)
+                            self.initialize_camera(self.camera_index)
+                        except ValueError:
+                            messagebox.showerror("Error", "Invalid camera selection")
+                
+                tk.Button(dialog, text="Start Camera", command=on_select, bg="#27ae60", 
+                         fg="white", font=('Helvetica', 10, 'bold'), height=2).pack(pady=20, fill="x", padx=20)
+                
+                dialog.wait_window()
+                
             except Exception as e:
                 logger.error(f"Camera start error: {e}")
                 messagebox.showerror("Error", f"Failed to start camera: {e}")
+
+    def add_ip_camera_dialog(self):
+        """Dialog to add IP Camera details"""
+        ip_dialog = tk.Toplevel(self.root)
+        ip_dialog.title("Add IP Camera")
+        ip_dialog.geometry("400x300")
+        ip_dialog.transient(self.root)
+        ip_dialog.grab_set()
+        
+        tk.Label(ip_dialog, text="Enter IP Camera Details", font=('Helvetica', 12, 'bold')).pack(pady=10)
+        
+        input_frame = tk.Frame(ip_dialog)
+        input_frame.pack(fill="both", expand=True, padx=20)
+        
+        # URL
+        tk.Label(input_frame, text="IP/URL (e.g. 192.168.1.100 or rtsp://...):", anchor="w").pack(fill="x")
+        url_var = tk.StringVar()
+        tk.Entry(input_frame, textvariable=url_var).pack(fill="x", pady=(0, 10))
+        
+        # Username
+        tk.Label(input_frame, text="Username (Optional):", anchor="w").pack(fill="x")
+        user_var = tk.StringVar()
+        tk.Entry(input_frame, textvariable=user_var).pack(fill="x", pady=(0, 10))
+        
+        # Password
+        tk.Label(input_frame, text="Password (Optional):", anchor="w").pack(fill="x")
+        pass_var = tk.StringVar()
+        tk.Entry(input_frame, textvariable=pass_var, show="*").pack(fill="x", pady=(0, 10))
+        
+        def connect_ip():
+            url = url_var.get().strip()
+            username = user_var.get().strip()
+            password = pass_var.get().strip()
+            
+            if not url:
+                messagebox.showerror("Error", "URL is required")
+                return
+            
+            # Construct RTSP URL if username/password provided and not already in URL
+            final_url = url
+            if username and password and "@" not in url:
+                # Check if it starts with rtsp:// or http://
+                if url.startswith("rtsp://"):
+                    final_url = f"rtsp://{username}:{password}@{url[7:]}"
+                elif url.startswith("http://"):
+                    final_url = f"http://{username}:{password}@{url[7:]}"
+                else:
+                    # Assume RTSP if not specified
+                    final_url = f"rtsp://{username}:{password}@{url}"
+            
+            ip_dialog.destroy()
+            self.camera_index = final_url  # Store URL as camera index
+            self.initialize_camera(final_url)
+
+        tk.Button(ip_dialog, text="Connect", command=connect_ip, bg="#3498db", 
+                 fg="white", font=('Helvetica', 10, 'bold')).pack(pady=20)
+
+    def initialize_camera(self, source):
+        """Initialize camera from source (int index or string URL)"""
+        try:
+            # Open selected camera
+            self.cap = cv2.VideoCapture(source)
+            if not self.cap.isOpened():
+                messagebox.showerror("Camera Error", f"Failed to open camera source: {source}")
+                return
+            
+            # ✅ OPTIMIZATION: Set camera properties for faster capture and better clarity
+            # Note: Some properties might not work for IP cameras
+            if isinstance(source, int):
+                self.cap.set(cv2.CAP_PROP_FPS, 30)
+                self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+                self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+                self.cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
+                self.cap.set(cv2.CAP_PROP_AUTO_WB, 1)
+            
+            # Reduce camera buffer to minimize latency (works for RTSP too usually)
+            self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+            
+            # ✅ CRITICAL: Warm up camera with initial frames
+            logger.info("Warming up camera (please wait)...")
+            for _ in range(10):
+                ret, _ = self.cap.read()
+                time.sleep(0.05)
+                if not ret:
+                    logger.warning("Camera warmup: frame read failed, retrying...")
+                    continue
+            logger.info("Camera ready!")
+                
+            self.frame_w = int(self.cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+            self.frame_h = int(self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+            
+            # Fallback dimensions if detection failed (common with IP cams)
+            if self.frame_w == 0 or self.frame_h == 0:
+                self.frame_w = 640
+                self.frame_h = 480
+                
+            self.is_running = True
+            self.is_camera_running = True
+            self.btn_camera_toggle.configure(text="🎥 Camera ON", fg_color="#27ae60")
+            self.btn_guard_toggle.configure(state="normal")
+            self.btn_alert_toggle.configure(state="normal")
+            self.btn_fugitive_toggle.configure(state="normal")
+            logger.warning(f"Camera started successfully: {source}")
+            self.update_video_feed()
+            
+        except Exception as e:
+            logger.error(f"Camera init error: {e}")
+            messagebox.showerror("Error", f"Failed to initialize camera: {e}")
+
 
     def stop_camera(self):
         if self.is_running:

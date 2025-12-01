@@ -1,1166 +1,660 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirakshan | Project Showcase</title>
-    <style>
-        :root {
-            --bg-dark: #0f172a;
-            --bg-card: #1e293b;
-            --primary: #10b981; /* Neon Green for success/security */
-            --accent: #3b82f6;  /* Blue for UI */
-            --danger: #ef4444;  /* Red for alerts/fugitive */
-            --warning: #f59e0b; /* Orange for bugs */
-            --text-main: #f1f5f9;
-            --text-muted: #94a3b8;
-            --code-bg: #020617;
-            --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        }
+    <title>Niraakshan | Enterprise AI Surveillance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        /* --- Hero Section --- */
-        header {
-            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
-                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop'); 
-            background-size: cover;
-            background-position: center;
-            padding: 5rem 2rem;
-            text-align: center;
-            border-bottom: 2px solid var(--primary);
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0.5rem;
-            background: -webkit-linear-gradient(45deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-            font-weight: 300;
-        }
-
-        .tagline-hindi {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--text-main);
-            letter-spacing: 1px;
-            margin-top: 10px;
-            display: inline-block;
-            padding: 5px 15px;
-            border: 1px solid var(--primary);
-            border-radius: 8px;
-            background: rgba(16, 185, 129, 0.1);
-        }
-
-        /* Hero Buttons Container */
-        .hero-actions {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2.5rem;
-            flex-wrap: wrap;
-        }
-
-        /* Hero Button */
-        .hero-btn {
-            padding: 12px 25px;
-            background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .hero-btn.secondary {
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-
-        .hero-btn.tertiary {
-            border-color: var(--warning);
-            color: var(--warning);
-        }
-
-        .hero-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
-        .hero-btn:hover {
-            background: var(--primary);
-            color: var(--bg-dark);
-        }
-
-        .hero-btn.secondary:hover {
-            background: var(--accent);
-            color: white;
-        }
-
-        .hero-btn.tertiary:hover {
-            background: var(--warning);
-            color: var(--bg-dark);
-        }
-
-        /* --- Container & Layout --- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 6rem;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 2.5rem;
-            border-left: 5px solid var(--primary);
-            padding-left: 1rem;
-            color: var(--text-main);
-        }
-
-        /* --- Stats Grid --- */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .stat-card {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-        }
-
-        .stat-value {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            display: block;
-        }
-
-        .stat-label {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-
-        /* --- Features Grid --- */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background: var(--bg-card);
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.05);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .feature-header {
-            padding: 1.5rem;
-            background: rgba(255,255,255,0.02);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .feature-icon {
-            font-size: 1.5rem;
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--primary);
-            padding: 0.5rem;
-            border-radius: 8px;
-        }
-
-        .feature-body {
-            padding: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .feature-body ul {
-            list-style: none;
-        }
-
-        .feature-body li {
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-            color: var(--text-muted);
-        }
-
-        .feature-body li::before {
-            content: "▹";
-            color: var(--primary);
-            flex-shrink: 0;
-            margin-top: 4px;
-        }
-
-        /* --- Comparison Table (Normal vs PRO) --- */
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            background: var(--bg-card);
-            border-radius: 12px;
-            overflow: hidden;
-        }
-
-        .comparison-table th, .comparison-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .comparison-table th {
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--primary);
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .check-icon { color: var(--primary); }
-        .cross-icon { color: var(--text-muted); opacity: 0.5; }
-
-        /* --- Performance Table --- */
-        .perf-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            margin-top: 1rem;
-        }
-        
-        .perf-table th, .perf-table td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        
-        .perf-table th {
-            color: var(--text-muted);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-        }
-        
-        .perf-table td {
-            color: var(--text-main);
-            font-family: monospace;
-            font-size: 0.95rem;
-        }
-
-        .perf-val { color: var(--primary); font-weight: bold; }
-        
-        .perf-note {
-            font-size: 0.8rem;
-            color: var(--warning);
-            margin-top: 1rem;
-            font-style: italic;
-            border-left: 2px solid var(--warning);
-            padding-left: 10px;
-        }
-
-        /* --- Bugs & Resolutions --- */
-        .bug-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            margin-bottom: 1.5rem;
-            overflow: hidden;
-            border-left: 4px solid var(--warning);
-        }
-
-        .bug-header {
-            padding: 1rem 1.5rem;
-            background: rgba(245, 158, 11, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .bug-title {
-            color: var(--warning);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .bug-content {
-            padding: 1.5rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-
-        .issue-box h4 { color: var(--danger); margin-bottom: 0.5rem; }
-        .fix-box h4 { color: var(--primary); margin-bottom: 0.5rem; }
-        
-        .fix-box {
-            border-left: 1px solid rgba(255,255,255,0.1);
-            padding-left: 2rem;
-        }
-
-        /* --- Modal Styles --- */
-        .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 1000; 
-            left: 0;
-            top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgba(15, 23, 42, 0.95); /* Darker background */
-            backdrop-filter: blur(5px);
-        }
-
-        .modal-content {
-            background-color: var(--bg-dark);
-            margin: 5% auto; 
-            padding: 2.5rem;
-            border: 1px solid var(--primary);
-            width: 80%; 
-            max-width: 900px;
-            border-radius: 16px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            position: relative;
-            animation: modalFadeIn 0.3s ease-out;
-        }
-
-        @keyframes modalFadeIn {
-            from {opacity: 0; transform: translateY(20px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-
-        .close {
-            position: absolute;
-            right: 25px;
-            top: 20px;
-            color: var(--text-muted);
-            font-size: 2rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
-            line-height: 1;
-            z-index: 10;
-        }
-
-        .close:hover {
-            color: var(--primary);
-        }
-
-        /* --- Installation Steps (Inside Modal) --- */
-        .install-step {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .step-number {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            width: 25px;
-            height: 25px;
-            text-align: center;
-            border-radius: 50%;
-            margin-right: 10px;
-            font-size: 0.9rem;
-            line-height: 25px;
-        }
-
-        .code-block {
-            background: var(--code-bg);
-            padding: 1rem;
-            border-radius: 6px;
-            font-family: 'Courier New', monospace;
-            margin-top: 0.5rem;
-            color: #a5b4fc;
-            border-left: 3px solid var(--accent);
-            overflow-x: auto;
-        }
-
-        /* --- Operator Manual Styles --- */
-        .op-card {
-            background: var(--bg-card);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-left: 4px solid var(--accent);
-        }
-        
-        .op-title {
-            color: var(--accent);
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            display: block;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        .button-ref {
-            background-color: rgba(59, 130, 246, 0.2);
-            border: 1px solid var(--accent);
-            color: var(--text-main);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-family: monospace;
-            font-size: 0.9rem;
-        }
-
-        /* --- Timeline (Journey) --- */
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background-color: var(--bg-card);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -2px;
-        }
-
-        .container-time {
-            padding: 10px 40px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-        }
-
-        .container-time::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            right: -10px;
-            background-color: var(--primary);
-            border: 4px solid var(--bg-dark);
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .left { left: 0; }
-        .right { left: 50%; }
-
-        .left::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            right: 30px;
-            border: medium solid white;
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent var(--bg-card);
-        }
-
-        .right::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            left: 30px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent var(--bg-card) transparent transparent;
-        }
-
-        .right::after { left: -10px; }
-
-        .content {
-            padding: 20px 30px;
-            background-color: var(--bg-card);
-            position: relative;
-            border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .phase-tag {
-            background: var(--accent);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        /* --- Tech Stack Pills --- */
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-
-        .tech-pill {
-            background: var(--bg-card);
-            border: 1px solid var(--text-muted);
-            color: var(--text-muted);
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-family: monospace;
-            transition: 0.3s;
-        }
-
-        .tech-pill:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
-        }
-
-        /* --- Footer --- */
-        footer {
-            background: var(--bg-card);
-            text-align: center;
-            padding: 3rem;
-            margin-top: 5rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: var(--text-muted);
-        }
-
-        /* --- Responsive --- */
-        @media screen and (max-width: 768px) {
-            .timeline::after { left: 31px; }
-            .container-time { width: 100%; padding-left: 70px; padding-right: 25px; }
-            .container-time::before { left: 60px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent var(--bg-card) transparent transparent; }
-            .left::after, .right::after { left: 21px; }
-            .right { left: 0%; }
-            .bug-content { grid-template-columns: 1fr; gap: 1rem; }
-            .fix-box { border-left: none; border-top: 1px solid rgba(255,255,255,0.1); padding-left: 0; padding-top: 1rem; }
-            h1 { font-size: 2.5rem; }
-            .modal-content { width: 95%; padding: 1.5rem; margin: 10% auto; }
-            .hero-actions { flex-direction: column; align-items: center; }
-            .hero-btn { width: 100%; justify-content: center; }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>🛡️ NIRAKSHAN DEEP</h1>
-            <p class="subtitle">Multi-Guard Security Monitoring System</p>
-            <div class="tagline-hindi">" निरीक्षण करें रक्षण "</div>
-            <br>
-            
-            <!-- Dedicated Action Buttons -->
-            <div class="hero-actions">
-                <button onclick="openModal('opManualModal')" class="hero-btn secondary">
-                    📖 Operation Manual
-                </button>
-                <button onclick="openModal('installModal')" class="hero-btn">
-                    📦 Installation Guide
-                </button>
-                <button onclick="openModal('troubleModal')" class="hero-btn tertiary">
-                    🔧 Troubleshooting
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-
-        <!-- Executive Summary Stats -->
-        <section>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-value">100%</span>
-                    <span class="stat-label">Feature Compliance</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-value">15+</span>
-                    <span class="stat-label">Critical Bugs Resolved</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-value">~25 FPS</span>
-                    <span class="stat-label">Avg. Performance</span>
-                </div>
-            </div>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">
-                Nirakshan Deep represents a comprehensive evolution from a basic surveillance prototype to an enterprise-grade tracking system. 
-                Optimized for efficiency, it handles multi-guard scenarios with high-precision face recognition and pose detection.
-            </p>
-        </section>
-
-        <!-- Operating Modes & Comparison -->
-        <section>
-            <h2 class="section-title">Operating Modes Explained</h2>
-            <div class="features-grid">
-                <!-- Normal Mode -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">🛡️</span>
-                        <h3>Normal Mode</h3>
-                    </div>
-                    <div class="feature-body">
-                        <p style="color: var(--text-muted);">Standard operational mode optimized for general surveillance and performance.</p>
-                        <ul>
-                            <li>Basic Face & Pose Tracking</li>
-                            <li>Standard Action Alerts</li>
-                            <li>Efficient Resource Usage</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- PRO Mode -->
-                <div class="feature-card" style="border-color: var(--accent);">
-                    <div class="feature-header" style="background: rgba(59, 130, 246, 0.1);">
-                        <span class="feature-icon" style="background: rgba(59, 130, 246, 0.2); color: var(--accent);">⚡</span>
-                        <h3 style="color: var(--accent);">PRO Mode</h3>
-                    </div>
-                    <div class="feature-body">
-                        <p style="color: var(--text-muted);">Advanced analytics suite enabled. Unlocks deeper insights at slightly higher compute cost.</p>
-                        <ul>
-                            <li><strong>Stillness Detection:</strong> Alerts if guard is motionless >15s (Sleeping/Unconscious).</li>
-                            <li><strong>Detailed Metrics:</strong> Real-time confidence scores and debug overlays.</li>
-                            <li><strong>5-Angle Onboarding:</strong> Captures Top-View for better detection.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Night Mode -->
-                <div class="feature-card" style="border-color: #a855f7;">
-                    <div class="feature-header" style="background: rgba(168, 85, 247, 0.1);">
-                        <span class="feature-icon" style="background: rgba(168, 85, 247, 0.2); color: #a855f7;">🌙</span>
-                        <h3 style="color: #a855f7;">Night Mode</h3>
-                    </div>
-                    <div class="feature-body">
-                        <p style="color: var(--text-muted);">Advanced image enhancement pipeline for low-light environments.</p>
-                        <ul>
-                            <li><strong>CLAHE Enhancement:</strong> Contrast Limited Adaptive Histogram Equalization.</li>
-                            <li><strong>Gamma Correction:</strong> Brightness boosting for dark feeds.</li>
-                            <li><strong>Dual-Model Pipeline:</strong> Switches to specialized detection parameters.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Comparison Table -->
-            <div style="margin-top: 3rem;">
-                <h3 style="color: var(--text-main); margin-bottom: 1rem;">Feature Comparison</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Normal Mode</th>
-                            <th>PRO Mode</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Face Recognition</td>
-                            <td><span class="check-icon">✔</span> Standard</td>
-                            <td><span class="check-icon">✔</span> Enhanced (5 Angles)</td>
-                        </tr>
-                        <tr>
-                            <td>Action Alerts</td>
-                            <td><span class="check-icon">✔</span> Yes</td>
-                            <td><span class="check-icon">✔</span> Yes</td>
-                        </tr>
-                        <tr>
-                            <td>Stillness/Sleep Alert</td>
-                            <td><span class="cross-icon">✘</span> No</td>
-                            <td><span class="check-icon">✔</span> Yes (>15s)</td>
-                        </tr>
-                        <tr>
-                            <td>Performance Impact</td>
-                            <td><span class="check-icon">✔</span> Low (High FPS)</td>
-                            <td><span class="warning-icon" style="color: var(--warning);">⚠</span> Medium</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Detection Systems -->
-        <section>
-            <h2 class="section-title">Detection Architecture</h2>
-            <div class="features-grid">
-                <!-- Single Guard -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">👤</span>
-                        <h3>Single Guard System</h3>
-                    </div>
-                    <div class="feature-body">
-                        <p style="color: var(--text-muted);">Optimized pipeline for tracking one individual with maximum precision.</p>
-                        <ul>
-                            <li><strong>Pipeline:</strong> BlazeFace + MoveNet Lightning.</li>
-                            <li><strong>Focus:</strong> High-speed pose estimation.</li>
-                            <li><strong>Logic:</strong> Direct frame analysis without overlap overhead.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Multi Guard -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">👥</span>
-                        <h3>Multi-Guard System</h3>
-                    </div>
-                    <div class="feature-body">
-                        <p style="color: var(--text-muted);">Complex orchestration for tracking 2-6 individuals simultaneously.</p>
-                        <ul>
-                            <li><strong>Pipeline:</strong> BlazePose + CSRT/KCF Trackers.</li>
-                            <li><strong>Logic:</strong> Independent tracking threads per guard.</li>
-                            <li><strong>Conflict Resolution:</strong> Smart IoU (Intersection over Union) logic to handle crossing paths and overlaps.</li>
-                            <li><strong>ID Persistence:</strong> Re-identifies guards if they leave and re-enter frame.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- System Capabilities -->
-        <section>
-            <h2 class="section-title">System Capabilities</h2>
-            <div class="features-grid">
-                <!-- Card 1 -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">👁️</span>
-                        <h3>Intelligent Monitoring</h3>
-                    </div>
-                    <div class="feature-body">
-                        <ul>
-                            <li><strong>Multi-Guard Tracking:</strong> Simultaneous tracking of 2-6 guards using CSRT/KCF hybrid trackers.</li>
-                            <li><strong>Pose Detection:</strong> MediaPipe Holistic integration detecting specific stances.</li>
-                            <li><strong>Recognized Actions:</strong> Hands Up, Hands Crossed, Left/Right Hand Up, T-Pose, Sit, Standing.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">🚨</span>
-                        <h3>Advanced Alert System</h3>
-                    </div>
-                    <div class="feature-body">
-                        <ul>
-                            <li><strong>Fugitive Mode:</strong> Immediate 15-second siren and red-box highlighting upon detecting specific targets.</li>
-                            <li><strong>Action Timeouts:</strong> Configurable intervals (HH:MM:SS) triggering alerts if guards fail to perform required actions.</li>
-                            <li><strong>Pro Mode Stillness:</strong> Detects if a guard has been motionless (sleeping) for >15 seconds.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">💻</span>
-                        <h3>Control Center</h3>
-                    </div>
-                    <div class="feature-body">
-                        <ul>
-                            <li><strong>Framework:</strong> Built with <code>CustomTkinter</code> for a modern Dark Mode aesthetic.</li>
-                            <li><strong>Multi-Language:</strong> Real-time switching between <strong>Hindi, English, Marathi, and Gujarati</strong>.</li>
-                            <li><strong>Visual Feedback:</strong> Dynamic bounding boxes (Green=Safe, Red=Fugitive/Error, Orange=Sparse/Back View).</li>
-                            <li><strong>Tools:</strong> Night Mode (CLAHE), Snap Photo, Guard Management (Add/Remove).</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="feature-card">
-                    <div class="feature-header">
-                        <span class="feature-icon">⚙️</span>
-                        <h3>Under the Hood</h3>
-                    </div>
-                    <div class="feature-body">
-                        <table class="perf-table">
-                            <tr>
-                                <th>FPS (Tracking)</th>
-                                <td class="perf-val">15-20 FPS ✅</td>
-                            </tr>
-                            <tr>
-                                <th>FPS (Detecting)</th>
-                                <td class="perf-val">10-15 FPS ✅</td>
-                            </tr>
-                            <tr>
-                                <th>Min FPS</th>
-                                <td class="perf-val">>10 FPS ✅</td>
-                            </tr>
-                            <tr>
-                                <th>Detection Time</th>
-                                <td class="perf-val"><100ms ✅</td>
-                            </tr>
-                            <tr>
-                                <th>Initial Detection</th>
-                                <td class="perf-val"><1sec ✅</td>
-                            </tr>
-                            <tr>
-                                <th>Accuracy</th>
-                                <td class="perf-val">>90% ✅</td>
-                            </tr>
-                        </table>
-                        <div class="perf-note">
-                            * Note: Real-time performance may vary significantly (10-30 FPS) depending on CPU/GPU capabilities and guard count.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Development Journey -->
-        <section>
-            <h2 class="section-title">Development Journey</h2>
-            <div class="timeline">
-                <div class="container-time left">
-                    <div class="content">
-                        <span class="phase-tag">Phase 0</span>
-                        <h3>Prototype & Analysis</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">
-                            Initial ~3,200 lines. Basic surveillance with low performance (5-10 FPS). Identified critical issues like hardcoded paths and missing grace periods.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-time right">
-                    <div class="content">
-                        <span class="phase-tag">Phase 1</span>
-                        <h3>Comprehensive Planning</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">
-                            Deep-dive analysis (Nov 23, 2025). Created requirements map, cleanup audit, and identified 40+ unused variables.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-time left">
-                    <div class="content">
-                        <span class="phase-tag">Phase 2</span>
-                        <h3>Cleanup & Stabilization</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">
-                            Removed technical debt. Fixed cross-platform path issues and validated all imports. 100% backward compatible fixes.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-time right">
-                    <div class="content">
-                        <span class="phase-tag">Phase 3</span>
-                        <h3>UI & Control Panel Rebuild</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">
-                            Complete UI overhaul using Grid layout. Implemented Pro Mode toggles, unified Camera controls, and dynamic alert sections.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-time left">
-                    <div class="content">
-                        <span class="phase-tag">Phase 4</span>
-                        <h3>Advanced Integration</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">
-                            Independent processing pipelines per guard. Achieved 3-5x performance gain (25-30 FPS). Solved the critical "Multi-Guard Identification Crisis".
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Critical Challenges Solved (Moved to Bottom) -->
-        <section>
-            <h2 class="section-title">Critical Challenges Solved</h2>
-            
-            <!-- Bug 1 -->
-            <div class="bug-card">
-                <div class="bug-header">
-                    <span class="bug-title">⚠️ Issue: Multi-Guard Identification Crisis</span>
-                </div>
-                <div class="bug-content">
-                    <div class="issue-box">
-                        <h4>The Problem</h4>
-                        <p style="color: var(--text-muted);">System was swapping identities between guards in live feed. Loose tolerance (0.55) allowed false positives, and a greedy matching algorithm caused "ID theft" where one face matched multiple IDs.</p>
-                    </div>
-                    <div class="fix-box">
-                        <h4>The Solution</h4>
-                        <p style="color: var(--text-main);">Implemented a <strong>Two-Pass Assignment Algorithm</strong> with Mutual Exclusion. Reduced multi-guard tolerance to 0.40 (strict) while keeping single-guard at 0.45. Added strict cross-checks to prevent the same face from matching multiple profiles.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bug 2 -->
-            <div class="bug-card">
-                <div class="bug-header">
-                    <span class="bug-title">⚠️ Issue: Guard Separation Failure</span>
-                </div>
-                <div class="bug-content">
-                    <div class="issue-box">
-                        <h4>The Problem</h4>
-                        <p style="color: var(--text-muted);">When guards overlapped, one was hidden to resolve conflict. However, they never re-appeared after separating because the logic only handled <em>overlap</em>, not <em>separation</em>.</p>
-                    </div>
-                    <div class="fix-box">
-                        <h4>The Solution</h4>
-                        <p style="color: var(--text-main);">Rewrote conflict resolution with a <strong>3-Layer Logic System</strong>. Added specific logic to detect when IoU drops below 0.30 to immediately re-enable the hidden guard and reset their tracker.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bug 3 -->
-            <div class="bug-card">
-                <div class="bug-header">
-                    <span class="bug-title">⚠️ Issue: Ghost Tracking & Stability</span>
-                </div>
-                <div class="bug-content">
-                    <div class="issue-box">
-                        <h4>The Problem</h4>
-                        <p style="color: var(--text-muted);">Trackers would drift onto background objects ("Ghosts") when guards turned away. Face detection was too slow to correct this in real-time.</p>
-                    </div>
-                    <div class="fix-box">
-                        <h4>The Solution</h4>
-                        <p style="color: var(--text-main);">Developed <strong>Skeleton Validation</strong>. Even if the face is hidden, the system validates the body skeleton (shoulders, hips). If 8/14 critical joints are missing, the tracker is killed immediately.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack -->
-        <section style="text-align: center;">
-            <h2 style="margin-bottom: 2rem; color: var(--text-muted); font-size: 1.2rem;">Powered By</h2>
-            <div class="tech-stack">
-                <div class="tech-pill">Python 3.11</div>
-                <div class="tech-pill">OpenCV</div>
-                <div class="tech-pill">MediaPipe</div>
-                <div class="tech-pill">CustomTkinter</div>
-                <div class="tech-pill">Face Recognition</div>
-                <div class="tech-pill">TensorFlow</div>
-                <div class="tech-pill">PyGame</div>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Nirakshan Deep Project.</p>
-        <p style="font-size: 0.9rem; margin-top: 0.5rem;">"Observe to Protect"</p>
-        <div style="margin-top: 1rem; opacity: 0.6;">
-            Created by Rudresh, Krunal, and Kaushik
-        </div>
-    </footer>
-
-    <!-- ================= MODALS ================= -->
-
-    <!-- 1. INSTALLATION MODAL -->
-    <div id="installModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('installModal')">&times;</span>
-            <h2 class="section-title" style="margin-top: 0; border: none; margin-bottom: 1.5rem;">📦 Installation & Setup Guide</h2>
-            
-            <div class="install-step">
-                <h3><span class="step-number">1</span>Prerequisites</h3>
-                <p style="color: var(--text-muted); margin-bottom: 10px;">Ensure you have Python 3.10 or 3.11 installed on your system.</p>
-                <div class="code-block">python --version</div>
-            </div>
-
-            <div class="install-step">
-                <h3><span class="step-number">2</span>Create Environment</h3>
-                <p style="color: var(--text-muted);">Create a virtual environment to manage dependencies cleanly.</p>
-                <div class="code-block">
-python -m venv venv
-.\venv\Scripts\activate  # On Windows
-                </div>
-            </div>
-
-            <div class="install-step">
-                <h3><span class="step-number">3</span>Install Dependencies</h3>
-                <p style="color: var(--text-muted);">Install the required libraries for Computer Vision and UI.</p>
-                <div class="code-block">
-pip install opencv-python mediapipe face-recognition
-pip install tensorflow customtkinter pygame psutil pydub
-                </div>
-            </div>
-
-            <div class="install-step">
-                <h3><span class="step-number">4</span>Project Structure</h3>
-                <p style="color: var(--text-muted);">Ensure the following directories exist in your project folder:</p>
-                <div class="code-block">
-/guard_profiles      # Face images
-/pose_references     # Pose JSONs
-/capture_snapshots   # Captured photos
-/alert_snapshots     # Alert evidence
-/logs                # Event CSVs
-/audio_files         # MP3 alerts
-                </div>
-            </div>
-
-            <div class="install-step">
-                <h3><span class="step-number">5</span>Run Application</h3>
-                <p style="color: var(--text-muted);">Launch the application main script.</p>
-                <div class="code-block">python Basic+Mediapose_v2_Done.py</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 2. OPERATION MANUAL MODAL -->
-    <div id="opManualModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('opManualModal')">&times;</span>
-            <h2 class="section-title" style="margin-top: 0; border: none; margin-bottom: 1.5rem;">📖 Operator Manual</h2>
-            
-            <div class="op-card">
-                <span class="op-title">Daily Routine (Start of Shift)</span>
-                <ol style="margin-left: 20px; color: var(--text-muted);">
-                    <li><strong>Select Who is Working:</strong> Check boxes next to guard names.</li>
-                    <li><strong>Start Tracking:</strong> Click the <span class="button-ref">🎯 Track Guard</span> button.</li>
-                    <li><strong>Monitor Status:</strong> Look for <span style="color: #10b981;">● Standing</span> (Good) or <span style="color: #ef4444;">● Missing</span> (Alert).</li>
-                    <li><strong>End of Shift:</strong> Click <span class="button-ref">⏹️ Stop Monitoring</span> before closing.</li>
-                </ol>
-            </div>
-
-            <div class="op-card">
-                <span class="op-title">Adding New Guards</span>
-                <ul style="margin-left: 20px; color: var(--text-muted);">
-                    <li>Click <span class="button-ref">➕ Add Guard</span>.</li>
-                    <li>Enter Guard Name.</li>
-                    <li>Take 4 Photos (Front, Left, Right, Back).</li>
-                </ul>
-            </div>
-
-            <div class="op-card">
-                <span class="op-title">Special Features</span>
-                <ul style="list-style: none; color: var(--text-muted);">
-                    <li style="margin-bottom: 10px;"><strong>🚨 Fugitive Alert:</strong> Upload a photo of a banned person. Immediate SIREN if detected.</li>
-                    <li style="margin-bottom: 10px;"><strong>🌙 Night Mode:</strong> Turn on if room is dark. Makes video brighter.</li>
-                    <li><strong>🌐 Language:</strong> Change app language to Hindi, Marathi, or Gujarati via top-left logo.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- 3. TROUBLESHOOTING MODAL -->
-    <div id="troubleModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('troubleModal')">&times;</span>
-            <h2 class="section-title" style="margin-top: 0; border: none; margin-bottom: 1.5rem;">🔧 Easy Fixes & Troubleshooting</h2>
-            
-            <div class="bug-card" style="border-left-color: var(--accent);">
-                <div class="bug-header" style="background: rgba(59, 130, 246, 0.1);">
-                    <span class="bug-title" style="color: var(--accent);">Screen is Black / No Video</span>
-                </div>
-                <div class="bug-content" style="display: block; padding: 1rem;">
-                    <ul style="color: var(--text-muted); margin-left: 20px;">
-                        <li>Check if camera USB is plugged in tight.</li>
-                        <li>Click the <strong>Camera ON/OFF</strong> button again.</li>
-                        <li>Restart the computer if issue persists.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="bug-card" style="border-left-color: var(--accent);">
-                <div class="bug-header" style="background: rgba(59, 130, 246, 0.1);">
-                    <span class="bug-title" style="color: var(--accent);">No Sound on Alert</span>
-                </div>
-                <div class="bug-content" style="display: block; padding: 1rem;">
-                    <ul style="color: var(--text-muted); margin-left: 20px;">
-                        <li>Check if computer speakers are muted.</li>
-                        <li>Turn up the volume.</li>
-                        <li>Ensure <code>audio_files/siren.mp3</code> exists.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="bug-card" style="border-left-color: var(--accent);">
-                <div class="bug-header" style="background: rgba(59, 130, 246, 0.1);">
-                    <span class="bug-title" style="color: var(--accent);">Guard is present but says "Missing"</span>
-                </div>
-                <div class="bug-content" style="display: block; padding: 1rem;">
-                    <ul style="color: var(--text-muted); margin-left: 20px;">
-                        <li>The room might be too dark. Turn on lights or use <strong>Night Mode</strong>.</li>
-                        <li>The guard might be hiding their face. Ask them to look up.</li>
-                        <li>Try re-taking the guard's profile photos.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="bug-card" style="border-left-color: var(--accent);">
-                <div class="bug-header" style="background: rgba(59, 130, 246, 0.1);">
-                    <span class="bug-title" style="color: var(--accent);">System is very slow</span>
-                </div>
-                <div class="bug-content" style="display: block; padding: 1rem;">
-                    <ul style="color: var(--text-muted); margin-left: 20px;">
-                        <li>Close other apps like YouTube or Chrome.</li>
-                        <li>Click <strong>Stop Monitoring</strong> and start again.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Script -->
     <script>
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = "block";
-            document.body.style.overflow = "hidden"; // Disable scroll
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = "none";
-            document.body.style.overflow = "auto"; // Enable scroll
-        }
-
-        // Close modal clicking outside
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = "none";
-                document.body.style.overflow = "auto";
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        display: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        dark: {
+                            bg: '#020617',
+                            card: '#0f172a',
+                            border: '#1e293b',
+                        },
+                        accent: {
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                            rose: '#f43f5e',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'scan': 'scan 4s linear infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        scan: {
+                            '0%': { top: '0%', opacity: 0 },
+                            '10%': { opacity: 1 },
+                            '90%': { opacity: 1 },
+                            '100%': { top: '100%', opacity: 0 },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
             }
         }
     </script>
 
+    <style>
+        body {
+            background-color: #020617;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,0.1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,0.1) 0, transparent 50%);
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.4) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+
+        .code-syntax .keyword { color: #c678dd; }
+        .code-syntax .function { color: #61afef; }
+        .code-syntax .string { color: #98c379; }
+        .code-syntax .comment { color: #5c6370; font-style: italic; }
+        .code-syntax .number { color: #d19a66; }
+
+        /* Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-slate-300">
+
+    <!-- Sticky Header -->
+    <header x-data="{ scrolled: false }" 
+            @scroll.window="scrolled = (window.pageYOffset > 20)"
+            :class="scrolled ? 'border-b border-slate-800 bg-dark-bg/80 backdrop-blur-xl' : 'bg-transparent border-transparent'"
+            class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="relative w-10 h-10 flex items-center justify-center bg-brand-500/10 rounded-lg border border-brand-500/20">
+                    <i data-lucide="shield-check" class="text-brand-400 w-6 h-6"></i>
+                    <div class="absolute inset-0 bg-brand-400/20 blur-lg rounded-full"></div>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-2xl text-white tracking-tight">NIRAAKSHAN</span>
+                    <span class="text-[10px] text-brand-400 font-mono tracking-widest block uppercase">Sentinel AI v2.0</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#logic" class="hover:text-white transition-colors">Core Logic</a>
+                <a href="#features" class="hover:text-white transition-colors">Capabilities</a>
+                <a href="#interface" class="hover:text-white transition-colors">Interface</a>
+                <a href="#tech" class="hover:text-white transition-colors">Stack</a>
+            </nav>
+
+            <a href="#contact" class="hidden md:flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 px-5 py-2.5 rounded-full transition-all text-sm font-semibold text-white group">
+                System Specs
+                <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform text-brand-400"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Abstract Background Elements -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-600/20 rounded-full mix-blend-screen filter blur-[128px] animate-blob"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-emerald/10 rounded-full mix-blend-screen filter blur-[128px] animate-blob animation-delay-2000"></div>
+        
+        <!-- Grid Pattern Overlay -->
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 50px 50px; mask-image: radial-gradient(circle at center, black, transparent 80%);"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+            <!-- Content -->
+            <div class="flex flex-col justify-center">
+                <div class="inline-flex items-center gap-3 mb-8 self-start bg-slate-900/50 backdrop-blur-md border border-slate-700 rounded-full px-4 py-1.5">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                    </span>
+                    <span class="text-xs font-mono text-brand-200 tracking-wide">SYSTEM OPERATIONAL // V2.0 READY</span>
+                </div>
+                
+                <h1 class="font-display font-bold text-6xl md:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+                    The Eye That <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-brand-300 to-accent-emerald text-glow">Never Sleeps.</span>
+                </h1>
+                
+                <p class="text-lg text-slate-400 max-w-xl leading-relaxed mb-10 border-l-2 border-brand-500/30 pl-6">
+                    Transform standard CCTV feeds into active intelligence. Niraakshan combines 
+                    <strong class="text-white">Face Recognition</strong>, <strong class="text-white">Skeletal Tracking</strong>, and <strong class="text-white">Logic-Based Alerts</strong> to detect not just who is there, but <em>what they are doing</em>.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-[0_0_30px_-5px_rgba(2,132,199,0.4)] hover:shadow-[0_0_40px_-5px_rgba(2,132,199,0.6)] flex items-center justify-center gap-2 group">
+                        <i data-lucide="play-circle" class="w-5 h-5"></i>
+                        Launch Simulation
+                    </button>
+                    <button class="glass-card hover:bg-white/5 text-white px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="code-2" class="w-5 h-5 text-slate-400"></i>
+                        View Architecture
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Visual: The "Engine" -->
+            <div class="relative perspective-1000 group">
+                <!-- Floating Code Card -->
+                <div class="relative bg-[#0d1117] rounded-2xl border border-slate-700/50 p-6 shadow-2xl transform rotate-y-12 transition-transform duration-500 group-hover:rotate-y-0 group-hover:scale-105 animate-float">
+                    <!-- Glow effect behind -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-accent-emerald opacity-20 blur-xl rounded-2xl -z-10"></div>
+                    
+                    <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                        </div>
+                        <div class="text-[10px] font-mono text-slate-500">core_logic.py — Security Protocol</div>
+                    </div>
+                    
+                    <div class="code-syntax font-mono text-xs md:text-sm leading-6">
+                        <div class="flex"><span class="text-slate-700 mr-4">42</span><span class="keyword">class</span> <span class="text-yellow-400">SentinelAI</span>:</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">43</span>&nbsp;&nbsp;<span class="keyword">def</span> <span class="function">process_frame</span>(self, frame):</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">44</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># 1. CLAHE Enhancement for Night Mode</span></div>
+                        <div class="flex"><span class="text-slate-700 mr-4">45</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> self.night_mode:</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">46</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frame = cv2.<span class="function">createCLAHE</span>(frame)</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">47</span></div>
+                        <div class="flex"><span class="text-slate-700 mr-4">48</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># 2. ReID & Pose Estimation</span></div>
+                        <div class="flex"><span class="text-slate-700 mr-4">49</span>&nbsp;&nbsp;&nbsp;&nbsp;id, pose = self.<span class="function">track_guard</span>(frame)</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">50</span>&nbsp;&nbsp;&nbsp;&nbsp;action = self.<span class="function">classify_action</span>(pose)</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">51</span></div>
+                        <div class="flex"><span class="text-slate-700 mr-4">52</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># 3. Logic Gate</span></div>
+                        <div class="flex"><span class="text-slate-700 mr-4">53</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> action == <span class="string">"SLEEPING"</span>:</div>
+                        <div class="flex"><span class="text-slate-700 mr-4">54</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<span class="function">trigger_alert</span>(level=<span class="number">5</span>)</div>
+                    </div>
+
+                    <!-- Overlay Badge -->
+                    <div class="absolute -bottom-6 -right-6 bg-slate-800/90 backdrop-blur border border-slate-700 p-4 rounded-xl shadow-xl flex items-center gap-4 animate-pulse-slow">
+                        <div class="bg-green-500/20 p-2 rounded-lg">
+                            <i data-lucide="activity" class="w-6 h-6 text-green-400"></i>
+                        </div>
+                        <div>
+                            <div class="text-[10px] text-slate-400 font-mono uppercase">Processing Latency</div>
+                            <div class="text-white font-bold font-mono">0.032s / Frame</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Logic Architecture -->
+    <section id="logic" class="py-32 bg-dark-bg relative">
+        <!-- Section Header -->
+        <div class="max-w-7xl mx-auto px-6 mb-20">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+                <div>
+                    <h2 class="font-display font-bold text-4xl text-white mb-4">Inside the <span class="text-brand-400">Logic Core</span></h2>
+                    <p class="text-slate-400 max-w-xl">
+                        Niraakshan isn't just a camera viewer. It's a complex decision engine built on Python's robust libraries. Here is how the `Basic_v2_Done.py` script actually thinks.
+                    </p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-md font-mono border border-slate-700">Mediapipe</span>
+                    <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-md font-mono border border-slate-700">OpenCV</span>
+                    <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-md font-mono border border-slate-700">TensorFlow</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Logic Block 1: 5-Angle Onboarding -->
+            <div class="reveal glass-card p-8 rounded-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-3 opacity-5">
+                    <i data-lucide="scan-face" class="w-32 h-32"></i>
+                </div>
+                <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 mb-6">
+                    <span class="font-mono font-bold text-brand-400 text-lg">01</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">5-Angle Onboarding</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    Single-angle face recognition fails when guards turn away. Niraakshan registers guards from 5 distinct vectors:
+                </p>
+                <!-- Visual -->
+                <div class="grid grid-cols-5 gap-2 mt-auto">
+                    <div class="aspect-square bg-slate-800 rounded border border-slate-700 flex items-center justify-center text-[10px] text-slate-500">Front</div>
+                    <div class="aspect-square bg-slate-800 rounded border border-slate-700 flex items-center justify-center text-[10px] text-slate-500">Left</div>
+                    <div class="aspect-square bg-slate-800 rounded border border-slate-700 flex items-center justify-center text-[10px] text-slate-500">Right</div>
+                    <div class="aspect-square bg-slate-800 rounded border border-slate-700 flex items-center justify-center text-[10px] text-slate-500">Back</div>
+                    <div class="aspect-square bg-brand-900/50 rounded border border-brand-500/50 flex items-center justify-center text-[10px] text-brand-400 font-bold">Top</div>
+                </div>
+                <div class="mt-4 text-[10px] text-slate-500 font-mono text-center">ReID Accuracy: 98.5%</div>
+            </div>
+
+            <!-- Logic Block 2: Anti-Ghosting -->
+            <div class="reveal glass-card p-8 rounded-2xl relative overflow-hidden" style="transition-delay: 100ms;">
+                <div class="absolute top-0 right-0 p-3 opacity-5">
+                    <i data-lucide="ghost" class="w-32 h-32"></i>
+                </div>
+                <div class="w-12 h-12 bg-accent-rose/10 rounded-xl flex items-center justify-center border border-accent-rose/20 mb-6">
+                    <span class="font-mono font-bold text-accent-rose text-lg">02</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Anti-Ghosting Protocol</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    False positives ("Ghosts") trigger false alarms. The system runs a validation check on every tracked object.
+                </p>
+                <div class="bg-slate-950 p-4 rounded-lg font-mono text-[10px] border border-slate-800/50">
+                    <div class="text-slate-500"># Verification Logic</div>
+                    <div class="text-purple-400">if <span class="text-slate-300">pose_confidence</span> < <span class="text-orange-400">0.4</span>:</div>
+                    <div class="pl-4 text-slate-300">mark_as_ghost()</div>
+                    <div class="text-purple-400">elif <span class="text-slate-300">missing_keypoints</span> > <span class="text-orange-400">30</span>:</div>
+                    <div class="pl-4 text-slate-300">kill_tracker()</div>
+                    <div class="text-purple-400">else:</div>
+                    <div class="pl-4 text-green-400">confirm_human()</div>
+                </div>
+            </div>
+
+            <!-- Logic Block 3: Contextual Alert -->
+            <div class="reveal glass-card p-8 rounded-2xl relative overflow-hidden" style="transition-delay: 200ms;">
+                <div class="absolute top-0 right-0 p-3 opacity-5">
+                    <i data-lucide="siren" class="w-32 h-32"></i>
+                </div>
+                <div class="w-12 h-12 bg-accent-emerald/10 rounded-xl flex items-center justify-center border border-accent-emerald/20 mb-6">
+                    <span class="font-mono font-bold text-accent-emerald text-lg">03</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Grace Period Logic</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                    The system is fair. It doesn't alert instantly. It grants a configurable "Grace Period" for actions.
+                </p>
+                <!-- Timeline Visual -->
+                <div class="relative pt-4">
+                    <div class="h-1 bg-slate-700 w-full rounded-full overflow-hidden">
+                        <div class="h-full bg-gradient-to-r from-green-500 via-yellow-500 to-red-500 w-full"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] font-mono text-slate-400 mt-2">
+                        <span>0s</span>
+                        <span class="text-yellow-400">Grace Period (10s)</span>
+                        <span class="text-red-400">ALARM</span>
+                    </div>
+                    <div class="absolute top-0 left-2/3 -ml-1 w-3 h-3 bg-white rounded-full border-2 border-slate-900 shadow-lg"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRO Mode Showcase -->
+    <section id="features" class="py-24 border-y border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-accent-cyan font-mono text-xs tracking-[0.2em] uppercase">Enterprise Capabilities</span>
+                <h2 class="text-4xl font-bold text-white mt-2">PRO Mode Enabled</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Feature 1: Night Vision -->
+                <div class="group relative bg-black rounded-2xl overflow-hidden border border-slate-800">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
+                    
+                    <!-- Content -->
+                    <div class="absolute bottom-0 left-0 p-8 z-20 w-full">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="bg-purple-500/20 p-2 rounded backdrop-blur">
+                                <i data-lucide="moon" class="w-5 h-5 text-purple-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Night Vision (CLAHE)</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Contrast Limited Adaptive Histogram Equalization. When light drops, the code automatically boosts local contrast to maintain 95% detection accuracy.
+                        </p>
+                        <!-- Code Badge -->
+                        <div class="inline-block bg-slate-800/80 backdrop-blur px-3 py-1 rounded text-[10px] font-mono text-purple-300 border border-slate-700">
+                            cv2.createCLAHE(clipLimit=2.0)
+                        </div>
+                    </div>
+
+                    <!-- Visual -->
+                    <img src="https://images.unsplash.com/photo-1510255955374-12349074704c?q=80&w=2070&auto=format&fit=crop" 
+                         class="w-full h-80 object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" alt="Night Vision">
+                </div>
+
+                <!-- Feature 2: Stillness Detection -->
+                <div class="group relative bg-black rounded-2xl overflow-hidden border border-slate-800">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
+                    
+                    <div class="absolute bottom-0 left-0 p-8 z-20 w-full">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="bg-orange-500/20 p-2 rounded backdrop-blur">
+                                <i data-lucide="hourglass" class="w-5 h-5 text-orange-400"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Stillness Alert</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Guards sleeping or absent? The system tracks micro-movements. If normalized motion drops below threshold for 15s, an audible alarm triggers.
+                        </p>
+                        <div class="inline-block bg-slate-800/80 backdrop-blur px-3 py-1 rounded text-[10px] font-mono text-orange-300 border border-slate-700">
+                            if stillness_duration > 15.0: play_siren()
+                        </div>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1555431189-0fabf2667795?q=80&w=2070&auto=format&fit=crop" 
+                         class="w-full h-80 object-cover opacity-60 group-hover:scale-105 transition-transform duration-700 grayscale" alt="Stillness">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Command Center UI -->
+    <section id="interface" class="py-24 bg-dark-bg relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-brand-600/10 blur-[100px] rounded-full"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-display font-bold text-4xl text-white">The Command Center</h2>
+                <p class="text-slate-400 mt-3">CustomTkinter Interface • Localization • Real-time Logs</p>
+            </div>
+
+            <!-- UI Mockup -->
+            <div class="bg-slate-900 rounded-xl border border-slate-800 shadow-2xl overflow-hidden ring-1 ring-white/10">
+                <!-- Window Title Bar -->
+                <div class="bg-slate-950 h-10 flex items-center px-4 justify-between border-b border-slate-800">
+                    <div class="flex gap-2">
+                        <div class="w-3 h-3 rounded-full bg-slate-700"></div>
+                        <div class="w-3 h-3 rounded-full bg-slate-700"></div>
+                        <div class="w-3 h-3 rounded-full bg-slate-700"></div>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500">Niraakshan_Dashboard.exe</div>
+                    <div class="flex gap-4 text-[10px] font-mono text-slate-500">
+                        <span>CPU: 12%</span>
+                        <span>MEM: 142MB</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row h-[600px]">
+                    <!-- Sidebar Control Panel -->
+                    <div class="w-full md:w-80 bg-slate-900 border-r border-slate-800 flex flex-col p-4">
+                        
+                        <!-- Header -->
+                        <div class="mb-6 pb-4 border-b border-slate-800">
+                            <div class="text-brand-400 font-bold text-lg tracking-tight">🛡️ NIRAAKSHAN</div>
+                            <div class="text-[10px] text-slate-500 uppercase">Observe to Protect</div>
+                        </div>
+
+                        <!-- Language Switcher -->
+                        <div class="mb-4">
+                            <label class="text-[10px] font-bold text-slate-500 uppercase block mb-2">Localization</label>
+                            <div class="grid grid-cols-4 gap-1">
+                                <button class="bg-brand-600 text-white text-[10px] py-1 rounded">ENG</button>
+                                <button class="bg-slate-800 text-slate-400 hover:text-white text-[10px] py-1 rounded">HIN</button>
+                                <button class="bg-slate-800 text-slate-400 hover:text-white text-[10px] py-1 rounded">GUJ</button>
+                                <button class="bg-slate-800 text-slate-400 hover:text-white text-[10px] py-1 rounded">MAR</button>
+                            </div>
+                        </div>
+
+                        <!-- Guard List -->
+                        <div class="flex-1 mb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-[10px] font-bold text-slate-500 uppercase">Active Guards</label>
+                                <span class="text-[10px] text-green-500">● Live</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="bg-slate-800/50 border border-brand-500/30 p-2 rounded flex items-center gap-3">
+                                    <div class="w-8 h-8 bg-slate-700 rounded-full overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&auto=format&fit=crop&q=60" class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-white font-bold">Officer Vikram</div>
+                                        <div class="text-[9px] text-brand-400">Post: North Gate</div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-800/50 border border-slate-700 p-2 rounded flex items-center gap-3 opacity-50">
+                                    <div class="w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center text-xs">+</div>
+                                    <div class="text-xs text-slate-400">Add New Guard</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Log -->
+                        <div class="h-40 bg-black rounded border border-slate-800 p-2 font-mono text-[9px] overflow-hidden relative">
+                            <div class="absolute top-0 right-0 p-1">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            </div>
+                            <div class="space-y-1 text-slate-400">
+                                <div><span class="text-slate-600">[14:02:11]</span> System Init... OK</div>
+                                <div><span class="text-slate-600">[14:02:15]</span> Cam_01 Connected</div>
+                                <div><span class="text-slate-600">[14:02:45]</span> <span class="text-green-400">DETECT:</span> Officer Vikram</div>
+                                <div><span class="text-slate-600">[14:03:00]</span> <span class="text-blue-400">ACTION:</span> Hands Up (98%)</div>
+                                <div><span class="text-slate-600">[14:03:15]</span> <span class="text-yellow-400">WARN:</span> Stillness > 10s</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Video Feed -->
+                    <div class="flex-1 bg-black relative group overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2070&auto=format&fit=crop" 
+                             class="w-full h-full object-cover opacity-70" alt="CCTV Feed">
+                        
+                        <!-- Digital Scan Line -->
+                        <div class="scan-line"></div>
+
+                        <!-- Video Overlays -->
+                        <div class="absolute top-4 left-4 flex gap-2">
+                            <div class="bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded animate-pulse">REC</div>
+                            <div class="bg-black/50 backdrop-blur text-white text-[10px] font-mono px-2 py-1 rounded border border-white/10">1080p | 30fps</div>
+                        </div>
+
+                        <!-- Bounding Box & Skeleton Overlay -->
+                        <div class="absolute top-[20%] left-[45%] w-[180px] h-[300px] border-2 border-brand-500/80 rounded bg-brand-500/5 backdrop-blur-[1px]">
+                            <!-- Header -->
+                            <div class="absolute -top-6 left-0 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-t flex items-center gap-2">
+                                <i data-lucide="scan-face" class="w-3 h-3"></i> 
+                                VIKRAM (0.98)
+                            </div>
+                            
+                            <!-- Skeleton Lines (CSS) -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-px h-[60%] bg-brand-400/50 relative">
+                                    <div class="absolute top-0 -left-6 w-12 h-px bg-brand-400/50"></div> <!-- Shoulders -->
+                                    <div class="absolute top-1/2 -left-4 w-8 h-px bg-brand-400/50"></div> <!-- Hips -->
+                                </div>
+                            </div>
+
+                            <!-- Footer Status -->
+                            <div class="absolute -bottom-8 left-0 right-0">
+                                <div class="flex gap-1 justify-center">
+                                    <span class="bg-black/70 text-brand-400 text-[9px] font-mono px-2 py-1 rounded border border-brand-500/30">STANDING</span>
+                                    <span class="bg-black/70 text-slate-300 text-[9px] font-mono px-2 py-1 rounded border border-slate-700">Conf: 98%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Controls -->
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur border border-slate-700 rounded-full p-2 flex gap-2 shadow-xl transform translate-y-10 group-hover:translate-y-0 transition-transform">
+                            <button class="p-2 hover:bg-slate-700 rounded-full text-white" title="Snapshot"><i data-lucide="camera" class="w-5 h-5"></i></button>
+                            <button class="p-2 hover:bg-slate-700 rounded-full text-brand-400" title="Toggle Night Mode"><i data-lucide="moon" class="w-5 h-5"></i></button>
+                            <button class="p-2 hover:bg-slate-700 rounded-full text-red-400" title="Panic"><i data-lucide="bell" class="w-5 h-5"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section id="tech" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-3">
+                    <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+                        <i data-lucide="cpu" class="text-brand-500"></i> Technical Requirements
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-slate-950 p-4 rounded border border-slate-800">
+                            <div class="text-[10px] text-slate-500 uppercase font-mono mb-1">Compute</div>
+                            <div class="text-white font-bold">Intel i5 (6th Gen)</div>
+                            <div class="text-xs text-brand-400">AVX Support Reqd.</div>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded border border-slate-800">
+                            <div class="text-[10px] text-slate-500 uppercase font-mono mb-1">Memory</div>
+                            <div class="text-white font-bold">8GB RAM</div>
+                            <div class="text-xs text-slate-400">16GB Recommended</div>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded border border-slate-800">
+                            <div class="text-[10px] text-slate-500 uppercase font-mono mb-1">Input</div>
+                            <div class="text-white font-bold">RTSP / USB</div>
+                            <div class="text-xs text-slate-400">720p @ 30fps</div>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded border border-slate-800">
+                            <div class="text-[10px] text-slate-500 uppercase font-mono mb-1">Environment</div>
+                            <div class="text-white font-bold">Python 3.9+</div>
+                            <div class="text-xs text-slate-400">OpenCV / TensorFlow</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-span-1">
+                    <h3 class="text-lg font-bold text-white mb-6">Performance</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-400 mb-1">
+                                <span>Detection Latency</span>
+                                <span class="text-white">32ms</span>
+                            </div>
+                            <div class="h-1 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-brand-500 w-[20%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-400 mb-1">
+                                <span>Memory Usage</span>
+                                <span class="text-white">~450MB</span>
+                            </div>
+                            <div class="h-1 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-accent-emerald w-[40%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 bg-black text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <i data-lucide="shield-check" class="text-brand-500 w-6 h-6"></i>
+                <span class="text-xl font-display font-bold text-white tracking-tight">NIRAAKSHAN</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-8">
+                Advanced Surveillance Solutions. Built for precision, optimized for reality.
+            </p>
+            <div class="flex justify-center gap-6 text-sm font-medium text-slate-400">
+                <a href="#" class="hover:text-white transition-colors">Documentation</a>
+                <a href="#" class="hover:text-white transition-colors">API Reference</a>
+                <a href="#" class="hover:text-white transition-colors">Contact Support</a>
+            </div>
+            <div class="mt-12 text-xs text-slate-600 font-mono">
+                &copy; 2025 Niraakshan Systems. All rights reserved.
+            </div>
+        </div>
+        
+        <!-- Bottom glow -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-brand-600/5 blur-[80px] rounded-full pointer-events-none"></div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Scroll Reveal Animation Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

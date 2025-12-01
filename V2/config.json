@@ -24,7 +24,7 @@
   "storage": {
     "alert_snapshots_dir": "alert_snapshots",
     "snapshot_retention_days": 30,
-    "guard_profiles_dir": "guard_profiles",
+    "guard_profiles_dir": "D:\\CUDA_Experiments\\Git_HUB\\Nirikhsan_Deep\\V2\\guard_profiles",
     "capture_snapshots_dir": "capture_snapshots",
     "audio_files_dir": "audio_files",
     "pose_references_dir": "pose_references"

@@ -1,0 +1,92 @@
+2025-11-28 13:03:11,913 - WARNING - Loaded 1 guards
+2025-11-28 13:03:48,428 - WARNING - Camera 2 started successfully
+2025-11-28 13:03:56,566 - WARNING - Failed to read frame, attempting recovery...
+2025-11-28 13:03:57,092 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-11-28 13:04:08,273 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-11-28 13:04:42,834 - WARNING - Failed to read frame, attempting recovery...
+2025-11-28 13:04:43,358 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-11-28 13:04:52,900 - WARNING - Switched to Camera 1 - Restarting video feed
+2025-11-28 14:18:56,429 - WARNING - Camera 1 started successfully
+2025-11-28 14:19:18,538 - WARNING - Failed to read frame, attempting recovery...
+2025-11-28 14:19:19,063 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-11-28 14:19:35,883 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:35,935 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:35,986 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,037 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,089 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,141 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,192 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,243 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,294 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,346 - WARNING - Camera warmup: frame read failed, retrying...
+2025-11-28 14:19:36,346 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-11-28 14:19:36,347 - WARNING - Failed to read frame, attempting recovery...
+2025-11-28 14:19:36,874 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-11-28 14:19:49,502 - WARNING - Initiating graceful shutdown...
+2025-11-28 14:19:49,860 - WARNING - Shutdown complete
+2025-11-28 14:21:36,706 - WARNING - Loaded 1 guards
+2025-11-28 14:21:55,895 - WARNING - Camera 1 started successfully
+2025-11-28 14:22:09,150 - WARNING - Failed to read frame, attempting recovery...
+2025-11-28 14:22:09,674 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-11-28 14:22:19,692 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-11-28 14:24:00,540 - WARNING - Loaded 2 guards
+2025-11-28 14:24:42,414 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2025-11-28 14:24:46,139 - WARNING - Alert mode started - logging enabled
+2025-11-28 14:24:50,329 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-11-28 14:24:50,848 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.528, distance: 0.472, bbox: 52x52 px)
+2025-11-28 14:24:52,948 - WARNING - [TRACKING START] Identifying and tracking: Guard | Action: Hands Up
+2025-11-28 14:25:06,306 - WARNING - REAL-TIME language switched to: English (NO RESTART NEEDED)
+2025-11-28 14:27:30,510 - WARNING - [ALERT] Guard: Action TIMEOUT - triggering alarm
+2025-11-28 14:27:31,570 - WARNING - [ALERT] Guard: Restarting 15s alarm loop
+2025-11-28 14:28:08,245 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:28:32,900 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.687, distance: 0.313, bbox: 74x75 px)
+2025-11-28 14:29:36,564 - WARNING - [ALERT] Guard: Action TIMEOUT - triggering alarm
+2025-11-28 14:29:36,566 - WARNING - [ALERT] Guard: Restarting 15s alarm loop
+2025-11-28 14:29:56,487 - WARNING - Fugitive Added: target_Krunal_face
+2025-11-28 14:29:56,488 - WARNING - Fugitive Detection ENABLED - Searching for: target_Krunal_face
+2025-11-28 14:30:06,879 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_Krunal_face - Playing 15s alert! (confidence: 0.475)
+2025-11-28 14:30:06,891 - WARNING - Saved 10 log entries to logs\events.csv
+2025-11-28 14:30:06,891 - WARNING - [FUGITIVE DETECTED] !!! target_Krunal_face FIRST APPEARANCE logged - Snapshot captured (confidence: 0.475)
+2025-11-28 14:30:24,730 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_Krunal_face - Playing 15s alert! (confidence: 0.355)
+2025-11-28 14:30:29,661 - WARNING - Fugitive Removed
+2025-11-28 14:30:34,720 - WARNING - Alert mode stopped - logging saved
+2025-11-28 14:31:04,010 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-11-28 14:31:06,580 - WARNING - Day Mode - Face: BlazeFace | Pose: MoveNet Lightning/BlazePose | Tracking: ByteTrack
+2025-11-28 14:31:09,007 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-11-28 14:31:17,267 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-11-28 14:31:17,942 - WARNING - Day Mode - Face: BlazeFace | Pose: MoveNet Lightning/BlazePose | Tracking: ByteTrack
+2025-11-28 14:31:21,440 - WARNING - Stillness Alert ENABLED
+2025-11-28 14:31:49,777 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:31:50,454 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.487, distance: 0.513, bbox: 52x52 px)
+2025-11-28 14:31:50,687 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:31:57,348 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.614, distance: 0.386, bbox: 62x62 px)
+2025-11-28 14:32:03,458 - WARNING - Failed to read frame, attempting recovery...
+2025-11-28 14:32:03,983 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-11-28 14:32:13,446 - WARNING - Switched to Camera 1 - Restarting video feed
+2025-11-28 14:33:01,496 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:33:08,060 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.514, distance: 0.486, bbox: 36x36 px)
+2025-11-28 14:33:08,401 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:33:12,456 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.621, distance: 0.379, bbox: 36x36 px)
+2025-11-28 14:33:49,787 - WARNING - [STILLNESS ALERT] !!! Guard - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-11-28 14:33:49,789 - WARNING - Saved 1 log entries to logs\events.csv
+2025-11-28 14:33:59,972 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:34:01,925 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.598, distance: 0.402, bbox: 36x36 px)
+2025-11-28 14:34:02,160 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:34:08,110 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.618, distance: 0.382, bbox: 36x36 px)
+2025-11-28 14:34:08,452 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:34:09,133 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.562, distance: 0.438, bbox: 36x36 px)
+2025-11-28 14:34:09,473 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:34:10,434 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.564, distance: 0.436, bbox: 36x36 px)
+2025-11-28 14:36:08,674 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:36:37,577 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.526, distance: 0.474, bbox: 36x36 px)
+2025-11-28 14:36:37,813 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:36:40,336 - WARNING - [DETECTED] OK Guard identified & tracking (confidence: 0.549, distance: 0.451, bbox: 36x36 px)
+2025-11-28 14:36:40,866 - WARNING - [TRACK ENDED] Guard: No face for 45 frames - guard likely left frame
+2025-11-28 14:36:59,816 - WARNING - Initiating graceful shutdown...
+2025-11-28 14:37:00,184 - WARNING - Shutdown complete
+2025-12-01 10:38:43,200 - WARNING - Loaded 2 guards
+2025-12-01 10:43:46,438 - WARNING - Camera started successfully: 0
+2025-12-01 10:44:09,948 - WARNING - Failed to read frame, attempting recovery...
+2025-12-01 10:44:10,474 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-01 10:44:31,733 - WARNING - Initiating graceful shutdown...
+2025-12-01 10:44:32,275 - WARNING - Shutdown complete
