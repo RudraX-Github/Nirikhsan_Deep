@@ -10,3 +10,4 @@ Timestamp,Name,Action,Status,Image_Path,Confidence
 2025-11-28 14:29:41,Guard,'Hands Up' required,PERFORMED,N/A,0.88
 2025-11-28 14:30:06,FUGITIVE_target_Krunal_face,FUGITIVE_DETECTED,FIRST_APPEARANCE (confidence: 0.475),alert_snapshots\alert_FUGITIVE_target_Krunal_face_APPEARED_20251128_143006.jpg,0.475
 2025-11-28 14:33:49,Guard,STILLNESS_ALERT,NO MOTION FOR 15.1 SECONDS,N/A,1.0
+2025-12-03 14:46:55,FUGITIVE_target_fugitive_face,FUGITIVE_DETECTED,FIRST_APPEARANCE (confidence: 0.354),alert_snapshots\alert_FUGITIVE_target_fugitive_face_APPEARED_20251203_144655.jpg,0.354

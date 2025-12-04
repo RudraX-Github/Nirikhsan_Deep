@@ -2,6 +2,12 @@ import os as _os_init
 _os_init.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 _os_init.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 
+# ✅ OPTIMIZED: RTSP transport options for minimal latency
+if "OPENCV_FFMPEG_CAPTURE_OPTIONS" not in _os_init.environ:
+    # Simplified for smooth streaming: tcp transport with minimal analysis
+    # video_codec;h264 forces H.264 decoding, avoiding HEVC/H.265 issues
+    _os_init.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;tcp|stimeout;5000000|video_codec;h264"
+
 import cv2
 from types import SimpleNamespace
 
@@ -1448,6 +1454,12 @@ class PoseApp:
         self.is_running = False
         self.is_logging = False
         self.camera_index = 0  # Default camera
+        self.rtsp_fallback_applied = False
+        self._rtsp_original_url = None
+        self._rtsp_fallback_notice_logged = False
+        self.decoder_failure_count = 0
+        self.last_frame_time = time.time()  # ✅ FIX: Track frame timing to detect lag
+        self.frame_lag_warnings = 0  # Count consecutive lag warnings
         
         # ✅ NEW: Camera and Mode state tracking
         self.is_camera_running = False
@@ -3832,6 +3844,121 @@ class PoseApp:
 
     # ✅ SIMPLIFIED: toggle_pro_detection_mode and _save_pro_detection_log functions removed
 
+    def _build_rtsp_alternatives(self, source):
+        """Return candidate RTSP URLs that downgrade to H.264 substreams when possible."""
+        if not isinstance(source, str) or not source.lower().startswith("rtsp://"):
+            return [source]
+        candidates = [source]
+        base, sep, query = source.partition("?")
+        params = []
+        if sep:
+            for chunk in query.split("&"):
+                if not chunk:
+                    continue
+                if "=" in chunk:
+                    key, value = chunk.split("=", 1)
+                else:
+                    key, value = chunk, ""
+                params.append((key, value))
+
+        def rebuild(mod_params):
+            if not mod_params:
+                return base
+            query_str = "&".join(f"{k}={v}" if v != "" else k for k, v in mod_params)
+            return f"{base}?{query_str}"
+
+        # Substream fallback (Dahua/Onvif subtype=0 → subtype=1)
+        for idx, (key, value) in enumerate(params):
+            if key.lower() == "subtype" and value == "0":
+                updated = list(params)
+                updated[idx] = (key, "1")
+                candidates.append(rebuild(updated))
+                break
+
+        # Codec parameter fallback (codec=h265/hevc → h264)
+        for idx, (key, value) in enumerate(params):
+            if key.lower() in ("codec", "compression", "videocodec") and value.lower() in ("h265", "hevc", "265"):
+                updated = list(params)
+                updated[idx] = (key, "H264")
+                candidates.append(rebuild(updated))
+                break
+
+        # Profile fallback (Profile_1/Main → Profile_2/Sub)
+        for idx, (key, value) in enumerate(params):
+            value_lower = value.lower()
+            if key.lower() == "profile" and value_lower in ("profile_1", "profile1", "main", "mainstream"):
+                updated = list(params)
+                updated[idx] = (key, "Profile_2")
+                candidates.append(rebuild(updated))
+                break
+
+        # Onvif channel fallback (Streaming/Channels/101 → 102)
+        lowered_base = base.lower()
+        if "/channels/" in lowered_base:
+            parts = base.split("/")
+            if parts and parts[-1].isdigit() and len(parts[-1]) >= 3:
+                tail = parts[-1]
+                if tail[-1] in ("1", "0"):
+                    alt_tail = tail[:-1] + "2"
+                    alt_base = "/".join(parts[:-1] + [alt_tail])
+                    if sep and query:
+                        alt_full = f"{alt_base}?{query}"
+                    else:
+                        alt_full = alt_base
+                    candidates.append(alt_full)
+
+        # Ensure uniqueness while preserving order
+        unique_candidates = []
+        seen = set()
+        for candidate in candidates:
+            if candidate and candidate not in seen:
+                unique_candidates.append(candidate)
+                seen.add(candidate)
+        return unique_candidates
+
+    def _open_camera(self, source):
+        """Open camera source, trying safer RTSP fallbacks if necessary."""
+        candidates = self._build_rtsp_alternatives(source)
+        last_error = None
+        for candidate in candidates:
+            backend = cv2.CAP_FFMPEG if isinstance(candidate, str) and candidate.lower().startswith("rtsp://") else cv2.CAP_ANY
+            if backend == cv2.CAP_FFMPEG:
+                logger.info(f"Opening RTSP stream with FFmpeg backend: {candidate[:30]}...")
+            try:
+                cap = cv2.VideoCapture(candidate, backend)
+            except Exception as e:
+                last_error = e
+                logger.debug(f"VideoCapture init failed for {candidate}: {e}")
+                continue
+
+            if not cap or not cap.isOpened():
+                logger.debug(f"Camera candidate unavailable: {candidate}")
+                if cap:
+                    cap.release()
+                continue
+
+            # ✅ CRITICAL FIX: Optimize for IP cameras to reduce lag
+            is_ip_camera = isinstance(candidate, str) and candidate.lower().startswith("rtsp://")
+            if is_ip_camera:
+                # Set minimal buffer to reduce latency (critical for real-time)
+                cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+                # Flush initial buffered frames
+                for _ in range(10):
+                    cap.grab()
+                logger.info("IP camera optimized: buffer=1, flushed initial frames")
+
+            if isinstance(source, str) and isinstance(candidate, str) and candidate != source:
+                self.rtsp_fallback_applied = True
+                if not self._rtsp_fallback_notice_logged:
+                    logger.warning(f"Switched to fallback RTSP stream (likely H.264 substream): {candidate}")
+                    self._rtsp_fallback_notice_logged = True
+                self.camera_index = candidate
+            return cap, candidate
+
+        if last_error:
+            logger.error(f"Camera open error: {last_error}")
+        return None, source
+
     def start_camera(self):
         if not self.is_running:
             try:
@@ -3890,80 +4017,157 @@ class PoseApp:
                 messagebox.showerror("Error", f"Failed to start camera: {e}")
 
     def add_ip_camera_dialog(self):
-        """Dialog to add IP Camera details"""
+        """Dialog to add IP Camera details - Username and Password are REQUIRED"""
+        import urllib.parse
+        
         ip_dialog = tk.Toplevel(self.root)
         ip_dialog.title("Add IP Camera")
-        ip_dialog.geometry("400x300")
+        ip_dialog.geometry("500x450")
+        ip_dialog.configure(bg="#2c3e50")
         ip_dialog.transient(self.root)
         ip_dialog.grab_set()
         
-        tk.Label(ip_dialog, text="Enter IP Camera Details", font=('Helvetica', 12, 'bold')).pack(pady=10)
+        tk.Label(ip_dialog, text="Enter IP Camera Details", font=('Helvetica', 12, 'bold'),
+                bg="#2c3e50", fg="white").pack(pady=10)
         
-        input_frame = tk.Frame(ip_dialog)
-        input_frame.pack(fill="both", expand=True, padx=20)
+        input_frame = tk.Frame(ip_dialog, bg="#34495e")
+        input_frame.pack(fill="both", expand=True, padx=20, pady=10)
         
-        # URL
-        tk.Label(input_frame, text="IP/URL (e.g. 192.168.1.100 or rtsp://...):", anchor="w").pack(fill="x")
-        url_var = tk.StringVar()
-        tk.Entry(input_frame, textvariable=url_var).pack(fill="x", pady=(0, 10))
+        # IP Address
+        tk.Label(input_frame, text="IP Address (e.g. 192.168.1.111):", anchor="w",
+                bg="#34495e", fg="white", font=('Helvetica', 10)).pack(fill="x", pady=(5,0))
+        ip_var = tk.StringVar(value="192.168.1.111")
+        tk.Entry(input_frame, textvariable=ip_var, font=('Helvetica', 10)).pack(fill="x", pady=(0, 10))
         
-        # Username
-        tk.Label(input_frame, text="Username (Optional):", anchor="w").pack(fill="x")
+        # RTSP Port
+        tk.Label(input_frame, text="RTSP Port (e.g. 554):", anchor="w",
+                bg="#34495e", fg="white", font=('Helvetica', 10)).pack(fill="x")
+        port_var = tk.StringVar(value="554")
+        tk.Entry(input_frame, textvariable=port_var, font=('Helvetica', 10)).pack(fill="x", pady=(0, 10))
+        
+        # Username - REQUIRED
+        tk.Label(input_frame, text="Username (Required):", anchor="w",
+                bg="#34495e", fg="#f39c12", font=('Helvetica', 10, 'bold')).pack(fill="x")
         user_var = tk.StringVar()
-        tk.Entry(input_frame, textvariable=user_var).pack(fill="x", pady=(0, 10))
+        user_entry = tk.Entry(input_frame, textvariable=user_var, font=('Helvetica', 10))
+        user_entry.pack(fill="x", pady=(0, 10))
         
-        # Password
-        tk.Label(input_frame, text="Password (Optional):", anchor="w").pack(fill="x")
+        # Password - REQUIRED
+        tk.Label(input_frame, text="Password (Required):", anchor="w",
+                bg="#34495e", fg="#f39c12", font=('Helvetica', 10, 'bold')).pack(fill="x")
         pass_var = tk.StringVar()
-        tk.Entry(input_frame, textvariable=pass_var, show="*").pack(fill="x", pady=(0, 10))
+        pass_entry = tk.Entry(input_frame, textvariable=pass_var, show="*", font=('Helvetica', 10))
+        pass_entry.pack(fill="x", pady=(0, 10))
+        
+        # Stream Path Selection
+        tk.Label(input_frame, text="Stream Path (Select for compatibility):", anchor="w",
+                bg="#34495e", fg="white", font=('Helvetica', 10)).pack(fill="x")
+        stream_option_var = tk.StringVar(value="stream1")
+        stream_frame = tk.Frame(input_frame, bg="#34495e")
+        stream_frame.pack(fill="x", pady=(0, 10))
+        tk.Radiobutton(stream_frame, text="stream1 (Recommended - Universal H.264)", 
+                      variable=stream_option_var, value="stream1",
+                      bg="#34495e", fg="white", selectcolor="#2c3e50", 
+                      font=('Helvetica', 9)).pack(anchor="w")
+        tk.Radiobutton(stream_frame, text="cam/realmonitor?channel=1&subtype=1 (Dahua H.264)", 
+                      variable=stream_option_var, value="dahua_h264",
+                      bg="#34495e", fg="white", selectcolor="#2c3e50", 
+                      font=('Helvetica', 9)).pack(anchor="w")
+        
+        # Info label
+        tk.Label(input_frame, text="✓ stream1 recommended for maximum compatibility\n✓ Uses H.264 codec for smooth real-time playback\n✓ No HEVC/H.265 decoder issues",
+                anchor="w", bg="#34495e", fg="#95a5a6", font=('Helvetica', 8), justify="left").pack(fill="x", pady=(5,0))
         
         def connect_ip():
-            url = url_var.get().strip()
+            ip = ip_var.get().strip()
+            port = port_var.get().strip()
             username = user_var.get().strip()
             password = pass_var.get().strip()
             
-            if not url:
-                messagebox.showerror("Error", "URL is required")
+            # Validation
+            if not ip or not port:
+                messagebox.showerror("Error", "IP Address and Port are required!")
                 return
             
-            # Construct RTSP URL if username/password provided and not already in URL
-            final_url = url
-            if username and password and "@" not in url:
-                # Check if it starts with rtsp:// or http://
-                if url.startswith("rtsp://"):
-                    final_url = f"rtsp://{username}:{password}@{url[7:]}"
-                elif url.startswith("http://"):
-                    final_url = f"http://{username}:{password}@{url[7:]}"
-                else:
-                    # Assume RTSP if not specified
-                    final_url = f"rtsp://{username}:{password}@{url}"
+            if not username:
+                messagebox.showwarning("Username Required", "Please enter a username for the IP camera")
+                user_entry.focus_set()
+                return
             
-            ip_dialog.destroy()
-            self.camera_index = final_url  # Store URL as camera index
-            self.initialize_camera(final_url)
+            if not password:
+                messagebox.showwarning("Password Required", "Please enter a password for the IP camera")
+                pass_entry.focus_set()
+                return
+            
+            try:
+                # URL-encode password to handle special characters like '@'
+                password_encoded = urllib.parse.quote(password)
+                
+                # Construct RTSP URL based on selected stream path
+                stream_option = stream_option_var.get()
+                if stream_option == "stream1":
+                    # Universal H.264 stream path (works with most cameras)
+                    stream_path = "stream1"
+                else:
+                    # Dahua H.264 substream path
+                    stream_path = "cam/realmonitor?channel=1&subtype=1"
+                
+                rtsp_url = f"rtsp://{username}:{password_encoded}@{ip}:{port}/{stream_path}"
+                
+                logger.info(f"Connecting to IP camera: rtsp://{username}:***@{ip}:{port}/{stream_path}")
+                
+                ip_dialog.destroy()
+                self.camera_index = rtsp_url  # Store URL as camera index
+                self.initialize_camera(rtsp_url)
+                
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to construct camera URL: {e}")
 
-        tk.Button(ip_dialog, text="Connect", command=connect_ip, bg="#3498db", 
-                 fg="white", font=('Helvetica', 10, 'bold')).pack(pady=20)
+        # Buttons frame
+        btn_frame = tk.Frame(ip_dialog, bg="#2c3e50")
+        btn_frame.pack(pady=15)
+        
+        tk.Button(btn_frame, text="Connect", command=connect_ip, bg="#27ae60", 
+                 fg="white", font=('Helvetica', 11, 'bold'), width=12, height=1).pack(side="left", padx=5)
+        tk.Button(btn_frame, text="Cancel", command=ip_dialog.destroy, bg="#e74c3c", 
+                 fg="white", font=('Helvetica', 11, 'bold'), width=12, height=1).pack(side="left", padx=5)
 
     def initialize_camera(self, source):
         """Initialize camera from source (int index or string URL)"""
         try:
-            # Open selected camera
-            self.cap = cv2.VideoCapture(source)
-            if not self.cap.isOpened():
+            # Reset fallback tracking for a fresh connect
+            if isinstance(source, str):
+                self.rtsp_fallback_applied = False
+                self._rtsp_fallback_notice_logged = False
+                self._rtsp_original_url = source
+            else:
+                self.rtsp_fallback_applied = False
+                self._rtsp_fallback_notice_logged = False
+                self._rtsp_original_url = None
+
+            self.decoder_failure_count = 0
+
+            # Open selected camera (with automatic fallback for RTSP streams)
+            cap, used_source = self._open_camera(source)
+            if not cap:
                 messagebox.showerror("Camera Error", f"Failed to open camera source: {source}")
                 return
+
+            if self.cap:
+                self.cap.release()
+            self.cap = cap
+            self.camera_index = used_source
             
             # ✅ OPTIMIZATION: Set camera properties for faster capture and better clarity
             # Note: Some properties might not work for IP cameras
-            if isinstance(source, int):
+            if isinstance(used_source, int):
                 self.cap.set(cv2.CAP_PROP_FPS, 30)
                 self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
                 self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
                 self.cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
                 self.cap.set(cv2.CAP_PROP_AUTO_WB, 1)
             
-            # Reduce camera buffer to minimize latency (works for RTSP too usually)
+            # ✅ CRITICAL: Reduce buffer to minimize latency (essential for RTSP streams)
             self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
             
             # ✅ CRITICAL: Warm up camera with initial frames
@@ -3990,7 +4194,7 @@ class PoseApp:
             self.btn_guard_toggle.configure(state="normal")
             self.btn_alert_toggle.configure(state="normal")
             self.btn_fugitive_toggle.configure(state="normal")
-            logger.warning(f"Camera started successfully: {source}")
+            logger.warning(f"Camera started successfully: {self.camera_index}")
             self.update_video_feed()
             
         except Exception as e:
@@ -4006,6 +4210,11 @@ class PoseApp:
                 self.cap = None
             if self.is_logging:
                 self.save_log_to_file()
+
+            self.decoder_failure_count = 0
+            self.rtsp_fallback_applied = False
+            self._rtsp_fallback_notice_logged = False
+            self._rtsp_original_url = None
             
             # Stop Fugitive Mode if running
             if hasattr(self, 'is_fugitive_detection') and self.is_fugitive_detection:
@@ -4335,49 +4544,110 @@ class PoseApp:
                 self.stop_camera()
                 return
             
+            # ✅ CRITICAL FIX: Aggressive buffer flush for IP cameras to get latest frame
+            is_ip_camera = isinstance(self.camera_index, str) and self.camera_index.lower().startswith("rtsp://")
+            if is_ip_camera:
+                # AGGRESSIVE: Drop accumulated buffered frames to get real-time stream
+                # Grab and discard old frames without decoding (fast)
+                for _ in range(5):
+                    self.cap.grab()
+            
             ret, frame = self.cap.read()
             if not ret or frame is None:
-                # ✅ OPTIMIZATION: Try faster recover without full reconnect
+                self.decoder_failure_count += 1
                 logger.warning("Failed to read frame, attempting recovery...")
+
                 # Clear buffer and retry with exponential backoff
                 retry_count = 0
                 max_retries = 10
                 retry_delay = 0.02
                 
-                while not ret and retry_count < max_retries:
+                while (not ret or frame is None) and retry_count < max_retries:
                     time.sleep(retry_delay)
                     ret, frame = self.cap.read()
                     retry_count += 1
                     if retry_delay < 0.1:
                         retry_delay *= 1.2  # Exponential backoff
-                
-                if not ret or frame is None:
+
+                if ret and frame is not None:
+                    # Short-term recovery succeeded
+                    self.decoder_failure_count = 0
+                else:
                     logger.error(f"Failed to recover after {max_retries} retries, attempting reconnect...")
-                    # Full reconnect only if buffer clear didn't work
                     try:
-                        self.cap.release()
+                        if self.cap:
+                            self.cap.release()
                         time.sleep(1.0)
-                        self.cap = cv2.VideoCapture(self.camera_index)
+
+                        reconnect_source = self.camera_index
+                        if (isinstance(self.camera_index, str) and self._rtsp_original_url and
+                                not self.rtsp_fallback_applied):
+                            reconnect_source = self._rtsp_original_url
+                            logger.warning("RTSP stream unstable - trying H.264 fallback")
+
+                        cap, used_source = self._open_camera(reconnect_source)
+                        if not cap:
+                            raise RuntimeError("VideoCapture reopen failed")
+
+                        self.cap = cap
+                        self.camera_index = used_source
+
+                        if isinstance(used_source, int):
+                            self.cap.set(cv2.CAP_PROP_FPS, 30)
+                            self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+                            self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+                            self.cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
+                            self.cap.set(cv2.CAP_PROP_AUTO_WB, 1)
+
+                        # ✅ CRITICAL: Minimal buffer for IP cameras
                         self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+                        
+                        # ✅ FIX: Additional IP camera optimization after reconnect
+                        if isinstance(used_source, str) and used_source.lower().startswith("rtsp://"):
+                            self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'H264'))
+                            logger.info("Reconnected IP camera with low-latency settings")
+
                         # Warm up after reconnect
                         for _ in range(5):
                             self.cap.read()
                             time.sleep(0.05)
-                        
+
                         ret, frame = self.cap.read()
                         if not ret or frame is None:
                             logger.error("Camera reconnection failed")
                             self.stop_camera()
                             messagebox.showerror("Camera Error", "Camera disconnected - please restart")
-                        return
+                            return
+
+                        self.decoder_failure_count = 0
                     except Exception as e:
                         logger.error(f"Reconnection error: {e}")
                         self.stop_camera()
                         return
+            else:
+                self.decoder_failure_count = 0
         except Exception as e:
             logger.error(f"Camera read error: {e}")
             self.stop_camera()
             return
+        
+        # ✅ FIX: Detect and handle frame lag for IP cameras
+        current_frame_time = time.time()
+        frame_delay = current_frame_time - self.last_frame_time
+        self.last_frame_time = current_frame_time
+        
+        if is_ip_camera and frame_delay > 0.2:  # More than 200ms between frames = lag
+            self.frame_lag_warnings += 1
+            if self.frame_lag_warnings % 30 == 1:  # Log warning every 30 lag occurrences
+                logger.warning(f"IP camera lag detected: {frame_delay*1000:.0f}ms frame delay")
+            
+            # Aggressive buffer flush when lag is detected
+            if self.frame_lag_warnings > 5:
+                for _ in range(5):
+                    self.cap.grab()  # Drop accumulated frames
+                self.frame_lag_warnings = 0  # Reset counter
+        else:
+            self.frame_lag_warnings = max(0, self.frame_lag_warnings - 1)  # Gradual recovery
         
         self.unprocessed_frame = frame.copy()
         

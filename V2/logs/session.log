@@ -90,3 +90,696 @@
 2025-12-01 10:44:10,474 - ERROR - Failed to recover after 10 retries, attempting reconnect...
 2025-12-01 10:44:31,733 - WARNING - Initiating graceful shutdown...
 2025-12-01 10:44:32,275 - WARNING - Shutdown complete
+2025-12-01 15:43:26,894 - WARNING - Loaded 2 guards
+2025-12-01 15:48:40,024 - WARNING - Initiating graceful shutdown...
+2025-12-01 15:48:40,123 - WARNING - Shutdown complete
+2025-12-01 16:43:24,301 - WARNING - Loaded 2 guards
+2025-12-01 16:43:54,202 - WARNING - Camera started successfully: rtsp://Demo:Demo%401234@127.0.0.1:29555/cam/realmonitor?channel=1&subtype=0
+2025-12-01 16:45:38,968 - WARNING - Initiating graceful shutdown...
+2025-12-01 16:45:39,181 - WARNING - Shutdown complete
+2025-12-02 16:19:54,058 - WARNING - Loaded 2 guards
+2025-12-02 16:22:50,891 - WARNING - Initiating graceful shutdown...
+2025-12-02 16:22:50,972 - WARNING - Shutdown complete
+2025-12-02 16:35:47,045 - WARNING - Loaded 2 guards
+2025-12-02 16:36:32,809 - WARNING - Camera started successfully: rtsp://demo:demo@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-02 16:37:02,560 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 16:37:03,086 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 16:37:45,160 - WARNING - Initiating graceful shutdown...
+2025-12-02 16:37:45,245 - WARNING - Shutdown complete
+2025-12-02 16:39:51,236 - WARNING - Loaded 2 guards
+2025-12-02 16:40:34,825 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-02 16:41:04,522 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 16:41:05,047 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 16:42:14,889 - WARNING - Initiating graceful shutdown...
+2025-12-02 16:42:14,968 - WARNING - Shutdown complete
+2025-12-02 16:52:11,613 - WARNING - Loaded 2 guards
+2025-12-02 16:52:57,024 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-02 16:53:11,941 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 16:53:12,468 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 16:54:59,329 - WARNING - Camera started successfully: 0
+2025-12-02 16:55:12,331 - WARNING - Initiating graceful shutdown...
+2025-12-02 16:55:12,772 - WARNING - Shutdown complete
+2025-12-02 17:00:36,057 - WARNING - Loaded 2 guards
+2025-12-02 17:01:04,495 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-02 17:01:34,295 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:01:34,820 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:13:08,788 - WARNING - Loaded 2 guards
+2025-12-02 17:13:36,176 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-02 17:14:05,921 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:14:06,445 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:14:07,465 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-02 17:15:54,399 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:15:54,924 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:15:55,938 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-02 17:16:15,442 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-02 17:16:17,783 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-02 17:16:32,960 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:16:33,486 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:16:34,497 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-02 17:16:36,342 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.424, distance: 0.576, bbox: 36x36 px)
+2025-12-02 17:16:40,931 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:16:42,011 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.432, distance: 0.568, bbox: 43x43 px)
+2025-12-02 17:16:42,260 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:16:43,339 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.408, distance: 0.592, bbox: 43x43 px)
+2025-12-02 17:16:43,583 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:16:44,674 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.381, distance: 0.619, bbox: 43x43 px)
+2025-12-02 17:16:44,919 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:16:48,139 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.481, distance: 0.519, bbox: 52x52 px)
+2025-12-02 17:16:48,382 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:16:49,467 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.447, distance: 0.553, bbox: 52x52 px)
+2025-12-02 17:17:08,871 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:17:09,397 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:17:10,406 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-02 17:17:18,415 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:17:39,366 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.418, distance: 0.582, bbox: 43x43 px)
+2025-12-02 17:17:39,616 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:17:40,697 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.412, distance: 0.588, bbox: 36x36 px)
+2025-12-02 17:17:40,946 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:17:55,917 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.393, distance: 0.607, bbox: 36x36 px)
+2025-12-02 17:17:56,168 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:17:57,269 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.403, distance: 0.597, bbox: 36x36 px)
+2025-12-02 17:17:57,466 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:17:57,990 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:17:58,998 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-02 17:18:00,751 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-02 17:18:00,799 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-02 17:18:17,877 - WARNING - Failed to read frame, attempting recovery...
+2025-12-02 17:18:18,403 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-02 17:18:19,416 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-02 17:18:24,215 - WARNING - Initiating graceful shutdown...
+2025-12-02 17:18:24,291 - WARNING - Shutdown complete
+2025-12-03 10:53:29,629 - WARNING - Loaded 2 guards
+2025-12-03 10:57:27,882 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-03 10:58:00,227 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 10:58:00,753 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 10:58:01,782 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 10:58:35,738 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 10:58:36,273 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 10:58:37,297 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 10:59:12,173 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 10:59:12,701 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 10:59:13,726 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 10:59:25,098 - WARNING - Initiating graceful shutdown...
+2025-12-03 10:59:25,252 - WARNING - Shutdown complete
+2025-12-03 11:15:10,762 - WARNING - Loaded 2 guards
+2025-12-03 11:15:55,326 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-03 11:15:55,330 - WARNING - IP camera lag detected: 47352ms frame delay
+2025-12-03 11:15:56,633 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:15:57,958 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:15:59,262 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:16:00,571 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:16:01,895 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:16:03,195 - WARNING - IP camera lag detected: 211ms frame delay
+2025-12-03 11:16:04,510 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:16:05,838 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:16:07,159 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:16:08,479 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:16:09,788 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:16:11,115 - WARNING - IP camera lag detected: 224ms frame delay
+2025-12-03 11:16:12,744 - WARNING - IP camera lag detected: 223ms frame delay
+2025-12-03 11:16:14,055 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:16:15,350 - WARNING - IP camera lag detected: 206ms frame delay
+2025-12-03 11:16:16,674 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:16:17,951 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:16:19,272 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:16:20,586 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:16:21,908 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:16:23,217 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:16:24,532 - WARNING - IP camera lag detected: 224ms frame delay
+2025-12-03 11:16:25,862 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:16:27,187 - WARNING - IP camera lag detected: 224ms frame delay
+2025-12-03 11:16:28,829 - WARNING - IP camera lag detected: 542ms frame delay
+2025-12-03 11:16:30,137 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:16:31,460 - WARNING - IP camera lag detected: 217ms frame delay
+2025-12-03 11:16:32,783 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:16:34,078 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:16:35,407 - WARNING - IP camera lag detected: 225ms frame delay
+2025-12-03 11:16:36,712 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:16:38,022 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:16:39,567 - WARNING - IP camera lag detected: 303ms frame delay
+2025-12-03 11:16:41,030 - WARNING - IP camera lag detected: 239ms frame delay
+2025-12-03 11:16:42,544 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:16:43,977 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:16:45,399 - WARNING - IP camera lag detected: 239ms frame delay
+2025-12-03 11:16:47,264 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 11:16:48,686 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 11:16:50,140 - WARNING - IP camera lag detected: 254ms frame delay
+2025-12-03 11:16:51,587 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 11:16:53,470 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 11:16:54,897 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 11:16:55,424 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 11:16:56,466 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 11:16:57,884 - WARNING - IP camera lag detected: 3235ms frame delay
+2025-12-03 11:16:59,299 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:17:00,760 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 11:17:02,198 - WARNING - IP camera lag detected: 238ms frame delay
+2025-12-03 11:17:03,615 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 11:17:05,034 - WARNING - IP camera lag detected: 238ms frame delay
+2025-12-03 11:17:06,453 - WARNING - IP camera lag detected: 233ms frame delay
+2025-12-03 11:17:08,285 - WARNING - IP camera lag detected: 649ms frame delay
+2025-12-03 11:17:09,704 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:17:11,158 - WARNING - IP camera lag detected: 255ms frame delay
+2025-12-03 11:17:12,588 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 11:17:14,022 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 11:17:15,443 - WARNING - IP camera lag detected: 223ms frame delay
+2025-12-03 11:17:16,746 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:17:18,071 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:17:19,377 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:17:20,703 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:17:22,014 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:17:23,328 - WARNING - IP camera lag detected: 223ms frame delay
+2025-12-03 11:17:24,653 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:17:26,268 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:17:27,578 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:17:28,883 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:17:30,194 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:17:31,521 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:17:32,848 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:17:34,180 - WARNING - IP camera lag detected: 225ms frame delay
+2025-12-03 11:17:35,512 - WARNING - IP camera lag detected: 223ms frame delay
+2025-12-03 11:17:36,844 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:17:38,156 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:17:39,482 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:17:40,806 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:17:41,892 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 11:17:42,420 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 11:17:43,446 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 11:17:45,451 - WARNING - IP camera lag detected: 650ms frame delay
+2025-12-03 11:17:46,756 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:17:48,036 - WARNING - IP camera lag detected: 222ms frame delay
+2025-12-03 11:17:49,329 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:17:50,623 - WARNING - IP camera lag detected: 213ms frame delay
+2025-12-03 11:17:51,055 - WARNING - Initiating graceful shutdown...
+2025-12-03 11:17:51,217 - WARNING - Shutdown complete
+2025-12-03 11:43:52,334 - WARNING - Loaded 2 guards
+2025-12-03 11:45:14,305 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-03 11:45:14,349 - WARNING - IP camera lag: 83910ms delay
+2025-12-03 11:45:32,599 - WARNING - IP camera lag: 521ms delay
+2025-12-03 11:45:50,582 - WARNING - IP camera lag: 536ms delay
+2025-12-03 11:46:08,651 - WARNING - IP camera lag: 542ms delay
+2025-12-03 11:46:14,585 - WARNING - IP camera lag: 522ms delay
+2025-12-03 11:46:26,589 - WARNING - IP camera lag: 543ms delay
+2025-12-03 11:46:32,334 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-03 11:46:32,350 - WARNING - IP camera lag: 582ms delay
+2025-12-03 11:46:33,488 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.399, distance: 0.601, bbox: 52x52 px)
+2025-12-03 11:46:34,616 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:46:35,946 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.460, distance: 0.540, bbox: 51x52 px)
+2025-12-03 11:46:37,123 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-03 11:46:43,197 - WARNING - IP camera lag: 1036ms delay
+2025-12-03 11:46:46,041 - WARNING - IP camera lag: 1032ms delay
+2025-12-03 11:46:48,497 - WARNING - IP camera lag: 630ms delay
+2025-12-03 11:46:50,861 - WARNING - IP camera lag: 1051ms delay
+2025-12-03 11:46:53,689 - WARNING - IP camera lag: 1048ms delay
+2025-12-03 11:46:56,626 - WARNING - IP camera lag: 953ms delay
+2025-12-03 11:46:58,222 - WARNING - IP camera lag: 586ms delay
+2025-12-03 11:47:00,285 - WARNING - IP camera lag: 1064ms delay
+2025-12-03 11:47:02,095 - WARNING - IP camera lag: 1083ms delay
+2025-12-03 11:47:04,447 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 11:47:04,973 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 11:47:06,000 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 11:47:07,433 - WARNING - IP camera lag: 3349ms delay
+2025-12-03 11:47:09,081 - WARNING - IP camera lag: 1316ms delay
+2025-12-03 11:47:12,633 - WARNING - IP camera lag: 1036ms delay
+2025-12-03 11:47:15,376 - WARNING - IP camera lag: 1048ms delay
+2025-12-03 11:47:18,183 - WARNING - IP camera lag: 1046ms delay
+2025-12-03 11:47:25,342 - WARNING - IP camera lag: 1049ms delay
+2025-12-03 11:47:27,712 - WARNING - IP camera lag: 1032ms delay
+2025-12-03 11:47:30,537 - WARNING - IP camera lag: 1022ms delay
+2025-12-03 11:47:37,263 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 11:47:37,790 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 11:47:38,812 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 11:47:40,310 - WARNING - IP camera lag: 3359ms delay
+2025-12-03 11:47:42,019 - WARNING - IP camera lag: 1032ms delay
+2025-12-03 11:47:44,459 - WARNING - IP camera lag: 1037ms delay
+2025-12-03 11:47:46,345 - WARNING - IP camera lag: 1092ms delay
+2025-12-03 11:47:50,061 - WARNING - IP camera lag: 907ms delay
+2025-12-03 11:47:52,303 - WARNING - IP camera lag: 862ms delay
+2025-12-03 11:47:57,701 - WARNING - IP camera lag: 1026ms delay
+2025-12-03 11:48:01,391 - WARNING - IP camera lag: 1716ms delay
+2025-12-03 11:48:04,519 - WARNING - IP camera lag: 1718ms delay
+2025-12-03 11:48:08,079 - WARNING - IP camera lag: 1738ms delay
+2025-12-03 11:48:11,717 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 11:48:12,243 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 11:48:13,271 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 11:48:14,777 - WARNING - IP camera lag: 4002ms delay
+2025-12-03 11:48:18,505 - WARNING - Initiating graceful shutdown...
+2025-12-03 11:48:18,679 - WARNING - Shutdown complete
+2025-12-03 11:52:19,669 - WARNING - Loaded 2 guards
+2025-12-03 11:53:06,592 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-03 11:53:06,681 - WARNING - IP camera lag detected: 48152ms frame delay
+2025-12-03 11:53:08,378 - WARNING - IP camera lag detected: 514ms frame delay
+2025-12-03 11:53:08,766 - WARNING - IP camera lag detected: 205ms frame delay
+2025-12-03 11:53:10,417 - WARNING - IP camera lag detected: 437ms frame delay
+2025-12-03 11:53:12,074 - WARNING - IP camera lag detected: 428ms frame delay
+2025-12-03 11:53:14,164 - WARNING - IP camera lag detected: 444ms frame delay
+2025-12-03 11:53:15,812 - WARNING - IP camera lag detected: 451ms frame delay
+2025-12-03 11:53:17,947 - WARNING - IP camera lag detected: 438ms frame delay
+2025-12-03 11:53:19,598 - WARNING - IP camera lag detected: 457ms frame delay
+2025-12-03 11:53:21,194 - WARNING - IP camera lag detected: 434ms frame delay
+2025-12-03 11:53:22,844 - WARNING - IP camera lag detected: 446ms frame delay
+2025-12-03 11:53:24,479 - WARNING - IP camera lag detected: 438ms frame delay
+2025-12-03 11:53:26,112 - WARNING - IP camera lag detected: 423ms frame delay
+2025-12-03 11:53:28,251 - WARNING - IP camera lag detected: 441ms frame delay
+2025-12-03 11:53:29,890 - WARNING - IP camera lag detected: 409ms frame delay
+2025-12-03 11:53:31,518 - WARNING - IP camera lag detected: 397ms frame delay
+2025-12-03 11:53:33,653 - WARNING - IP camera lag detected: 439ms frame delay
+2025-12-03 11:53:35,319 - WARNING - IP camera lag detected: 446ms frame delay
+2025-12-03 11:53:36,921 - WARNING - IP camera lag detected: 421ms frame delay
+2025-12-03 11:53:38,644 - WARNING - IP camera lag detected: 441ms frame delay
+2025-12-03 11:53:39,055 - WARNING - IP camera lag detected: 224ms frame delay
+2025-12-03 11:53:41,157 - WARNING - IP camera lag detected: 437ms frame delay
+2025-12-03 11:53:43,286 - WARNING - IP camera lag detected: 409ms frame delay
+2025-12-03 11:53:45,422 - WARNING - IP camera lag detected: 440ms frame delay
+2025-12-03 11:53:47,149 - WARNING - IP camera lag detected: 500ms frame delay
+2025-12-03 11:53:47,796 - WARNING - IP camera lag detected: 269ms frame delay
+2025-12-03 11:53:49,411 - WARNING - IP camera lag detected: 456ms frame delay
+2025-12-03 11:53:51,035 - WARNING - IP camera lag detected: 440ms frame delay
+2025-12-03 11:53:52,677 - WARNING - IP camera lag detected: 444ms frame delay
+2025-12-03 11:53:54,334 - WARNING - IP camera lag detected: 457ms frame delay
+2025-12-03 11:53:55,967 - WARNING - IP camera lag detected: 450ms frame delay
+2025-12-03 11:53:57,609 - WARNING - IP camera lag detected: 422ms frame delay
+2025-12-03 11:53:59,242 - WARNING - IP camera lag detected: 446ms frame delay
+2025-12-03 11:54:01,849 - WARNING - IP camera lag detected: 455ms frame delay
+2025-12-03 11:54:04,500 - WARNING - IP camera lag detected: 437ms frame delay
+2025-12-03 11:54:04,947 - WARNING - IP camera lag detected: 267ms frame delay
+2025-12-03 11:54:06,522 - WARNING - IP camera lag detected: 396ms frame delay
+2025-12-03 11:54:09,156 - WARNING - IP camera lag detected: 440ms frame delay
+2025-12-03 11:54:10,990 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-03 11:54:10,993 - WARNING - IP camera lag detected: 595ms frame delay
+2025-12-03 11:54:11,533 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.489, distance: 0.511, bbox: 62x62 px)
+2025-12-03 11:54:12,996 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 11:54:13,395 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-03 11:54:14,634 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 11:54:16,089 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 11:54:17,538 - WARNING - IP camera lag detected: 242ms frame delay
+2025-12-03 11:54:19,691 - WARNING - IP camera lag detected: 252ms frame delay
+2025-12-03 11:54:21,136 - WARNING - IP camera lag detected: 252ms frame delay
+2025-12-03 11:54:23,270 - WARNING - IP camera lag detected: 252ms frame delay
+2025-12-03 11:54:24,872 - WARNING - IP camera lag detected: 250ms frame delay
+2025-12-03 11:54:26,667 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 11:54:28,473 - WARNING - IP camera lag detected: 250ms frame delay
+2025-12-03 11:54:30,733 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 11:54:32,554 - WARNING - IP camera lag detected: 247ms frame delay
+2025-12-03 11:54:34,669 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 11:54:36,128 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 11:54:39,153 - WARNING - IP camera lag detected: 783ms frame delay
+2025-12-03 11:54:41,266 - WARNING - IP camera lag detected: 239ms frame delay
+2025-12-03 11:54:44,019 - WARNING - IP camera lag detected: 586ms frame delay
+2025-12-03 11:54:45,494 - WARNING - IP camera lag detected: 250ms frame delay
+2025-12-03 11:54:46,938 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:54:49,621 - WARNING - IP camera lag detected: 297ms frame delay
+2025-12-03 11:54:53,327 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:54:53,529 - WARNING - IP camera lag detected: 277ms frame delay
+2025-12-03 11:54:54,568 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.476, distance: 0.524, bbox: 52x52 px)
+2025-12-03 11:54:54,868 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:54:55,575 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.476, distance: 0.524, bbox: 62x62 px)
+2025-12-03 11:54:55,817 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:54:56,529 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.489, distance: 0.511, bbox: 62x62 px)
+2025-12-03 11:54:56,786 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:54:56,972 - WARNING - IP camera lag detected: 238ms frame delay
+2025-12-03 11:54:57,500 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.504, distance: 0.496, bbox: 62x62 px)
+2025-12-03 11:54:57,751 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:54:58,463 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.476, distance: 0.524, bbox: 62x62 px)
+2025-12-03 11:54:59,426 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:55:00,143 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.502, distance: 0.498, bbox: 63x62 px)
+2025-12-03 11:55:00,343 - WARNING - IP camera lag detected: 730ms frame delay
+2025-12-03 11:55:00,394 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:55:01,107 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.510, distance: 0.490, bbox: 63x62 px)
+2025-12-03 11:55:01,360 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:55:02,073 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.456, distance: 0.544, bbox: 75x74 px)
+2025-12-03 11:55:03,420 - WARNING - IP camera lag detected: 571ms frame delay
+2025-12-03 11:55:06,523 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 11:55:07,049 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 11:55:08,063 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 11:55:09,656 - WARNING - IP camera lag detected: 3690ms frame delay
+2025-12-03 11:55:11,463 - WARNING - IP camera lag detected: 250ms frame delay
+2025-12-03 11:55:12,970 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 11:55:14,484 - WARNING - IP camera lag detected: 291ms frame delay
+2025-12-03 11:55:16,328 - WARNING - IP camera lag detected: 253ms frame delay
+2025-12-03 11:55:18,460 - WARNING - IP camera lag detected: 250ms frame delay
+2025-12-03 11:55:20,980 - WARNING - IP camera lag detected: 587ms frame delay
+2025-12-03 11:55:22,650 - WARNING - IP camera lag detected: 233ms frame delay
+2025-12-03 11:55:25,484 - WARNING - IP camera lag detected: 602ms frame delay
+2025-12-03 11:55:27,297 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:55:29,479 - WARNING - IP camera lag detected: 256ms frame delay
+2025-12-03 11:55:31,623 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 11:55:34,353 - WARNING - IP camera lag detected: 555ms frame delay
+2025-12-03 11:55:36,088 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 11:55:37,481 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 11:55:39,526 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:55:41,894 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:55:43,352 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 11:55:45,178 - WARNING - IP camera lag detected: 347ms frame delay
+2025-12-03 11:55:46,669 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 11:55:48,351 - WARNING - IP camera lag detected: 557ms frame delay
+2025-12-03 11:55:49,736 - WARNING - IP camera lag detected: 225ms frame delay
+2025-12-03 11:55:51,598 - WARNING - IP camera lag detected: 347ms frame delay
+2025-12-03 11:55:53,362 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:55:55,383 - WARNING - IP camera lag detected: 540ms frame delay
+2025-12-03 11:55:57,062 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 11:55:58,667 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 11:56:00,175 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 11:56:02,869 - WARNING - IP camera lag detected: 557ms frame delay
+2025-12-03 11:56:04,552 - WARNING - IP camera lag detected: 224ms frame delay
+2025-12-03 11:56:07,225 - WARNING - IP camera lag detected: 557ms frame delay
+2025-12-03 11:56:09,241 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 11:56:11,281 - WARNING - IP camera lag detected: 558ms frame delay
+2025-12-03 11:56:13,278 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 11:56:14,962 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 11:56:16,994 - WARNING - IP camera lag detected: 230ms frame delay
+2025-12-03 11:56:18,514 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 11:56:18,680 - WARNING - IP camera lag detected: 202ms frame delay
+2025-12-03 11:56:20,437 - WARNING - IP camera lag detected: 299ms frame delay
+2025-12-03 11:56:22,156 - WARNING - IP camera lag detected: 287ms frame delay
+2025-12-03 11:56:23,875 - WARNING - IP camera lag detected: 288ms frame delay
+2025-12-03 11:56:24,629 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-03 11:56:32,703 - WARNING - IP camera lag detected: 209ms frame delay
+2025-12-03 11:56:34,621 - WARNING - Initiating graceful shutdown...
+2025-12-03 11:56:34,699 - WARNING - Shutdown complete
+2025-12-03 14:37:18,837 - WARNING - Loaded 2 guards
+2025-12-03 14:38:49,197 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-03 14:38:49,231 - WARNING - IP camera lag detected: 90929ms frame delay
+2025-12-03 14:38:50,900 - WARNING - IP camera lag detected: 430ms frame delay
+2025-12-03 14:38:52,547 - WARNING - IP camera lag detected: 474ms frame delay
+2025-12-03 14:38:54,163 - WARNING - IP camera lag detected: 458ms frame delay
+2025-12-03 14:38:55,821 - WARNING - IP camera lag detected: 435ms frame delay
+2025-12-03 14:38:57,923 - WARNING - IP camera lag detected: 447ms frame delay
+2025-12-03 14:38:59,546 - WARNING - IP camera lag detected: 445ms frame delay
+2025-12-03 14:39:01,198 - WARNING - IP camera lag detected: 453ms frame delay
+2025-12-03 14:39:02,820 - WARNING - IP camera lag detected: 428ms frame delay
+2025-12-03 14:39:04,474 - WARNING - IP camera lag detected: 428ms frame delay
+2025-12-03 14:39:06,123 - WARNING - IP camera lag detected: 454ms frame delay
+2025-12-03 14:39:07,765 - WARNING - IP camera lag detected: 442ms frame delay
+2025-12-03 14:39:09,391 - WARNING - IP camera lag detected: 440ms frame delay
+2025-12-03 14:39:11,511 - WARNING - IP camera lag detected: 449ms frame delay
+2025-12-03 14:39:13,502 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:39:15,463 - WARNING - IP camera lag detected: 323ms frame delay
+2025-12-03 14:39:17,387 - WARNING - IP camera lag detected: 324ms frame delay
+2025-12-03 14:39:19,337 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:39:21,274 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:39:23,227 - WARNING - IP camera lag detected: 321ms frame delay
+2025-12-03 14:39:25,180 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:39:27,147 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:39:29,111 - WARNING - IP camera lag detected: 330ms frame delay
+2025-12-03 14:39:31,077 - WARNING - IP camera lag detected: 322ms frame delay
+2025-12-03 14:39:33,044 - WARNING - IP camera lag detected: 330ms frame delay
+2025-12-03 14:39:35,166 - WARNING - IP camera lag detected: 326ms frame delay
+2025-12-03 14:39:37,130 - WARNING - IP camera lag detected: 329ms frame delay
+2025-12-03 14:39:39,098 - WARNING - IP camera lag detected: 322ms frame delay
+2025-12-03 14:39:41,062 - WARNING - IP camera lag detected: 326ms frame delay
+2025-12-03 14:39:43,030 - WARNING - IP camera lag detected: 330ms frame delay
+2025-12-03 14:39:45,000 - WARNING - IP camera lag detected: 332ms frame delay
+2025-12-03 14:39:46,962 - WARNING - IP camera lag detected: 330ms frame delay
+2025-12-03 14:39:48,922 - WARNING - IP camera lag detected: 323ms frame delay
+2025-12-03 14:39:50,900 - WARNING - IP camera lag detected: 339ms frame delay
+2025-12-03 14:39:52,867 - WARNING - IP camera lag detected: 331ms frame delay
+2025-12-03 14:39:54,830 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:39:56,799 - WARNING - IP camera lag detected: 325ms frame delay
+2025-12-03 14:39:58,911 - WARNING - IP camera lag detected: 329ms frame delay
+2025-12-03 14:40:00,879 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:40:02,847 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:04,807 - WARNING - IP camera lag detected: 329ms frame delay
+2025-12-03 14:40:06,935 - WARNING - IP camera lag detected: 488ms frame delay
+2025-12-03 14:40:08,905 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:10,863 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:12,833 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:14,804 - WARNING - IP camera lag detected: 326ms frame delay
+2025-12-03 14:40:16,746 - WARNING - IP camera lag detected: 321ms frame delay
+2025-12-03 14:40:18,694 - WARNING - IP camera lag detected: 321ms frame delay
+2025-12-03 14:40:20,656 - WARNING - IP camera lag detected: 331ms frame delay
+2025-12-03 14:40:22,623 - WARNING - IP camera lag detected: 326ms frame delay
+2025-12-03 14:40:24,734 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:40:26,715 - WARNING - IP camera lag detected: 326ms frame delay
+2025-12-03 14:40:28,771 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:30,752 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:32,838 - WARNING - IP camera lag detected: 324ms frame delay
+2025-12-03 14:40:34,839 - WARNING - IP camera lag detected: 344ms frame delay
+2025-12-03 14:40:36,851 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:40:38,836 - WARNING - IP camera lag detected: 332ms frame delay
+2025-12-03 14:40:40,801 - WARNING - IP camera lag detected: 329ms frame delay
+2025-12-03 14:40:42,779 - WARNING - IP camera lag detected: 333ms frame delay
+2025-12-03 14:40:44,743 - WARNING - IP camera lag detected: 329ms frame delay
+2025-12-03 14:40:46,696 - WARNING - IP camera lag detected: 316ms frame delay
+2025-12-03 14:40:48,802 - WARNING - IP camera lag detected: 327ms frame delay
+2025-12-03 14:40:49,455 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:40:49,980 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:40:51,000 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:40:53,829 - WARNING - IP camera lag detected: 330ms frame delay
+2025-12-03 14:40:55,800 - WARNING - IP camera lag detected: 332ms frame delay
+2025-12-03 14:40:57,769 - WARNING - IP camera lag detected: 329ms frame delay
+2025-12-03 14:40:59,737 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:41:01,706 - WARNING - IP camera lag detected: 328ms frame delay
+2025-12-03 14:41:02,075 - WARNING - Loaded 3 guards
+2025-12-03 14:41:07,550 - WARNING - IP camera lag detected: 201ms frame delay
+2025-12-03 14:41:09,210 - WARNING - IP camera lag detected: 450ms frame delay
+2025-12-03 14:41:11,384 - WARNING - IP camera lag detected: 424ms frame delay
+2025-12-03 14:41:11,847 - WARNING - IP camera lag detected: 278ms frame delay
+2025-12-03 14:41:13,447 - WARNING - IP camera lag detected: 415ms frame delay
+2025-12-03 14:41:16,165 - WARNING - IP camera lag detected: 410ms frame delay
+2025-12-03 14:41:16,575 - WARNING - IP camera lag detected: 220ms frame delay
+2025-12-03 14:41:18,231 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-03 14:41:19,200 - WARNING - IP camera lag detected: 344ms frame delay
+2025-12-03 14:41:20,599 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-03 14:41:21,064 - WARNING - IP camera lag detected: 313ms frame delay
+2025-12-03 14:41:22,924 - WARNING - IP camera lag detected: 311ms frame delay
+2025-12-03 14:41:24,798 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:41:26,822 - WARNING - IP camera lag detected: 308ms frame delay
+2025-12-03 14:41:28,929 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.558, distance: 0.442, bbox: 63x62 px)
+2025-12-03 14:41:29,141 - WARNING - IP camera lag detected: 767ms frame delay
+2025-12-03 14:41:31,229 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 14:41:33,029 - WARNING - IP camera lag detected: 362ms frame delay
+2025-12-03 14:41:35,599 - WARNING - IP camera lag detected: 232ms frame delay
+2025-12-03 14:41:38,652 - WARNING - IP camera lag detected: 788ms frame delay
+2025-12-03 14:41:40,794 - WARNING - IP camera lag detected: 216ms frame delay
+2025-12-03 14:41:42,936 - WARNING - IP camera lag detected: 578ms frame delay
+2025-12-03 14:41:45,623 - WARNING - IP camera lag detected: 248ms frame delay
+2025-12-03 14:41:47,752 - WARNING - IP camera lag detected: 579ms frame delay
+2025-12-03 14:41:49,913 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 14:41:50,660 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:41:51,781 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:41:53,654 - WARNING - IP camera lag detected: 314ms frame delay
+2025-12-03 14:41:55,517 - WARNING - IP camera lag detected: 311ms frame delay
+2025-12-03 14:41:56,992 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.549, distance: 0.451, bbox: 129x125 px)
+2025-12-03 14:41:58,119 - WARNING - IP camera lag detected: 361ms frame delay
+2025-12-03 14:42:00,482 - WARNING - IP camera lag detected: 578ms frame delay
+2025-12-03 14:42:02,618 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:42:05,128 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 14:42:07,542 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 14:42:10,590 - WARNING - IP camera lag detected: 783ms frame delay
+2025-12-03 14:42:13,431 - WARNING - IP camera lag detected: 232ms frame delay
+2025-12-03 14:42:15,718 - WARNING - IP camera lag detected: 560ms frame delay
+2025-12-03 14:42:18,020 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 14:42:20,514 - WARNING - IP camera lag detected: 238ms frame delay
+2025-12-03 14:42:23,322 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:42:23,848 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:42:24,861 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:42:26,746 - WARNING - IP camera lag detected: 371ms frame delay
+2025-12-03 14:42:29,195 - WARNING - IP camera lag detected: 577ms frame delay
+2025-12-03 14:42:31,657 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 14:42:34,138 - WARNING - IP camera lag detected: 580ms frame delay
+2025-12-03 14:42:36,683 - WARNING - IP camera lag detected: 267ms frame delay
+2025-12-03 14:42:39,528 - WARNING - IP camera lag detected: 641ms frame delay
+2025-12-03 14:42:41,831 - WARNING - IP camera lag detected: 264ms frame delay
+2025-12-03 14:42:44,289 - WARNING - IP camera lag detected: 390ms frame delay
+2025-12-03 14:42:46,148 - WARNING - IP camera lag detected: 263ms frame delay
+2025-12-03 14:42:48,132 - WARNING - IP camera lag detected: 392ms frame delay
+2025-12-03 14:42:49,795 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 14:42:51,543 - WARNING - IP camera lag detected: 375ms frame delay
+2025-12-03 14:42:53,396 - WARNING - IP camera lag detected: 247ms frame delay
+2025-12-03 14:42:55,243 - WARNING - IP camera lag detected: 363ms frame delay
+2025-12-03 14:42:56,821 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 14:42:58,278 - WARNING - IP camera lag detected: 245ms frame delay
+2025-12-03 14:43:00,117 - WARNING - IP camera lag detected: 247ms frame delay
+2025-12-03 14:43:02,107 - WARNING - IP camera lag detected: 245ms frame delay
+2025-12-03 14:43:03,694 - WARNING - IP camera lag detected: 247ms frame delay
+2025-12-03 14:43:05,368 - WARNING - IP camera lag detected: 362ms frame delay
+2025-12-03 14:43:07,130 - WARNING - IP camera lag detected: 221ms frame delay
+2025-12-03 14:43:08,885 - WARNING - IP camera lag detected: 355ms frame delay
+2025-12-03 14:43:10,216 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-03 14:43:10,706 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:43:12,579 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:43:14,448 - WARNING - IP camera lag detected: 308ms frame delay
+2025-12-03 14:43:16,314 - WARNING - IP camera lag detected: 313ms frame delay
+2025-12-03 14:43:18,186 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:43:20,060 - WARNING - IP camera lag detected: 313ms frame delay
+2025-12-03 14:43:21,935 - WARNING - IP camera lag detected: 316ms frame delay
+2025-12-03 14:43:24,200 - WARNING - IP camera lag detected: 704ms frame delay
+2025-12-03 14:43:25,843 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.450, distance: 0.550, bbox: 63x62 px)
+2025-12-03 14:43:28,580 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:43:29,105 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:43:30,114 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:43:32,109 - WARNING - IP camera lag detected: 530ms frame delay
+2025-12-03 14:43:33,758 - WARNING - IP camera lag detected: 230ms frame delay
+2025-12-03 14:43:35,293 - WARNING - IP camera lag detected: 232ms frame delay
+2025-12-03 14:43:36,913 - WARNING - IP camera lag detected: 435ms frame delay
+2025-12-03 14:43:38,529 - WARNING - IP camera lag detected: 386ms frame delay
+2025-12-03 14:43:40,164 - WARNING - IP camera lag detected: 418ms frame delay
+2025-12-03 14:43:41,833 - WARNING - IP camera lag detected: 442ms frame delay
+2025-12-03 14:43:43,653 - WARNING - IP camera lag detected: 247ms frame delay
+2025-12-03 14:43:45,129 - WARNING - IP camera lag detected: 233ms frame delay
+2025-12-03 14:43:46,744 - WARNING - IP camera lag detected: 383ms frame delay
+2025-12-03 14:43:48,361 - WARNING - IP camera lag detected: 255ms frame delay
+2025-12-03 14:43:49,999 - WARNING - IP camera lag detected: 386ms frame delay
+2025-12-03 14:43:52,063 - WARNING - IP camera lag detected: 565ms frame delay
+2025-12-03 14:43:54,546 - WARNING - IP camera lag detected: 247ms frame delay
+2025-12-03 14:43:56,813 - WARNING - IP camera lag detected: 359ms frame delay
+2025-12-03 14:43:59,001 - WARNING - IP camera lag detected: 229ms frame delay
+2025-12-03 14:44:01,617 - WARNING - IP camera lag detected: 796ms frame delay
+2025-12-03 14:44:03,776 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:44:05,526 - WARNING - IP camera lag detected: 361ms frame delay
+2025-12-03 14:44:07,848 - WARNING - IP camera lag detected: 233ms frame delay
+2025-12-03 14:44:09,850 - WARNING - IP camera lag detected: 359ms frame delay
+2025-12-03 14:44:11,854 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:44:13,925 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:44:14,109 - WARNING - IP camera lag detected: 359ms frame delay
+2025-12-03 14:44:15,985 - WARNING - IP camera lag detected: 313ms frame delay
+2025-12-03 14:44:17,174 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.425, distance: 0.575, bbox: 63x62 px)
+2025-12-03 14:44:17,557 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:44:18,361 - WARNING - IP camera lag detected: 319ms frame delay
+2025-12-03 14:44:18,912 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.396, distance: 0.604, bbox: 75x74 px)
+2025-12-03 14:44:21,190 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:44:21,670 - WARNING - IP camera lag detected: 303ms frame delay
+2025-12-03 14:44:23,512 - WARNING - IP camera lag detected: 303ms frame delay
+2025-12-03 14:44:25,368 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:44:26,537 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.429, distance: 0.571, bbox: 62x62 px)
+2025-12-03 14:44:28,525 - WARNING - IP camera lag detected: 594ms frame delay
+2025-12-03 14:44:31,524 - WARNING - IP camera lag detected: 238ms frame delay
+2025-12-03 14:44:34,005 - WARNING - IP camera lag detected: 582ms frame delay
+2025-12-03 14:44:36,508 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 14:44:38,178 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:44:39,570 - WARNING - IP camera lag detected: 237ms frame delay
+2025-12-03 14:44:40,954 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:44:42,340 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-03 14:44:43,739 - WARNING - IP camera lag detected: 230ms frame delay
+2025-12-03 14:44:45,458 - WARNING - IP camera lag detected: 264ms frame delay
+2025-12-03 14:44:46,965 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 14:44:48,510 - WARNING - IP camera lag detected: 265ms frame delay
+2025-12-03 14:44:50,023 - WARNING - IP camera lag detected: 249ms frame delay
+2025-12-03 14:44:51,549 - WARNING - IP camera lag detected: 252ms frame delay
+2025-12-03 14:44:53,048 - WARNING - IP camera lag detected: 253ms frame delay
+2025-12-03 14:44:54,117 - WARNING - [TRACK ENDED-PARTIAL] KD: Partial body validation failed after 35 frames
+2025-12-03 14:44:54,608 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:44:56,523 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:44:58,457 - WARNING - IP camera lag detected: 325ms frame delay
+2025-12-03 14:44:59,933 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.452, distance: 0.548, bbox: 75x75 px)
+2025-12-03 14:45:01,318 - WARNING - IP camera lag detected: 604ms frame delay
+2025-12-03 14:45:03,672 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:45:03,859 - WARNING - IP camera lag detected: 345ms frame delay
+2025-12-03 14:45:05,718 - WARNING - IP camera lag detected: 308ms frame delay
+2025-12-03 14:45:07,565 - WARNING - IP camera lag detected: 304ms frame delay
+2025-12-03 14:45:09,591 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:45:11,589 - WARNING - IP camera lag detected: 311ms frame delay
+2025-12-03 14:45:13,453 - WARNING - IP camera lag detected: 310ms frame delay
+2025-12-03 14:45:15,311 - WARNING - IP camera lag detected: 313ms frame delay
+2025-12-03 14:45:17,183 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:45:19,060 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:45:19,599 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.432, distance: 0.568, bbox: 75x75 px)
+2025-12-03 14:45:21,604 - WARNING - IP camera lag detected: 370ms frame delay
+2025-12-03 14:45:22,026 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:45:23,459 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:45:23,983 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:45:24,991 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:45:26,496 - WARNING - IP camera lag detected: 3349ms frame delay
+2025-12-03 14:45:30,573 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.412, distance: 0.588, bbox: 108x108 px)
+2025-12-03 14:45:30,766 - WARNING - IP camera lag detected: 736ms frame delay
+2025-12-03 14:45:34,527 - WARNING - IP camera lag detected: 248ms frame delay
+2025-12-03 14:45:36,546 - WARNING - IP camera lag detected: 787ms frame delay
+2025-12-03 14:45:37,972 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 14:45:39,663 - WARNING - IP camera lag detected: 348ms frame delay
+2025-12-03 14:45:41,111 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:45:42,589 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-03 14:45:45,168 - WARNING - IP camera lag detected: 232ms frame delay
+2025-12-03 14:45:46,539 - WARNING - IP camera lag detected: 229ms frame delay
+2025-12-03 14:45:49,339 - WARNING - IP camera lag detected: 233ms frame delay
+2025-12-03 14:45:51,707 - WARNING - IP camera lag detected: 761ms frame delay
+2025-12-03 14:45:53,637 - WARNING - IP camera lag detected: 223ms frame delay
+2025-12-03 14:45:55,557 - WARNING - IP camera lag detected: 555ms frame delay
+2025-12-03 14:45:57,404 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 14:45:59,760 - WARNING - IP camera lag detected: 544ms frame delay
+2025-12-03 14:46:01,800 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-03 14:46:04,146 - WARNING - IP camera lag detected: 565ms frame delay
+2025-12-03 14:46:06,428 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-03 14:46:08,206 - WARNING - IP camera lag detected: 357ms frame delay
+2025-12-03 14:46:09,941 - WARNING - IP camera lag detected: 219ms frame delay
+2025-12-03 14:46:11,512 - WARNING - IP camera lag detected: 218ms frame delay
+2025-12-03 14:46:12,539 - WARNING - [TRACK ENDED-PARTIAL] KD: Partial body validation failed after 35 frames
+2025-12-03 14:46:13,040 - WARNING - IP camera lag detected: 315ms frame delay
+2025-12-03 14:46:14,920 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:46:16,784 - WARNING - IP camera lag detected: 312ms frame delay
+2025-12-03 14:46:18,656 - WARNING - IP camera lag detected: 314ms frame delay
+2025-12-03 14:46:21,400 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:46:21,926 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:46:22,938 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:46:25,292 - WARNING - IP camera lag detected: 874ms frame delay
+2025-12-03 14:46:29,518 - WARNING - IP camera lag detected: 698ms frame delay
+2025-12-03 14:46:33,024 - WARNING - Loaded 4 guards
+2025-12-03 14:46:33,741 - WARNING - IP camera lag detected: 709ms frame delay
+2025-12-03 14:46:37,963 - WARNING - IP camera lag detected: 711ms frame delay
+2025-12-03 14:46:38,591 - WARNING - Fugitive Removed
+2025-12-03 14:46:42,315 - WARNING - IP camera lag detected: 710ms frame delay
+2025-12-03 14:46:43,539 - WARNING - [RESET] KD: Missing for 30.5s — hard reset tracking, forcing immediate re-detection
+2025-12-03 14:46:46,527 - WARNING - IP camera lag detected: 717ms frame delay
+2025-12-03 14:46:50,021 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:46:50,546 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:46:51,559 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:46:53,855 - WARNING - Fugitive Added: target_fugitive_face
+2025-12-03 14:46:53,856 - WARNING - Fugitive Detection ENABLED - Searching for: target_fugitive_face
+2025-12-03 14:46:53,860 - WARNING - IP camera lag detected: 847ms frame delay
+2025-12-03 14:46:55,542 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_fugitive_face - Playing 15s alert! (confidence: 0.354)
+2025-12-03 14:46:55,825 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-03 14:46:55,825 - WARNING - [FUGITIVE DETECTED] !!! target_fugitive_face FIRST APPEARANCE logged - Snapshot captured (confidence: 0.354)
+2025-12-03 14:46:57,697 - WARNING - IP camera lag detected: 781ms frame delay
+2025-12-03 14:47:00,042 - WARNING - IP camera lag detected: 390ms frame delay
+2025-12-03 14:47:02,394 - WARNING - IP camera lag detected: 391ms frame delay
+2025-12-03 14:47:04,981 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.569, distance: 0.431, bbox: 155x150 px)
+2025-12-03 14:47:05,893 - WARNING - IP camera lag detected: 704ms frame delay
+2025-12-03 14:47:10,084 - WARNING - IP camera lag detected: 711ms frame delay
+2025-12-03 14:47:15,036 - WARNING - IP camera lag detected: 713ms frame delay
+2025-12-03 14:47:15,619 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:47:17,361 - WARNING - IP camera lag detected: 392ms frame delay
+2025-12-03 14:47:19,706 - WARNING - IP camera lag detected: 391ms frame delay
+2025-12-03 14:47:22,051 - WARNING - IP camera lag detected: 394ms frame delay
+2025-12-03 14:47:24,400 - WARNING - IP camera lag detected: 393ms frame delay
+2025-12-03 14:47:26,979 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_fugitive_face - Playing 15s alert! (confidence: 0.344)
+2025-12-03 14:47:27,284 - WARNING - IP camera lag detected: 784ms frame delay
+2025-12-03 14:47:29,873 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.539, distance: 0.461, bbox: 75x74 px)
+2025-12-03 14:47:32,180 - WARNING - IP camera lag detected: 1060ms frame delay
+2025-12-03 14:47:37,034 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:47:37,209 - WARNING - IP camera lag detected: 823ms frame delay
+2025-12-03 14:47:41,120 - WARNING - IP camera lag detected: 783ms frame delay
+2025-12-03 14:47:41,901 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:47:42,425 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:47:43,441 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:47:46,856 - WARNING - IP camera lag detected: 389ms frame delay
+2025-12-03 14:47:49,214 - WARNING - IP camera lag detected: 392ms frame delay
+2025-12-03 14:47:51,566 - WARNING - IP camera lag detected: 393ms frame delay
+2025-12-03 14:47:52,579 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.434, distance: 0.566, bbox: 62x62 px)
+2025-12-03 14:47:58,021 - WARNING - IP camera lag detected: 1052ms frame delay
+2025-12-03 14:47:58,586 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:48:00,325 - WARNING - IP camera lag detected: 387ms frame delay
+2025-12-03 14:48:01,341 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.620, distance: 0.380, bbox: 155x155 px)
+2025-12-03 14:48:04,578 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:48:05,141 - WARNING - IP camera lag detected: 388ms frame delay
+2025-12-03 14:48:07,489 - WARNING - IP camera lag detected: 392ms frame delay
+2025-12-03 14:48:07,968 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_fugitive_face - Playing 15s alert! (confidence: 0.293)
+2025-12-03 14:48:10,066 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.428, distance: 0.572, bbox: 75x75 px)
+2025-12-03 14:48:12,879 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:48:13,054 - WARNING - IP camera lag detected: 701ms frame delay
+2025-12-03 14:48:14,069 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.625, distance: 0.375, bbox: 90x89 px)
+2025-12-03 14:48:14,789 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-03 14:48:15,979 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.651, distance: 0.349, bbox: 90x89 px)
+2025-12-03 14:48:17,228 - WARNING - Failed to read frame, attempting recovery...
+2025-12-03 14:48:17,752 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-03 14:48:18,765 - WARNING - RTSP stream unstable - trying H.264 fallback
+2025-12-03 14:48:48,785 - ERROR - Reconnection error: VideoCapture reopen failed
+2025-12-03 14:49:19,651 - WARNING - Camera started successfully: 0
+2025-12-03 14:50:00,212 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-03 14:50:04,487 - WARNING - Fugitive Removed
+2025-12-03 14:50:24,650 - WARNING - Fugitive Added: target_fugitive_face
+2025-12-03 14:50:24,651 - WARNING - Fugitive Detection ENABLED - Searching for: target_fugitive_face
+2025-12-03 14:50:29,717 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.635, distance: 0.365, bbox: 75x75 px)
+2025-12-03 14:50:36,380 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_fugitive_face - Playing 15s alert! (confidence: 0.566)
+2025-12-03 14:51:26,618 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-03 14:51:30,671 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-03 14:51:37,224 - WARNING - Initiating graceful shutdown...
+2025-12-03 14:51:37,586 - WARNING - Shutdown complete
