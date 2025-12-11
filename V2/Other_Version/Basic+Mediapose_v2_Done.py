@@ -87,7 +87,7 @@ def load_config():
             "performance": {"gui_refresh_ms": 30, "pose_buffer_size": 12, "frame_skip_interval": 2, "enable_frame_skipping": True, "min_buffer_for_classification": 5},
             "logging": {"log_directory": "logs", "max_log_size_mb": 10, "auto_flush_interval": 50},
             "storage": {"alert_snapshots_dir": "alert_snapshots", "snapshot_retention_days": 30,
-                       "guard_profiles_dir": r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\V2\guard_profiles", "capture_snapshots_dir": "capture_snapshots",
+                       "guard_profiles_dir": "guard_profiles", "capture_snapshots_dir": "capture_snapshots",
                        "audio_files_dir": "audio_files"},
             "monitoring": {"mode": "pose", "session_restart_prompt_hours": 8}
         }
@@ -95,8 +95,11 @@ def load_config():
 CONFIG = load_config()
 
 # --- 2. Logging Setup with Rotation ---
-if not os.path.exists(CONFIG["logging"]["log_directory"]):
-    os.makedirs(CONFIG["logging"]["log_directory"])
+# Get base directory early for consistent path handling
+_script_base_dir = os.path.dirname(os.path.abspath(__file__))
+_log_dir_path = os.path.join(_script_base_dir, CONFIG["logging"]["log_directory"])
+if not os.path.exists(_log_dir_path):
+    os.makedirs(_log_dir_path)
 
 logger = logging.getLogger("निराक्षण")
 logger.setLevel(logging.WARNING)  # Only log warnings and errors by default
@@ -109,7 +112,7 @@ console_handler.setFormatter(console_formatter)
 
 # Rotating file handler
 file_handler = RotatingFileHandler(
-    os.path.join(CONFIG["logging"]["log_directory"], "session.log"),
+    os.path.join(_log_dir_path, "session.log"),
     maxBytes=CONFIG["logging"]["max_log_size_mb"] * 1024 * 1024,
     backupCount=5
 )
@@ -309,6 +312,10 @@ class ThreadedIPCamera:
             self.cap.release()
             self.cap = None
     
+    def stop(self):
+        """Alias for release() - stops the threaded grabber."""
+        self.release()
+    
     def set(self, prop, value):
         """Set camera property (compatibility with cv2.VideoCapture)."""
         if self.cap:
@@ -331,10 +338,13 @@ def get_storage_paths():
     - capture_snapshots/: Timestamped captures
     - logs/: CSV events and session logs
     """
+    # Get base directory of this script
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    
     paths = {
-        "guard_profiles": CONFIG.get("storage", {}).get("guard_profiles_dir", r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\V2\guard_profiles"),
-        "capture_snapshots": CONFIG.get("storage", {}).get("capture_snapshots_dir", "capture_snapshots"),
-        "logs": CONFIG["logging"]["log_directory"]
+        "guard_profiles": os.path.join(base_dir, CONFIG.get("storage", {}).get("guard_profiles_dir", "guard_profiles")),
+        "capture_snapshots": os.path.join(base_dir, CONFIG.get("storage", {}).get("capture_snapshots_dir", "capture_snapshots")),
+        "logs": os.path.join(base_dir, CONFIG["logging"]["log_directory"])
     }
     
     # Create all directories
@@ -413,20 +423,23 @@ def save_capture_snapshot(face_image, guard_name):
     return snapshot_path
 
 # --- Directory Setup (using systematic functions) ---
-if not os.path.exists(CONFIG["storage"]["alert_snapshots_dir"]):
-    os.makedirs(CONFIG["storage"]["alert_snapshots_dir"])
+# Use the base directory already determined for logging
+# _script_base_dir is already set above
 
-if not os.path.exists(CONFIG.get("storage", {}).get("guard_profiles_dir", r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\V2\guard_profiles")):
-    os.makedirs(CONFIG.get("storage", {}).get("guard_profiles_dir", r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\V2\guard_profiles"))
+alert_snapshots_dir = os.path.join(_script_base_dir, CONFIG["storage"]["alert_snapshots_dir"])
+if not os.path.exists(alert_snapshots_dir):
+    os.makedirs(alert_snapshots_dir)
 
-if not os.path.exists(CONFIG.get("storage", {}).get("capture_snapshots_dir", "capture_snapshots")):
-    os.makedirs(CONFIG.get("storage", {}).get("capture_snapshots_dir", "capture_snapshots"))
+guard_profiles_dir = os.path.join(_script_base_dir, CONFIG.get("storage", {}).get("guard_profiles_dir", "guard_profiles"))
+if not os.path.exists(guard_profiles_dir):
+    os.makedirs(guard_profiles_dir)
 
-# Ensure logs directory exists
-if not os.path.exists(CONFIG["logging"]["log_directory"]):
-    os.makedirs(CONFIG["logging"]["log_directory"])
+capture_snapshots_dir = os.path.join(_script_base_dir, CONFIG.get("storage", {}).get("capture_snapshots_dir", "capture_snapshots"))
+if not os.path.exists(capture_snapshots_dir):
+    os.makedirs(capture_snapshots_dir)
 
-csv_file = os.path.join(CONFIG["logging"]["log_directory"], "events.csv")
+# Logs directory already created above with _log_dir_path
+csv_file = os.path.join(_log_dir_path, "events.csv")
 if not os.path.exists(csv_file):
     with open(csv_file, mode="w", newline="") as f:
         writer = csv.writer(f)
@@ -627,8 +640,9 @@ def play_siren_sound(stop_event=None, duration_seconds=30, sound_file="siren.mp3
             mp3_path = os.path.join(audio_dir, sound_file)
         
         if not os.path.exists(mp3_path):
-            # Fallback to old hardcoded path for backwards compatibility
-            mp3_path = rf"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Web_Cam\{sound_file}"
+            # Fallback: Try script directory
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            mp3_path = os.path.join(script_dir, sound_file)
         start_time = time.time()
         
         # Option 1: Try pygame (PRIMARY - most reliable for MP3 on Windows)
@@ -2103,9 +2117,11 @@ class PoseApp:
     # ✅ INDUSTRIAL-LEVEL: Low-Light Detection & Tracking Enhancements
     def enhance_frame_for_low_light(self, frame):
         """
-        ✅ OPTIMIZED: Fast frame enhancement with night/day mode awareness
+        ✅ OPTIMIZED: Ultra-fast frame enhancement with night/day mode awareness
         Day mode: Skip enhancement entirely (fast)
-        Night mode: Lightweight enhancement only if brightness is low
+        Night mode: Fast CLAHE-only enhancement (skips slow denoising)
+        
+        Performance target: <5ms per frame (was ~50ms with denoising)
         """
         try:
             # Day Mode: No enhancement needed, return frame as-is for maximum speed
@@ -2113,22 +2129,26 @@ class PoseApp:
                 return frame
             
             # Night Mode: Only enhance if brightness is low (adaptive)
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            # ✅ OPTIMIZATION: Use downscaled grayscale for faster brightness calculation
+            small_frame = cv2.resize(frame, (160, 120), interpolation=cv2.INTER_NEAREST)
+            gray = cv2.cvtColor(small_frame, cv2.COLOR_BGR2GRAY)
             brightness = np.mean(gray)
             
             # Skip enhancement for normal/bright conditions - return frame as-is for speed
-            if brightness > 120:  # Normal/bright - no enhancement needed
+            if brightness > 100:  # Normal/bright - no enhancement needed (lowered threshold)
                 return frame
             
-            # Lightweight enhancement for low-light (fast, minimal overhead)
-            # Stage 1: Lightweight denoise only for dark areas (faster version)
-            frame = cv2.fastNlMeansDenoisingColored(frame, h=8, templateWindowSize=7, searchWindowSize=15)
-            
-            # Stage 2: Minimal CLAHE for contrast - very fast
+            # ✅ ULTRA-FAST ENHANCEMENT: CLAHE only (skip slow denoising for FPS)
+            # fastNlMeansDenoisingColored takes 30-50ms, CLAHE takes only 2-5ms
+            # For real-time tracking, speed is more critical than perfect denoising
             lab = cv2.cvtColor(frame, cv2.COLOR_BGR2LAB)
             l_channel, a, b = cv2.split(lab)
-            clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(16, 16))  # Reduced tile size for speed
-            l_channel_clahe = clahe.apply(l_channel)
+            
+            # ✅ OPTIMIZATION: Reuse CLAHE object if available (avoid recreation overhead)
+            if not hasattr(self, '_clahe_cache') or self._clahe_cache is None:
+                self._clahe_cache = cv2.createCLAHE(clipLimit=2.5, tileGridSize=(8, 8))
+            
+            l_channel_clahe = self._clahe_cache.apply(l_channel)
             lab_enhanced = cv2.merge([l_channel_clahe, a, b])
             frame_enhanced = cv2.cvtColor(lab_enhanced, cv2.COLOR_LAB2BGR)
             
@@ -3079,8 +3099,9 @@ class PoseApp:
     
     def load_targets(self):
         self.target_map = {}
-        # Search ONLY in guard_profiles directory
-        guard_profiles_dir = CONFIG.get("storage", {}).get("guard_profiles_dir", r"D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\V2\guard_profiles")
+        # Search ONLY in guard_profiles directory (relative to script location)
+        paths = get_storage_paths()
+        guard_profiles_dir = paths["guard_profiles"]
         if not os.path.exists(guard_profiles_dir):
             os.makedirs(guard_profiles_dir)
         target_files = glob.glob(os.path.join(guard_profiles_dir, "target_*.jpg"))
@@ -3094,7 +3115,14 @@ class PoseApp:
                 # Remove 'target' prefix and 'face' suffix
                 if len(parts) >= 3 and parts[-1] == "face":
                     # Join all parts between 'target' and 'face' as the name
+                    # Use UTF-8 safe handling for guard names with special characters
                     display_name = " ".join(parts[1:-1])
+                    # Ensure proper Unicode handling on Windows
+                    try:
+                        display_name.encode('utf-8')
+                    except UnicodeEncodeError:
+                        # Replace problematic characters with ASCII equivalents
+                        display_name = display_name.encode('utf-8', errors='replace').decode('utf-8', errors='replace')
                     self.target_map[display_name] = f
                     display_names.append(display_name)
             except Exception as e:
@@ -3707,6 +3735,7 @@ class PoseApp:
                 
                 if self.is_camera_running:
                     logger.warning(f"Connected to IP Camera at {ip_addr} - Restarting video feed")
+                    self.reset_all_tracking_state()  # ✅ Reset tracking when switching cameras
                     self.update_video_feed()
                 else:
                     logger.warning(f"IP Camera at {ip_addr} ready (feed paused)")
@@ -3771,6 +3800,7 @@ class PoseApp:
             if self.is_camera_running:
                 # Restart video feed update loop for new camera
                 logger.warning(f"Switched to Camera {self.camera_index} - Restarting video feed")
+                self.reset_all_tracking_state()  # ✅ Reset tracking when switching cameras
                 self.update_video_feed()
             else:
                 logger.warning(f"Camera {self.camera_index} ready (feed paused)")
@@ -3793,6 +3823,30 @@ class PoseApp:
             self.start_camera()
         else:
             self.stop_camera()
+            # ✅ Reset all tracking state when camera is turned off
+            self.reset_all_tracking_state()
+    
+    def reset_all_tracking_state(self):
+        """Reset all guard tracking state - called when camera is turned off or switched"""
+        for name, status in self.targets_status.items():
+            status["visible"] = False
+            status["tracker"] = None
+            status["body_tracker"] = None
+            status["face_box"] = None
+            status["body_box"] = None
+            status["stable_tracking"] = False
+            status["consecutive_detections"] = 0
+            status["face_confidence"] = 0.0
+            status["pose_confidence"] = 0.0
+            status["face_detection_missing_frames"] = 0
+            status["missing_pose_counter"] = 0
+            status["pending_face_idx"] = None
+            status["pending_confirm_count"] = 0
+            if status.get("pose_buffer") is not None and hasattr(status["pose_buffer"], "clear"):
+                status["pose_buffer"].clear()
+            if status.get("face_encoding_history") is not None and hasattr(status["face_encoding_history"], "clear"):
+                status["face_encoding_history"].clear()
+        logger.info("[RESET] All guard tracking state cleared")
 
     def toggle_pro_mode(self):
         """Toggle PRO Mode ON/OFF - enables advanced features like ReID and Stillness detection"""
@@ -3809,15 +3863,6 @@ class PoseApp:
 
     def toggle_guard_mode(self):
         """Directly enter onboarding mode to add a new guard"""
-        if not self.is_camera_running:
-            messagebox.showwarning("Camera Required", "Please start camera first")
-            return
-        
-        # Enter onboarding mode to capture guard face and poses
-        self.enter_onboarding_mode()
-
-    def add_guard_then_capture(self):
-        """Show dialog to enter guard name, then capture face and poses"""
         if not self.is_camera_running:
             messagebox.showwarning("Camera Required", "Please start camera first")
             return
@@ -3938,36 +3983,7 @@ class PoseApp:
 
     def open_guard_selection_dialog(self):
         """Open dialog to select multiple guards for tracking"""
-        # Get available guards from guard_profiles directory
-        guard_profile_dir = os.path.join(os.path.dirname(__file__), "guard_profiles")
-        if not os.path.exists(guard_profile_dir):
-            messagebox.showinfo("No Guards", "No guards available. Please add guards first.")
-            return
-        
-        # List all unique guard names from face files
-        guard_files = glob.glob(os.path.join(guard_profile_dir, "target_*_face.jpg"))
-        available_guards = list(set([os.path.basename(f).replace("target_", "").replace("_face.jpg", "") for f in guard_files]))
-        
-        if not available_guards:
-            messagebox.showinfo("No Guards", "No guards available. Please add guards first.")
-            return
-        
-        # For now, open the existing target selection dialog if it exists
-        if hasattr(self, 'open_target_selection_dialog'):
-            self.open_target_selection_dialog()
-        else:
-            messagebox.showinfo("Select Guards", f"Available guards: {', '.join(available_guards)}")
-
-    def on_track_selected_guard_clicked(self):
-        """Handle Track Selected Guard button click - activates tracking for selected guards"""
-        if not hasattr(self, 'selected_target_names') or not self.selected_target_names:
-            messagebox.showwarning("No Guards Selected", "Please select guards first using 'Select Guard' button")
-            return
-        
-        # Log the tracking activation
-        guards_list = ", ".join(self.selected_target_names)
-        logger.warning(f"Tracking activated for: {guards_list}")
-        messagebox.showinfo("Tracking Activated", f"Now tracking: {guards_list}")
+        self.open_target_selection_dialog()
 
     def toggle_track_monitoring(self):
         """Toggle Track Guard / Stop Monitoring button - start or stop tracking selected guards"""
@@ -4013,41 +4029,6 @@ class PoseApp:
             else:
                 logger.warning("[TRACKING STOP] Monitoring stopped")
                 messagebox.showinfo("Monitoring Stopped", "Guard tracking stopped")
-
-    def on_track_guards_clicked(self):
-        """Handle Track Guards button click - identifies and starts tracking selected guards"""
-        if not hasattr(self, 'selected_target_names') or not self.selected_target_names:
-            messagebox.showwarning("No Guards Selected", "Please select guards first using 'Select Guard' button")
-            return
-        
-        if not self.is_running:
-            messagebox.showwarning("Camera Required", "Please start the camera first")
-            return
-        
-        # Activate the selected guards for tracking
-        self.apply_target_selection()
-        
-        # Log and show confirmation
-        guards_list = ", ".join(self.selected_target_names)
-        logger.warning(f"[TRACKING START] Identifying and tracking: {guards_list}")
-        messagebox.showinfo("Tracking Started", f"Now identifying and tracking:\n{guards_list}\n\nMonitoring for action alerts...")
-
-    def on_stop_tracking_clicked(self):
-        """Handle Stop Tracking button click - stops all guard tracking"""
-        if not self.targets_status:
-            messagebox.showinfo("No Tracking", "No guards are currently being tracked")
-            return
-        
-        # Clear all tracking data
-        tracked_guards = list(self.targets_status.keys())
-        self.targets_status.clear()
-        self.selected_target_names.clear()
-        self.update_selected_preview()
-        
-        # Log and show confirmation
-        guards_list = ", ".join(tracked_guards)
-        logger.warning(f"[TRACKING STOP] Stopped tracking: {guards_list}")
-        messagebox.showinfo("Tracking Stopped", f"Stopped tracking:\n{guards_list}")
 
     def toggle_fugitive_mode(self):
         """Toggle Fugitive Mode - Search for a specific person in live feed"""
@@ -4787,75 +4768,83 @@ class PoseApp:
             self.stop_camera()
             return
         
-        self.unprocessed_frame = frame.copy()
+        # ✅ FPS OPTIMIZATION: Only copy frame when needed for capture/snapshot features
+        # Removed unconditional frame.copy() that was wasting ~5-10ms per frame
+        # self.unprocessed_frame will be set only when actually needed
         
-        # ✅ INDUSTRIAL-LEVEL: Enhance frame for low-light conditions
-        # This improves face detection in dark areas significantly
-        frame = self.enhance_frame_for_low_light(frame)
-        
-        # Frame skipping for performance
+        # Frame counter for performance tracking (single increment point)
         self.frame_counter += 1
-        skip_interval = CONFIG["performance"]["frame_skip_interval"]
         
-        # ========== PERFORMANCE MONITORING SIMPLIFIED ==========
-        # Removed Phase 4 Stage 5 - just do basic FPS tracking
+        # ========== ULTRA-FAST PATH: No tracking mode ==========
+        # ✅ FPS TARGET: 30-40+ FPS when no guards selected
+        is_tracking_active = bool(self.targets_status) or self.is_fugitive_detection
         
         if self.is_in_capture_mode:
+            # CAPTURE MODE: Need frame copy and processing for face capture
+            self.unprocessed_frame = frame.copy()
+            # Only apply low-light enhancement in night mode
+            if self.night_mode:
+                frame = self.enhance_frame_for_low_light(frame)
             self.process_capture_frame(frame)
-        else:
-            # Skip processing every N frames when enabled
+        elif is_tracking_active:
+            # TRACKING MODE: Full processing with optimizations
+            self.unprocessed_frame = frame  # Reference only, not copy
+            
+            # Only apply low-light enhancement in night mode
+            if self.night_mode:
+                frame = self.enhance_frame_for_low_light(frame)
+            
+            # Process tracking (with frame skipping for performance)
+            skip_interval = CONFIG["performance"]["frame_skip_interval"]
             if CONFIG["performance"]["enable_frame_skipping"] and self.frame_counter % skip_interval != 0:
-                # Use cached frame
+                # Use cached processed frame for display
                 if self.last_process_frame is not None:
-                    frame = self.last_process_frame.copy()
+                    frame = self.last_process_frame
             else:
-                # Process tracking frame normally
+                # Process tracking frame
                 self.process_tracking_frame_optimized(frame)
+                self.last_process_frame = frame
+        # else: NO TRACKING - skip ALL processing, just display raw frame
         
-                self.last_process_frame = frame.copy()
-        
-        # ========== PERFORMANCE MONITORING & FPS CALCULATION ==========
-        # ✅ OPTIMIZATION: Update GUI labels only every 30 frames (~1 second) instead of every frame
-        # This reduces GUI rendering overhead significantly
-        self.frame_counter += 1
-        
-        if self.frame_counter % 30 == 0:  # Update labels every 30 frames
+        # ========== ULTRA-FAST FPS CALCULATION ==========
+        # ✅ FPS OPTIMIZATION: Minimal overhead performance monitoring
+        if self.frame_counter % 30 == 0:
             current_time = time.time()
             elapsed = current_time - self.last_fps_time
             if elapsed > 0:
                 self.current_fps = 30 / elapsed
             self.last_fps_time = current_time
             
-            # ✅ PERFORMANCE: Periodic memory optimization
-            if self.frame_counter % 150 == 0:  # Every 150 frames (~5 seconds at 30 FPS)
-                optimize_memory()
-            
-            # Memory monitoring and label updates (only every 30 frames)
+            # Update FPS label only (skip memory monitoring for speed)
+            try:
+                if hasattr(self, 'fps_label') and self.fps_label.winfo_exists():
+                    self.fps_label.configure(text=f"{self.current_fps:.1f}")
+            except:
+                pass
+        
+        # ✅ OPTIMIZATION: Memory monitoring only every 5 seconds (expensive operation)
+        if self.frame_counter % 150 == 0:
             try:
                 process = psutil.Process()
                 mem_mb = process.memory_info().rss / 1024 / 1024
-                if hasattr(self, 'fps_label') and self.fps_label.winfo_exists():
-                    self.fps_label.configure(text=f"{self.current_fps:.1f}")
                 if hasattr(self, 'mem_label') and self.mem_label.winfo_exists():
                     self.mem_label.configure(text=f"{mem_mb:.0f}MB")
             except:
                 pass
+            # Periodic memory optimization
+            optimize_memory()
             
-            # Update system clock (only when second changes)
+            # Update system clock
             try:
-                current_datetime = datetime.now()
-                current_second = current_datetime.second
-                if current_second != self.last_clock_second:
-                    current_time_str = current_datetime.strftime("%H:%M:%S")
-                    if hasattr(self, 'clock_label') and self.clock_label.winfo_exists():
-                        self.clock_label.configure(text=current_time_str)
-                    self.last_clock_second = current_second
+                current_time_str = datetime.now().strftime("%H:%M:%S")
+                if hasattr(self, 'clock_label') and self.clock_label.winfo_exists():
+                    self.clock_label.configure(text=current_time_str)
             except:
                 pass
             
-            # Session time check (only every 30 frames)
+            # Session time check (only every 5 seconds at 150 frames)
             try:
-                session_hours = (current_time - self.session_start_time) / 3600
+                session_hours = (time.time() - self.session_start_time) / 3600
                 if session_hours >= CONFIG["monitoring"]["session_restart_prompt_hours"]:
                     response = messagebox.askyesno(
                         "Long Session",
@@ -4865,63 +4854,69 @@ class PoseApp:
                         self.stop_camera()
                         return
                     else:
-                        self.session_start_time = current_time
+                        self.session_start_time = time.time()
             except:
                 pass
         
-        # Auto flush logs
-        self.auto_flush_logs()
+        # Auto flush logs (only every 100 frames to reduce overhead)
+        if self.frame_counter % 100 == 0:
+            self.auto_flush_logs()
         
-        # ========== OPTIMIZED: GUI VIDEO FEED RENDERING ==========
-        # ✅ CRITICAL OPTIMIZATION: Only update GUI every other frame (50ms instead of 33ms)
-        # This reduces GUI overhead by ~30-40% and frees up CPU for tracking/detection
-        # Visual effect: ~15 FPS GUI (still acceptable for video) but backend gets much more time
-        should_update_gui = (self.frame_counter % 2 == 0)  # Update every 2nd frame = 50ms at 30 FPS input
+        # ========== ULTRA-FAST GUI VIDEO FEED RENDERING ==========
+        # ✅ FPS OPTIMIZATION: Minimize GUI overhead for maximum frame rate
+        is_tracking_for_gui = bool(self.targets_status) or self.is_fugitive_detection
         
-        if should_update_gui and self.video_label.winfo_exists():
+        if self.video_label.winfo_exists():
             try:
+                # ✅ FAST PATH: Direct BGR to RGB conversion
                 frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 
-                # ✅ OPTIMIZED: Scale frame efficiently using linear interpolation
+                # ✅ ULTRA-FAST: Skip resize when possible, use fastest interpolation
                 lbl_w = self.video_label.winfo_width()
                 lbl_h = self.video_label.winfo_height()
                 h, w = frame.shape[:2]
                 
                 if lbl_w > 10 and lbl_h > 10:
                     scale = min(lbl_w/w, lbl_h/h, 1.5)
-                    new_w, new_h = int(w*scale), int(h*scale)
-                    # Use INTER_LINEAR for balance between quality and speed
-                    frame_rgb = cv2.resize(frame_rgb, (new_w, new_h), interpolation=cv2.INTER_LINEAR)
+                    # Only resize if scale is significantly different
+                    if abs(scale - 1.0) > 0.1:
+                        new_w, new_h = int(w*scale), int(h*scale)
+                        frame_rgb = cv2.resize(frame_rgb, (new_w, new_h), interpolation=cv2.INTER_NEAREST)
                 
-                # ✅ OPTIMIZATION: Use PIL directly for image conversion
+                # ✅ FAST DISPLAY: Direct PIL to CTkImage
                 pil_image = Image.fromarray(frame_rgb, mode='RGB')
                 ctk_image = ctk.CTkImage(light_image=pil_image, size=(pil_image.width, pil_image.height))
                 self.video_label.configure(image=ctk_image, text="")
                 self.video_label.image = ctk_image
             except Exception as e:
-                logger.debug(f"Frame display error: {e}")
+                pass  # Silent fail for speed
         
         # ========== DYNAMIC REFRESH RATE OPTIMIZATION ==========
-        # ✅ OPTIMIZATION: Smart refresh rate - increase backend processing time automatically
-        # When FPS drops, GUI refresh slows down to give backend more CPU time
-        # When FPS is good, maintain smooth 30 FPS visual feedback
-        refresh_ms = 50  # Base refresh rate
+        # ✅ FPS OPTIMIZATION: Two-mode refresh strategy
+        # Mode 1: No tracking active -> Maximum FPS (30-40+ FPS) with fast refresh (16-25ms)
+        # Mode 2: Tracking active -> Balanced FPS (10-15 FPS) with slower refresh for processing
         
-        if self.current_fps < 10:
-            # Very slow - maximize backend processing time
-            refresh_ms = 150  # ~6.7 FPS GUI, but backend gets more time
-        elif self.current_fps < 15:
-            # Slow - increase backend time
-            refresh_ms = 100  # ~10 FPS GUI
-        elif self.current_fps < 20:
-            # Below target - slight delay
-            refresh_ms = 66  # ~15 FPS GUI
-        elif self.current_fps >= 25:
-            # Good performance - faster refresh for responsive feedback
-            refresh_ms = 40  # ~25 FPS GUI
+        is_tracking_active = bool(self.targets_status) or self.is_fugitive_detection
+        
+        if not is_tracking_active:
+            # ✅ NO TRACKING MODE: Maximum speed for smooth live preview
+            # Target 30-40+ FPS with minimal delay between frames
+            refresh_ms = 16  # ~60 FPS max (limited by camera), gives smooth 30-40 FPS display
         else:
-            # Excellent - maintain smooth 30 FPS
-            refresh_ms = 33  # ~30 FPS GUI
+            # ✅ TRACKING MODE: Adaptive refresh based on current performance
+            # Target 10-15 FPS stable tracking with processing headroom
+            if self.current_fps < 8:
+                # Very slow - give maximum processing time
+                refresh_ms = 100  # ~10 FPS GUI
+            elif self.current_fps < 12:
+                # Below target - moderate delay
+                refresh_ms = 66  # ~15 FPS GUI
+            elif self.current_fps < 15:
+                # Near target - slight delay
+                refresh_ms = 50  # ~20 FPS GUI
+            else:
+                # Good tracking performance - balanced refresh
+                refresh_ms = 40  # ~25 FPS GUI
         
         self.root.after(refresh_ms, self.update_video_feed)
 
@@ -5020,28 +5015,31 @@ class PoseApp:
         # ✅ CRITICAL: Fugitive detection runs FIRST, before checking if guards exist
         # This ensures fugitive alert works independently of guard tracking state
         
-        # Prepare color space for face detection (used by both fugitive and guard detection)
-        rgb_full_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # ✅ FPS OPTIMIZATION: Lazy RGB conversion - only convert when needed
         frame_h, frame_w = frame.shape[:2]
+        rgb_full_frame = None  # Will be set when first needed
         
         # ==================== FUGITIVE MODE (ALWAYS RUNS - Independent of other modes) ====================
         # ✅ CRITICAL: Fugitive detection MUST run regardless of mode, always prioritized
         # Fugitive is detected instantly and independently from guard tracking or action monitoring
         if self.is_fugitive_detection and self.fugitive_face_encoding is not None:
-            # Use downscaled frame for faster detection (same optimization as guard detection)
-            # ✅ OPTIMIZED FOR FAR DISTANCE: Reduced scale factor to detect small faces
-            scale_factor = 1.2  # Less downscaling for far-distance detection (was 1.5)
+            # Convert to RGB only when fugitive detection is active
+            if rgb_full_frame is None:
+                rgb_full_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            
+            # Use downscaled frame for faster detection
+            scale_factor = 1.5  # More downscaling for speed (was 1.2)
             h, w = rgb_full_frame.shape[:2]
             scaled_w = max(1, int(w / scale_factor))
             scaled_h = max(1, int(h / scale_factor))
-            rgb_frame_fugitive = cv2.resize(rgb_full_frame, (scaled_w, scaled_h), interpolation=cv2.INTER_LINEAR)
+            rgb_frame_fugitive = cv2.resize(rgb_full_frame, (scaled_w, scaled_h), interpolation=cv2.INTER_NEAREST)
             
             try:
                 face_locations = face_recognition.face_locations(rgb_frame_fugitive, model="hog")
                 if face_locations:
-                    # ✅ ENHANCED: Better encoding quality for all-angle detection
-                    # Use num_jitters=2 for more accurate face encodings at angles (was 1)
-                    face_encodings = face_recognition.face_encodings(rgb_frame_fugitive, face_locations, num_jitters=2)
+                    # ✅ FPS OPTIMIZATION: Use num_jitters=1 for faster encoding (was 2)
+                    # num_jitters=2 adds ~50ms per face, not worth the accuracy gain
+                    face_encodings = face_recognition.face_encodings(rgb_frame_fugitive, face_locations, num_jitters=1)
                     
                     for face_encoding, face_location in zip(face_encodings, face_locations):
                         # ✅ ENHANCED: Multi-angle fugitive detection with relaxed tolerance
@@ -5222,22 +5220,22 @@ class PoseApp:
                         logger.debug(f"[INSTANT] {name} tracking stabilized after 5 frames, returning to normal interval")
             logger.debug(f"[INSTANT] Instant tracking active - {sum(1 for s in self.targets_status.values() if s.get('newly_detected'))} guard(s) in rapid acquisition phase")
         else:
-            # All visible and tracked - run detection MORE FREQUENTLY for real-time accuracy
-            # ✅ MULTI-GUARD STABILITY: Faster detection for multiple guards (2 frames vs 3)
-            # Multiple guards need more frequent verification to prevent mix-ups and maintain stable tracking
+            # All visible and tracked - run detection LESS FREQUENTLY for stable 10-15 FPS
+            # ✅ FPS OPTIMIZATION: Increased intervals when all guards are stable
+            # Detection is expensive (~30-50ms), so reducing frequency helps maintain FPS
             num_guards = len(self.targets_status)
             if num_guards >= 2:
-                adaptive_interval = 2  # 67ms - Very fast for multi-guard stability
+                adaptive_interval = 6  # ~200ms - Balanced for multi-guard
             else:
-                adaptive_interval = 3  # 100ms - Standard for single guard
+                adaptive_interval = 8  # ~265ms - Relaxed for single guard
         
         if self.re_detect_counter > adaptive_interval:
             self.re_detect_counter = 0
         
-        rgb_full_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # ✅ FPS OPTIMIZATION: Only convert to RGB when detection will run
+        # This saves ~3-5ms per frame when detection is skipped
         frame_h, frame_w = frame.shape[:2]
-        
-        # ✅ SIMPLIFIED: PRO_DETECTION MODE removed - focus on Normal Mode only
+        rgb_full_frame = None  # Lazy initialization
         
         # ✅ IMPORTANT: Get current time at the start of the tracking loop
         current_time = time.time()
@@ -5401,26 +5399,41 @@ class PoseApp:
                 # All visible targets have high confidence trackers - skip detection, just update trackers
                 logger.debug(f"[PERF-SKIP] All {len([s for s in self.targets_status.values() if s.get('visible')])} targets have high confidence trackers (>0.96) - skipping face detection")
                 face_locations = []
+                face_encodings = []
             else:
                 # Need to run detection
-                # ✅ NEW PIPELINE: Initialize and use new model pipelines
+                # ✅ FPS OPTIMIZATION: Lazy convert to RGB only when needed
+                if rgb_full_frame is None:
+                    rgb_full_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                
+                # ✅ FPS OPTIMIZATION: Downscale frame for faster face detection
+                # Face detection on smaller frame is 2-4x faster with minimal accuracy loss
+                scale_factor = 0.5  # 50% scale = 4x faster detection
+                small_h, small_w = int(frame_h * scale_factor), int(frame_w * scale_factor)
+                rgb_small_frame = cv2.resize(rgb_full_frame, (small_w, small_h), interpolation=cv2.INTER_NEAREST)
                 
                 # Initialize pipeline if needed
                 if not self.model_pipeline_initialized:
                     self._initialize_model_pipeline()
                 
-                # Load appropriate pipeline
-                if is_single_person:
-                    # Single person optimization
-                    face_locations = face_recognition.face_locations(rgb_full_frame, model="hog")
+                # Detect faces on smaller frame
+                face_locations_small = face_recognition.face_locations(rgb_small_frame, model="hog")
+                
+                # Scale face locations back to original frame size
+                face_locations = []
+                for (top, right, bottom, left) in face_locations_small:
+                    face_locations.append((
+                        int(top / scale_factor),
+                        int(right / scale_factor),
+                        int(bottom / scale_factor),
+                        int(left / scale_factor)
+                    ))
+                
+                # Get encodings if faces found (on full resolution for accuracy)
+                if face_locations:
+                    face_encodings = face_recognition.face_encodings(rgb_full_frame, face_locations)
                 else:
-                    # Multi person - standard detection
-                    face_locations = face_recognition.face_locations(rgb_full_frame, model="hog")
-            # Get encodings if faces found
-            if face_locations:
-                face_encodings = face_recognition.face_encodings(rgb_full_frame, face_locations)
-            else:
-                face_encodings = []
+                    face_encodings = []
 
             # Iterate over all targets to verify tracking
             for name, status in self.targets_status.items():
@@ -5700,6 +5713,9 @@ class PoseApp:
                     face_encodings = []
                 else:
                     # Only encode faces when we have untracked targets to match against
+                    # Ensure rgb_full_frame exists (lazy initialization safety)
+                    if rgb_full_frame is None:
+                        rgb_full_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                     face_encodings = face_recognition.face_encodings(rgb_full_frame, face_locations, num_jitters=num_jitters)
                 
                 # ✅ CRITICAL: Skip encoding step if no untracked targets
@@ -5715,6 +5731,9 @@ class PoseApp:
                     logger.debug(f"Skipping face matching: {len(untracked_targets)} untracked, {len(face_encodings)} encodings")
                 else:
                     # ✅ NEW PIPELINE: Detect brightness for dark mode pipeline
+                    # Ensure rgb_full_frame exists
+                    if rgb_full_frame is None:
+                        rgb_full_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                     gray_frame = cv2.cvtColor(rgb_full_frame, cv2.COLOR_RGB2GRAY)
                     brightness = np.mean(gray_frame)
                     
@@ -5741,17 +5760,18 @@ class PoseApp:
                     # Stricter values prevent identity switching, while still supporting moderate angles
                     # For extreme angles, skeleton tracking takes over when face detection fails
                     if adaptive_params["brightness"] < 100:  # Low-light mode
-                        base_tolerance = 0.52  # STRICTER: Prevent false matches in dark (was 0.60)
-                        min_confidence = 0.42  # STRICTER: Require better confidence (was 0.35)
+                        base_tolerance = 0.48  # STRICTER: Prevent false matches in dark
+                        min_confidence = 0.48  # STRICTER: Require better confidence
                         logger.debug(f"Using STABLE tolerances for dark mode: tolerance={base_tolerance:.2f}, min_confidence={min_confidence:.2f}")
                     elif num_guards >= 2:
-                        # MULTI-GUARD MODE: Stricter to prevent cross-matching between guards
-                        base_tolerance = 0.50  # STRICTER: Prevent guard mix-ups (was 0.60)
-                        min_confidence = 0.45  # STRICTER: High confidence required (was 0.38)
+                        # MULTI-GUARD MODE: Very strict to prevent cross-matching between guards
+                        base_tolerance = 0.45  # VERY STRICT: Prevent guard mix-ups
+                        min_confidence = 0.50  # VERY STRICT: High confidence required
+                        logger.debug(f"Using STRICT tolerances for multi-guard mode ({num_guards} guards): tolerance={base_tolerance:.2f}, min_confidence={min_confidence:.2f}")
                     else:
                         # SINGLE GUARD: Moderate for stability with some angle tolerance
-                        base_tolerance = 0.55  # BALANCED: Good stability + angle support (was 0.62)
-                        min_confidence = 0.42  # BALANCED: Reasonable confidence (was 0.36)
+                        base_tolerance = 0.52  # BALANCED: Good stability + angle support
+                        min_confidence = 0.45  # BALANCED: Reasonable confidence
                     
                     # ✅ CRITICAL: Build complete cost matrix with ALL candidates
                     # But only consider STRONG face detections to avoid false positives
@@ -5785,6 +5805,7 @@ class PoseApp:
                     
                     for target_idx, name in enumerate(untracked_targets):
                         target_encoding = self.targets_status[name]["encoding"]
+                        multi_angle_encodings = self.targets_status[name].get("multi_angle_encodings", [])
                         if target_encoding is None:
                             logger.warning(f"[WARN] Skip {name}: no encoding available")
                             continue
@@ -5798,7 +5819,15 @@ class PoseApp:
                             if unknown_encoding is None:
                                 continue
                             
-                            dist = face_recognition.face_distance([target_encoding], unknown_encoding)[0]
+                            # ✅ IMPROVED: Use multi-angle matching for better stability
+                            # Compare against ALL stored angle encodings and use BEST match
+                            if multi_angle_encodings and len(multi_angle_encodings) > 0:
+                                all_distances = face_recognition.face_distance(multi_angle_encodings, unknown_encoding)
+                                dist = min(all_distances)  # Best match from all angles
+                                best_angle_idx = int(np.argmin(all_distances))
+                                logger.debug(f"[MULTI-ANGLE] {name} vs face_{face_idx}: best_dist={dist:.3f} from angle_{best_angle_idx}/{len(multi_angle_encodings)}")
+                            else:
+                                dist = face_recognition.face_distance([target_encoding], unknown_encoding)[0]
                             confidence = 1.0 - dist
                             
                             # ✅ CRITICAL FIX: STRICT GUARD/FUGITIVE SEPARATION
@@ -5865,6 +5894,44 @@ class PoseApp:
                     assigned_targets = set()
                     assignments = []
                     
+                    # ✅ IDENTITY LOCKING: Track which faces are already locked to guards
+                    # This prevents identity switching when multiple persons are in frame
+                    locked_identities = {}  # face_idx -> guard_name for locked assignments
+                    
+                    # First pass: Preserve existing stable tracking (identity lock)
+                    for name, status in self.targets_status.items():
+                        if status.get("visible", False) and status.get("stable_tracking", False):
+                            # This guard is stably tracked - find their face in current detections
+                            current_face_box = status.get("face_box")
+                            if current_face_box:
+                                cx1, cy1, cx2, cy2 = current_face_box
+                                cx_center = (cx1 + cx2) / 2
+                                cy_center = (cy1 + cy2) / 2
+                                
+                                # Find closest face to current tracked position
+                                for face_idx, face_width, face_height in valid_face_indices:
+                                    if face_idx in assigned_faces:
+                                        continue
+                                    top, right, bottom, left = face_locations[face_idx]
+                                    fx_center = (left + right) / 2
+                                    fy_center = (top + bottom) / 2
+                                    
+                                    # Check if face is close to tracked position (within 100px)
+                                    distance_px = np.sqrt((cx_center - fx_center)**2 + (cy_center - fy_center)**2)
+                                    if distance_px < 100:  # Within 100px - likely same person
+                                        # Verify with face encoding
+                                        if face_idx < len(face_encodings):
+                                            unknown_enc = face_encodings[face_idx]
+                                            multi_encs = status.get("multi_angle_encodings", [status.get("encoding")])
+                                            if multi_encs:
+                                                face_dist = min(face_recognition.face_distance(multi_encs, unknown_enc))
+                                                if face_dist < 0.6:  # Reasonable match
+                                                    locked_identities[face_idx] = name
+                                                    assigned_faces.add(face_idx)
+                                                    assigned_targets.add(name)
+                                                    logger.debug(f"[IDENTITY LOCK] {name} locked to face_{face_idx} (dist={face_dist:.3f}, pos_dist={distance_px:.1f}px)")
+                                                    break
+                    
                     # Single-pass: Best-distance-first greedy assignment with stability tracking
                     # (Previous two-pass approach added ~50-100ms per frame with multiple guards)
                     for item in cost_matrix:
@@ -5886,10 +5953,11 @@ class PoseApp:
                             
                             # ✅ STABILITY: Track pending identity confirmation
                             # Require multiple consecutive frames matching same face before confirming
+                            # INCREASED: From 5 to 8 frames for more stable identity assignment
                             status = self.targets_status[name]
                             pending_face_idx = status.get("pending_face_idx", None)
                             pending_confirm_count = status.get("pending_confirm_count", 0)
-                            confirm_threshold = getattr(self, 'identity_confirmation_frames', 5)
+                            confirm_threshold = getattr(self, 'identity_confirmation_frames', 8)  # INCREASED for stability
                             
                             # If guard is already visible and tracking, require confirmation before switching
                             if status.get("visible", False) and status.get("stable_tracking", False):

@@ -1,0 +1,1123 @@
+2025-12-10 12:56:56,992 - WARNING - Loaded 5 guards
+2025-12-10 12:58:02,874 - WARNING - Camera 0 started successfully
+2025-12-10 12:58:06,867 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-12-10 12:58:09,542 - WARNING - Day Mode - Face: BlazeFace | Pose: MoveNet Lightning/BlazePose | Tracking: ByteTrack
+2025-12-10 12:58:47,513 - WARNING - Initiating graceful shutdown...
+2025-12-10 12:58:48,048 - WARNING - Shutdown complete
+2025-12-10 13:01:43,033 - WARNING - No target files found
+2025-12-10 13:03:00,161 - WARNING - Initiating graceful shutdown...
+2025-12-10 13:03:00,317 - WARNING - Shutdown complete
+2025-12-10 13:03:16,303 - WARNING - Loaded 3 guards
+2025-12-10 13:03:54,767 - WARNING - Camera 0 started successfully
+2025-12-10 13:03:59,735 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 13:04:00,976 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.652, distance: 0.348, bbox: 186x186 px)
+2025-12-10 13:04:01,437 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:02,880 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.676, distance: 0.324, bbox: 186x186 px)
+2025-12-10 13:04:03,256 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:04,686 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.678, distance: 0.322, bbox: 186x186 px)
+2025-12-10 13:04:04,794 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 13:04:05,041 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:06,500 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.688, distance: 0.312, bbox: 186x186 px)
+2025-12-10 13:04:06,872 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:08,286 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.673, distance: 0.327, bbox: 186x186 px)
+2025-12-10 13:04:08,655 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:10,071 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.711, distance: 0.289, bbox: 155x155 px)
+2025-12-10 13:04:10,447 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:13,696 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.655, distance: 0.345, bbox: 186x185 px)
+2025-12-10 13:04:15,151 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:04:16,564 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.680, distance: 0.320, bbox: 155x155 px)
+2025-12-10 13:04:26,419 - WARNING - Initiating graceful shutdown...
+2025-12-10 13:04:26,980 - WARNING - Shutdown complete
+2025-12-10 13:09:51,533 - WARNING - Loaded 3 guards
+2025-12-10 13:10:33,242 - WARNING - Camera 0 started successfully
+2025-12-10 13:10:46,528 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 13:10:47,756 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.650, distance: 0.350, bbox: 186x186 px)
+2025-12-10 13:10:50,158 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 13:11:39,429 - WARNING - Initiating graceful shutdown...
+2025-12-10 13:11:39,954 - WARNING - Shutdown complete
+2025-12-10 13:20:16,241 - WARNING - Loaded 3 guards
+2025-12-10 13:20:44,092 - WARNING - Camera 0 started successfully
+2025-12-10 13:20:54,293 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 13:20:55,513 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.669, distance: 0.331, bbox: 129x129 px)
+2025-12-10 13:20:58,681 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 13:21:03,360 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:21:05,666 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.563, distance: 0.437, bbox: 129x129 px)
+2025-12-10 13:21:07,584 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:21:09,917 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.610, distance: 0.390, bbox: 129x129 px)
+2025-12-10 13:21:38,296 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:21:39,678 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.705, distance: 0.295, bbox: 155x155 px)
+2025-12-10 13:21:40,056 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:21:41,448 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.691, distance: 0.309, bbox: 155x155 px)
+2025-12-10 13:21:41,543 - WARNING - Initiating graceful shutdown...
+2025-12-10 13:21:42,084 - WARNING - Shutdown complete
+2025-12-10 13:42:46,682 - WARNING - Loaded 3 guards
+2025-12-10 13:43:13,978 - WARNING - Camera 0 started successfully
+2025-12-10 13:43:29,950 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 13:43:31,148 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.639, distance: 0.361, bbox: 155x154 px)
+2025-12-10 13:43:34,140 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 13:44:06,646 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:44:10,331 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.742, distance: 0.258, bbox: 155x155 px)
+2025-12-10 13:44:10,951 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:44:14,642 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.723, distance: 0.277, bbox: 155x155 px)
+2025-12-10 13:44:15,317 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:44:19,024 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.537, distance: 0.463, bbox: 186x186 px)
+2025-12-10 13:44:26,373 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 13:44:30,171 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.623, distance: 0.377, bbox: 155x155 px)
+2025-12-10 13:46:21,846 - WARNING - [TRACK ENDED-PARTIAL] Rudresh: Partial body validation failed after 35 frames
+2025-12-10 13:46:52,379 - WARNING - [RESET] Rudresh: Missing for 30.0s — hard reset tracking, forcing immediate re-detection
+2025-12-10 13:48:42,377 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.553, distance: 0.447, bbox: 155x155 px)
+2025-12-10 13:53:34,399 - WARNING - Initiating graceful shutdown...
+2025-12-10 13:53:34,958 - WARNING - Shutdown complete
+2025-12-10 14:00:53,182 - WARNING - Loaded 3 guards
+2025-12-10 14:01:12,511 - WARNING - Camera 0 started successfully
+2025-12-10 14:01:40,930 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 14:01:41,449 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.661, distance: 0.339, bbox: 129x129 px)
+2025-12-10 14:01:46,948 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 14:02:20,546 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 14:02:21,238 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.528, distance: 0.472, bbox: 51x52 px)
+2025-12-10 14:02:21,481 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 14:02:22,163 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.562, distance: 0.438, bbox: 51x52 px)
+2025-12-10 14:02:22,403 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 14:02:23,094 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.553, distance: 0.447, bbox: 52x52 px)
+2025-12-10 14:02:40,857 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 14:02:52,914 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.488, distance: 0.512, bbox: 186x185 px)
+2025-12-10 14:02:53,296 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 14:02:53,981 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.686, distance: 0.314, bbox: 154x155 px)
+2025-12-10 14:02:56,216 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-10 14:04:22,409 - WARNING - Initiating graceful shutdown...
+2025-12-10 14:04:22,822 - WARNING - Shutdown complete
+2025-12-10 14:11:10,336 - WARNING - Loaded 3 guards
+2025-12-10 14:11:19,741 - WARNING - Initiating graceful shutdown...
+2025-12-10 14:11:19,807 - WARNING - Shutdown complete
+2025-12-10 14:23:27,109 - ERROR - Snapshot cleanup error: [WinError 3] The system cannot find the path specified: 'alert_snapshots'
+2025-12-10 14:23:27,639 - WARNING - Loaded 3 guards
+2025-12-10 14:24:04,320 - WARNING - Initiating graceful shutdown...
+2025-12-10 14:24:04,406 - WARNING - Shutdown complete
+2025-12-10 14:24:37,310 - WARNING - Loaded 3 guards
+2025-12-10 14:25:03,158 - WARNING - Initiating graceful shutdown...
+2025-12-10 14:25:03,243 - WARNING - Shutdown complete
+2025-12-10 15:55:34,574 - WARNING - Loaded 3 guards
+2025-12-10 15:55:38,360 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-10 15:56:14,871 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-10 15:56:45,047 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-10 15:56:45,049 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-10 15:56:45,050 - ERROR - Camera start error: 'ThreadedIPCamera' object has no attribute 'stop'
+2025-12-10 15:57:31,634 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-10 15:57:31,744 - ERROR - Failed to open RTSP stream: rtsp://admin:Deo12345678@192.168.1.111:554/stream1
+2025-12-10 15:57:31,745 - WARNING - Trying: rtsp://admin:Deo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-10 15:57:31,746 - ERROR - Camera start error: 'ThreadedIPCamera' object has no attribute 'stop'
+2025-12-10 15:58:11,390 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-10 15:58:13,208 - WARNING - Waiting for IP camera stream...
+2025-12-10 15:58:13,210 - WARNING - IP camera stream ready!
+2025-12-10 15:58:13,240 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-10 16:00:40,984 - WARNING - Initiating graceful shutdown...
+2025-12-10 16:00:41,140 - WARNING - Shutdown complete
+2025-12-10 16:00:57,588 - WARNING - Loaded 3 guards
+2025-12-10 16:01:58,712 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-10 16:02:00,345 - WARNING - Waiting for IP camera stream...
+2025-12-10 16:02:00,347 - WARNING - IP camera stream ready!
+2025-12-10 16:02:00,380 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-10 16:02:38,520 - WARNING - Loaded 4 guards
+2025-12-10 16:02:54,385 - WARNING - [WARN] No face encoding found in SHambhu image - guard may not be detectable
+2025-12-10 16:02:54,386 - ERROR - No targets were initialized - check that guard profile images contain faces
+2025-12-10 16:02:54,386 - WARNING - [TRACKING START] Identifying and tracking: SHambhu | Action: Hands Up
+2025-12-10 16:03:24,680 - WARNING - [TRACKING STOP] Monitoring stopped
+2025-12-10 16:06:44,259 - WARNING - Loaded 3 guards
+2025-12-10 16:06:44,273 - WARNING - Guard removed: SHambhu (Face image (profiles))
+2025-12-10 16:06:50,286 - WARNING - Initiating graceful shutdown...
+2025-12-10 16:06:50,438 - WARNING - Shutdown complete
+2025-12-10 16:07:07,389 - WARNING - Loaded 3 guards
+2025-12-10 16:07:37,691 - WARNING - Camera 0 started successfully
+2025-12-10 16:08:50,691 - WARNING - Loaded 4 guards
+2025-12-10 16:08:59,821 - WARNING - Failed to read frame, attempting recovery...
+2025-12-10 16:09:00,349 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-10 16:09:25,002 - WARNING - Initiating graceful shutdown...
+2025-12-10 16:09:25,541 - WARNING - Shutdown complete
+2025-12-10 16:09:42,927 - WARNING - Loaded 4 guards
+2025-12-10 16:10:10,682 - WARNING - Camera 0 started successfully
+2025-12-10 16:11:16,367 - WARNING - Loaded 5 guards
+2025-12-10 16:11:53,570 - WARNING - Loaded 6 guards
+2025-12-10 16:11:57,570 - WARNING - Initiating graceful shutdown...
+2025-12-10 16:11:58,078 - WARNING - Shutdown complete
+2025-12-10 16:12:13,890 - WARNING - Loaded 6 guards
+2025-12-10 16:12:32,577 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-10 16:12:34,170 - WARNING - Waiting for IP camera stream...
+2025-12-10 16:12:34,172 - WARNING - IP camera stream ready!
+2025-12-10 16:12:34,200 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-10 16:12:47,052 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 16:12:50,666 - WARNING - [TRACKING START] Identifying and tracking: abhiraj | Action: Hands Up
+2025-12-10 16:13:01,481 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.524, distance: 0.476, bbox: 62x63 px)
+2025-12-10 16:13:25,227 - WARNING - Fugitive Removed
+2025-12-10 16:13:37,967 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:13:44,805 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.462, distance: 0.538, bbox: 43x43 px)
+2025-12-10 16:13:47,904 - WARNING - Fugitive Removed
+2025-12-10 16:13:48,189 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:13:58,993 - WARNING - Fugitive Added: target_ishan_face
+2025-12-10 16:13:58,994 - WARNING - Fugitive Detection ENABLED - Searching for: target_ishan_face
+2025-12-10 16:14:03,746 - WARNING - Alert mode started - logging enabled
+2025-12-10 16:14:06,709 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.603 < guard_dist=0.732)
+2025-12-10 16:14:06,765 - WARNING - Alert mode stopped - logging saved
+2025-12-10 16:14:11,733 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.610, fugitive=0.663, margin=0.12)
+2025-12-10 16:14:11,735 - WARNING - [STRICT REJECT] abhiraj vs face_1: Face is FUGITIVE (fugitive_dist=0.601 < guard_dist=0.602)
+2025-12-10 16:14:15,768 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.675, fugitive=0.724, margin=0.12)
+2025-12-10 16:14:18,715 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.645 < guard_dist=0.704)
+2025-12-10 16:14:21,179 - WARNING - [RESET] abhiraj: Missing for 31.9s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:14:26,154 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.591 < guard_dist=0.697)
+2025-12-10 16:14:29,529 - WARNING - [STRICT REJECT] abhiraj vs face_1: Face is FUGITIVE (fugitive_dist=0.718 < guard_dist=0.752)
+2025-12-10 16:14:29,808 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2025-12-10 16:14:51,400 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.722, fugitive=0.829, margin=0.12)
+2025-12-10 16:14:56,624 - WARNING - Alert mode started - logging enabled
+2025-12-10 16:14:57,742 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.610 < guard_dist=0.683)
+2025-12-10 16:14:59,255 - WARNING - [STRICT REJECT] abhiraj vs face_1: Face is FUGITIVE (fugitive_dist=0.626 < guard_dist=0.711)
+2025-12-10 16:15:00,782 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.691, fugitive=0.711, margin=0.12)
+2025-12-10 16:15:00,783 - WARNING - [STRICT REJECT] abhiraj vs face_1: Face is FUGITIVE (fugitive_dist=0.710 < guard_dist=0.818)
+2025-12-10 16:15:09,732 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.577, distance: 0.423, bbox: 74x75 px)
+2025-12-10 16:15:10,709 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:15:11,979 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.677, fugitive=0.767, margin=0.12)
+2025-12-10 16:15:16,251 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.562, distance: 0.438, bbox: 52x52 px)
+2025-12-10 16:15:16,915 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.511 < fugitive_dist=0.629)
+2025-12-10 16:15:35,602 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.489 < fugitive_dist=0.645)
+2025-12-10 16:15:49,934 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:15:58,298 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.467, distance: 0.533, bbox: 52x51 px)
+2025-12-10 16:16:02,989 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:16:07,680 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.581, fugitive=0.619, margin=0.12)
+2025-12-10 16:16:08,867 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.559, distance: 0.441, bbox: 36x36 px)
+2025-12-10 16:16:56,854 - WARNING - [ALERT] abhiraj: Action TIMEOUT - triggering alarm
+2025-12-10 16:16:57,405 - WARNING - [ALERT] abhiraj: Restarting 15s alarm loop
+2025-12-10 16:17:20,966 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.689, fugitive=0.632, margin=0.12)
+2025-12-10 16:17:23,377 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_ishan_face - Playing 15s alert! (confidence: 0.449)
+2025-12-10 16:17:23,398 - WARNING - Saved 7 log entries to logs\events.csv
+2025-12-10 16:17:23,399 - WARNING - [FUGITIVE DETECTED] !!! target_ishan_face FIRST APPEARANCE logged - Snapshot captured (confidence: 0.449)
+2025-12-10 16:17:40,868 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.545 < fugitive_dist=0.639)
+2025-12-10 16:18:14,422 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_ishan_face - Playing 15s alert! (confidence: 0.520)
+2025-12-10 16:18:49,841 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.761, fugitive=0.645, margin=0.12)
+2025-12-10 16:18:57,055 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.647, fugitive=0.637, margin=0.12)
+2025-12-10 16:19:06,695 - WARNING - [ALERT] abhiraj: Action TIMEOUT - triggering alarm
+2025-12-10 16:19:06,696 - WARNING - [ALERT] abhiraj: Restarting 15s alarm loop
+2025-12-10 16:19:12,270 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.616 < fugitive_dist=0.636)
+2025-12-10 16:19:21,265 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.502 < fugitive_dist=0.611)
+2025-12-10 16:19:25,209 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.605, fugitive=0.565, margin=0.12)
+2025-12-10 16:19:26,834 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.635, fugitive=0.596, margin=0.12)
+2025-12-10 16:19:29,365 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:19:30,376 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.609, fugitive=0.572, margin=0.12)
+2025-12-10 16:19:31,257 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.610 < guard_dist=0.665)
+2025-12-10 16:19:33,171 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.659, fugitive=0.678, margin=0.12)
+2025-12-10 16:19:34,333 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.648, fugitive=0.658, margin=0.12)
+2025-12-10 16:19:34,970 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.603, fugitive=0.565, margin=0.12)
+2025-12-10 16:19:35,486 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.620 < guard_dist=0.641)
+2025-12-10 16:19:36,131 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.632, fugitive=0.597, margin=0.12)
+2025-12-10 16:19:36,641 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.633 < guard_dist=0.666)
+2025-12-10 16:19:37,805 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.661, fugitive=0.705, margin=0.12)
+2025-12-10 16:19:38,829 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.695, fugitive=0.650, margin=0.12)
+2025-12-10 16:19:39,352 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.639 < guard_dist=0.736)
+2025-12-10 16:19:39,991 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.615 < fugitive_dist=0.622)
+2025-12-10 16:19:40,513 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.611 < guard_dist=0.657)
+2025-12-10 16:19:47,461 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.562 < fugitive_dist=0.650)
+2025-12-10 16:19:47,965 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.541, fugitive=0.600, margin=0.12)
+2025-12-10 16:19:55,777 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.474, distance: 0.526, bbox: 36x36 px)
+2025-12-10 16:19:58,042 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:20:01,001 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'abhiraj' (guard=0.608, fugitive=0.586, margin=0.12)
+2025-12-10 16:20:01,507 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.628, fugitive=0.631, margin=0.12)
+2025-12-10 16:20:02,661 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.709, fugitive=0.807, margin=0.12)
+2025-12-10 16:20:03,815 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.688, fugitive=0.769, margin=0.12)
+2025-12-10 16:20:05,354 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.680, fugitive=0.694, margin=0.12)
+2025-12-10 16:20:06,377 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'abhiraj' (guard_dist=0.563 < fugitive_dist=0.626)
+2025-12-10 16:20:06,887 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.591, fugitive=0.669, margin=0.12)
+2025-12-10 16:20:13,422 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.655, fugitive=0.757, margin=0.12)
+2025-12-10 16:20:25,931 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.658, fugitive=0.745, margin=0.12)
+2025-12-10 16:20:26,706 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.566, fugitive=0.683, margin=0.12)
+2025-12-10 16:20:27,856 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.607, fugitive=0.710, margin=0.12)
+2025-12-10 16:20:28,640 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.585, fugitive=0.674, margin=0.12)
+2025-12-10 16:20:28,641 - WARNING - [RESET] abhiraj: Missing for 30.4s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:20:29,414 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.645, fugitive=0.660, margin=0.12)
+2025-12-10 16:20:30,178 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.655, fugitive=0.733, margin=0.12)
+2025-12-10 16:20:38,662 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.617, fugitive=0.688, margin=0.12)
+2025-12-10 16:20:50,235 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.621, fugitive=0.725, margin=0.12)
+2025-12-10 16:21:15,674 - WARNING - [ALERT] abhiraj MISSING - Alert triggered!
+2025-12-10 16:21:20,313 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.671, fugitive=0.734, margin=0.12)
+2025-12-10 16:21:21,472 - WARNING - [STRICT REJECT] abhiraj vs face_0: Face is FUGITIVE (fugitive_dist=0.696 < guard_dist=0.727)
+2025-12-10 16:21:23,388 - WARNING - [STRICT REJECT] abhiraj vs face_0: TOO CLOSE to fugitive (guard=0.727, fugitive=0.745, margin=0.12)
+2025-12-10 16:21:23,412 - WARNING - Fugitive Removed
+2025-12-10 16:21:28,989 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.511, distance: 0.489, bbox: 51x52 px)
+2025-12-10 16:21:29,010 - WARNING - [ALERT] abhiraj: Action TIMEOUT - triggering alarm
+2025-12-10 16:21:43,226 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:21:47,198 - WARNING - [DETECTED] OK abhiraj identified & tracking (confidence: 0.514, distance: 0.486, bbox: 43x43 px)
+2025-12-10 16:21:47,900 - WARNING - [GHOST REMOVED] abhiraj: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:21:49,141 - WARNING - [TRACKING STOP] Stopped monitoring: abhiraj
+2025-12-10 16:23:43,262 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 16:23:44,369 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.472, distance: 0.528, bbox: 36x36 px)
+2025-12-10 16:23:46,296 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-10 16:23:51,398 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:23:54,049 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.451, distance: 0.549, bbox: 36x36 px)
+2025-12-10 16:24:04,177 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:24:14,439 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.467, distance: 0.533, bbox: 36x36 px)
+2025-12-10 16:24:16,307 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:24:17,529 - WARNING - Fugitive Added: 01_front
+2025-12-10 16:24:17,529 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-10 16:24:21,650 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.546, fugitive=0.620, margin=0.12)
+2025-12-10 16:24:26,619 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.646, fugitive=0.757, margin=0.12)
+2025-12-10 16:24:29,305 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.649, fugitive=0.729, margin=0.12)
+2025-12-10 16:24:32,731 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.620, fugitive=0.729, margin=0.12)
+2025-12-10 16:24:36,805 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.544 < fugitive_dist=0.642)
+2025-12-10 16:24:38,463 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.752, fugitive=0.768, margin=0.12)
+2025-12-10 16:24:39,229 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.726, fugitive=0.759, margin=0.12)
+2025-12-10 16:24:43,063 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.662, fugitive=0.705, margin=0.12)
+2025-12-10 16:24:43,705 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.557 < fugitive_dist=0.610)
+2025-12-10 16:24:44,210 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.576, fugitive=0.647, margin=0.12)
+2025-12-10 16:24:44,846 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.456 < fugitive_dist=0.563)
+2025-12-10 16:24:45,368 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.551, distance: 0.449, bbox: 36x36 px)
+2025-12-10 16:24:46,020 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.524 < fugitive_dist=0.592)
+2025-12-10 16:24:47,044 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.515 < fugitive_dist=0.570)
+2025-12-10 16:24:48,490 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:24:54,271 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.506, distance: 0.494, bbox: 36x36 px)
+2025-12-10 16:24:54,716 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:25:04,319 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.492 < fugitive_dist=0.540)
+2025-12-10 16:25:04,830 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.488, fugitive=0.564, margin=0.12)
+2025-12-10 16:25:05,993 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.494, distance: 0.506, bbox: 52x52 px)
+2025-12-10 16:25:06,867 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:25:07,654 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.504, distance: 0.496, bbox: 52x52 px)
+2025-12-10 16:25:08,314 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.523 < fugitive_dist=0.621)
+2025-12-10 16:25:09,343 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.490 < fugitive_dist=0.613)
+2025-12-10 16:25:10,388 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.439 < fugitive_dist=0.640)
+2025-12-10 16:25:11,206 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:25:18,500 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.511, distance: 0.489, bbox: 36x36 px)
+2025-12-10 16:25:19,153 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.461 < fugitive_dist=0.580)
+2025-12-10 16:25:20,179 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.480 < fugitive_dist=0.553)
+2025-12-10 16:25:22,303 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.524 < fugitive_dist=0.592)
+2025-12-10 16:25:23,324 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.483 < fugitive_dist=0.620)
+2025-12-10 16:25:24,016 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.487 < fugitive_dist=0.611)
+2025-12-10 16:25:31,866 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.564 < fugitive_dist=0.593)
+2025-12-10 16:25:36,206 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.636, fugitive=0.593, margin=0.12)
+2025-12-10 16:25:36,208 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.646, fugitive=0.645, margin=0.12)
+2025-12-10 16:25:37,713 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front - Playing 15s alert! (confidence: 0.579)
+2025-12-10 16:25:38,932 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.501 < fugitive_dist=0.564)
+2025-12-10 16:25:39,617 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.479 < fugitive_dist=0.584)
+2025-12-10 16:25:43,684 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-10 16:25:43,685 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-10 16:25:44,697 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.684, fugitive=0.625, margin=0.12)
+2025-12-10 16:25:44,698 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.534 < fugitive_dist=0.553)
+2025-12-10 16:25:51,181 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.606, fugitive=0.510, margin=0.12)
+2025-12-10 16:25:53,472 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.523 < fugitive_dist=0.609)
+2025-12-10 16:25:56,840 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.591 < fugitive_dist=0.606)
+2025-12-10 16:25:58,046 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.524 < fugitive_dist=0.578)
+2025-12-10 16:25:58,744 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.528 < fugitive_dist=0.567)
+2025-12-10 16:25:59,814 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.514 < fugitive_dist=0.602)
+2025-12-10 16:25:59,815 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front - Playing 15s alert! (confidence: 0.511)
+2025-12-10 16:26:01,037 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.555 < fugitive_dist=0.616)
+2025-12-10 16:26:15,001 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.692, fugitive=0.646, margin=0.12)
+2025-12-10 16:26:15,694 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front - Playing 15s alert! (confidence: 0.418)
+2025-12-10 16:26:16,515 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.654, fugitive=0.604, margin=0.12)
+2025-12-10 16:26:18,690 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.500 < fugitive_dist=0.605)
+2025-12-10 16:26:48,024 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.655, fugitive=0.633, margin=0.12)
+2025-12-10 16:26:49,241 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.491 < fugitive_dist=0.620)
+2025-12-10 16:26:57,031 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.450 < fugitive_dist=0.584)
+2025-12-10 16:27:00,862 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.477 < fugitive_dist=0.539)
+2025-12-10 16:27:08,059 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:27:09,204 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.750 < guard_dist=0.766)
+2025-12-10 16:27:14,728 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.521, fugitive=0.634, margin=0.12)
+2025-12-10 16:27:15,365 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.458 < fugitive_dist=0.588)
+2025-12-10 16:27:15,885 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.549, distance: 0.451, bbox: 36x36 px)
+2025-12-10 16:27:16,320 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:27:17,843 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.771 < guard_dist=0.826)
+2025-12-10 16:27:18,984 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.694 < guard_dist=0.760)
+2025-12-10 16:27:19,750 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.714 < guard_dist=0.724)
+2025-12-10 16:27:20,888 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.698 < guard_dist=0.730)
+2025-12-10 16:27:22,025 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.756, fugitive=0.756, margin=0.12)
+2025-12-10 16:27:26,229 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.787, fugitive=0.811, margin=0.12)
+2025-12-10 16:27:28,523 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.599 < guard_dist=0.629)
+2025-12-10 16:27:29,682 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.497, distance: 0.503, bbox: 62x63 px)
+2025-12-10 16:27:30,124 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:27:32,033 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.730, fugitive=0.730, margin=0.12)
+2025-12-10 16:27:32,799 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.776, fugitive=0.809, margin=0.12)
+2025-12-10 16:27:36,638 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.773, fugitive=0.796, margin=0.12)
+2025-12-10 16:27:37,402 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.750, fugitive=0.772, margin=0.12)
+2025-12-10 16:27:38,040 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.676, fugitive=0.621, margin=0.12)
+2025-12-10 16:27:38,925 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.609 < guard_dist=0.667)
+2025-12-10 16:27:43,524 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.663 < guard_dist=0.759)
+2025-12-10 16:27:44,286 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.620 < guard_dist=0.710)
+2025-12-10 16:27:45,426 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.660 < guard_dist=0.757)
+2025-12-10 16:27:45,427 - WARNING - [STRICT REJECT] KD vs face_1: TOO CLOSE to fugitive (guard=0.820, fugitive=0.876, margin=0.12)
+2025-12-10 16:27:46,568 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.600 < guard_dist=0.731)
+2025-12-10 16:27:46,569 - WARNING - [STRICT REJECT] KD vs face_1: Face is FUGITIVE (fugitive_dist=0.677 < guard_dist=0.712)
+2025-12-10 16:27:47,205 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.677, fugitive=0.631, margin=0.12)
+2025-12-10 16:27:47,707 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.617 < guard_dist=0.718)
+2025-12-10 16:27:48,345 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.556, fugitive=0.551, margin=0.12)
+2025-12-10 16:27:48,849 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.570 < guard_dist=0.606)
+2025-12-10 16:27:49,614 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.646 < guard_dist=0.677)
+2025-12-10 16:27:50,377 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.550 < guard_dist=0.596)
+2025-12-10 16:27:51,137 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.685 < guard_dist=0.694)
+2025-12-10 16:27:55,086 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.688, fugitive=0.626, margin=0.12)
+2025-12-10 16:27:55,592 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.609 < guard_dist=0.628)
+2025-12-10 16:27:56,730 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.656 < guard_dist=0.661)
+2025-12-10 16:27:59,028 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.783 < guard_dist=0.786)
+2025-12-10 16:28:00,166 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.734 < guard_dist=0.796)
+2025-12-10 16:28:01,308 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.697 < guard_dist=0.759)
+2025-12-10 16:28:01,308 - WARNING - [RESET] KD: Missing for 30.8s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:28:01,314 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-10 16:28:02,462 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.711, fugitive=0.738, margin=0.12)
+2025-12-10 16:28:03,607 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.636 < guard_dist=0.715)
+2025-12-10 16:28:04,744 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.706 < guard_dist=0.736)
+2025-12-10 16:28:05,887 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.751 < guard_dist=0.788)
+2025-12-10 16:28:07,795 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.756 < guard_dist=0.763)
+2025-12-10 16:28:11,498 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.602 < fugitive_dist=0.649)
+2025-12-10 16:28:12,382 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.692 < guard_dist=0.744)
+2025-12-10 16:28:12,383 - WARNING - [STRICT REJECT] KD vs face_1: TOO CLOSE to fugitive (guard=0.586, fugitive=0.647, margin=0.12)
+2025-12-10 16:28:13,901 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.727 < guard_dist=0.740)
+2025-12-10 16:28:13,921 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.473, distance: 0.527, bbox: 43x43 px)
+2025-12-10 16:28:13,942 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-10 16:28:14,606 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.581 < fugitive_dist=0.629)
+2025-12-10 16:28:16,279 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.596 < fugitive_dist=0.647)
+2025-12-10 16:28:18,726 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.521 < fugitive_dist=0.628)
+2025-12-10 16:28:24,863 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-10 16:28:28,134 - WARNING - Saved 23 log entries to logs\events.csv
+2025-12-10 16:28:28,134 - WARNING - Alert mode stopped - logging saved
+2025-12-10 16:28:30,829 - WARNING - Fugitive Removed
+2025-12-10 16:28:46,119 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 16:28:48,557 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-10 16:29:01,091 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.456, distance: 0.544, bbox: 51x52 px)
+2025-12-10 16:29:02,433 - WARNING - Fugitive Added: front
+2025-12-10 16:29:02,434 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-10 16:29:02,911 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.395)
+2025-12-10 16:29:07,678 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.675, fugitive=0.634, margin=0.12)
+2025-12-10 16:29:08,680 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.651, fugitive=0.625, margin=0.12)
+2025-12-10 16:29:09,371 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.617, fugitive=0.613, margin=0.12)
+2025-12-10 16:29:15,098 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.620, fugitive=0.589, margin=0.12)
+2025-12-10 16:29:17,452 - WARNING - Alert mode started - logging enabled
+2025-12-10 16:29:21,836 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.546 < fugitive_dist=0.567)
+2025-12-10 16:29:22,851 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.469 < fugitive_dist=0.648)
+2025-12-10 16:29:25,632 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.497 < fugitive_dist=0.590)
+2025-12-10 16:29:26,322 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.436 < fugitive_dist=0.634)
+2025-12-10 16:29:35,326 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.574 < fugitive_dist=0.624)
+2025-12-10 16:29:47,677 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.561 < fugitive_dist=0.638)
+2025-12-10 16:29:49,326 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.432 < fugitive_dist=0.611)
+2025-12-10 16:29:50,356 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.463 < fugitive_dist=0.640)
+2025-12-10 16:29:57,858 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.551 < fugitive_dist=0.599)
+2025-12-10 16:29:58,545 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.489 < fugitive_dist=0.608)
+2025-12-10 16:29:59,229 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.494 < fugitive_dist=0.626)
+2025-12-10 16:30:00,246 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.527 < fugitive_dist=0.647)
+2025-12-10 16:30:01,274 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.474 < fugitive_dist=0.611)
+2025-12-10 16:30:01,971 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.520 < fugitive_dist=0.630)
+2025-12-10 16:30:02,668 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.494 < fugitive_dist=0.623)
+2025-12-10 16:30:03,698 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.422 < fugitive_dist=0.579)
+2025-12-10 16:30:04,414 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.466 < fugitive_dist=0.545)
+2025-12-10 16:30:10,859 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.606 < fugitive_dist=0.611)
+2025-12-10 16:30:12,351 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.546 < fugitive_dist=0.635)
+2025-12-10 16:30:13,195 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.458 < fugitive_dist=0.627)
+2025-12-10 16:30:13,904 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.437 < fugitive_dist=0.554)
+2025-12-10 16:30:15,996 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.563 < fugitive_dist=0.615)
+2025-12-10 16:30:17,453 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.511 < fugitive_dist=0.604)
+2025-12-10 16:30:17,859 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-10 16:30:18,472 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.457 < fugitive_dist=0.622)
+2025-12-10 16:30:19,172 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.661, fugitive=0.615, margin=0.12)
+2025-12-10 16:30:20,446 - WARNING - Stillness Alert ENABLED
+2025-12-10 16:30:24,643 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.663, fugitive=0.632, margin=0.12)
+2025-12-10 16:30:25,637 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.519 < fugitive_dist=0.623)
+2025-12-10 16:30:26,326 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.550 < fugitive_dist=0.636)
+2025-12-10 16:30:28,031 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.474 < fugitive_dist=0.601)
+2025-12-10 16:30:29,069 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.481 < fugitive_dist=0.606)
+2025-12-10 16:30:29,772 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.435 < fugitive_dist=0.613)
+2025-12-10 16:30:30,468 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.456 < fugitive_dist=0.613)
+2025-12-10 16:30:31,163 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.499 < fugitive_dist=0.623)
+2025-12-10 16:30:31,859 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.439 < fugitive_dist=0.608)
+2025-12-10 16:30:32,553 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.464 < fugitive_dist=0.617)
+2025-12-10 16:30:33,248 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.445 < fugitive_dist=0.616)
+2025-12-10 16:30:33,946 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.426 < fugitive_dist=0.584)
+2025-12-10 16:30:34,638 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.474 < fugitive_dist=0.592)
+2025-12-10 16:30:35,332 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.445 < fugitive_dist=0.611)
+2025-12-10 16:30:36,026 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.430 < fugitive_dist=0.604)
+2025-12-10 16:30:36,717 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.460 < fugitive_dist=0.610)
+2025-12-10 16:30:37,748 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.458 < fugitive_dist=0.625)
+2025-12-10 16:30:38,446 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.462 < fugitive_dist=0.598)
+2025-12-10 16:30:39,145 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.449 < fugitive_dist=0.603)
+2025-12-10 16:30:39,847 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.426 < fugitive_dist=0.579)
+2025-12-10 16:30:40,544 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.431 < fugitive_dist=0.575)
+2025-12-10 16:30:41,250 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.408 < fugitive_dist=0.589)
+2025-12-10 16:30:41,949 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.430 < fugitive_dist=0.578)
+2025-12-10 16:30:42,648 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.432 < fugitive_dist=0.648)
+2025-12-10 16:30:43,341 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.444 < fugitive_dist=0.608)
+2025-12-10 16:30:44,034 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.461 < fugitive_dist=0.593)
+2025-12-10 16:30:45,125 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.480 < fugitive_dist=0.620)
+2025-12-10 16:30:45,126 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.544)
+2025-12-10 16:30:46,204 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.465 < fugitive_dist=0.623)
+2025-12-10 16:30:47,275 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.506 < fugitive_dist=0.600)
+2025-12-10 16:30:48,344 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.502 < fugitive_dist=0.639)
+2025-12-10 16:30:50,129 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.460 < fugitive_dist=0.621)
+2025-12-10 16:30:51,210 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.453 < fugitive_dist=0.631)
+2025-12-10 16:30:52,280 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.472 < fugitive_dist=0.615)
+2025-12-10 16:30:53,735 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.451 < fugitive_dist=0.645)
+2025-12-10 16:30:54,432 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.436 < fugitive_dist=0.634)
+2025-12-10 16:30:55,130 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.486 < fugitive_dist=0.629)
+2025-12-10 16:30:55,831 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.499 < fugitive_dist=0.616)
+2025-12-10 16:30:56,521 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.453 < fugitive_dist=0.624)
+2025-12-10 16:30:57,226 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.472 < fugitive_dist=0.614)
+2025-12-10 16:30:58,264 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.465 < fugitive_dist=0.609)
+2025-12-10 16:30:58,966 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.516 < fugitive_dist=0.626)
+2025-12-10 16:30:59,673 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.435 < fugitive_dist=0.607)
+2025-12-10 16:31:00,380 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.473 < fugitive_dist=0.602)
+2025-12-10 16:31:01,074 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.462 < fugitive_dist=0.617)
+2025-12-10 16:31:01,776 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.504 < fugitive_dist=0.614)
+2025-12-10 16:31:02,472 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.499 < fugitive_dist=0.609)
+2025-12-10 16:31:03,173 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.513 < fugitive_dist=0.610)
+2025-12-10 16:31:03,865 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.510 < fugitive_dist=0.620)
+2025-12-10 16:31:04,557 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.489 < fugitive_dist=0.593)
+2025-12-10 16:31:05,256 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.414 < fugitive_dist=0.581)
+2025-12-10 16:31:05,953 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.434 < fugitive_dist=0.572)
+2025-12-10 16:31:06,777 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.437 < fugitive_dist=0.588)
+2025-12-10 16:31:07,472 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.446 < fugitive_dist=0.581)
+2025-12-10 16:31:08,165 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.427 < fugitive_dist=0.592)
+2025-12-10 16:31:08,865 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.406 < fugitive_dist=0.577)
+2025-12-10 16:31:09,561 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.449 < fugitive_dist=0.587)
+2025-12-10 16:31:10,265 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.436 < fugitive_dist=0.591)
+2025-12-10 16:31:10,965 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.450 < fugitive_dist=0.593)
+2025-12-10 16:31:11,661 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.426 < fugitive_dist=0.595)
+2025-12-10 16:31:12,362 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.445 < fugitive_dist=0.600)
+2025-12-10 16:31:13,061 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.488 < fugitive_dist=0.627)
+2025-12-10 16:31:13,755 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.362 < fugitive_dist=0.591)
+2025-12-10 16:31:14,453 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.357 < fugitive_dist=0.581)
+2025-12-10 16:31:15,147 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.373 < fugitive_dist=0.603)
+2025-12-10 16:31:15,843 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.359 < fugitive_dist=0.602)
+2025-12-10 16:31:16,543 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.332 < fugitive_dist=0.584)
+2025-12-10 16:31:17,238 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.388 < fugitive_dist=0.597)
+2025-12-10 16:31:17,941 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.447 < fugitive_dist=0.606)
+2025-12-10 16:31:18,003 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 16:31:18,004 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 16:31:18,640 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.417 < fugitive_dist=0.612)
+2025-12-10 16:31:19,339 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.420 < fugitive_dist=0.603)
+2025-12-10 16:31:20,038 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.478 < fugitive_dist=0.598)
+2025-12-10 16:31:20,098 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 16:31:20,732 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.439 < fugitive_dist=0.597)
+2025-12-10 16:31:22,124 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.484 < fugitive_dist=0.611)
+2025-12-10 16:31:23,156 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.512 < fugitive_dist=0.619)
+2025-12-10 16:31:25,256 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.521 < fugitive_dist=0.612)
+2025-12-10 16:31:26,278 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.563 < fugitive_dist=0.596)
+2025-12-10 16:31:26,976 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.513 < fugitive_dist=0.575)
+2025-12-10 16:31:27,668 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.551 < fugitive_dist=0.625)
+2025-12-10 16:31:28,696 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.532 < fugitive_dist=0.615)
+2025-12-10 16:31:29,726 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.489 < fugitive_dist=0.645)
+2025-12-10 16:31:30,423 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.500 < fugitive_dist=0.646)
+2025-12-10 16:31:31,115 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.497 < fugitive_dist=0.641)
+2025-12-10 16:31:31,810 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.463 < fugitive_dist=0.628)
+2025-12-10 16:31:32,496 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.446 < fugitive_dist=0.624)
+2025-12-10 16:31:33,191 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.442 < fugitive_dist=0.588)
+2025-12-10 16:31:33,889 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.405 < fugitive_dist=0.575)
+2025-12-10 16:31:34,586 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.410 < fugitive_dist=0.591)
+2025-12-10 16:31:35,272 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.420 < fugitive_dist=0.601)
+2025-12-10 16:31:35,960 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.434 < fugitive_dist=0.594)
+2025-12-10 16:31:36,651 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.460 < fugitive_dist=0.637)
+2025-12-10 16:31:37,343 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.415 < fugitive_dist=0.583)
+2025-12-10 16:31:38,034 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.438 < fugitive_dist=0.572)
+2025-12-10 16:31:38,725 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.449 < fugitive_dist=0.594)
+2025-12-10 16:31:39,411 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.418 < fugitive_dist=0.598)
+2025-12-10 16:31:40,103 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.427 < fugitive_dist=0.580)
+2025-12-10 16:31:40,790 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.440 < fugitive_dist=0.571)
+2025-12-10 16:31:41,478 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.502 < fugitive_dist=0.578)
+2025-12-10 16:31:42,293 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.453 < fugitive_dist=0.559)
+2025-12-10 16:31:42,985 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.456 < fugitive_dist=0.566)
+2025-12-10 16:31:43,678 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.436 < fugitive_dist=0.582)
+2025-12-10 16:31:44,364 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.453 < fugitive_dist=0.578)
+2025-12-10 16:31:45,051 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.470 < fugitive_dist=0.572)
+2025-12-10 16:31:45,746 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.455 < fugitive_dist=0.586)
+2025-12-10 16:31:46,433 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.455 < fugitive_dist=0.582)
+2025-12-10 16:31:47,120 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.476 < fugitive_dist=0.623)
+2025-12-10 16:31:47,815 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.489 < fugitive_dist=0.607)
+2025-12-10 16:31:48,502 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.462 < fugitive_dist=0.618)
+2025-12-10 16:31:49,199 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.540 < fugitive_dist=0.633)
+2025-12-10 16:31:49,890 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.482 < fugitive_dist=0.617)
+2025-12-10 16:31:50,583 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.480 < fugitive_dist=0.594)
+2025-12-10 16:31:51,598 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.537 < fugitive_dist=0.637)
+2025-12-10 16:31:52,297 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.531 < fugitive_dist=0.634)
+2025-12-10 16:31:52,990 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.549 < fugitive_dist=0.647)
+2025-12-10 16:31:53,684 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.446 < fugitive_dist=0.605)
+2025-12-10 16:31:54,380 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.455 < fugitive_dist=0.611)
+2025-12-10 16:31:55,077 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.417 < fugitive_dist=0.604)
+2025-12-10 16:31:55,776 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.442 < fugitive_dist=0.646)
+2025-12-10 16:31:56,473 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.423 < fugitive_dist=0.613)
+2025-12-10 16:31:57,164 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.424 < fugitive_dist=0.610)
+2025-12-10 16:31:57,859 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.485 < fugitive_dist=0.603)
+2025-12-10 16:31:58,554 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.471 < fugitive_dist=0.585)
+2025-12-10 16:31:59,251 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.435 < fugitive_dist=0.581)
+2025-12-10 16:32:00,084 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.402 < fugitive_dist=0.585)
+2025-12-10 16:32:00,781 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.439 < fugitive_dist=0.588)
+2025-12-10 16:32:01,477 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.462 < fugitive_dist=0.622)
+2025-12-10 16:32:02,173 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.508 < fugitive_dist=0.631)
+2025-12-10 16:32:02,868 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.459 < fugitive_dist=0.599)
+2025-12-10 16:32:03,560 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.435 < fugitive_dist=0.596)
+2025-12-10 16:32:04,253 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.456 < fugitive_dist=0.614)
+2025-12-10 16:32:04,956 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.454 < fugitive_dist=0.593)
+2025-12-10 16:32:06,356 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.508 < fugitive_dist=0.593)
+2025-12-10 16:32:07,043 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.480 < fugitive_dist=0.585)
+2025-12-10 16:32:07,741 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.476 < fugitive_dist=0.578)
+2025-12-10 16:32:08,446 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.521 < fugitive_dist=0.603)
+2025-12-10 16:32:09,152 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.478 < fugitive_dist=0.573)
+2025-12-10 16:32:09,874 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.464 < fugitive_dist=0.547)
+2025-12-10 16:32:10,565 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.477 < fugitive_dist=0.550)
+2025-12-10 16:32:11,274 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.482 < fugitive_dist=0.589)
+2025-12-10 16:32:11,977 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.436 < fugitive_dist=0.588)
+2025-12-10 16:32:12,683 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.444 < fugitive_dist=0.584)
+2025-12-10 16:32:13,387 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.468 < fugitive_dist=0.626)
+2025-12-10 16:32:14,088 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.457 < fugitive_dist=0.579)
+2025-12-10 16:32:14,791 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.484 < fugitive_dist=0.595)
+2025-12-10 16:32:15,486 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.483 < fugitive_dist=0.567)
+2025-12-10 16:32:16,190 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.480 < fugitive_dist=0.568)
+2025-12-10 16:32:16,900 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.445 < fugitive_dist=0.542)
+2025-12-10 16:32:17,610 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.472 < fugitive_dist=0.598)
+2025-12-10 16:32:18,313 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.518 < fugitive_dist=0.619)
+2025-12-10 16:32:19,013 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.481 < fugitive_dist=0.581)
+2025-12-10 16:32:19,715 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.461 < fugitive_dist=0.565)
+2025-12-10 16:32:19,796 - WARNING - Fugitive Removed
+2025-12-10 16:32:31,870 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:32:32,568 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.480, distance: 0.520, bbox: 52x52 px)
+2025-12-10 16:32:32,805 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:32:33,499 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.571, distance: 0.429, bbox: 44x43 px)
+2025-12-10 16:33:22,644 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 16:33:22,646 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 16:33:23,349 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 16:33:47,450 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:33:49,883 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.495, distance: 0.505, bbox: 43x43 px)
+2025-12-10 16:33:50,121 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:33:52,761 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.505, distance: 0.495, bbox: 43x43 px)
+2025-12-10 16:33:53,130 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:34:05,683 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.452, distance: 0.548, bbox: 43x43 px)
+2025-12-10 16:35:27,625 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-10 16:35:46,228 - WARNING - Saved 8 log entries to logs\events.csv
+2025-12-10 16:35:46,228 - WARNING - Alert mode stopped - logging saved
+2025-12-10 16:35:47,368 - WARNING - Alert mode started - logging enabled
+2025-12-10 16:36:08,128 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 16:36:09,076 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.470, distance: 0.530, bbox: 36x36 px)
+2025-12-10 16:36:11,134 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 16:36:26,705 - WARNING - Fugitive Added: target_KD_face
+2025-12-10 16:36:26,706 - WARNING - Fugitive Detection ENABLED - Searching for: target_KD_face
+2025-12-10 16:36:38,338 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.448 < fugitive_dist=0.644)
+2025-12-10 16:36:42,500 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.408 < fugitive_dist=0.649)
+2025-12-10 16:36:44,583 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.440 < fugitive_dist=0.633)
+2025-12-10 16:37:04,030 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_KD_face - Playing 15s alert! (confidence: 0.517)
+2025-12-10 16:37:30,080 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_KD_face - Playing 15s alert! (confidence: 0.555)
+2025-12-10 16:37:56,993 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.497 < fugitive_dist=0.648)
+2025-12-10 16:38:08,778 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-10 16:38:08,780 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:38:10,502 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:38:11,846 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:38:18,434 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_KD_face - Playing 15s alert! (confidence: 0.491)
+2025-12-10 16:38:37,118 - WARNING - PRO Mode DISABLED
+2025-12-10 16:38:43,000 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-10 16:38:45,076 - WARNING - Stillness Alert ENABLED
+2025-12-10 16:39:24,890 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.508 < fugitive_dist=0.623)
+2025-12-10 16:39:39,479 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.444 < fugitive_dist=0.592)
+2025-12-10 16:40:09,929 - WARNING - Stillness Alert DISABLED
+2025-12-10 16:40:10,920 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Rudresh' (guard=0.637, fugitive=0.582, margin=0.12)
+2025-12-10 16:40:12,528 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_KD_face - Playing 15s alert! (confidence: 0.541)
+2025-12-10 16:40:22,152 - WARNING - Stillness Alert ENABLED
+2025-12-10 16:40:29,744 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.395 < fugitive_dist=0.647)
+2025-12-10 16:40:32,522 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.390 < fugitive_dist=0.645)
+2025-12-10 16:40:33,910 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.402 < fugitive_dist=0.638)
+2025-12-10 16:40:45,721 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.397 < fugitive_dist=0.634)
+2025-12-10 16:40:53,704 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.379 < fugitive_dist=0.649)
+2025-12-10 16:40:54,394 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.377 < fugitive_dist=0.629)
+2025-12-10 16:40:56,475 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.376 < fugitive_dist=0.633)
+2025-12-10 16:40:57,243 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.6 SECONDS - Triggering 15s alert!
+2025-12-10 16:40:57,245 - WARNING - Saved 6 log entries to logs\events.csv
+2025-12-10 16:40:58,565 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.410 < fugitive_dist=0.641)
+2025-12-10 16:41:32,462 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.379 < fugitive_dist=0.634)
+2025-12-10 16:41:43,557 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.445 < fugitive_dist=0.644)
+2025-12-10 16:41:54,637 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.458 < fugitive_dist=0.647)
+2025-12-10 16:42:05,291 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Rudresh' (guard_dist=0.452 < fugitive_dist=0.646)
+2025-12-10 16:42:08,122 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-10 16:42:08,124 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:10,193 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:10,512 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:10,950 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:11,690 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:12,380 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:13,397 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:42:14,420 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-10 16:43:11,154 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.3 SECONDS - Triggering 15s alert!
+2025-12-10 16:43:11,156 - WARNING - Saved 6 log entries to logs\events.csv
+2025-12-10 16:43:41,583 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - target_KD_face - Playing 15s alert! (confidence: 0.540)
+2025-12-10 16:43:43,051 - WARNING - Fugitive Removed
+2025-12-10 16:43:47,272 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-10 16:43:52,100 - WARNING - Stillness Alert DISABLED
+2025-12-10 16:43:54,138 - WARNING - PRO Mode DISABLED
+2025-12-10 16:44:02,366 - WARNING - Initiating graceful shutdown...
+2025-12-10 16:44:02,441 - WARNING - Shutdown complete
+2025-12-10 16:45:41,557 - WARNING - Loaded 6 guards
+2025-12-10 16:45:57,106 - WARNING - Camera 0 started successfully
+2025-12-10 16:46:01,863 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-12-10 16:46:03,443 - WARNING - Day Mode - Face: BlazeFace | Pose: MoveNet Lightning/BlazePose | Tracking: ByteTrack
+2025-12-10 16:46:20,374 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2025-12-10 16:46:22,553 - WARNING - Alert mode started - logging enabled
+2025-12-10 16:46:26,343 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 16:46:28,476 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-10 16:46:32,284 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.515, distance: 0.485, bbox: 36x36 px)
+2025-12-10 16:46:40,122 - WARNING - Fugitive Added: 01_front
+2025-12-10 16:46:40,123 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-10 16:47:05,485 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-10 16:47:15,441 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.693, fugitive=0.749, margin=0.12)
+2025-12-10 16:47:20,884 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.484 < guard_dist=0.628)
+2025-12-10 16:47:21,626 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.558 < guard_dist=0.664)
+2025-12-10 16:47:23,813 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.519, fugitive=0.586, margin=0.12)
+2025-12-10 16:47:24,932 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.670, fugitive=0.766, margin=0.12)
+2025-12-10 16:47:31,969 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.452, fugitive=0.556, margin=0.12)
+2025-12-10 16:47:35,590 - WARNING - [RESET] KD: Missing for 30.1s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:47:36,331 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.472, fugitive=0.550, margin=0.12)
+2025-12-10 16:47:37,071 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.489, fugitive=0.562, margin=0.12)
+2025-12-10 16:47:38,199 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.483, fugitive=0.576, margin=0.12)
+2025-12-10 16:47:38,200 - WARNING - [STRICT REJECT] KD vs face_1: TOO CLOSE to fugitive (guard=0.632, fugitive=0.706, margin=0.12)
+2025-12-10 16:47:38,947 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.572, fugitive=0.676, margin=0.12)
+2025-12-10 16:47:41,132 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.527, fugitive=0.580, margin=0.12)
+2025-12-10 16:47:41,881 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.553, fugitive=0.564, margin=0.12)
+2025-12-10 16:47:43,349 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.538, fugitive=0.583, margin=0.12)
+2025-12-10 16:47:44,092 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.491, fugitive=0.523, margin=0.12)
+2025-12-10 16:47:44,963 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.517, fugitive=0.609, margin=0.12)
+2025-12-10 16:47:45,592 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.595 < fugitive_dist=0.641)
+2025-12-10 16:47:46,079 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.587, fugitive=0.627, margin=0.12)
+2025-12-10 16:47:47,190 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.593, fugitive=0.684, margin=0.12)
+2025-12-10 16:47:47,828 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.430 < fugitive_dist=0.567)
+2025-12-10 16:47:48,321 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.439, fugitive=0.550, margin=0.12)
+2025-12-10 16:47:49,083 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.574, distance: 0.426, bbox: 36x36 px)
+2025-12-10 16:47:50,737 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.475 < fugitive_dist=0.637)
+2025-12-10 16:48:26,687 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.593, fugitive=0.507, margin=0.12)
+2025-12-10 16:48:27,053 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-10 16:48:27,524 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-10 16:48:30,349 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:48:32,493 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-10 16:48:33,031 - WARNING - Fugitive Removed
+2025-12-10 16:48:38,850 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.515, distance: 0.485, bbox: 51x51 px)
+2025-12-10 16:48:48,436 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:48:50,523 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.535, distance: 0.465, bbox: 36x36 px)
+2025-12-10 16:49:11,889 - WARNING - Fugitive Added: 01_front
+2025-12-10 16:49:11,890 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-10 16:49:24,320 - WARNING - [GHOST REMOVED] KD: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:49:32,506 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.490, fugitive=0.537, margin=0.12)
+2025-12-10 16:49:33,242 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.615, fugitive=0.616, margin=0.12)
+2025-12-10 16:49:35,524 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.486, fugitive=0.561, margin=0.12)
+2025-12-10 16:49:36,278 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.522, distance: 0.478, bbox: 36x36 px)
+2025-12-10 16:50:11,501 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-10 16:50:16,494 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.695 < guard_dist=0.697)
+2025-12-10 16:50:17,615 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.520, distance: 0.480, bbox: 36x36 px)
+2025-12-10 16:50:18,228 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-10 16:50:18,970 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.643 < guard_dist=0.731)
+2025-12-10 16:50:26,833 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.496, distance: 0.504, bbox: 36x36 px)
+2025-12-10 16:50:27,250 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-10 16:50:27,991 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.503, fugitive=0.523, margin=0.12)
+2025-12-10 16:50:28,732 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.694 < guard_dist=0.727)
+2025-12-10 16:50:29,715 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.489 < fugitive_dist=0.638)
+2025-12-10 16:50:30,597 - WARNING - [STRICT REJECT] KD vs face_1: Face is FUGITIVE (fugitive_dist=0.706 < guard_dist=0.731)
+2025-12-10 16:50:30,616 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.502, distance: 0.498, bbox: 52x52 px)
+2025-12-10 16:50:31,224 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-10 16:50:33,164 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.608, fugitive=0.704, margin=0.12)
+2025-12-10 16:50:33,904 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.712 < guard_dist=0.738)
+2025-12-10 16:50:36,468 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.699 < guard_dist=0.710)
+2025-12-10 16:50:36,468 - WARNING - [STRICT REJECT] KD vs face_1: TOO CLOSE to fugitive (guard=0.749, fugitive=0.814, margin=0.12)
+2025-12-10 16:50:37,592 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.762, fugitive=0.810, margin=0.12)
+2025-12-10 16:50:39,043 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.585 < guard_dist=0.595)
+2025-12-10 16:50:39,756 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-10 16:50:41,915 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.683 < guard_dist=0.736)
+2025-12-10 16:50:42,656 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.745 < guard_dist=0.798)
+2025-12-10 16:50:43,396 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.674 < guard_dist=0.726)
+2025-12-10 16:50:45,576 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.607, distance: 0.393, bbox: 36x36 px)
+2025-12-10 16:50:46,006 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-10 16:50:49,014 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.739, fugitive=0.744, margin=0.12)
+2025-12-10 16:50:52,608 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.413 < guard_dist=0.565)
+2025-12-10 16:50:55,031 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front - Playing 15s alert! (confidence: 0.506)
+2025-12-10 16:50:55,046 - WARNING - Saved 8 log entries to logs\events.csv
+2025-12-10 16:50:55,046 - WARNING - [FUGITIVE DETECTED] !!! 01_front FIRST APPEARANCE logged - Snapshot captured (confidence: 0.506)
+2025-12-10 16:50:55,900 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.348 < guard_dist=0.590)
+2025-12-10 16:50:58,800 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.780 < guard_dist=0.807)
+2025-12-10 16:51:00,643 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.705 < guard_dist=0.743)
+2025-12-10 16:51:01,391 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.666 < guard_dist=0.680)
+2025-12-10 16:51:02,856 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.709 < guard_dist=0.792)
+2025-12-10 16:51:03,599 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.685 < guard_dist=0.751)
+2025-12-10 16:51:04,339 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.484, fugitive=0.527, margin=0.12)
+2025-12-10 16:51:05,086 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.437, fugitive=0.540, margin=0.12)
+2025-12-10 16:51:05,833 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.755, fugitive=0.777, margin=0.12)
+2025-12-10 16:51:06,575 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.732 < guard_dist=0.793)
+2025-12-10 16:51:09,089 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.514, fugitive=0.587, margin=0.12)
+2025-12-10 16:51:09,835 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.535 < guard_dist=0.614)
+2025-12-10 16:51:11,415 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.764 < guard_dist=0.776)
+2025-12-10 16:51:14,295 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.500, fugitive=0.537, margin=0.12)
+2025-12-10 16:51:14,922 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.488, fugitive=0.486, margin=0.12)
+2025-12-10 16:51:15,416 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.476, fugitive=0.521, margin=0.12)
+2025-12-10 16:51:16,425 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front - Playing 15s alert! (confidence: 0.648)
+2025-12-10 16:51:16,425 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'KD' (guard=0.631, fugitive=0.618, margin=0.12)
+2025-12-10 16:51:17,296 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.710 < guard_dist=0.728)
+2025-12-10 16:51:17,297 - WARNING - [STRICT REJECT] KD vs face_1: Face is FUGITIVE (fugitive_dist=0.393 < guard_dist=0.577)
+2025-12-10 16:51:17,298 - WARNING - [RESET] KD: Missing for 30.6s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:51:18,426 - WARNING - [STRICT REJECT] KD vs face_0: Face is FUGITIVE (fugitive_dist=0.659 < guard_dist=0.661)
+2025-12-10 16:51:19,055 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.581 < fugitive_dist=0.628)
+2025-12-10 16:51:19,548 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.606, fugitive=0.632, margin=0.12)
+2025-12-10 16:51:20,293 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.591, fugitive=0.673, margin=0.12)
+2025-12-10 16:51:20,923 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.543 < fugitive_dist=0.585)
+2025-12-10 16:51:21,417 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.565, fugitive=0.667, margin=0.12)
+2025-12-10 16:51:22,049 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.530 < fugitive_dist=0.647)
+2025-12-10 16:51:22,559 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.563, distance: 0.437, bbox: 36x36 px)
+2025-12-10 16:52:51,939 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-10 16:53:10,141 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.403 < fugitive_dist=0.539)
+2025-12-10 16:53:10,833 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.456 < fugitive_dist=0.538)
+2025-12-10 16:53:14,334 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.447 < fugitive_dist=0.570)
+2025-12-10 16:53:15,015 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'KD' (guard_dist=0.483 < fugitive_dist=0.532)
+2025-12-10 16:53:18,913 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front - Playing 15s alert! (confidence: 0.588)
+2025-12-10 16:53:34,915 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-10 16:53:45,359 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 16:53:47,181 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-10 16:53:52,728 - WARNING - Fugitive Removed
+2025-12-10 16:54:05,951 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-10 16:54:07,471 - WARNING - Stillness Alert ENABLED
+2025-12-10 16:54:16,082 - WARNING - [RESET] Krunal: Missing for 30.1s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:54:18,892 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.562, distance: 0.438, bbox: 36x36 px)
+2025-12-10 16:54:21,122 - WARNING - Fugitive Added: front
+2025-12-10 16:54:21,122 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-10 16:54:52,667 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.525)
+2025-12-10 16:54:58,202 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.437 < fugitive_dist=0.622)
+2025-12-10 16:55:01,363 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:55:01,993 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.364 < fugitive_dist=0.630)
+2025-12-10 16:55:02,505 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.622, distance: 0.378, bbox: 108x108 px)
+2025-12-10 16:55:02,921 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:55:03,902 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.400 < fugitive_dist=0.628)
+2025-12-10 16:55:04,778 - WARNING - [STRICT REJECT] Krunal vs face_1: Face is FUGITIVE (fugitive_dist=0.516 < guard_dist=0.712)
+2025-12-10 16:55:04,797 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.595, distance: 0.405, bbox: 129x129 px)
+2025-12-10 16:55:05,438 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.407 < fugitive_dist=0.625)
+2025-12-10 16:55:06,637 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.339 < fugitive_dist=0.602)
+2025-12-10 16:55:08,021 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:55:09,001 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.387 < fugitive_dist=0.613)
+2025-12-10 16:55:09,511 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.619, distance: 0.381, bbox: 129x129 px)
+2025-12-10 16:55:09,926 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:55:12,671 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.438 < fugitive_dist=0.617)
+2025-12-10 16:55:13,180 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.552, distance: 0.448, bbox: 129x129 px)
+2025-12-10 16:55:13,595 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:55:17,163 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.537 < guard_dist=0.661)
+2025-12-10 16:55:17,898 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.455 < guard_dist=0.610)
+2025-12-10 16:55:18,632 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.452 < guard_dist=0.676)
+2025-12-10 16:55:19,724 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.629, fugitive=0.704, margin=0.12)
+2025-12-10 16:55:20,460 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.607 < guard_dist=0.609)
+2025-12-10 16:55:24,031 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.404 < guard_dist=0.683)
+2025-12-10 16:55:24,767 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.522 < guard_dist=0.721)
+2025-12-10 16:55:27,269 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.365 < guard_dist=0.621)
+2025-12-10 16:55:28,013 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.423 < guard_dist=0.654)
+2025-12-10 16:55:31,383 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.430 < guard_dist=0.661)
+2025-12-10 16:55:34,241 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.462 < guard_dist=0.674)
+2025-12-10 16:55:35,686 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.476 < guard_dist=0.697)
+2025-12-10 16:55:36,423 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.521 < guard_dist=0.708)
+2025-12-10 16:55:37,165 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.495 < guard_dist=0.693)
+2025-12-10 16:55:37,796 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.502)
+2025-12-10 16:55:38,641 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.520 < guard_dist=0.668)
+2025-12-10 16:55:39,381 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.494 < guard_dist=0.675)
+2025-12-10 16:55:40,121 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.513 < guard_dist=0.691)
+2025-12-10 16:55:40,862 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.506 < guard_dist=0.681)
+2025-12-10 16:55:41,597 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.521 < guard_dist=0.758)
+2025-12-10 16:55:42,335 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.559 < guard_dist=0.766)
+2025-12-10 16:55:43,087 - WARNING - PRO Mode DISABLED
+2025-12-10 16:55:43,798 - WARNING - [RESET] Krunal: Missing for 30.2s — hard reset tracking, forcing immediate re-detection
+2025-12-10 16:55:45,265 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.554 < guard_dist=0.734)
+2025-12-10 16:55:45,761 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-10 16:55:46,854 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.472 < guard_dist=0.651)
+2025-12-10 16:55:48,701 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.428 < guard_dist=0.702)
+2025-12-10 16:55:49,437 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.423 < guard_dist=0.700)
+2025-12-10 16:55:50,173 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.433 < guard_dist=0.678)
+2025-12-10 16:55:51,261 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.441 < guard_dist=0.729)
+2025-12-10 16:55:52,378 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.410 < guard_dist=0.698)
+2025-12-10 16:55:52,398 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.648, distance: 0.352, bbox: 52x52 px)
+2025-12-10 16:55:52,419 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 16:55:55,080 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.532)
+2025-12-10 16:55:57,022 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:55:58,159 - WARNING - [STRICT REJECT] Krunal vs face_1: Face is FUGITIVE (fugitive_dist=0.450 < guard_dist=0.697)
+2025-12-10 16:55:58,179 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.637, distance: 0.363, bbox: 43x43 px)
+2025-12-10 16:55:58,823 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.430 < fugitive_dist=0.603)
+2025-12-10 16:55:59,406 - WARNING - Fugitive Removed
+2025-12-10 16:55:59,919 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:56:08,549 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.577, distance: 0.423, bbox: 43x43 px)
+2025-12-10 16:56:08,893 - WARNING - [GHOST REMOVED] Krunal: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 16:56:25,592 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.548, distance: 0.452, bbox: 44x43 px)
+2025-12-10 16:57:20,201 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:57:26,195 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.526, distance: 0.474, bbox: 36x36 px)
+2025-12-10 16:57:26,428 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:57:40,933 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.610, distance: 0.390, bbox: 43x44 px)
+2025-12-10 16:57:54,597 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 16:57:54,598 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 16:58:55,350 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 16:58:57,426 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.529, distance: 0.471, bbox: 36x36 px)
+2025-12-10 17:00:05,212 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:00:11,208 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.474, distance: 0.526, bbox: 36x36 px)
+2025-12-10 17:00:11,551 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:00:12,793 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.604, distance: 0.396, bbox: 36x36 px)
+2025-12-10 17:00:24,244 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 17:00:24,245 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 17:00:53,910 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:01:12,071 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.603, distance: 0.397, bbox: 36x36 px)
+2025-12-10 17:01:12,410 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:01:15,877 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.518, distance: 0.482, bbox: 43x43 px)
+2025-12-10 17:01:16,114 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:01:31,060 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.646, distance: 0.354, bbox: 52x52 px)
+2025-12-10 17:01:31,403 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:01:32,079 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.632, distance: 0.368, bbox: 52x52 px)
+2025-12-10 17:01:32,418 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:01:37,833 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.641, distance: 0.359, bbox: 44x43 px)
+2025-12-10 17:02:15,219 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:02:32,819 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-10 17:02:36,666 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.619, distance: 0.381, bbox: 43x44 px)
+2025-12-10 17:02:36,686 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 17:02:37,398 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:02:38,848 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.562, distance: 0.438, bbox: 43x44 px)
+2025-12-10 17:02:39,577 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:02:39,579 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-10 17:02:41,040 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.563, distance: 0.437, bbox: 44x43 px)
+2025-12-10 17:02:41,765 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:02:42,434 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-10 17:02:44,939 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.635, distance: 0.365, bbox: 43x43 px)
+2025-12-10 17:02:44,982 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-10 17:03:11,012 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 17:03:17,222 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-10 17:03:18,696 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.629, distance: 0.371, bbox: 51x52 px)
+2025-12-10 17:03:31,222 - WARNING - REAL-TIME language switched to: English (NO RESTART NEEDED)
+2025-12-10 17:03:45,934 - WARNING - Fugitive Added: front
+2025-12-10 17:03:45,935 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-10 17:03:46,711 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.596, fugitive=0.541, margin=0.12)
+2025-12-10 17:03:50,868 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.684, fugitive=0.626, margin=0.12)
+2025-12-10 17:03:59,607 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:04:01,056 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.649 < guard_dist=0.753)
+2025-12-10 17:04:01,796 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.541 < guard_dist=0.690)
+2025-12-10 17:04:02,811 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.483)
+2025-12-10 17:04:02,811 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.356 < fugitive_dist=0.640)
+2025-12-10 17:04:03,321 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.617, distance: 0.383, bbox: 44x44 px)
+2025-12-10 17:04:03,933 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-10 17:04:05,033 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.618 < guard_dist=0.693)
+2025-12-10 17:04:05,775 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.540 < guard_dist=0.678)
+2025-12-10 17:04:06,517 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.541 < guard_dist=0.672)
+2025-12-10 17:04:07,256 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.560 < guard_dist=0.642)
+2025-12-10 17:04:07,887 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.635, fugitive=0.545, margin=0.12)
+2025-12-10 17:04:08,385 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.564 < guard_dist=0.642)
+2025-12-10 17:04:09,126 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.583 < guard_dist=0.697)
+2025-12-10 17:04:09,759 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.350 < fugitive_dist=0.639)
+2025-12-10 17:04:10,639 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.573 < guard_dist=0.693)
+2025-12-10 17:04:10,658 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.594, distance: 0.406, bbox: 51x51 px)
+2025-12-10 17:04:11,311 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.428 < fugitive_dist=0.622)
+2025-12-10 17:04:13,957 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.382 < fugitive_dist=0.635)
+2025-12-10 17:04:19,791 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.643, fugitive=0.562, margin=0.12)
+2025-12-10 17:04:21,082 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.645, fugitive=0.539, margin=0.12)
+2025-12-10 17:04:25,601 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.609, fugitive=0.603, margin=0.12)
+2025-12-10 17:04:27,187 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.356 < fugitive_dist=0.646)
+2025-12-10 17:04:28,759 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.634, fugitive=0.603, margin=0.12)
+2025-12-10 17:04:29,965 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.452)
+2025-12-10 17:04:30,661 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.674, fugitive=0.582, margin=0.12)
+2025-12-10 17:04:32,056 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.641, fugitive=0.531, margin=0.12)
+2025-12-10 17:04:35,868 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.648, fugitive=0.528, margin=0.12)
+2025-12-10 17:04:36,575 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.634, fugitive=0.516, margin=0.12)
+2025-12-10 17:04:49,601 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.649, fugitive=0.569, margin=0.12)
+2025-12-10 17:04:50,581 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.651, fugitive=0.542, margin=0.12)
+2025-12-10 17:04:53,066 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.651, fugitive=0.573, margin=0.12)
+2025-12-10 17:04:53,744 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.638, fugitive=0.561, margin=0.12)
+2025-12-10 17:04:54,725 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.644, fugitive=0.580, margin=0.12)
+2025-12-10 17:04:55,704 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.643, fugitive=0.631, margin=0.12)
+2025-12-10 17:04:56,389 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.632, fugitive=0.585, margin=0.12)
+2025-12-10 17:04:58,676 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.633, fugitive=0.564, margin=0.12)
+2025-12-10 17:05:01,788 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.636, fugitive=0.604, margin=0.12)
+2025-12-10 17:05:04,299 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.684, fugitive=0.581, margin=0.12)
+2025-12-10 17:05:06,189 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.645, fugitive=0.611, margin=0.12)
+2025-12-10 17:05:06,872 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.643, fugitive=0.581, margin=0.12)
+2025-12-10 17:05:07,572 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.658, fugitive=0.586, margin=0.12)
+2025-12-10 17:05:08,256 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.656, fugitive=0.571, margin=0.12)
+2025-12-10 17:05:09,244 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.654, fugitive=0.589, margin=0.12)
+2025-12-10 17:05:09,928 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.654, fugitive=0.609, margin=0.12)
+2025-12-10 17:05:10,610 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.645, fugitive=0.594, margin=0.12)
+2025-12-10 17:05:11,615 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.677, fugitive=0.582, margin=0.12)
+2025-12-10 17:05:11,974 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-10 17:05:11,976 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-10 17:05:12,998 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.399 < fugitive_dist=0.628)
+2025-12-10 17:05:12,998 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.644, fugitive=0.571, margin=0.12)
+2025-12-10 17:05:14,967 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.658, fugitive=0.563, margin=0.12)
+2025-12-10 17:05:17,369 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.676, fugitive=0.571, margin=0.12)
+2025-12-10 17:05:18,365 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.620, fugitive=0.576, margin=0.12)
+2025-12-10 17:05:19,048 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.610, fugitive=0.539, margin=0.12)
+2025-12-10 17:05:19,741 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.656, fugitive=0.580, margin=0.12)
+2025-12-10 17:05:21,746 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.351 < fugitive_dist=0.638)
+2025-12-10 17:05:23,516 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.638, fugitive=0.585, margin=0.12)
+2025-12-10 17:05:24,218 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.621, fugitive=0.578, margin=0.12)
+2025-12-10 17:05:25,184 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.630, fugitive=0.568, margin=0.12)
+2025-12-10 17:05:26,268 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.582 < fugitive_dist=0.627)
+2025-12-10 17:05:26,269 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.639, fugitive=0.567, margin=0.12)
+2025-12-10 17:05:28,256 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.644, fugitive=0.577, margin=0.12)
+2025-12-10 17:05:28,256 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.622, fugitive=0.585, margin=0.12)
+2025-12-10 17:05:30,157 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.644, fugitive=0.566, margin=0.12)
+2025-12-10 17:05:30,845 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.628, fugitive=0.556, margin=0.12)
+2025-12-10 17:05:32,827 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.657, fugitive=0.573, margin=0.12)
+2025-12-10 17:05:33,511 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.648, fugitive=0.558, margin=0.12)
+2025-12-10 17:05:34,201 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.652, fugitive=0.562, margin=0.12)
+2025-12-10 17:05:35,193 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.633, fugitive=0.553, margin=0.12)
+2025-12-10 17:05:36,556 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.644, fugitive=0.548, margin=0.12)
+2025-12-10 17:05:36,557 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.342 < fugitive_dist=0.628)
+2025-12-10 17:05:37,618 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.392 < fugitive_dist=0.642)
+2025-12-10 17:05:37,618 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.674, fugitive=0.570, margin=0.12)
+2025-12-10 17:05:38,691 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.354 < fugitive_dist=0.620)
+2025-12-10 17:05:38,692 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.628, fugitive=0.550, margin=0.12)
+2025-12-10 17:05:40,269 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.330 < fugitive_dist=0.629)
+2025-12-10 17:05:44,241 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.644, fugitive=0.568, margin=0.12)
+2025-12-10 17:05:45,228 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.649, fugitive=0.619, margin=0.12)
+2025-12-10 17:05:45,916 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.669, fugitive=0.584, margin=0.12)
+2025-12-10 17:05:46,604 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.637, fugitive=0.554, margin=0.12)
+2025-12-10 17:05:47,785 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.658, fugitive=0.569, margin=0.12)
+2025-12-10 17:05:48,957 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.596, fugitive=0.569, margin=0.12)
+2025-12-10 17:05:49,644 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.611, fugitive=0.583, margin=0.12)
+2025-12-10 17:05:51,336 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.400 < fugitive_dist=0.621)
+2025-12-10 17:05:53,109 - WARNING - [STRICT SKIP FUGITIVE] Face is GUARD 'Krunal' (guard_dist=0.371 < fugitive_dist=0.635)
+2025-12-10 17:05:53,110 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.652, fugitive=0.535, margin=0.12)
+2025-12-10 17:05:53,804 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.675, fugitive=0.567, margin=0.12)
+2025-12-10 17:05:54,484 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.635, fugitive=0.592, margin=0.12)
+2025-12-10 17:05:56,460 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.654, fugitive=0.550, margin=0.12)
+2025-12-10 17:05:56,460 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.597, fugitive=0.577, margin=0.12)
+2025-12-10 17:05:57,152 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.602, fugitive=0.561, margin=0.12)
+2025-12-10 17:06:01,768 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.663, fugitive=0.566, margin=0.12)
+2025-12-10 17:06:04,379 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.661, fugitive=0.555, margin=0.12)
+2025-12-10 17:06:05,379 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front - Playing 15s alert! (confidence: 0.461)
+2025-12-10 17:06:07,603 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Krunal' (guard=0.650, fugitive=0.544, margin=0.12)
+2025-12-10 17:06:09,551 - WARNING - Initiating graceful shutdown...
+2025-12-10 17:06:09,840 - WARNING - Saved 48 log entries to logs\events.csv
+2025-12-10 17:06:09,912 - WARNING - Shutdown complete
+2025-12-10 17:24:11,814 - WARNING - Loaded 6 guards
+2025-12-10 17:24:45,398 - WARNING - Camera 0 started successfully
+2025-12-10 17:25:00,900 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 17:25:03,345 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-10 17:25:25,219 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.542, distance: 0.458, bbox: 43x43 px)
+2025-12-10 17:26:15,904 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-10 17:26:22,394 - WARNING - Initiating graceful shutdown...
+2025-12-10 17:26:22,891 - WARNING - Shutdown complete
+2025-12-10 17:47:31,650 - WARNING - Loaded 6 guards
+2025-12-10 17:47:58,873 - WARNING - Camera 0 started successfully
+2025-12-10 17:48:10,770 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-10 17:48:11,836 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.700, distance: 0.300, bbox: 186x186 px)
+2025-12-10 17:48:13,467 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-10 17:48:21,138 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 17:48:22,431 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.501, distance: 0.499, bbox: 62x62 px)
+2025-12-10 17:48:29,486 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-10 17:48:42,060 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.483, distance: 0.517, bbox: 43x44 px)
+2025-12-10 17:49:50,420 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-10 17:49:55,580 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.600, distance: 0.400, bbox: 75x74 px)
+2025-12-10 17:49:56,162 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-10 17:50:03,090 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.606, distance: 0.394, bbox: 155x154 px)
+2025-12-10 17:50:04,220 - WARNING - Initiating graceful shutdown...
+2025-12-10 17:50:04,765 - WARNING - Shutdown complete
+2025-12-11 10:57:59,146 - WARNING - Loaded 7 guards
+2025-12-11 10:58:54,569 - WARNING - Camera 0 started successfully
+2025-12-11 10:59:15,456 - WARNING - Initiating graceful shutdown...
+2025-12-11 10:59:15,942 - WARNING - Shutdown complete
+2025-12-11 11:12:00,105 - WARNING - Loaded 7 guards
+2025-12-11 11:12:24,618 - WARNING - Camera 0 started successfully
+2025-12-11 11:13:38,105 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 11:13:39,960 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 11:14:08,233 - WARNING - [RESET] Rudresh: Missing for 30.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 11:14:36,904 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 11:15:17,683 - WARNING - Failed to read frame, attempting recovery...
+2025-12-11 11:15:18,206 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-11 11:15:34,336 - WARNING - Initiating graceful shutdown...
+2025-12-11 11:15:34,798 - WARNING - Shutdown complete
+2025-12-11 11:28:53,888 - WARNING - Loaded 7 guards
+2025-12-11 11:29:19,340 - WARNING - Camera 0 started successfully
+2025-12-11 11:30:13,186 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 11:30:14,937 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 11:30:43,348 - WARNING - [RESET] Rudresh: Missing for 30.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 11:30:44,974 - WARNING - Initiating graceful shutdown...
+2025-12-11 11:30:45,385 - WARNING - Shutdown complete
+2025-12-11 11:33:42,396 - WARNING - Loaded 7 guards
+2025-12-11 11:35:56,329 - WARNING - Camera 0 started successfully
+2025-12-11 11:42:55,495 - WARNING - Initiating graceful shutdown...
+2025-12-11 11:42:55,903 - WARNING - Shutdown complete
+2025-12-11 11:44:26,481 - WARNING - Loaded 7 guards
+2025-12-11 11:44:48,823 - WARNING - Camera 0 started successfully
+2025-12-11 11:45:32,808 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 11:45:34,944 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 11:45:38,980 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.521, distance: 0.479, bbox: 36x36 px)
+2025-12-11 11:45:39,593 - WARNING - [GHOST REMOVED] Rudresh: Tracked but failed body validation - no_body_box, pose_low(0.00), keypts_low(0), out_of_frame
+2025-12-11 11:45:47,024 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.588, distance: 0.412, bbox: 36x36 px)
+2025-12-11 11:46:26,324 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:46:44,792 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.625, distance: 0.375, bbox: 36x36 px)
+2025-12-11 11:46:45,355 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:46:48,397 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.656, distance: 0.344, bbox: 36x36 px)
+2025-12-11 11:46:48,977 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:46:51,844 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.647, distance: 0.353, bbox: 36x36 px)
+2025-12-11 11:46:52,194 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:46:53,448 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.630, distance: 0.370, bbox: 36x36 px)
+2025-12-11 11:46:54,029 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:46:57,020 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.632, distance: 0.368, bbox: 36x36 px)
+2025-12-11 11:46:57,375 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:46:58,633 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.648, distance: 0.352, bbox: 36x36 px)
+2025-12-11 11:46:59,207 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 11:47:12,251 - WARNING - Initiating graceful shutdown...
+2025-12-11 11:47:12,745 - WARNING - Shutdown complete
+2025-12-11 11:58:30,471 - WARNING - Loaded 7 guards
+2025-12-11 12:06:37,964 - WARNING - Camera 0 started successfully
+2025-12-11 12:06:58,001 - WARNING - Failed to read frame, attempting recovery...
+2025-12-11 12:06:58,525 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-11 12:07:32,481 - WARNING - Switched to Camera 1 - Restarting video feed
+2025-12-11 12:07:50,583 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:07:51,106 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.681, distance: 0.319, bbox: 155x155 px)
+2025-12-11 12:07:51,443 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-11 12:07:52,057 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.668, distance: 0.332, bbox: 155x155 px)
+2025-12-11 12:07:52,216 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-11 12:07:52,822 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.686, distance: 0.314, bbox: 186x186 px)
+2025-12-11 12:07:52,989 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-11 12:07:53,025 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:07:53,609 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.688, distance: 0.312, bbox: 155x154 px)
+2025-12-11 12:07:53,782 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-11 12:07:54,388 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.660, distance: 0.340, bbox: 155x154 px)
+2025-12-11 12:07:54,549 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-11 12:07:55,158 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.679, distance: 0.321, bbox: 155x154 px)
+2025-12-11 12:08:18,697 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:08:26,624 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.550, distance: 0.450, bbox: 52x52 px)
+2025-12-11 12:09:31,486 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 12:09:38,102 - WARNING - Failed to read frame, attempting recovery...
+2025-12-11 12:09:38,628 - ERROR - Failed to recover after 10 retries, attempting reconnect...
+2025-12-11 12:09:49,558 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-12-11 12:10:06,503 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:10:09,794 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:10:19,410 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.464, distance: 0.536, bbox: 36x36 px)
+2025-12-11 12:10:38,212 - WARNING - [GHOST REMOVED] Rudresh: Body detected but no face in area + low pose confidence - likely ghost
+2025-12-11 12:10:41,313 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.587, distance: 0.413, bbox: 36x36 px)
+2025-12-11 12:10:54,784 - WARNING - Initiating graceful shutdown...
+2025-12-11 12:10:55,140 - WARNING - Shutdown complete
+2025-12-11 12:25:28,709 - WARNING - Loaded 7 guards
+2025-12-11 12:25:45,104 - WARNING - Camera 0 started successfully
+2025-12-11 12:26:04,985 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:26:06,791 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:26:16,133 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.579, distance: 0.421, bbox: 36x36 px)
+2025-12-11 12:26:39,437 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:27:09,642 - WARNING - [RESET] Rudresh: Missing for 30.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 12:28:27,454 - WARNING - Camera warmup: frame read failed, retrying...
+2025-12-11 12:28:37,508 - WARNING - Camera warmup: frame read failed, retrying...
+2025-12-11 12:28:47,570 - WARNING - Camera warmup: frame read failed, retrying...
+2025-12-11 12:28:57,634 - WARNING - Camera warmup: frame read failed, retrying...
+2025-12-11 12:29:21,642 - WARNING - Loaded 7 guards
+2025-12-11 12:29:44,936 - WARNING - Camera 0 started successfully
+2025-12-11 12:29:55,287 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:29:56,866 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:30:04,885 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.553, distance: 0.447, bbox: 36x36 px)
+2025-12-11 12:30:43,573 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-11 12:30:46,199 - WARNING - Alert mode started - logging enabled
+2025-12-11 12:30:52,313 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:07,449 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.522, distance: 0.478, bbox: 36x36 px)
+2025-12-11 12:31:07,774 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:08,452 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.518, distance: 0.482, bbox: 36x36 px)
+2025-12-11 12:31:08,782 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:11,382 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.539, distance: 0.461, bbox: 36x36 px)
+2025-12-11 12:31:11,728 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:13,773 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.456, distance: 0.544, bbox: 36x36 px)
+2025-12-11 12:31:13,996 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:14,949 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.547, distance: 0.453, bbox: 36x36 px)
+2025-12-11 12:31:15,190 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:16,137 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.509, distance: 0.491, bbox: 36x36 px)
+2025-12-11 12:31:16,462 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:17,789 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.621, distance: 0.379, bbox: 36x36 px)
+2025-12-11 12:31:42,925 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 12:31:44,968 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.579, distance: 0.421, bbox: 36x36 px)
+2025-12-11 12:31:46,441 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-11 12:31:47,496 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-11 12:31:47,498 - WARNING - Pygame playback failed: No such file or directory: 'D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\Final\siren.mp3'.
+2025-12-11 12:31:47,499 - WARNING - Pydub playback failed: [Errno 2] No such file or directory: 'D:\\CUDA_Experiments\\Git_HUB\\Nirikhsan_Deep\\Final\\siren.mp3'
+2025-12-11 12:31:47,500 - WARNING - Pygame playback failed: No such file or directory: 'D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\Final\siren.mp3'.
+2025-12-11 12:31:47,501 - WARNING - Pydub playback failed: [Errno 2] No such file or directory: 'D:\\CUDA_Experiments\\Git_HUB\\Nirikhsan_Deep\\Final\\siren.mp3'
+2025-12-11 12:31:48,925 - WARNING - Pygame playback failed: No such file or directory: 'D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\Final\siren.mp3'.
+2025-12-11 12:31:48,926 - WARNING - Pydub playback failed: [Errno 2] No such file or directory: 'D:\\CUDA_Experiments\\Git_HUB\\Nirikhsan_Deep\\Final\\siren.mp3'
+2025-12-11 12:31:51,476 - WARNING - Pygame playback failed: No such file or directory: 'D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\Final\siren.mp3'.
+2025-12-11 12:31:51,476 - WARNING - Pydub playback failed: [Errno 2] No such file or directory: 'D:\\CUDA_Experiments\\Git_HUB\\Nirikhsan_Deep\\Final\\siren.mp3'
+2025-12-11 12:31:54,223 - WARNING - Pygame playback failed: No such file or directory: 'D:\CUDA_Experiments\Git_HUB\Nirikhsan_Deep\Final\siren.mp3'.
+2025-12-11 12:31:54,223 - WARNING - Pydub playback failed: [Errno 2] No such file or directory: 'D:\\CUDA_Experiments\\Git_HUB\\Nirikhsan_Deep\\Final\\siren.mp3'
+2025-12-11 12:32:05,471 - WARNING - Initiating graceful shutdown...
+2025-12-11 12:32:05,753 - WARNING - Saved 6 log entries to logs\events.csv
+2025-12-11 12:32:05,822 - WARNING - Shutdown complete
