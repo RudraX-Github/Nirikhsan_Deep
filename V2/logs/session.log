@@ -1492,3 +1492,35 @@
 2025-12-10 11:37:58,497 - WARNING - PRO Mode DISABLED
 2025-12-10 11:40:08,767 - WARNING - Initiating graceful shutdown...
 2025-12-10 11:40:09,124 - WARNING - Shutdown complete
+2025-12-13 16:32:13,193 - WARNING - Loaded 5 guards
+2025-12-13 16:32:32,542 - WARNING - Camera started successfully: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-13 16:32:32,551 - WARNING - IP camera lag detected: 19771ms frame delay
+2025-12-13 16:32:34,201 - WARNING - IP camera lag detected: 468ms frame delay
+2025-12-13 16:32:35,823 - WARNING - IP camera lag detected: 421ms frame delay
+2025-12-13 16:32:37,977 - WARNING - IP camera lag detected: 465ms frame delay
+2025-12-13 16:32:39,605 - WARNING - IP camera lag detected: 433ms frame delay
+2025-12-13 16:32:41,222 - WARNING - IP camera lag detected: 439ms frame delay
+2025-12-13 16:32:42,859 - WARNING - IP camera lag detected: 422ms frame delay
+2025-12-13 16:32:44,495 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:32:44,531 - WARNING - IP camera lag detected: 467ms frame delay
+2025-12-13 16:32:46,031 - WARNING - [TRACKING START] Identifying and tracking: Rudresh bhai | Action: Hands Up
+2025-12-13 16:32:46,401 - WARNING - IP camera lag detected: 313ms frame delay
+2025-12-13 16:32:48,521 - WARNING - [DETECTED] OK Rudresh bhai identified & tracking (confidence: 0.547, distance: 0.453, bbox: 43x43 px)
+2025-12-13 16:32:48,754 - WARNING - IP camera lag detected: 777ms frame delay
+2025-12-13 16:32:50,909 - WARNING - IP camera lag detected: 248ms frame delay
+2025-12-13 16:32:52,343 - WARNING - IP camera lag detected: 240ms frame delay
+2025-12-13 16:32:53,772 - WARNING - IP camera lag detected: 245ms frame delay
+2025-12-13 16:32:55,599 - WARNING - IP camera lag detected: 361ms frame delay
+2025-12-13 16:32:57,037 - WARNING - IP camera lag detected: 252ms frame delay
+2025-12-13 16:32:58,705 - WARNING - IP camera lag detected: 360ms frame delay
+2025-12-13 16:33:00,766 - WARNING - IP camera lag detected: 234ms frame delay
+2025-12-13 16:33:02,742 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-13 16:33:04,218 - WARNING - IP camera lag detected: 251ms frame delay
+2025-12-13 16:33:05,795 - WARNING - IP camera lag detected: 252ms frame delay
+2025-12-13 16:33:07,259 - WARNING - IP camera lag detected: 236ms frame delay
+2025-12-13 16:33:09,167 - WARNING - IP camera lag detected: 363ms frame delay
+2025-12-13 16:33:10,828 - WARNING - IP camera lag detected: 231ms frame delay
+2025-12-13 16:33:12,561 - WARNING - IP camera lag detected: 346ms frame delay
+2025-12-13 16:33:14,085 - WARNING - IP camera lag detected: 235ms frame delay
+2025-12-13 16:33:15,676 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:33:15,753 - WARNING - Shutdown complete

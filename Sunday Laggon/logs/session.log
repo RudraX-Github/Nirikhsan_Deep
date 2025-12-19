@@ -1,0 +1,335 @@
+2025-12-16 14:24:21,757 - WARNING - Loaded 10 guards
+2025-12-16 14:25:13,962 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-16 14:25:15,468 - WARNING - Waiting for IP camera stream...
+2025-12-16 14:25:15,468 - WARNING - IP camera stream ready!
+2025-12-16 14:25:15,478 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-16 14:25:24,118 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:25:26,458 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-16 14:25:29,351 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:25:35,118 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.484, distance: 0.516, bbox: 36x36 px)
+2025-12-16 14:25:49,343 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2025-12-16 14:25:50,798 - WARNING - Alert mode started - logging enabled
+2025-12-16 14:27:50,831 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-16 14:27:51,231 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-16 14:28:21,092 - WARNING - Fugitive Added: 01_front
+2025-12-16 14:28:21,092 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-16 14:28:52,274 - WARNING - [FUGITIVE MATCH] Distance=0.460, Confidence=0.540 - FUGITIVE DETECTED!
+2025-12-16 14:28:52,281 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 14:28:52,285 - WARNING - Saved 5 log entries to logs\events.csv
+2025-12-16 14:28:52,285 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-16 14:30:00,124 - WARNING - Initiating graceful shutdown...
+2025-12-16 14:30:00,125 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 14:30:00,201 - WARNING - Shutdown complete
+2025-12-16 14:32:03,171 - WARNING - Loaded 10 guards
+2025-12-16 14:33:45,076 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-16 14:34:14,979 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-16 14:34:16,578 - WARNING - Waiting for IP camera stream...
+2025-12-16 14:34:16,580 - WARNING - IP camera stream ready!
+2025-12-16 14:34:16,590 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-16 14:35:18,715 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:35:21,309 - WARNING - [TRACKING START] Identifying and tracking: kaka | Action: Hands Up
+2025-12-16 14:35:23,868 - WARNING - [RESET] kaka: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:35:34,025 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2025-12-16 14:35:50,589 - WARNING - [TRACKING STOP] Stopped monitoring: kaka
+2025-12-16 14:36:01,220 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2025-12-16 14:36:24,998 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:36:26,890 - WARNING - [TRACKING START] Identifying and tracking: kaka | Action: Hands Up
+2025-12-16 14:36:30,142 - WARNING - [RESET] kaka: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:36:52,380 - WARNING - [DETECTED] OK kaka identified & tracking (confidence: 0.484, distance: 0.516, bbox: 36x36 px)
+2025-12-16 14:37:06,605 - WARNING - Alert mode started - logging enabled
+2025-12-16 14:39:06,668 - WARNING - [ALERT] kaka: Action TIMEOUT - triggering alarm
+2025-12-16 14:39:06,669 - WARNING - [ALERT] kaka: Restarting 15s alarm loop
+2025-12-16 14:39:12,725 - WARNING - [GHOST REMOVED + HARD RESET] kaka: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:39:17,787 - WARNING - [RESET] kaka: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:39:57,640 - WARNING - [TRACKING STOP] Stopped monitoring: kaka
+2025-12-16 14:40:12,234 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:40:13,929 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-16 14:40:17,415 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:40:21,472 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.482, distance: 0.518, bbox: 43x43 px)
+2025-12-16 14:40:26,537 - WARNING - Saved 4 log entries to logs\events.csv
+2025-12-16 14:40:26,537 - WARNING - Alert mode stopped - logging saved
+2025-12-16 14:40:27,423 - WARNING - Alert mode started - logging enabled
+2025-12-16 14:41:35,231 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-16 14:41:43,170 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:41:45,924 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-16 14:41:48,461 - WARNING - [RESET] KD: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:41:54,330 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.485, distance: 0.515, bbox: 36x36 px)
+2025-12-16 14:43:43,196 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 14:43:43,198 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 14:45:57,189 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:46:02,264 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:46:18,601 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.488, distance: 0.512, bbox: 36x36 px)
+2025-12-16 14:46:42,385 - WARNING - Fugitive Added: front
+2025-12-16 14:46:42,385 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-16 14:47:17,223 - WARNING - [FUGITIVE MATCH] Distance=0.508, Confidence=0.492 - FUGITIVE DETECTED!
+2025-12-16 14:47:17,226 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-16 14:47:17,228 - WARNING - Saved 10 log entries to logs\events.csv
+2025-12-16 14:47:17,229 - WARNING - [FUGITIVE DETECTED] front FIRST APPEARANCE logged
+2025-12-16 14:47:50,291 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:47:55,545 - WARNING - [RESET] KD: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:47:56,134 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-16 14:48:00,341 - WARNING - [STRICT REJECT] KD vs face_0: TOO CLOSE to fugitive (guard=0.571, fugitive=0.659, margin=0.12)
+2025-12-16 14:48:05,900 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.497, distance: 0.503, bbox: 52x52 px)
+2025-12-16 14:48:05,921 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 14:48:21,706 - WARNING - Saved 4 log entries to logs\events.csv
+2025-12-16 14:50:03,244 - WARNING - Camera 1 started successfully
+2025-12-16 14:50:07,057 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 14:50:07,058 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 14:50:12,671 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-16 14:50:35,829 - WARNING - Saved 4 log entries to logs\events.csv
+2025-12-16 14:50:35,829 - WARNING - Alert mode stopped - logging saved
+2025-12-16 14:50:37,241 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:50:42,394 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:50:43,215 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-16 14:50:48,492 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.543, distance: 0.457, bbox: 36x36 px)
+2025-12-16 14:50:55,513 - WARNING - Alert mode started - logging enabled
+2025-12-16 14:51:57,657 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:52:02,801 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:52:55,591 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 14:53:04,572 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.625, distance: 0.375, bbox: 36x36 px)
+2025-12-16 14:53:04,592 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-16 14:53:09,198 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:53:11,004 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 14:53:13,624 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.548, distance: 0.452, bbox: 36x36 px)
+2025-12-16 14:54:36,188 - WARNING - Fugitive Removed
+2025-12-16 14:54:50,910 - WARNING - Fugitive Added: 01_front
+2025-12-16 14:54:50,911 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-16 14:55:13,516 - WARNING - [FUGITIVE MATCH] Distance=0.472, Confidence=0.528 - FUGITIVE DETECTED!
+2025-12-16 14:55:13,517 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 14:55:13,958 - WARNING - [FUGITIVE MATCH] Distance=0.440, Confidence=0.560 - FUGITIVE DETECTED!
+2025-12-16 14:55:14,046 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-16 14:55:14,047 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 14:56:03,230 - WARNING - [FUGITIVE MATCH] Distance=0.501, Confidence=0.499 - FUGITIVE DETECTED!
+2025-12-16 14:56:03,231 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 14:56:07,581 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:56:08,526 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.564, distance: 0.436, bbox: 52x52 px)
+2025-12-16 14:56:09,749 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:56:11,869 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 14:56:14,902 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:56:17,053 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 14:56:21,957 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.536, distance: 0.464, bbox: 43x44 px)
+2025-12-16 14:56:23,591 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:56:24,893 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 14:56:28,779 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:56:30,071 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 14:56:31,404 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.547, distance: 0.453, bbox: 43x43 px)
+2025-12-16 14:57:21,653 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:57:26,920 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:57:57,911 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.551, distance: 0.449, bbox: 43x43 px)
+2025-12-16 14:58:05,335 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:58:10,608 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.580, distance: 0.420, bbox: 52x52 px)
+2025-12-16 14:58:26,000 - WARNING - [FUGITIVE MATCH] Distance=0.414, Confidence=0.586 - FUGITIVE DETECTED!
+2025-12-16 14:58:26,001 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 14:58:42,520 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-16 14:58:42,522 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 14:59:30,172 - WARNING - PRO Mode DISABLED
+2025-12-16 14:59:32,010 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:59:33,046 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-16 14:59:34,840 - WARNING - Stillness Alert ENABLED
+2025-12-16 14:59:37,146 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:59:41,908 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.549, distance: 0.451, bbox: 43x43 px)
+2025-12-16 15:00:40,030 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-16 15:00:40,031 - WARNING - Saved 43 log entries to logs\events.csv
+2025-12-16 15:00:45,007 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-16 15:00:45,008 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:00:47,126 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:01:19,704 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-16 15:01:19,707 - WARNING - Saved 4 log entries to logs\events.csv
+2025-12-16 15:02:01,033 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:02:01,035 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 15:02:47,385 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-16 15:02:47,386 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:48,039 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:49,723 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:50,353 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:50,563 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:50,988 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:51,198 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:51,410 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:52,039 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:52,249 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:52,455 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:52,874 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:53,081 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:53,293 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:53,503 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:53,712 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:53,918 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:54,127 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:54,370 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:54,991 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:56,259 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:56,472 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:56,681 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:56,893 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:57,104 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:57,315 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:57,529 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:57,982 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:58,194 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:58,406 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:58,613 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:58,828 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:59,069 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:59,279 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:59,513 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:02:59,726 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:02,009 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:02,218 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:03,085 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:04,343 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:04,553 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:04,765 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:04,976 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:05,183 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:05,604 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:05,818 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:06,031 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:06,239 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:06,454 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:06,689 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:06,928 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:07,136 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:07,348 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:09,074 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:09,547 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:09,789 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:10,029 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:10,266 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:10,738 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:11,217 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:12,801 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:13,243 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:13,693 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:19,809 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 15:03:20,860 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-16 15:03:25,068 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-16 15:03:26,533 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.488, distance: 0.512, bbox: 43x44 px)
+2025-12-16 15:03:27,044 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:27,289 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:27,524 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:27,772 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:28,270 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:28,509 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:30,153 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:30,391 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:30,635 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:30,850 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:31,065 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:03:44,262 - WARNING - Fugitive Removed
+2025-12-16 15:04:01,856 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-16 15:04:01,856 - WARNING - Saved 19 log entries to logs\events.csv
+2025-12-16 15:05:14,858 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:05:14,859 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 15:05:31,367 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-16 15:05:31,368 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:05:31,671 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:05:32,269 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:05:32,570 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:05:32,769 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-16 15:05:40,005 - WARNING - Stillness Alert DISABLED
+2025-12-16 15:05:43,172 - WARNING - Saved 3 log entries to logs\events.csv
+2025-12-16 15:05:43,172 - WARNING - Alert mode stopped - logging saved
+2025-12-16 15:05:44,914 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-16 15:07:05,324 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-12-16 15:07:11,394 - WARNING - REAL-TIME language switched to: English (NO RESTART NEEDED)
+2025-12-16 15:07:20,484 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 15:07:22,186 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-16 15:07:24,725 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.540, distance: 0.460, bbox: 36x36 px)
+2025-12-16 15:07:28,135 - WARNING - Day Mode - Face: BlazeFace | Pose: MoveNet Lightning/BlazePose | Tracking: ByteTrack
+2025-12-16 15:07:30,668 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-12-16 15:07:38,833 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-16 15:07:43,965 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 15:07:46,714 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.521, distance: 0.479, bbox: 36x36 px)
+2025-12-16 15:07:49,383 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 15:07:54,475 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 15:08:00,637 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.608, distance: 0.392, bbox: 43x43 px)
+2025-12-16 15:08:37,502 - WARNING - Alert mode started - logging enabled
+2025-12-16 15:10:37,616 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 15:10:37,617 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 15:10:47,178 - WARNING - Stillness Alert ENABLED
+2025-12-16 15:11:02,393 - WARNING - [STILLNESS ALERT] !!! KD - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:11:02,396 - WARNING - Saved 5 log entries to logs\events.csv
+2025-12-16 15:11:23,859 - WARNING - [STILLNESS ALERT] !!! KD - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:11:23,861 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 15:12:12,795 - WARNING - [STILLNESS ALERT] !!! KD - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:12:12,797 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 15:13:18,282 - WARNING - [STILLNESS ALERT] !!! KD - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:13:18,283 - WARNING - Saved 2 log entries to logs\events.csv
+2025-12-16 15:13:49,825 - WARNING - [STILLNESS ALERT] !!! KD - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 15:13:49,828 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 15:14:01,090 - WARNING - Stillness Alert DISABLED
+2025-12-16 15:14:40,295 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 15:14:40,297 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 15:14:46,253 - WARNING - Saved 4 log entries to logs\events.csv
+2025-12-16 15:14:46,253 - WARNING - Alert mode stopped - logging saved
+2025-12-16 15:14:58,176 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-16 15:15:15,458 - WARNING - Initiating graceful shutdown...
+2025-12-16 15:15:15,788 - WARNING - Shutdown complete
+2025-12-16 16:19:07,565 - WARNING - Loaded 10 guards
+2025-12-16 16:19:23,886 - WARNING - Camera 0 started successfully
+2025-12-16 16:20:09,626 - WARNING - REAL-TIME language switched to: English (NO RESTART NEEDED)
+2025-12-16 16:20:17,542 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 16:20:18,724 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.567, distance: 0.433, bbox: 155x155 px)
+2025-12-16 16:20:21,006 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-16 16:21:53,381 - WARNING - Alert mode started - logging enabled
+2025-12-16 16:22:03,512 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 16:22:03,515 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 16:22:14,842 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 16:22:14,847 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-16 16:22:15,924 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.569, distance: 0.431, bbox: 107x108 px)
+2025-12-16 16:22:30,586 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 16:22:30,588 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 16:22:51,163 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 16:22:51,165 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 16:23:07,486 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-16 16:23:07,490 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 16:23:23,408 - WARNING - Saved 38 log entries to logs\events.csv
+2025-12-16 16:23:23,409 - WARNING - Alert mode stopped - logging saved
+2025-12-16 16:23:29,019 - WARNING - Fugitive Removed
+2025-12-16 16:23:46,981 - WARNING - Fugitive Added: 01_front
+2025-12-16 16:23:46,981 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-16 16:24:03,520 - WARNING - Alert mode started - logging enabled
+2025-12-16 16:24:13,043 - WARNING - [FUGITIVE MATCH] Distance=0.440, Confidence=0.560 - FUGITIVE DETECTED!
+2025-12-16 16:24:13,046 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 16:24:13,072 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 16:24:13,073 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-16 16:24:13,891 - WARNING - [FUGITIVE MATCH] Distance=0.391, Confidence=0.609 - FUGITIVE DETECTED!
+2025-12-16 16:24:14,005 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-16 16:24:14,676 - WARNING - [FUGITIVE MATCH] Distance=0.363, Confidence=0.637 - FUGITIVE DETECTED!
+2025-12-16 16:24:15,462 - WARNING - [FUGITIVE MATCH] Distance=0.401, Confidence=0.599 - FUGITIVE DETECTED!
+2025-12-16 16:24:16,236 - WARNING - [FUGITIVE MATCH] Distance=0.391, Confidence=0.609 - FUGITIVE DETECTED!
+2025-12-16 16:24:17,418 - WARNING - [FUGITIVE MATCH] Distance=0.425, Confidence=0.575 - FUGITIVE DETECTED!
+2025-12-16 16:24:18,658 - WARNING - [FUGITIVE MATCH] Distance=0.411, Confidence=0.589 - FUGITIVE DETECTED!
+2025-12-16 16:24:20,706 - WARNING - [FUGITIVE MATCH] Distance=0.441, Confidence=0.559 - FUGITIVE DETECTED!
+2025-12-16 16:24:21,710 - WARNING - Saved 3 log entries to logs\events.csv
+2025-12-16 16:24:21,710 - WARNING - Alert mode stopped - logging saved
+2025-12-16 16:24:22,733 - WARNING - [FUGITIVE MATCH] Distance=0.395, Confidence=0.605 - FUGITIVE DETECTED!
+2025-12-16 16:24:23,899 - WARNING - [FUGITIVE MATCH] Distance=0.420, Confidence=0.580 - FUGITIVE DETECTED!
+2025-12-16 16:24:25,943 - WARNING - [FUGITIVE MATCH] Distance=0.393, Confidence=0.607 - FUGITIVE DETECTED!
+2025-12-16 16:24:27,967 - WARNING - [FUGITIVE MATCH] Distance=0.379, Confidence=0.621 - FUGITIVE DETECTED!
+2025-12-16 16:24:29,207 - WARNING - [FUGITIVE MATCH] Distance=0.419, Confidence=0.581 - FUGITIVE DETECTED!
+2025-12-16 16:24:29,209 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 16:24:30,440 - WARNING - [FUGITIVE MATCH] Distance=0.406, Confidence=0.594 - FUGITIVE DETECTED!
+2025-12-16 16:24:32,459 - WARNING - [FUGITIVE MATCH] Distance=0.434, Confidence=0.566 - FUGITIVE DETECTED!
+2025-12-16 16:24:33,661 - WARNING - [FUGITIVE MATCH] Distance=0.411, Confidence=0.589 - FUGITIVE DETECTED!
+2025-12-16 16:24:35,713 - WARNING - [FUGITIVE MATCH] Distance=0.408, Confidence=0.592 - FUGITIVE DETECTED!
+2025-12-16 16:24:37,772 - WARNING - [FUGITIVE MATCH] Distance=0.409, Confidence=0.591 - FUGITIVE DETECTED!
+2025-12-16 16:24:45,074 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-16 16:24:47,210 - WARNING - [FUGITIVE MATCH] Distance=0.516, Confidence=0.484 - FUGITIVE DETECTED!
+2025-12-16 16:24:47,211 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 16:24:48,314 - WARNING - [FUGITIVE MATCH] Distance=0.549, Confidence=0.451 - FUGITIVE DETECTED!
+2025-12-16 16:24:49,404 - WARNING - [FUGITIVE MATCH] Distance=0.521, Confidence=0.479 - FUGITIVE DETECTED!
+2025-12-16 16:24:50,494 - WARNING - [FUGITIVE MATCH] Distance=0.505, Confidence=0.495 - FUGITIVE DETECTED!
+2025-12-16 16:24:51,571 - WARNING - [FUGITIVE MATCH] Distance=0.507, Confidence=0.493 - FUGITIVE DETECTED!
+2025-12-16 16:24:53,758 - WARNING - [FUGITIVE MATCH] Distance=0.521, Confidence=0.479 - FUGITIVE DETECTED!
+2025-12-16 16:24:55,937 - WARNING - [FUGITIVE MATCH] Distance=0.504, Confidence=0.496 - FUGITIVE DETECTED!
+2025-12-16 16:24:57,042 - WARNING - [FUGITIVE MATCH] Distance=0.532, Confidence=0.468 - FUGITIVE DETECTED!
+2025-12-16 16:24:58,122 - WARNING - [FUGITIVE MATCH] Distance=0.526, Confidence=0.474 - FUGITIVE DETECTED!
+2025-12-16 16:25:00,407 - WARNING - [FUGITIVE MATCH] Distance=0.500, Confidence=0.500 - FUGITIVE DETECTED!
+2025-12-16 16:25:03,695 - WARNING - [FUGITIVE MATCH] Distance=0.534, Confidence=0.466 - FUGITIVE DETECTED!
+2025-12-16 16:25:03,697 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 16:25:04,811 - WARNING - [FUGITIVE MATCH] Distance=0.511, Confidence=0.489 - FUGITIVE DETECTED!
+2025-12-16 16:25:05,918 - WARNING - [FUGITIVE MATCH] Distance=0.522, Confidence=0.478 - FUGITIVE DETECTED!
+2025-12-16 16:25:05,974 - WARNING - Initiating graceful shutdown...
+2025-12-16 16:25:06,538 - WARNING - Shutdown complete

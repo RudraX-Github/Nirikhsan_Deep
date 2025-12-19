@@ -1121,3 +1121,1609 @@
 2025-12-11 12:32:05,471 - WARNING - Initiating graceful shutdown...
 2025-12-11 12:32:05,753 - WARNING - Saved 6 log entries to logs\events.csv
 2025-12-11 12:32:05,822 - WARNING - Shutdown complete
+2025-12-11 12:44:21,636 - WARNING - Loaded 7 guards
+2025-12-11 12:44:52,011 - WARNING - Camera 0 started successfully
+2025-12-11 12:45:31,371 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:45:33,645 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:46:01,454 - WARNING - [RESET] Rudresh: Missing for 30.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 12:46:25,661 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 12:46:44,099 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:46:46,516 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:47:03,989 - WARNING - Initiating graceful shutdown...
+2025-12-11 12:47:04,348 - WARNING - Shutdown complete
+2025-12-11 12:51:57,712 - WARNING - Loaded 7 guards
+2025-12-11 12:52:13,186 - WARNING - Camera 0 started successfully
+2025-12-11 12:52:26,579 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:52:27,971 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:52:56,633 - WARNING - [RESET] Rudresh: Missing for 30.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 12:57:26,900 - WARNING - Loaded 7 guards
+2025-12-11 12:57:59,713 - WARNING - Camera 0 started successfully
+2025-12-11 12:58:12,204 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 12:58:14,063 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 12:58:17,293 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:04:07,284 - WARNING - Loaded 7 guards
+2025-12-11 13:05:04,193 - WARNING - Camera 0 started successfully
+2025-12-11 13:05:17,511 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 13:05:19,058 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 13:05:22,593 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:07:52,923 - WARNING - Loaded 7 guards
+2025-12-11 13:08:11,840 - WARNING - Camera 0 started successfully
+2025-12-11 13:08:25,102 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 13:08:26,641 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 13:08:30,178 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:08:53,818 - WARNING - Initiating graceful shutdown...
+2025-12-11 13:08:54,162 - WARNING - Shutdown complete
+2025-12-11 13:16:38,157 - WARNING - Loaded 7 guards
+2025-12-11 13:16:52,518 - WARNING - Camera 0 started successfully
+2025-12-11 13:17:03,567 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 13:17:05,313 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 13:17:08,628 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:46:03,350 - WARNING - Initiating graceful shutdown...
+2025-12-11 13:46:03,725 - WARNING - Shutdown complete
+2025-12-11 13:46:12,756 - WARNING - Loaded 7 guards
+2025-12-11 13:46:38,378 - WARNING - Camera 0 started successfully
+2025-12-11 13:46:47,144 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 13:46:48,559 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 13:46:52,300 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:46:53,771 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.457, distance: 0.543, bbox: 36x36 px)
+2025-12-11 13:51:08,014 - WARNING - Initiating graceful shutdown...
+2025-12-11 13:51:08,378 - WARNING - Shutdown complete
+2025-12-11 13:52:52,276 - WARNING - Loaded 7 guards
+2025-12-11 13:53:52,128 - WARNING - Camera 0 started successfully
+2025-12-11 13:54:08,979 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 13:54:10,846 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 13:54:14,063 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.503, distance: 0.497, bbox: 36x36 px)
+2025-12-11 13:54:30,502 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-11 13:54:32,828 - WARNING - Alert mode started - logging enabled
+2025-12-11 13:54:37,172 - WARNING - Alert mode stopped - logging saved
+2025-12-11 13:54:51,378 - WARNING - Alert mode started - logging enabled
+2025-12-11 13:55:51,488 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-11 13:55:52,542 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-11 13:57:12,816 - WARNING - Fugitive Added: 03_right
+2025-12-11 13:57:12,817 - WARNING - Fugitive Detection ENABLED - Searching for: 03_right
+2025-12-11 13:57:34,442 - WARNING - [STRICT SKIP FUGITIVE] Face TOO CLOSE to guard 'Rudresh'
+2025-12-11 13:57:44,442 - WARNING - Fugitive Removed
+2025-12-11 13:57:50,359 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 13:58:09,948 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 13:58:13,393 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 13:58:15,093 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:58:20,119 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.548, distance: 0.452, bbox: 36x36 px)
+2025-12-11 13:58:38,125 - WARNING - Fugitive Added: front
+2025-12-11 13:58:38,125 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-11 13:58:48,500 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-11 13:58:53,595 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 13:58:55,723 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.569, distance: 0.431, bbox: 36x36 px)
+2025-12-11 13:59:10,014 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 13:59:10,016 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-11 13:59:22,840 - WARNING - Initiating graceful shutdown...
+2025-12-11 13:59:23,139 - WARNING - Saved 10 log entries to logs\events.csv
+2025-12-11 13:59:23,206 - WARNING - Shutdown complete
+2025-12-11 14:22:37,285 - WARNING - Loaded 7 guards
+2025-12-11 14:22:54,041 - WARNING - Camera 0 started successfully
+2025-12-11 14:23:08,298 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 14:23:09,989 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 14:23:13,430 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:23:30,241 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.560, distance: 0.440, bbox: 36x36 px)
+2025-12-11 14:24:36,190 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:24:41,287 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.506, distance: 0.494, bbox: 36x36 px)
+2025-12-11 14:24:41,878 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:24:43,198 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.543, distance: 0.457, bbox: 36x36 px)
+2025-12-11 14:24:43,350 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:24:43,717 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.517, distance: 0.483, bbox: 36x36 px)
+2025-12-11 14:24:45,786 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:24:46,630 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.623, distance: 0.377, bbox: 36x36 px)
+2025-12-11 14:25:13,442 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:25:15,068 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.505, distance: 0.495, bbox: 36x36 px)
+2025-12-11 14:27:36,047 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:27:41,327 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:32:15,510 - WARNING - Loaded 7 guards
+2025-12-11 14:33:05,423 - WARNING - Camera 0 started successfully
+2025-12-11 14:33:14,496 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 14:33:16,197 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 14:33:19,661 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:33:35,740 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.583, distance: 0.417, bbox: 36x36 px)
+2025-12-11 14:33:44,178 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:47,418 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.544, distance: 0.456, bbox: 36x36 px)
+2025-12-11 14:33:47,554 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:50,293 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.561, distance: 0.439, bbox: 36x36 px)
+2025-12-11 14:33:50,431 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:51,146 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.585, distance: 0.415, bbox: 36x36 px)
+2025-12-11 14:33:51,289 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:52,365 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.626, distance: 0.374, bbox: 36x36 px)
+2025-12-11 14:33:52,500 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:54,286 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.559, distance: 0.441, bbox: 36x36 px)
+2025-12-11 14:33:54,428 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:54,797 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.558, distance: 0.442, bbox: 36x36 px)
+2025-12-11 14:33:54,932 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:55,302 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.571, distance: 0.429, bbox: 36x36 px)
+2025-12-11 14:33:55,437 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:55,804 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.622, distance: 0.378, bbox: 36x36 px)
+2025-12-11 14:33:55,938 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:56,309 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.542, distance: 0.458, bbox: 36x36 px)
+2025-12-11 14:33:56,445 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:33:59,660 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.557, distance: 0.443, bbox: 36x36 px)
+2025-12-11 14:33:59,800 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:34:00,167 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.623, distance: 0.377, bbox: 36x36 px)
+2025-12-11 14:34:00,299 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:34:00,673 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.588, distance: 0.412, bbox: 36x36 px)
+2025-12-11 14:35:01,393 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:35:06,694 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:35:07,056 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.601, distance: 0.399, bbox: 43x43 px)
+2025-12-11 14:35:07,228 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:35:10,634 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.550, distance: 0.450, bbox: 36x36 px)
+2025-12-11 14:35:10,784 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:35:15,427 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.609, distance: 0.391, bbox: 36x36 px)
+2025-12-11 14:36:14,722 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:36:19,922 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:36:39,831 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.523, distance: 0.477, bbox: 43x43 px)
+2025-12-11 14:36:48,355 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:36:51,400 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.538, distance: 0.462, bbox: 36x36 px)
+2025-12-11 14:36:51,553 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:36:54,290 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.552, distance: 0.448, bbox: 36x36 px)
+2025-12-11 14:37:09,206 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:37:14,396 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:37:14,923 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.542, distance: 0.458, bbox: 52x52 px)
+2025-12-11 14:37:52,800 - WARNING - Fugitive Added: 01_front
+2025-12-11 14:37:52,800 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-11 14:38:03,750 - WARNING - [FUGITIVE MATCH] Distance=0.541, Confidence=0.459 - FUGITIVE DETECTED!
+2025-12-11 14:38:04,779 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 14:38:04,784 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-11 14:38:04,784 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-11 14:38:10,072 - WARNING - [FUGITIVE MATCH] Distance=0.475, Confidence=0.525 - FUGITIVE DETECTED!
+2025-12-11 14:38:10,893 - WARNING - [FUGITIVE MATCH] Distance=0.453, Confidence=0.547 - FUGITIVE DETECTED!
+2025-12-11 14:38:11,301 - WARNING - [FUGITIVE MATCH] Distance=0.517, Confidence=0.483 - FUGITIVE DETECTED!
+2025-12-11 14:38:11,710 - WARNING - [FUGITIVE MATCH] Distance=0.480, Confidence=0.520 - FUGITIVE DETECTED!
+2025-12-11 14:38:12,122 - WARNING - [FUGITIVE MATCH] Distance=0.473, Confidence=0.527 - FUGITIVE DETECTED!
+2025-12-11 14:38:12,556 - WARNING - [FUGITIVE MATCH] Distance=0.378, Confidence=0.622 - FUGITIVE DETECTED!
+2025-12-11 14:38:12,963 - WARNING - [FUGITIVE MATCH] Distance=0.394, Confidence=0.606 - FUGITIVE DETECTED!
+2025-12-11 14:38:13,368 - WARNING - [FUGITIVE MATCH] Distance=0.359, Confidence=0.641 - FUGITIVE DETECTED!
+2025-12-11 14:38:15,489 - WARNING - [FUGITIVE MATCH] Distance=0.367, Confidence=0.633 - FUGITIVE DETECTED!
+2025-12-11 14:38:17,383 - WARNING - [FUGITIVE MATCH] Distance=0.367, Confidence=0.633 - FUGITIVE DETECTED!
+2025-12-11 14:38:17,789 - WARNING - [FUGITIVE MATCH] Distance=0.349, Confidence=0.651 - FUGITIVE DETECTED!
+2025-12-11 14:38:18,195 - WARNING - [FUGITIVE MATCH] Distance=0.368, Confidence=0.632 - FUGITIVE DETECTED!
+2025-12-11 14:38:18,597 - WARNING - [FUGITIVE MATCH] Distance=0.359, Confidence=0.641 - FUGITIVE DETECTED!
+2025-12-11 14:38:19,003 - WARNING - [FUGITIVE MATCH] Distance=0.370, Confidence=0.630 - FUGITIVE DETECTED!
+2025-12-11 14:38:19,005 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 14:38:33,708 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 14:38:36,759 - WARNING - Fugitive Removed
+2025-12-11 14:38:50,901 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 14:38:52,760 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-11 14:38:56,041 - WARNING - [RESET] Krunal: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:39:02,519 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.579, distance: 0.421, bbox: 36x36 px)
+2025-12-11 14:39:37,278 - WARNING - Fugitive Added: front
+2025-12-11 14:39:37,279 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-11 14:39:41,344 - WARNING - [FUGITIVE MATCH] Distance=0.480, Confidence=0.520 - FUGITIVE DETECTED!
+2025-12-11 14:39:41,345 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-11 14:39:41,751 - WARNING - [FUGITIVE MATCH] Distance=0.390, Confidence=0.610 - FUGITIVE DETECTED!
+2025-12-11 14:39:44,759 - WARNING - [FUGITIVE MATCH] Distance=0.356, Confidence=0.644 - FUGITIVE DETECTED!
+2025-12-11 14:39:45,193 - WARNING - [FUGITIVE MATCH] Distance=0.406, Confidence=0.594 - FUGITIVE DETECTED!
+2025-12-11 14:39:54,007 - WARNING - [FUGITIVE MATCH] Distance=0.449, Confidence=0.551 - FUGITIVE DETECTED!
+2025-12-11 14:40:21,022 - WARNING - Initiating graceful shutdown...
+2025-12-11 14:40:21,380 - WARNING - Shutdown complete
+2025-12-11 14:51:58,434 - WARNING - Loaded 7 guards
+2025-12-11 14:52:12,443 - WARNING - Camera 0 started successfully
+2025-12-11 14:52:18,626 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 14:52:20,030 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 14:52:23,369 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.519, distance: 0.481, bbox: 36x36 px)
+2025-12-11 14:53:24,467 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:53:29,562 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:53:34,494 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.525, distance: 0.475, bbox: 36x36 px)
+2025-12-11 14:53:34,659 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:53:35,028 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.573, distance: 0.427, bbox: 36x36 px)
+2025-12-11 14:53:35,180 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:53:37,289 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.603, distance: 0.397, bbox: 44x43 px)
+2025-12-11 14:53:49,608 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:53:51,405 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.611, distance: 0.389, bbox: 43x43 px)
+2025-12-11 14:53:51,540 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:53:53,200 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.530, distance: 0.470, bbox: 43x44 px)
+2025-12-11 14:53:53,337 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:53:56,706 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.633, distance: 0.367, bbox: 52x52 px)
+2025-12-11 14:55:16,621 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:55:21,291 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.551, distance: 0.449, bbox: 52x52 px)
+2025-12-11 14:55:21,466 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:55:25,387 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.549, distance: 0.451, bbox: 43x43 px)
+2025-12-11 14:55:38,387 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:55:42,531 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.587, distance: 0.413, bbox: 36x36 px)
+2025-12-11 14:55:42,683 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:55:44,635 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.606, distance: 0.394, bbox: 36x36 px)
+2025-12-11 14:55:44,772 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 14:55:49,832 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 14:55:51,824 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.601, distance: 0.399, bbox: 36x36 px)
+2025-12-11 14:56:23,305 - WARNING - Fugitive Added: 01_front
+2025-12-11 14:56:23,305 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-11 14:56:43,728 - WARNING - [FUGITIVE MATCH] Distance=0.413, Confidence=0.587 - FUGITIVE DETECTED!
+2025-12-11 14:56:43,730 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 14:56:44,790 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-11 14:56:44,790 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-11 14:56:59,758 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 14:57:01,737 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.581, distance: 0.419, bbox: 36x36 px)
+2025-12-11 14:58:56,074 - WARNING - [FUGITIVE MATCH] Distance=0.409, Confidence=0.591 - FUGITIVE DETECTED!
+2025-12-11 14:58:56,075 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 14:59:05,595 - WARNING - [FUGITIVE MATCH] Distance=0.347, Confidence=0.653 - FUGITIVE DETECTED!
+2025-12-11 14:59:06,211 - WARNING - [FUGITIVE MATCH] Distance=0.423, Confidence=0.577 - FUGITIVE DETECTED!
+2025-12-11 14:59:18,801 - WARNING - [FUGITIVE MATCH] Distance=0.425, Confidence=0.575 - FUGITIVE DETECTED!
+2025-12-11 14:59:18,802 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 14:59:19,431 - WARNING - [FUGITIVE MATCH] Distance=0.423, Confidence=0.577 - FUGITIVE DETECTED!
+2025-12-11 14:59:29,149 - WARNING - Fugitive Removed
+2025-12-11 14:59:54,324 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-11 14:59:56,461 - WARNING - Stillness Alert ENABLED
+2025-12-11 15:01:44,656 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 15:01:46,065 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.542, distance: 0.458, bbox: 36x36 px)
+2025-12-11 15:02:07,500 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-11 15:02:07,501 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-11 15:05:05,317 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 15:05:10,360 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 15:06:02,215 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.546, distance: 0.454, bbox: 36x36 px)
+2025-12-11 15:06:02,348 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Tracked but failed body validation - no_body_box, out_of_frame - HARD RESET triggered
+2025-12-11 15:06:07,522 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 15:06:09,734 - WARNING - Initiating graceful shutdown...
+2025-12-11 15:06:10,095 - WARNING - Shutdown complete
+2025-12-11 15:16:04,878 - WARNING - Loaded 7 guards
+2025-12-11 15:55:21,226 - WARNING - Loaded 7 guards
+2025-12-11 15:55:52,158 - WARNING - Camera 0 started successfully
+2025-12-11 15:56:22,715 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 15:56:24,570 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 15:56:27,866 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 15:56:49,391 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.515) + low confidence (0.485) - REJECT to prevent ghost
+2025-12-11 15:56:53,567 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.547, distance: 0.453, bbox: 36x36 px)
+2025-12-11 15:57:02,630 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 15:57:07,676 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 15:57:14,900 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.609, distance: 0.391, bbox: 36x36 px)
+2025-12-11 15:58:37,022 - WARNING - Initiating graceful shutdown...
+2025-12-11 15:58:37,385 - WARNING - Shutdown complete
+2025-12-11 16:07:34,287 - WARNING - Loaded 7 guards
+2025-12-11 16:08:03,178 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-11 16:08:04,833 - WARNING - Waiting for IP camera stream...
+2025-12-11 16:08:04,834 - WARNING - IP camera stream ready!
+2025-12-11 16:08:04,844 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-11 16:08:26,491 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-11 16:08:27,568 - WARNING - Alert mode started - logging enabled
+2025-12-11 16:08:33,135 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:08:35,228 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 16:08:35,961 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.504) + low confidence (0.496) - REJECT to prevent ghost
+2025-12-11 16:08:36,358 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.513, distance: 0.487, bbox: 43x43 px)
+2025-12-11 16:08:38,522 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:08:41,328 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.510) + low confidence (0.490) - REJECT to prevent ghost
+2025-12-11 16:08:41,702 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.515, distance: 0.485, bbox: 36x36 px)
+2025-12-11 16:08:41,848 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:08:44,428 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.518, distance: 0.482, bbox: 36x36 px)
+2025-12-11 16:08:44,587 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:08:44,971 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.537, distance: 0.463, bbox: 36x36 px)
+2025-12-11 16:09:33,216 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:09:34,318 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:09:38,563 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:09:38,574 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:09:43,105 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.516, distance: 0.484, bbox: 51x52 px)
+2025-12-11 16:09:43,139 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 16:09:43,279 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:09:43,827 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.510) + low confidence (0.490) - REJECT to prevent ghost
+2025-12-11 16:09:43,828 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:09:44,753 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.501, distance: 0.499, bbox: 52x52 px)
+2025-12-11 16:09:44,906 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:09:46,670 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:09:50,625 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.530, distance: 0.470, bbox: 43x43 px)
+2025-12-11 16:09:50,776 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:09:51,342 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.542, distance: 0.458, bbox: 52x52 px)
+2025-12-11 16:09:51,498 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:09:52,239 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:09:53,506 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.517) + low confidence (0.483) - REJECT to prevent ghost
+2025-12-11 16:09:53,881 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.517, distance: 0.483, bbox: 52x52 px)
+2025-12-11 16:09:56,212 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:09:56,765 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-11 16:10:04,140 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:10:04,813 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 16:10:09,629 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.526, distance: 0.474, bbox: 52x51 px)
+2025-12-11 16:10:10,285 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:10:10,659 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.591, distance: 0.409, bbox: 52x52 px)
+2025-12-11 16:10:25,395 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:29,382 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.505, distance: 0.495, bbox: 36x36 px)
+2025-12-11 16:10:29,509 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:29,867 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.506) + low confidence (0.494) - REJECT to prevent ghost
+2025-12-11 16:10:31,045 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.511) + low confidence (0.489) - REJECT to prevent ghost
+2025-12-11 16:10:31,610 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.534, distance: 0.466, bbox: 36x36 px)
+2025-12-11 16:10:31,740 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:32,305 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.573, distance: 0.427, bbox: 36x36 px)
+2025-12-11 16:10:32,431 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:32,979 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.506) + low confidence (0.494) - REJECT to prevent ghost
+2025-12-11 16:10:33,900 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.543, distance: 0.457, bbox: 43x43 px)
+2025-12-11 16:10:34,025 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:34,574 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.503) + low confidence (0.497) - REJECT to prevent ghost
+2025-12-11 16:10:35,138 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.601, distance: 0.399, bbox: 44x44 px)
+2025-12-11 16:10:35,272 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:36,008 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.514) + low confidence (0.486) - REJECT to prevent ghost
+2025-12-11 16:10:36,575 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.518, distance: 0.482, bbox: 43x43 px)
+2025-12-11 16:10:36,710 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:37,273 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.569, distance: 0.431, bbox: 43x44 px)
+2025-12-11 16:10:37,408 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:38,163 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.515, distance: 0.485, bbox: 43x43 px)
+2025-12-11 16:10:38,292 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:38,858 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.587, distance: 0.413, bbox: 52x52 px)
+2025-12-11 16:10:38,989 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-11 16:10:39,555 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.537, distance: 0.463, bbox: 52x52 px)
+2025-12-11 16:11:04,927 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:11:08,474 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 16:11:16,169 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:11:17,013 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-11 16:11:21,970 - WARNING - [RESET] Krunal: Missing for 5.3s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:11:23,208 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.517, distance: 0.483, bbox: 43x43 px)
+2025-12-11 16:11:23,346 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Tracked but failed body validation - no_body_box, pose_low(0.00), keypts_low(0), out_of_frame - HARD RESET triggered
+2025-12-11 16:11:25,716 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.517, distance: 0.483, bbox: 43x43 px)
+2025-12-11 16:12:16,214 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:12:16,216 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-11 16:13:17,365 - WARNING - Fugitive Added: front
+2025-12-11 16:13:17,366 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-11 16:13:23,928 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:13:26,340 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.714, fugitive=0.688, margin=0.12)
+2025-12-11 16:13:26,347 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-11 16:13:27,018 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.594 << guard_dist=0.645)
+2025-12-11 16:13:27,695 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.628, fugitive=0.638, margin=0.12)
+2025-12-11 16:13:28,366 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.604, fugitive=0.639, margin=0.12)
+2025-12-11 16:13:29,035 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.585, fugitive=0.618, margin=0.12)
+2025-12-11 16:13:29,585 - WARNING - [FUGITIVE MATCH] Distance=0.528, Confidence=0.472 - FUGITIVE DETECTED!
+2025-12-11 16:13:29,593 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-11 16:13:29,599 - WARNING - Saved 16 log entries to logs\events.csv
+2025-12-11 16:13:29,600 - WARNING - [FUGITIVE DETECTED] front FIRST APPEARANCE logged
+2025-12-11 16:13:29,918 - WARNING - [GHOST PREVENTION] Krunal -> face_0: High distance (0.519) + low confidence (0.481) - REJECT to prevent ghost
+2025-12-11 16:13:29,919 - WARNING - [RESET] Krunal: Missing for 5.7s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:13:30,468 - WARNING - [FUGITIVE MATCH] Distance=0.459, Confidence=0.541 - FUGITIVE DETECTED!
+2025-12-11 16:13:30,785 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.649, fugitive=0.669, margin=0.12)
+2025-12-11 16:13:31,142 - WARNING - [FUGITIVE MATCH] Distance=0.474, Confidence=0.526 - FUGITIVE DETECTED!
+2025-12-11 16:13:31,816 - WARNING - [FUGITIVE MATCH] Distance=0.490, Confidence=0.510 - FUGITIVE DETECTED!
+2025-12-11 16:13:32,135 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.681, fugitive=0.662, margin=0.12)
+2025-12-11 16:13:32,137 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-11 16:13:33,078 - WARNING - [FUGITIVE MATCH] Distance=0.486, Confidence=0.514 - FUGITIVE DETECTED!
+2025-12-11 16:13:34,261 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.562 << guard_dist=0.732)
+2025-12-11 16:13:34,262 - WARNING - [STRICT REJECT] Krunal vs face_1: TOO CLOSE to fugitive (guard=0.651, fugitive=0.631, margin=0.12)
+2025-12-11 16:13:34,808 - WARNING - [FUGITIVE MATCH] Distance=0.484, Confidence=0.516 - FUGITIVE DETECTED!
+2025-12-11 16:13:35,142 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.552, distance: 0.448, bbox: 62x62 px)
+2025-12-11 16:13:35,163 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:14:19,711 - WARNING - [FUGITIVE MATCH] Distance=0.465, Confidence=0.535 - FUGITIVE DETECTED!
+2025-12-11 16:14:19,713 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-11 16:14:20,603 - WARNING - [FUGITIVE MATCH] Distance=0.490, Confidence=0.510 - FUGITIVE DETECTED!
+2025-12-11 16:14:21,051 - WARNING - [FUGITIVE MATCH] Distance=0.504, Confidence=0.496 - FUGITIVE DETECTED!
+2025-12-11 16:14:21,499 - WARNING - [FUGITIVE MATCH] Distance=0.474, Confidence=0.526 - FUGITIVE DETECTED!
+2025-12-11 16:14:21,943 - WARNING - [FUGITIVE MATCH] Distance=0.490, Confidence=0.510 - FUGITIVE DETECTED!
+2025-12-11 16:14:23,274 - WARNING - [FUGITIVE MATCH] Distance=0.524, Confidence=0.476 - FUGITIVE DETECTED!
+2025-12-11 16:14:24,420 - WARNING - [FUGITIVE MATCH] Distance=0.544, Confidence=0.456 - FUGITIVE DETECTED!
+2025-12-11 16:14:24,865 - WARNING - [FUGITIVE MATCH] Distance=0.446, Confidence=0.554 - FUGITIVE DETECTED!
+2025-12-11 16:14:33,226 - WARNING - [TRACK ENDED] Krunal: No face for 45 frames - guard likely left frame
+2025-12-11 16:14:36,496 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.564 << guard_dist=0.631)
+2025-12-11 16:14:38,608 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.654 << guard_dist=0.772)
+2025-12-11 16:14:38,609 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:14:38,616 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-11 16:14:39,865 - WARNING - [STRICT REJECT] Krunal vs face_0: Face is FUGITIVE (fugitive_dist=0.592 << guard_dist=0.736)
+2025-12-11 16:14:42,267 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.620, fugitive=0.626, margin=0.12)
+2025-12-11 16:14:53,879 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.542, fugitive=0.587, margin=0.12)
+2025-12-11 16:14:54,546 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.528, fugitive=0.628, margin=0.12)
+2025-12-11 16:14:55,797 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.622, fugitive=0.691, margin=0.12)
+2025-12-11 16:14:56,468 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.561, fugitive=0.647, margin=0.12)
+2025-12-11 16:14:57,139 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.560, fugitive=0.619, margin=0.12)
+2025-12-11 16:14:57,828 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.512, distance: 0.488, bbox: 43x43 px)
+2025-12-11 16:14:57,860 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:15:50,065 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-11 16:15:53,904 - WARNING - Fugitive Removed
+2025-12-11 16:16:11,296 - WARNING - Loaded 6 guards
+2025-12-11 16:16:11,298 - WARNING - Guard removed: KD (Face image (profiles))
+2025-12-11 16:19:12,170 - WARNING - Loaded 7 guards
+2025-12-11 16:19:22,693 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:19:24,237 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 16:19:27,942 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:19:36,419 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.608, distance: 0.392, bbox: 63x62 px)
+2025-12-11 16:19:37,222 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:19:37,910 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.508) + low confidence (0.492) - REJECT to prevent ghost
+2025-12-11 16:19:38,286 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.576, distance: 0.424, bbox: 44x43 px)
+2025-12-11 16:19:38,440 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:19:39,524 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.515, distance: 0.485, bbox: 43x43 px)
+2025-12-11 16:20:22,737 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 16:20:22,738 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-11 16:21:34,774 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 16:21:34,776 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-11 16:21:43,287 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-11 16:22:42,319 - WARNING - Saved 33 log entries to logs\events.csv
+2025-12-11 16:23:01,159 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-11 16:23:02,741 - WARNING - Waiting for IP camera stream...
+2025-12-11 16:23:02,743 - WARNING - IP camera stream ready!
+2025-12-11 16:23:02,747 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-11 16:24:20,867 - WARNING - Initiating graceful shutdown...
+2025-12-11 16:24:20,934 - WARNING - Shutdown complete
+2025-12-11 16:25:31,767 - WARNING - Loaded 7 guards
+2025-12-11 16:26:15,019 - WARNING - Camera 0 started successfully
+2025-12-11 16:26:44,803 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-11 16:26:45,863 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:26:47,897 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 16:26:51,007 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:27:02,014 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.526, distance: 0.474, bbox: 51x51 px)
+2025-12-11 16:27:10,103 - WARNING - Alert mode started - logging enabled
+2025-12-11 16:27:10,682 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-11 16:27:15,728 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:27:18,757 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.514) + low confidence (0.486) - REJECT to prevent ghost
+2025-12-11 16:27:42,718 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.519) + low confidence (0.481) - REJECT to prevent ghost
+2025-12-11 16:27:51,305 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.520) + low confidence (0.480) - REJECT to prevent ghost
+2025-12-11 16:27:56,049 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.504) + low confidence (0.496) - REJECT to prevent ghost
+2025-12-11 16:28:07,274 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.503, distance: 0.497, bbox: 62x62 px)
+2025-12-11 16:28:10,204 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 16:28:10,206 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-11 16:28:11,366 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:28:12,712 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:28:16,414 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:28:18,121 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:28:21,254 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.515) + low confidence (0.485) - REJECT to prevent ghost
+2025-12-11 16:28:30,937 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.518) + low confidence (0.482) - REJECT to prevent ghost
+2025-12-11 16:28:31,297 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.512, distance: 0.488, bbox: 75x75 px)
+2025-12-11 16:28:31,658 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:28:32,018 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.533, distance: 0.467, bbox: 90x90 px)
+2025-12-11 16:28:32,172 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:28:33,863 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:28:34,352 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.515) + low confidence (0.485) - REJECT to prevent ghost
+2025-12-11 16:28:37,269 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:28:38,906 - WARNING - [ALERT] KD MISSING - Alert triggered!
+2025-12-11 16:28:42,994 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-11 16:29:29,222 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:29:31,566 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-11 16:29:32,392 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.529, distance: 0.471, bbox: 43x44 px)
+2025-12-11 16:29:32,550 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:29:37,661 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.552, distance: 0.448, bbox: 36x36 px)
+2025-12-11 16:29:37,809 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:29:39,444 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.563, distance: 0.437, bbox: 36x36 px)
+2025-12-11 16:29:39,596 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:29:39,939 - WARNING - [GHOST PREVENTION] Krunal -> face_0: High distance (0.510) + low confidence (0.490) - REJECT to prevent ghost
+2025-12-11 16:29:40,296 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.523, distance: 0.477, bbox: 36x36 px)
+2025-12-11 16:30:29,302 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:30:29,304 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-11 16:31:26,024 - WARNING - Fugitive Added: 01_front
+2025-12-11 16:31:26,024 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-11 16:32:16,508 - WARNING - [FUGITIVE MATCH] Distance=0.420, Confidence=0.580 - FUGITIVE DETECTED!
+2025-12-11 16:32:16,510 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 16:32:16,515 - WARNING - Saved 12 log entries to logs\events.csv
+2025-12-11 16:32:16,516 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-11 16:32:21,832 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:32:21,832 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-11 16:33:24,962 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:33:24,964 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-11 16:33:30,271 - WARNING - [FUGITIVE MATCH] Distance=0.547, Confidence=0.453 - FUGITIVE DETECTED!
+2025-12-11 16:33:30,272 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 16:33:30,887 - WARNING - [FUGITIVE MATCH] Distance=0.493, Confidence=0.507 - FUGITIVE DETECTED!
+2025-12-11 16:33:48,132 - WARNING - [FUGITIVE MATCH] Distance=0.525, Confidence=0.475 - FUGITIVE DETECTED!
+2025-12-11 16:33:48,135 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-11 16:33:49,341 - WARNING - [FUGITIVE MATCH] Distance=0.529, Confidence=0.471 - FUGITIVE DETECTED!
+2025-12-11 16:33:53,383 - WARNING - [FUGITIVE MATCH] Distance=0.484, Confidence=0.516 - FUGITIVE DETECTED!
+2025-12-11 16:33:53,810 - WARNING - [FUGITIVE MATCH] Distance=0.454, Confidence=0.546 - FUGITIVE DETECTED!
+2025-12-11 16:33:54,215 - WARNING - [FUGITIVE MATCH] Distance=0.544, Confidence=0.456 - FUGITIVE DETECTED!
+2025-12-11 16:34:34,654 - WARNING - Fugitive Removed
+2025-12-11 16:35:12,865 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:13,416 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.607, distance: 0.393, bbox: 129x129 px)
+2025-12-11 16:35:13,566 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:13,926 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.559, distance: 0.441, bbox: 129x129 px)
+2025-12-11 16:35:14,180 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:14,542 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.566, distance: 0.434, bbox: 108x108 px)
+2025-12-11 16:35:14,696 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:15,052 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.610, distance: 0.390, bbox: 108x108 px)
+2025-12-11 16:35:15,207 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:15,567 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.607, distance: 0.393, bbox: 129x129 px)
+2025-12-11 16:35:18,669 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:20,470 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-11 16:35:23,087 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.598, distance: 0.402, bbox: 36x36 px)
+2025-12-11 16:35:23,109 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-11 16:35:23,342 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:35:23,695 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.565, distance: 0.435, bbox: 36x36 px)
+2025-12-11 16:36:29,862 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-11 16:36:43,183 - WARNING - Loaded 6 guards
+2025-12-11 16:36:43,186 - WARNING - Guard removed: KD (Face image (profiles))
+2025-12-11 16:37:02,535 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-11 16:37:03,036 - ERROR - Camera not available
+2025-12-11 16:37:03,037 - WARNING - Saved 14 log entries to logs\events.csv
+2025-12-11 16:37:15,343 - WARNING - Camera 1 ready (feed paused)
+2025-12-11 16:37:53,355 - WARNING - Camera 1 started successfully
+2025-12-11 16:38:48,235 - WARNING - Loaded 7 guards
+2025-12-11 16:39:01,778 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-11 16:39:02,279 - ERROR - Camera not available
+2025-12-11 16:39:11,021 - WARNING - Camera 0 ready (feed paused)
+2025-12-11 16:39:48,843 - WARNING - Camera 0 started successfully
+2025-12-11 16:39:55,382 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:39:57,608 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 16:40:00,289 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.502, distance: 0.498, bbox: 36x36 px)
+2025-12-11 16:40:00,422 - WARNING - [GHOST REMOVED + HARD RESET] KD: Tracked but failed body validation - no_body_box, pose_low(0.00), keypts_low(0), out_of_frame - HARD RESET triggered
+2025-12-11 16:40:00,780 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.558, distance: 0.442, bbox: 36x36 px)
+2025-12-11 16:40:55,422 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 16:40:55,424 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-11 16:41:48,726 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:41:49,083 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.501, distance: 0.499, bbox: 36x36 px)
+2025-12-11 16:41:49,478 - WARNING - [GHOST REMOVED + HARD RESET] KD: Tracked but failed body validation - no_body_box, out_of_frame - HARD RESET triggered
+2025-12-11 16:41:54,545 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:41:57,602 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.576, distance: 0.424, bbox: 36x36 px)
+2025-12-11 16:43:03,376 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-11 16:43:03,377 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-11 16:43:20,465 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:43:20,827 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.579, distance: 0.421, bbox: 36x36 px)
+2025-12-11 16:44:03,793 - WARNING - Initiating graceful shutdown...
+2025-12-11 16:44:04,071 - WARNING - Saved 14 log entries to logs\events.csv
+2025-12-11 16:44:04,141 - WARNING - Shutdown complete
+2025-12-11 16:44:40,660 - WARNING - Loaded 7 guards
+2025-12-11 16:44:56,493 - WARNING - Camera 0 started successfully
+2025-12-11 16:45:20,019 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:45:21,913 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-11 16:45:22,281 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.551, distance: 0.449, bbox: 44x43 px)
+2025-12-11 16:45:28,540 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-11 16:45:33,448 - WARNING - Alert mode started - logging enabled
+2025-12-11 16:45:35,008 - WARNING - Stillness Alert ENABLED
+2025-12-11 16:45:37,587 - WARNING - Alert mode stopped - logging saved
+2025-12-11 16:48:59,645 - WARNING - Stillness Alert DISABLED
+2025-12-11 16:49:00,965 - WARNING - Stillness Alert ENABLED
+2025-12-11 16:49:02,312 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-11 16:49:16,820 - WARNING - Stillness Alert DISABLED
+2025-12-11 16:49:20,401 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:49:22,275 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 16:49:25,553 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:49:44,285 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-11 16:52:54,876 - WARNING - Camera 0 started successfully
+2025-12-11 16:52:55,007 - ERROR - Camera start error: list index out of range
+2025-12-11 16:53:39,715 - WARNING - Camera 0 started successfully
+2025-12-11 16:53:39,842 - ERROR - Camera start error: list index out of range
+2025-12-11 16:53:45,975 - WARNING - Initiating graceful shutdown...
+2025-12-11 16:53:46,332 - WARNING - Shutdown complete
+2025-12-11 16:53:54,086 - WARNING - Loaded 8 guards
+2025-12-11 16:54:17,499 - WARNING - Camera 0 started successfully
+2025-12-11 16:55:44,728 - WARNING - Loaded 9 guards
+2025-12-11 16:56:19,032 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-11 16:56:49,095 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-11 16:56:49,096 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-11 16:57:19,144 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-11 16:57:19,145 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-11 16:57:27,258 - WARNING - Loaded 9 guards
+2025-12-11 16:57:52,531 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-11 16:57:54,129 - WARNING - Waiting for IP camera stream...
+2025-12-11 16:57:54,131 - WARNING - IP camera stream ready!
+2025-12-11 16:57:54,143 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-11 16:58:14,242 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 16:58:15,132 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.564, distance: 0.436, bbox: 43x43 px)
+2025-12-11 16:58:16,643 - WARNING - [TRACKING START] Identifying and tracking: Parth | Action: Hands Up
+2025-12-11 16:58:33,106 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-11 16:58:41,020 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 16:58:46,389 - WARNING - [RESET] Parth: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 16:58:48,906 - WARNING - Alert mode started - logging enabled
+2025-12-11 16:58:52,932 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.558, distance: 0.442, bbox: 43x43 px)
+2025-12-11 16:59:52,440 - WARNING - [TRACKING STOP] Stopped monitoring: Parth
+2025-12-11 17:00:12,376 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 17:00:14,079 - WARNING - [TRACKING START] Identifying and tracking: sagar | Action: Hands Up
+2025-12-11 17:00:15,982 - WARNING - [DETECTED] OK sagar identified & tracking (confidence: 0.539, distance: 0.461, bbox: 36x36 px)
+2025-12-11 17:00:26,789 - WARNING - [GHOST REMOVED + HARD RESET] sagar: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:00:29,156 - WARNING - [DETECTED] OK sagar identified & tracking (confidence: 0.561, distance: 0.439, bbox: 52x52 px)
+2025-12-11 17:01:12,493 - WARNING - [ALERT] sagar: Action TIMEOUT - triggering alarm
+2025-12-11 17:01:13,555 - WARNING - [ALERT] sagar: Restarting 15s alarm loop
+2025-12-11 17:01:32,224 - WARNING - [TRACKING STOP] Stopped monitoring: sagar
+2025-12-11 17:01:53,294 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 17:01:54,640 - WARNING - [TRACKING START] Identifying and tracking: Parth | Action: Hands Up
+2025-12-11 17:01:58,501 - WARNING - [RESET] Parth: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:01:59,588 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.578, distance: 0.422, bbox: 43x44 px)
+2025-12-11 17:02:15,856 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:02:18,072 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.548, distance: 0.452, bbox: 36x36 px)
+2025-12-11 17:02:18,236 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:02:18,803 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.510, distance: 0.490, bbox: 36x36 px)
+2025-12-11 17:02:44,956 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:02:45,331 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.561, distance: 0.439, bbox: 43x43 px)
+2025-12-11 17:02:57,826 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:03:03,014 - WARNING - [RESET] Parth: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:03:11,166 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.559, distance: 0.441, bbox: 52x52 px)
+2025-12-11 17:03:11,319 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:03:12,431 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.511, distance: 0.489, bbox: 43x43 px)
+2025-12-11 17:03:12,577 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:03:13,670 - WARNING - [GHOST PREVENTION] Parth -> face_0: High distance (0.514) + low confidence (0.486) - REJECT to prevent ghost
+2025-12-11 17:03:14,383 - WARNING - [GHOST PREVENTION] Parth -> face_0: High distance (0.518) + low confidence (0.482) - REJECT to prevent ghost
+2025-12-11 17:03:14,951 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.524, distance: 0.476, bbox: 36x36 px)
+2025-12-11 17:03:15,098 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:03:15,459 - WARNING - [GHOST PREVENTION] Parth -> face_0: High distance (0.512) + low confidence (0.488) - REJECT to prevent ghost
+2025-12-11 17:03:18,708 - WARNING - [GHOST PREVENTION] Parth -> face_0: High distance (0.507) + low confidence (0.493) - REJECT to prevent ghost
+2025-12-11 17:03:19,085 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.563, distance: 0.437, bbox: 52x51 px)
+2025-12-11 17:03:38,094 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:03:43,301 - WARNING - [RESET] Parth: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:03:45,020 - WARNING - [ALERT] Parth MISSING - Alert triggered!
+2025-12-11 17:03:47,385 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.573, distance: 0.427, bbox: 43x43 px)
+2025-12-11 17:03:47,419 - WARNING - [ALERT] Parth: Action TIMEOUT - triggering alarm
+2025-12-11 17:04:32,026 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:04:32,572 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.528, distance: 0.472, bbox: 36x36 px)
+2025-12-11 17:04:32,719 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:04:33,096 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.528, distance: 0.472, bbox: 36x36 px)
+2025-12-11 17:04:33,246 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:04:37,790 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.515, distance: 0.485, bbox: 44x43 px)
+2025-12-11 17:04:37,948 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:04:39,060 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.515, distance: 0.485, bbox: 43x43 px)
+2025-12-11 17:04:39,216 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:04:39,785 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.556, distance: 0.444, bbox: 44x43 px)
+2025-12-11 17:04:47,530 - WARNING - [GHOST REMOVED + HARD RESET] Parth: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:04:50,758 - WARNING - [DETECTED] OK Parth identified & tracking (confidence: 0.505, distance: 0.495, bbox: 43x43 px)
+2025-12-11 17:04:50,937 - WARNING - [ALERT] Parth: Action TIMEOUT - triggering alarm
+2025-12-11 17:04:50,937 - WARNING - [ALERT] Parth: Restarting 15s alarm loop
+2025-12-11 17:05:15,306 - WARNING - Fugitive Added: front
+2025-12-11 17:05:15,307 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-11 17:05:34,598 - WARNING - [FUGITIVE MATCH] Distance=0.507, Confidence=0.493 - FUGITIVE DETECTED!
+2025-12-11 17:05:34,600 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-11 17:05:34,614 - WARNING - Saved 19 log entries to logs\events.csv
+2025-12-11 17:05:34,614 - WARNING - [FUGITIVE DETECTED] front FIRST APPEARANCE logged
+2025-12-11 17:05:35,251 - WARNING - [FUGITIVE MATCH] Distance=0.426, Confidence=0.574 - FUGITIVE DETECTED!
+2025-12-11 17:05:35,887 - WARNING - [FUGITIVE MATCH] Distance=0.515, Confidence=0.485 - FUGITIVE DETECTED!
+2025-12-11 17:05:36,520 - WARNING - [FUGITIVE MATCH] Distance=0.484, Confidence=0.516 - FUGITIVE DETECTED!
+2025-12-11 17:05:59,864 - WARNING - [ALERT] Parth: Action TIMEOUT - triggering alarm
+2025-12-11 17:05:59,866 - WARNING - [ALERT] Parth: Restarting 15s alarm loop
+2025-12-11 17:06:18,965 - WARNING - [FUGITIVE MATCH] Distance=0.460, Confidence=0.540 - FUGITIVE DETECTED!
+2025-12-11 17:06:18,966 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-11 17:06:20,650 - WARNING - [FUGITIVE MATCH] Distance=0.462, Confidence=0.538 - FUGITIVE DETECTED!
+2025-12-11 17:06:21,060 - WARNING - [FUGITIVE MATCH] Distance=0.429, Confidence=0.571 - FUGITIVE DETECTED!
+2025-12-11 17:06:22,762 - WARNING - [FUGITIVE MATCH] Distance=0.507, Confidence=0.493 - FUGITIVE DETECTED!
+2025-12-11 17:06:23,173 - WARNING - [FUGITIVE MATCH] Distance=0.457, Confidence=0.543 - FUGITIVE DETECTED!
+2025-12-11 17:06:30,129 - WARNING - [FUGITIVE MATCH] Distance=0.465, Confidence=0.535 - FUGITIVE DETECTED!
+2025-12-11 17:06:30,969 - WARNING - [FUGITIVE MATCH] Distance=0.447, Confidence=0.553 - FUGITIVE DETECTED!
+2025-12-11 17:06:31,377 - WARNING - [FUGITIVE MATCH] Distance=0.485, Confidence=0.515 - FUGITIVE DETECTED!
+2025-12-11 17:06:31,791 - WARNING - [FUGITIVE MATCH] Distance=0.500, Confidence=0.500 - FUGITIVE DETECTED!
+2025-12-11 17:06:49,720 - WARNING - [FUGITIVE MATCH] Distance=0.463, Confidence=0.537 - FUGITIVE DETECTED!
+2025-12-11 17:06:49,721 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-11 17:06:50,589 - WARNING - [FUGITIVE MATCH] Distance=0.427, Confidence=0.573 - FUGITIVE DETECTED!
+2025-12-11 17:06:51,228 - WARNING - [FUGITIVE MATCH] Distance=0.432, Confidence=0.568 - FUGITIVE DETECTED!
+2025-12-11 17:06:51,646 - WARNING - [FUGITIVE MATCH] Distance=0.512, Confidence=0.488 - FUGITIVE DETECTED!
+2025-12-11 17:06:52,059 - WARNING - [FUGITIVE MATCH] Distance=0.421, Confidence=0.579 - FUGITIVE DETECTED!
+2025-12-11 17:06:52,477 - WARNING - [FUGITIVE MATCH] Distance=0.429, Confidence=0.571 - FUGITIVE DETECTED!
+2025-12-11 17:06:52,897 - WARNING - [FUGITIVE MATCH] Distance=0.401, Confidence=0.599 - FUGITIVE DETECTED!
+2025-12-11 17:06:53,318 - WARNING - [FUGITIVE MATCH] Distance=0.417, Confidence=0.583 - FUGITIVE DETECTED!
+2025-12-11 17:06:53,739 - WARNING - [FUGITIVE MATCH] Distance=0.384, Confidence=0.616 - FUGITIVE DETECTED!
+2025-12-11 17:06:54,150 - WARNING - [FUGITIVE MATCH] Distance=0.418, Confidence=0.582 - FUGITIVE DETECTED!
+2025-12-11 17:06:54,563 - WARNING - [FUGITIVE MATCH] Distance=0.441, Confidence=0.559 - FUGITIVE DETECTED!
+2025-12-11 17:06:54,976 - WARNING - [FUGITIVE MATCH] Distance=0.493, Confidence=0.507 - FUGITIVE DETECTED!
+2025-12-11 17:06:57,876 - WARNING - [FUGITIVE MATCH] Distance=0.431, Confidence=0.569 - FUGITIVE DETECTED!
+2025-12-11 17:06:59,413 - WARNING - [FUGITIVE MATCH] Distance=0.545, Confidence=0.455 - FUGITIVE DETECTED!
+2025-12-11 17:07:08,928 - WARNING - [TRACKING STOP] Stopped monitoring: Parth
+2025-12-11 17:07:20,652 - WARNING - Initiating graceful shutdown...
+2025-12-11 17:07:20,652 - WARNING - Saved 8 log entries to logs\events.csv
+2025-12-11 17:07:20,729 - WARNING - Shutdown complete
+2025-12-11 17:13:33,796 - WARNING - Loaded 9 guards
+2025-12-11 17:20:06,220 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-11 17:20:07,854 - WARNING - Waiting for IP camera stream...
+2025-12-11 17:20:07,854 - WARNING - IP camera stream ready!
+2025-12-11 17:20:07,865 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-11 17:20:18,090 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 17:20:19,480 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 17:20:23,274 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:20:25,723 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.501) + low confidence (0.499) - REJECT to prevent ghost
+2025-12-11 17:20:26,113 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.557, distance: 0.443, bbox: 43x43 px)
+2025-12-11 17:21:15,299 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:21:20,357 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:21:29,040 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.509) + low confidence (0.491) - REJECT to prevent ghost
+2025-12-11 17:21:29,404 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.511) + low confidence (0.489) - REJECT to prevent ghost
+2025-12-11 17:21:33,873 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.513) + low confidence (0.487) - REJECT to prevent ghost
+2025-12-11 17:21:35,695 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.495) + low confidence (0.505) - REJECT to prevent ghost
+2025-12-11 17:21:37,529 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.560, distance: 0.440, bbox: 52x52 px)
+2025-12-11 17:21:38,889 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:21:43,921 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:21:48,537 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.515) + low confidence (0.485) - REJECT to prevent ghost
+2025-12-11 17:21:48,894 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.507) + low confidence (0.493) - REJECT to prevent ghost
+2025-12-11 17:21:51,491 - WARNING - [GHOST PREVENTION] KD -> face_1: High distance (0.502) + low confidence (0.498) - REJECT to prevent ghost
+2025-12-11 17:21:57,366 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.513) + low confidence (0.487) - REJECT to prevent ghost
+2025-12-11 17:21:57,923 - WARNING - [GHOST PREVENTION] KD -> face_1: High distance (0.491) + low confidence (0.509) - REJECT to prevent ghost
+2025-12-11 17:21:58,498 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.547, distance: 0.453, bbox: 62x62 px)
+2025-12-11 17:22:04,365 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:22:09,568 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.544, distance: 0.456, bbox: 43x44 px)
+2025-12-11 17:22:09,835 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:22:10,390 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.504) + low confidence (0.496) - REJECT to prevent ghost
+2025-12-11 17:22:10,758 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.485) + low confidence (0.515) - REJECT to prevent ghost
+2025-12-11 17:22:11,123 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.495) + low confidence (0.505) - REJECT to prevent ghost
+2025-12-11 17:22:11,491 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.500) + low confidence (0.500) - REJECT to prevent ghost
+2025-12-11 17:22:12,215 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.514) + low confidence (0.486) - REJECT to prevent ghost
+2025-12-11 17:22:14,949 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:22:17,333 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.500) + low confidence (0.500) - REJECT to prevent ghost
+2025-12-11 17:22:19,942 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.493) + low confidence (0.507) - REJECT to prevent ghost
+2025-12-11 17:22:20,328 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.549, distance: 0.451, bbox: 52x51 px)
+2025-12-11 17:22:23,847 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:22:25,710 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.501) + low confidence (0.499) - REJECT to prevent ghost
+2025-12-11 17:22:28,925 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:23:10,816 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.516) + low confidence (0.484) - REJECT to prevent ghost
+2025-12-11 17:23:11,185 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.492) + low confidence (0.508) - REJECT to prevent ghost
+2025-12-11 17:23:11,552 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.492) + low confidence (0.508) - REJECT to prevent ghost
+2025-12-11 17:23:11,914 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.486) + low confidence (0.514) - REJECT to prevent ghost
+2025-12-11 17:23:12,283 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.470) + low confidence (0.530) - REJECT to prevent ghost
+2025-12-11 17:23:12,650 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.472) + low confidence (0.528) - REJECT to prevent ghost
+2025-12-11 17:23:13,015 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.465) + low confidence (0.535) - REJECT to prevent ghost
+2025-12-11 17:23:13,563 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.520) + low confidence (0.480) - REJECT to prevent ghost
+2025-12-11 17:23:26,264 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.484) + low confidence (0.516) - REJECT to prevent ghost
+2025-12-11 17:23:29,200 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-11 17:23:44,296 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 17:23:45,151 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-11 17:23:48,799 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.541, distance: 0.459, bbox: 44x43 px)
+2025-12-11 17:23:48,955 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:23:49,323 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.510) + low confidence (0.490) - REJECT to prevent ghost
+2025-12-11 17:23:49,698 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.549, distance: 0.451, bbox: 43x43 px)
+2025-12-11 17:23:49,859 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:23:50,237 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.542, distance: 0.458, bbox: 43x43 px)
+2025-12-11 17:23:50,381 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Tracked but failed body validation - no_body_box, out_of_frame - HARD RESET triggered
+2025-12-11 17:23:50,748 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.462) + low confidence (0.538) - REJECT to prevent ghost
+2025-12-11 17:23:51,131 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.572, distance: 0.428, bbox: 44x43 px)
+2025-12-11 17:24:50,394 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:24:51,973 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.517) + low confidence (0.483) - REJECT to prevent ghost
+2025-12-11 17:24:53,067 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.502) + low confidence (0.498) - REJECT to prevent ghost
+2025-12-11 17:24:53,780 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.474) + low confidence (0.526) - REJECT to prevent ghost
+2025-12-11 17:24:54,702 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.490) + low confidence (0.510) - REJECT to prevent ghost
+2025-12-11 17:24:55,986 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.541, distance: 0.459, bbox: 36x36 px)
+2025-12-11 17:24:56,146 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:24:57,034 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.513) + low confidence (0.487) - REJECT to prevent ghost
+2025-12-11 17:24:57,786 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.612, distance: 0.388, bbox: 43x43 px)
+2025-12-11 17:24:57,940 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:24:58,299 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.474) + low confidence (0.526) - REJECT to prevent ghost
+2025-12-11 17:24:58,683 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.553, distance: 0.447, bbox: 52x51 px)
+2025-12-11 17:26:13,111 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-11 17:26:53,430 - WARNING - IP Camera: Frame timeout, attempting reconnect...
+2025-12-11 17:26:53,431 - WARNING - IP Camera: Reconnecting... (attempt 1)
+2025-12-11 17:26:53,490 - ERROR - IP Camera not available
+2025-12-11 17:32:37,239 - WARNING - Loaded 9 guards
+2025-12-11 17:33:09,492 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-11 17:33:11,063 - WARNING - Waiting for IP camera stream...
+2025-12-11 17:33:11,065 - WARNING - IP camera stream ready!
+2025-12-11 17:33:11,079 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-11 17:33:21,340 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-11 17:33:24,419 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-11 17:33:26,483 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:33:31,625 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.485, distance: 0.515, bbox: 36x36 px)
+2025-12-11 17:33:48,424 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:33:49,554 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.528, distance: 0.472, bbox: 52x52 px)
+2025-12-11 17:34:08,006 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-11 17:34:13,218 - WARNING - [RESET] KD: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-11 17:34:20,147 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.494, distance: 0.506, bbox: 44x44 px)
+2025-12-11 17:38:14,327 - WARNING - Initiating graceful shutdown...
+2025-12-11 17:38:14,397 - WARNING - Shutdown complete
+2025-12-12 17:19:15,225 - WARNING - Loaded 9 guards
+2025-12-12 17:19:48,346 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-12 17:19:48,421 - ERROR - Failed to open RTSP stream: rtsp://admin:Deo12345678@192.168.1.111:554/stream1
+2025-12-12 17:19:48,421 - WARNING - Trying: rtsp://admin:Deo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-12 17:19:48,458 - ERROR - Failed to open RTSP stream: rtsp://admin:Deo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-12 17:19:48,458 - WARNING - Trying: rtsp://admin:Deo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-12 17:19:48,492 - ERROR - Failed to open RTSP stream: rtsp://admin:Deo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-12 17:19:48,492 - WARNING - Trying: rtsp://admin:Deo12345678@192.168.1.111:554/live/ch00_0
+2025-12-12 17:19:48,539 - ERROR - Failed to open RTSP stream: rtsp://admin:Deo12345678@192.168.1.111:554/live/ch00_0
+2025-12-12 17:19:48,540 - WARNING - Trying: rtsp://admin:Deo12345678@192.168.1.111:554/h264Preview_01_main
+2025-12-12 17:19:48,587 - ERROR - Failed to open RTSP stream: rtsp://admin:Deo12345678@192.168.1.111:554/h264Preview_01_main
+2025-12-12 17:20:08,498 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-12 17:20:10,103 - WARNING - Waiting for IP camera stream...
+2025-12-12 17:20:10,105 - WARNING - IP camera stream ready!
+2025-12-12 17:20:10,116 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-12 17:20:19,036 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-12 17:20:20,574 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-12 17:20:23,134 - WARNING - Alert mode started - logging enabled
+2025-12-12 17:20:24,330 - WARNING - [RESET] KD: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-12 17:20:28,416 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.527, distance: 0.473, bbox: 43x43 px)
+2025-12-12 17:20:28,488 - WARNING - Alert mode stopped - logging saved
+2025-12-12 17:20:36,758 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-12 17:20:38,884 - WARNING - Alert mode started - logging enabled
+2025-12-12 17:20:44,617 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-12 17:20:49,727 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.532, distance: 0.468, bbox: 44x43 px)
+2025-12-12 17:20:50,378 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-12 17:20:51,129 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.529, distance: 0.471, bbox: 43x44 px)
+2025-12-12 17:21:38,953 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-12 17:21:40,005 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-12 17:21:55,494 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-12 17:22:00,174 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.492, distance: 0.508, bbox: 36x36 px)
+2025-12-12 17:22:25,710 - WARNING - [TRACK ENDED] KD: No face for 45 frames - guard likely left frame
+2025-12-12 17:22:26,087 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.533, distance: 0.467, bbox: 36x36 px)
+2025-12-12 17:22:53,596 - WARNING - [ALERT] KD: Action TIMEOUT - triggering alarm
+2025-12-12 17:22:53,599 - WARNING - [ALERT] KD: Restarting 15s alarm loop
+2025-12-12 17:23:02,179 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-12 17:23:19,264 - WARNING - Fugitive Added: front
+2025-12-12 17:23:19,264 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-12 17:23:28,049 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-12 17:23:30,097 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-12 17:23:31,965 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.702, fugitive=0.685, margin=0.12)
+2025-12-12 17:23:32,648 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.582, fugitive=0.643, margin=0.12)
+2025-12-12 17:23:33,609 - WARNING - [RESET] Krunal: Missing for 5.3s — hard reset tracking, forcing immediate re-detection
+2025-12-12 17:23:35,445 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.472, fugitive=0.546, margin=0.12)
+2025-12-12 17:23:36,121 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.526, fugitive=0.628, margin=0.12)
+2025-12-12 17:23:36,815 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.552, distance: 0.448, bbox: 36x36 px)
+2025-12-12 17:24:02,349 - WARNING - [FUGITIVE MATCH] Distance=0.515, Confidence=0.485 - FUGITIVE DETECTED!
+2025-12-12 17:24:02,350 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-12 17:24:02,372 - WARNING - Saved 14 log entries to logs\events.csv
+2025-12-12 17:24:02,372 - WARNING - [FUGITIVE DETECTED] front FIRST APPEARANCE logged
+2025-12-12 17:24:02,973 - WARNING - [FUGITIVE MATCH] Distance=0.473, Confidence=0.527 - FUGITIVE DETECTED!
+2025-12-12 17:24:04,199 - WARNING - [FUGITIVE MATCH] Distance=0.550, Confidence=0.450 - FUGITIVE DETECTED!
+2025-12-12 17:24:16,473 - WARNING - Fugitive Removed
+2025-12-12 17:24:28,084 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-12 17:24:28,086 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:25:28,766 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-12 17:25:28,767 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:25:42,097 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-12 17:25:45,739 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.490, distance: 0.510, bbox: 36x36 px)
+2025-12-12 17:25:47,349 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-12 17:25:50,247 - WARNING - Stillness Alert ENABLED
+2025-12-12 17:26:31,931 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-12 17:26:31,932 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:32,198 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:32,329 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:32,469 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:32,607 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:32,843 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:33,199 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:33,505 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:33,615 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:34,298 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:34,431 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:34,826 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:34,928 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:36,853 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:26:36,985 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-12 17:27:58,470 - WARNING - Stillness Alert DISABLED
+2025-12-12 17:28:04,936 - WARNING - Initiating graceful shutdown...
+2025-12-12 17:28:04,937 - WARNING - Saved 12 log entries to logs\events.csv
+2025-12-12 17:28:05,017 - WARNING - Shutdown complete
+2025-12-13 14:06:27,479 - WARNING - Loaded 9 guards
+2025-12-13 14:07:02,971 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 14:07:04,518 - WARNING - Waiting for IP camera stream...
+2025-12-13 14:07:04,520 - WARNING - IP camera stream ready!
+2025-12-13 14:07:04,531 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 14:07:35,701 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:07:37,615 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-13 14:07:40,903 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:07:55,157 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.514, distance: 0.486, bbox: 36x36 px)
+2025-12-13 14:07:57,385 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:07:58,662 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.569, distance: 0.431, bbox: 43x43 px)
+2025-12-13 14:08:05,518 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:08:05,892 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.504, distance: 0.496, bbox: 52x52 px)
+2025-12-13 14:08:06,629 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:08:11,170 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.500, distance: 0.500, bbox: 63x62 px)
+2025-12-13 14:08:11,900 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:08:16,354 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.569, distance: 0.431, bbox: 52x52 px)
+2025-12-13 14:08:17,083 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:08:22,461 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.514, distance: 0.486, bbox: 52x51 px)
+2025-12-13 14:08:24,936 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:08:28,528 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.508, distance: 0.492, bbox: 43x43 px)
+2025-12-13 14:09:05,836 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:09:10,930 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:09:16,740 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.536, distance: 0.464, bbox: 43x43 px)
+2025-12-13 14:09:41,932 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:09:47,007 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:09:50,714 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.513, distance: 0.487, bbox: 36x36 px)
+2025-12-13 14:10:15,861 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-13 14:10:18,814 - WARNING - Stillness Alert ENABLED
+2025-12-13 14:10:36,346 - WARNING - [STILLNESS ALERT] !!! KD - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-13 14:10:37,423 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-13 14:12:51,047 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 14:12:52,662 - WARNING - Waiting for IP camera stream...
+2025-12-13 14:12:52,664 - WARNING - IP camera stream ready!
+2025-12-13 14:12:52,671 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 14:13:18,429 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-13 14:13:32,775 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:13:34,681 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-13 14:13:38,041 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:13:45,954 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.488, distance: 0.512, bbox: 52x52 px)
+2025-12-13 14:14:48,660 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:14:53,799 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:14:57,848 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.483, distance: 0.517, bbox: 36x36 px)
+2025-12-13 14:15:04,892 - WARNING - Stillness Alert DISABLED
+2025-12-13 14:15:10,302 - WARNING - Stillness Alert ENABLED
+2025-12-13 14:16:45,460 - WARNING - [STILLNESS ALERT] !!! Krunal - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-13 14:16:45,462 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-13 14:17:16,801 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-13 14:17:18,998 - WARNING - Alert mode started - logging enabled
+2025-12-13 14:17:27,067 - WARNING - Stillness Alert DISABLED
+2025-12-13 14:19:27,709 - WARNING - Saved 7 log entries to logs\events.csv
+2025-12-13 14:19:27,711 - WARNING - Alert mode stopped - logging saved
+2025-12-13 14:19:32,843 - WARNING - Alert mode started - logging enabled
+2025-12-13 14:19:33,049 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:19:33,428 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.545, distance: 0.455, bbox: 52x52 px)
+2025-12-13 14:19:43,231 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-13 14:19:58,787 - WARNING - Alert mode stopped - logging saved
+2025-12-13 14:19:59,546 - WARNING - Alert mode started - logging enabled
+2025-12-13 14:20:02,887 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:20:04,963 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-13 14:20:08,265 - WARNING - [RESET] Krunal: Missing for 5.3s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:20:26,119 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.536, distance: 0.464, bbox: 62x63 px)
+2025-12-13 14:20:55,337 - WARNING - Fugitive Added: front
+2025-12-13 14:20:55,337 - WARNING - Fugitive Detection ENABLED - Searching for: front
+2025-12-13 14:21:03,126 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-13 14:21:03,128 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-13 14:21:32,113 - WARNING - [FUGITIVE MATCH] Distance=0.541, Confidence=0.459 - FUGITIVE DETECTED!
+2025-12-13 14:21:32,132 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-13 14:21:32,138 - WARNING - Saved 4 log entries to logs\events.csv
+2025-12-13 14:21:32,138 - WARNING - [FUGITIVE DETECTED] front FIRST APPEARANCE logged
+2025-12-13 14:21:56,308 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:22:01,501 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:22:05,474 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.601, fugitive=0.637, margin=0.12)
+2025-12-13 14:22:06,058 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-13 14:22:09,036 - WARNING - [STRICT REJECT] Krunal vs face_0: TOO CLOSE to fugitive (guard=0.600, fugitive=0.636, margin=0.12)
+2025-12-13 14:22:09,725 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.559, distance: 0.441, bbox: 62x62 px)
+2025-12-13 14:22:09,747 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-13 14:22:32,473 - WARNING - [FUGITIVE MATCH] Distance=0.484, Confidence=0.516 - FUGITIVE DETECTED!
+2025-12-13 14:22:32,474 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - front
+2025-12-13 14:22:36,864 - WARNING - [FUGITIVE MATCH] Distance=0.516, Confidence=0.484 - FUGITIVE DETECTED!
+2025-12-13 14:23:12,360 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-13 14:23:12,361 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-13 14:23:12,722 - WARNING - Saved 6 log entries to logs\events.csv
+2025-12-13 14:23:26,755 - WARNING - Initiating graceful shutdown...
+2025-12-13 14:23:26,823 - WARNING - Shutdown complete
+2025-12-13 14:23:35,646 - WARNING - Loaded 9 guards
+2025-12-13 14:26:09,187 - WARNING - Camera 0 started successfully
+2025-12-13 14:27:11,537 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-13 14:27:12,871 - WARNING - Alert mode started - logging enabled
+2025-12-13 14:27:14,769 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:27:15,097 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.546, distance: 0.454, bbox: 36x36 px)
+2025-12-13 14:27:17,146 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-13 14:27:39,146 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:27:44,195 - WARNING - [RESET] Krunal: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:27:59,842 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.627, distance: 0.373, bbox: 36x36 px)
+2025-12-13 14:28:01,436 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:28:01,797 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.577, distance: 0.423, bbox: 43x43 px)
+2025-12-13 14:28:18,502 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:28:23,551 - WARNING - [RESET] Krunal: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:28:30,019 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-13 14:28:40,891 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:28:42,909 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 14:28:46,023 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:28:58,377 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.569, distance: 0.431, bbox: 43x44 px)
+2025-12-13 14:29:40,957 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 14:29:41,994 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 14:31:05,317 - WARNING - Fugitive Added: 01_front
+2025-12-13 14:31:05,317 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-13 14:31:37,174 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 14:31:37,176 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 14:31:45,950 - WARNING - [FUGITIVE MATCH] Distance=0.453, Confidence=0.547 - FUGITIVE DETECTED!
+2025-12-13 14:31:45,952 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-13 14:31:45,966 - WARNING - Saved 11 log entries to logs\events.csv
+2025-12-13 14:31:45,966 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-13 14:32:10,295 - WARNING - [FUGITIVE MATCH] Distance=0.475, Confidence=0.525 - FUGITIVE DETECTED!
+2025-12-13 14:32:10,297 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-13 14:33:34,449 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 14:33:34,450 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 14:34:01,069 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 14:34:15,028 - WARNING - Initiating graceful shutdown...
+2025-12-13 14:34:15,311 - WARNING - Saved 13 log entries to logs\events.csv
+2025-12-13 14:34:15,381 - WARNING - Shutdown complete
+2025-12-13 14:51:39,225 - WARNING - Loaded 9 guards
+2025-12-13 14:52:11,727 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 14:52:13,369 - WARNING - Waiting for IP camera stream...
+2025-12-13 14:52:13,370 - WARNING - IP camera stream ready!
+2025-12-13 14:52:13,381 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 14:52:14,651 - WARNING - Night Mode - Face: BlazeFace + CLAHE | Pose: MoveNet Lightning/BlazePose + CLAHE enhancement
+2025-12-13 14:52:32,868 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:52:34,394 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-13 14:52:38,041 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:52:54,814 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.514, distance: 0.486, bbox: 44x43 px)
+2025-12-13 14:53:33,583 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:53:38,792 - WARNING - [RESET] KD: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:54:14,912 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.502, distance: 0.498, bbox: 36x36 px)
+2025-12-13 14:56:08,579 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:56:13,767 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:56:15,186 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.495, distance: 0.505, bbox: 63x62 px)
+2025-12-13 14:56:54,956 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 14:57:00,088 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:57:14,715 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-12-13 14:58:21,651 - WARNING - Camera 0 started successfully
+2025-12-13 14:58:56,495 - WARNING - Loaded 10 guards
+2025-12-13 14:59:09,900 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-13 14:59:19,766 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 14:59:21,621 - WARNING - [TRACKING START] Identifying and tracking: kaka | Action: Hands Up
+2025-12-13 14:59:24,905 - WARNING - [RESET] kaka: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 14:59:28,900 - WARNING - [DETECTED] OK kaka identified & tracking (confidence: 0.684, distance: 0.316, bbox: 129x129 px)
+2025-12-13 14:59:36,900 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-13 14:59:37,402 - ERROR - Camera not available
+2025-12-13 14:59:51,171 - WARNING - Attempting to connect to IP camera at 192.168.1.111:554
+2025-12-13 14:59:52,715 - WARNING - Waiting for IP camera stream...
+2025-12-13 14:59:52,717 - WARNING - IP camera stream ready!
+2025-12-13 14:59:52,717 - WARNING - IP Camera at 192.168.1.111 ready (feed paused)
+2025-12-13 15:00:26,034 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 15:00:27,598 - WARNING - Waiting for IP camera stream...
+2025-12-13 15:00:27,600 - WARNING - IP camera stream ready!
+2025-12-13 15:00:27,603 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 15:01:06,813 - WARNING - Alert mode started - logging enabled
+2025-12-13 15:01:16,865 - WARNING - [ALERT] kaka: Action TIMEOUT - triggering alarm
+2025-12-13 15:01:17,929 - WARNING - [ALERT] kaka: Restarting 15s alarm loop
+2025-12-13 15:01:24,838 - WARNING - Saved 9 log entries to logs\events.csv
+2025-12-13 15:01:24,840 - WARNING - Alert mode stopped - logging saved
+2025-12-13 15:01:31,644 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-13 15:03:25,786 - WARNING - Initiating graceful shutdown...
+2025-12-13 15:03:25,856 - WARNING - Shutdown complete
+2025-12-13 15:17:46,742 - WARNING - Loaded 10 guards
+2025-12-13 15:18:57,031 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 15:18:58,580 - WARNING - Waiting for IP camera stream...
+2025-12-13 15:18:58,581 - WARNING - IP camera stream ready!
+2025-12-13 15:18:58,595 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 15:19:14,716 - WARNING - Alert mode started - logging enabled
+2025-12-13 15:19:17,232 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:19:18,850 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.496, distance: 0.504, bbox: 52x52 px)
+2025-12-13 15:19:19,469 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-13 15:19:27,338 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-13 15:19:28,354 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-13 15:19:59,571 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-13 15:19:59,572 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-13 15:20:01,476 - WARNING - Saved 51 log entries to logs\events.csv
+2025-12-13 15:20:02,571 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-13 15:20:49,512 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-13 15:21:54,951 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-13 15:21:54,952 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-13 15:22:18,873 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-13 15:22:27,947 - WARNING - Initiating graceful shutdown...
+2025-12-13 15:22:27,948 - WARNING - Saved 15 log entries to logs\events.csv
+2025-12-13 15:22:28,018 - WARNING - Shutdown complete
+2025-12-13 15:27:48,699 - WARNING - Loaded 10 guards
+2025-12-13 15:28:30,981 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-13 15:28:51,394 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 15:28:53,020 - WARNING - Waiting for IP camera stream...
+2025-12-13 15:28:53,021 - WARNING - IP camera stream ready!
+2025-12-13 15:28:53,031 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 15:29:06,738 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:29:09,423 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-13 15:29:11,997 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:29:25,451 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.487, distance: 0.513, bbox: 36x36 px)
+2025-12-13 15:31:59,212 - WARNING - [TRACKING STOP] Stopped monitoring: Krunal
+2025-12-13 15:32:19,333 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:32:21,720 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 15:32:24,468 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:32:34,956 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.491, distance: 0.509, bbox: 43x43 px)
+2025-12-13 15:33:15,248 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 15:33:20,435 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:33:53,318 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.521, distance: 0.479, bbox: 52x52 px)
+2025-12-13 15:34:07,433 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 15:34:12,644 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:34:28,516 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.530, distance: 0.470, bbox: 43x43 px)
+2025-12-13 15:35:13,950 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 15:35:19,170 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:35:50,459 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.480, distance: 0.520, bbox: 52x51 px)
+2025-12-13 15:36:14,836 - WARNING - Alert mode started - logging enabled
+2025-12-13 15:36:24,872 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:36:25,939 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 15:36:30,858 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 15:36:45,886 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:36:48,292 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 15:36:51,037 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:36:55,970 - WARNING - [ALERT] Rudresh MISSING - Alert triggered!
+2025-12-13 15:36:58,387 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.521, distance: 0.479, bbox: 43x43 px)
+2025-12-13 15:36:58,409 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:37:00,644 - WARNING - Saved 7 log entries to logs\events.csv
+2025-12-13 15:37:00,645 - WARNING - Alert mode stopped - logging saved
+2025-12-13 15:37:04,237 - WARNING - Alert mode started - logging enabled
+2025-12-13 15:37:29,619 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:37:29,621 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 15:37:45,650 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:37:45,652 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 15:37:51,907 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 15:37:58,689 - WARNING - Saved 38 log entries to logs\events.csv
+2025-12-13 15:37:58,689 - WARNING - Alert mode stopped - logging saved
+2025-12-13 15:38:01,386 - WARNING - Stillness Alert ENABLED
+2025-12-13 15:38:16,648 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:38:18,342 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 15:38:21,914 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:38:41,415 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.491, distance: 0.509, bbox: 62x63 px)
+2025-12-13 15:39:28,949 - WARNING - Stillness Alert DISABLED
+2025-12-13 15:39:30,816 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 15:39:39,177 - WARNING - Initiating graceful shutdown...
+2025-12-13 15:39:39,245 - WARNING - Shutdown complete
+2025-12-13 15:44:57,338 - WARNING - Loaded 10 guards
+2025-12-13 15:45:01,803 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-13 15:45:47,477 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 15:45:49,032 - WARNING - Waiting for IP camera stream...
+2025-12-13 15:45:49,034 - WARNING - IP camera stream ready!
+2025-12-13 15:45:49,043 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 15:46:03,276 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:46:05,342 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 15:46:08,072 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.561, distance: 0.439, bbox: 52x52 px)
+2025-12-13 15:46:27,074 - WARNING - Alert mode started - logging enabled
+2025-12-13 15:46:37,166 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:46:38,227 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 15:46:51,005 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:46:51,006 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 15:47:04,432 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 15:47:13,716 - WARNING - Saved 28 log entries to logs\events.csv
+2025-12-13 15:47:13,716 - WARNING - Alert mode stopped - logging saved
+2025-12-13 15:48:06,150 - WARNING - Fugitive Added: 01_front
+2025-12-13 15:48:06,151 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-13 15:48:12,213 - WARNING - [FUGITIVE MATCH] Distance=0.527, Confidence=0.473 - FUGITIVE DETECTED!
+2025-12-13 15:48:12,214 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-13 15:48:12,220 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-13 15:48:12,220 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-13 15:48:13,678 - WARNING - [FUGITIVE MATCH] Distance=0.456, Confidence=0.544 - FUGITIVE DETECTED!
+2025-12-13 15:48:14,123 - WARNING - [FUGITIVE MATCH] Distance=0.481, Confidence=0.519 - FUGITIVE DETECTED!
+2025-12-13 15:48:17,046 - WARNING - [FUGITIVE MATCH] Distance=0.479, Confidence=0.521 - FUGITIVE DETECTED!
+2025-12-13 15:48:17,633 - WARNING - [FUGITIVE MATCH] Distance=0.459, Confidence=0.541 - FUGITIVE DETECTED!
+2025-12-13 15:48:45,327 - WARNING - Fugitive Removed
+2025-12-13 15:48:55,954 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 15:49:02,698 - WARNING - Initiating graceful shutdown...
+2025-12-13 15:49:02,767 - WARNING - Shutdown complete
+2025-12-13 15:52:40,827 - WARNING - Loaded 10 guards
+2025-12-13 15:53:10,679 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 15:53:12,282 - WARNING - Waiting for IP camera stream...
+2025-12-13 15:53:12,284 - WARNING - IP camera stream ready!
+2025-12-13 15:53:12,296 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 15:53:19,788 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:53:21,322 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 15:53:24,952 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 15:53:27,955 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.513, distance: 0.487, bbox: 43x43 px)
+2025-12-13 15:54:58,738 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 15:55:13,921 - WARNING - IP Camera: Frame timeout, attempting reconnect...
+2025-12-13 15:55:13,922 - WARNING - IP Camera: Reconnecting... (attempt 1)
+2025-12-13 15:55:13,967 - ERROR - IP Camera not available
+2025-12-13 15:58:27,837 - WARNING - Initiating graceful shutdown...
+2025-12-13 15:58:27,906 - WARNING - Shutdown complete
+2025-12-13 15:58:45,789 - WARNING - Loaded 10 guards
+2025-12-13 15:59:05,172 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 15:59:06,721 - WARNING - Waiting for IP camera stream...
+2025-12-13 15:59:06,722 - WARNING - IP camera stream ready!
+2025-12-13 15:59:06,734 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 15:59:16,423 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 15:59:17,784 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 15:59:19,370 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.515, distance: 0.485, bbox: 52x52 px)
+2025-12-13 15:59:58,702 - WARNING - Alert mode started - logging enabled
+2025-12-13 16:00:08,739 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 16:00:09,804 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 16:00:23,116 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2025-12-13 16:00:23,117 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2025-12-13 16:00:50,538 - WARNING - Saved 27 log entries to logs\events.csv
+2025-12-13 16:00:50,538 - WARNING - Alert mode stopped - logging saved
+2025-12-13 16:01:44,391 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-13 16:01:50,596 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:01:50,728 - WARNING - Shutdown complete
+2025-12-13 16:06:39,401 - WARNING - Loaded 10 guards
+2025-12-13 16:06:56,128 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:06:57,675 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:06:57,677 - WARNING - IP camera stream ready!
+2025-12-13 16:06:57,690 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 16:07:04,175 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:07:05,717 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:07:09,462 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:07:11,782 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.497, distance: 0.503, bbox: 43x43 px)
+2025-12-13 16:08:04,457 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-13 16:08:09,669 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:08:22,976 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.555, distance: 0.445, bbox: 52x52 px)
+2025-12-13 16:08:36,279 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:08:41,652 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:09:05,725 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.527, distance: 0.473, bbox: 62x62 px)
+2025-12-13 16:11:35,406 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:11:35,477 - WARNING - Shutdown complete
+2025-12-13 16:14:03,127 - WARNING - Loaded 10 guards
+2025-12-13 16:14:19,292 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:14:49,371 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-13 16:14:49,372 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-13 16:14:49,435 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-13 16:14:49,436 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-13 16:14:50,991 - WARNING - Connected successfully using: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-13 16:14:50,992 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:14:50,995 - WARNING - IP camera stream ready!
+2025-12-13 16:14:51,009 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0 started successfully
+2025-12-13 16:14:59,251 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:15:00,632 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:15:02,562 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.545, distance: 0.455, bbox: 43x43 px)
+2025-12-13 16:16:24,963 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:16:25,038 - WARNING - Shutdown complete
+2025-12-13 16:20:41,673 - WARNING - Loaded 10 guards
+2025-12-13 16:21:54,656 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:22:24,727 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-13 16:22:24,728 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-13 16:22:24,792 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-13 16:22:24,793 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-13 16:22:26,394 - WARNING - Connected successfully using: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-13 16:22:26,394 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:22:26,395 - WARNING - IP camera stream ready!
+2025-12-13 16:22:26,413 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0 started successfully
+2025-12-13 16:22:34,543 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:22:36,066 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:22:39,687 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:23:08,251 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.500, distance: 0.500, bbox: 43x43 px)
+2025-12-13 16:24:53,451 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:24:53,519 - WARNING - Shutdown complete
+2025-12-13 16:27:21,498 - WARNING - Loaded 10 guards
+2025-12-13 16:27:38,993 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:28:09,086 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/stream1
+2025-12-13 16:28:09,088 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-13 16:28:09,146 - ERROR - Failed to open RTSP stream: rtsp://admin:Demo12345678@192.168.1.111:554/Streaming/Channels/101
+2025-12-13 16:28:09,147 - WARNING - Trying: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-13 16:28:10,719 - WARNING - Connected successfully using: rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0
+2025-12-13 16:28:10,720 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:28:10,721 - WARNING - IP camera stream ready!
+2025-12-13 16:28:10,735 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/cam/realmonitor?channel=1&subtype=0 started successfully
+2025-12-13 16:28:23,500 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:28:25,013 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:28:28,948 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:28:31,660 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.501, distance: 0.499, bbox: 43x43 px)
+2025-12-13 16:31:41,727 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:31:41,798 - WARNING - Shutdown complete
+2025-12-13 16:36:32,427 - WARNING - Loaded 10 guards
+2025-12-13 16:36:53,762 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:36:55,379 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:36:55,380 - WARNING - IP camera stream ready!
+2025-12-13 16:36:55,393 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 16:37:17,812 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:37:19,562 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:37:23,242 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.578, distance: 0.422, bbox: 43x43 px)
+2025-12-13 16:37:52,208 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:37:57,624 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:38:03,767 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.568, distance: 0.432, bbox: 43x44 px)
+2025-12-13 16:39:43,830 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:39:48,224 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.534) + low confidence (0.466) - REJECT to prevent ghost
+2025-12-13 16:39:49,097 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:39:51,046 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.505, distance: 0.495, bbox: 44x43 px)
+2025-12-13 16:40:44,058 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:40:49,194 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:40:51,807 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.487, distance: 0.513, bbox: 44x43 px)
+2025-12-13 16:41:49,680 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:41:55,242 - WARNING - [RESET] Rudresh: Missing for 5.3s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:42:10,742 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.501, distance: 0.499, bbox: 63x62 px)
+2025-12-13 16:43:06,105 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:43:06,182 - WARNING - Shutdown complete
+2025-12-13 16:47:36,729 - WARNING - Loaded 10 guards
+2025-12-13 16:47:55,883 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:47:57,501 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:47:57,503 - WARNING - IP camera stream ready!
+2025-12-13 16:47:57,515 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 16:48:08,758 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:48:10,281 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:48:13,909 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:48:14,966 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.527) + low confidence (0.473) - REJECT to prevent ghost
+2025-12-13 16:48:15,719 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.544, distance: 0.456, bbox: 43x43 px)
+2025-12-13 16:48:50,178 - WARNING - Loaded 10 guards
+2025-12-13 16:49:17,277 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:49:18,877 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:49:18,880 - WARNING - IP camera stream ready!
+2025-12-13 16:49:18,894 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 16:49:29,999 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:49:32,273 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:49:32,640 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.516, distance: 0.484, bbox: 43x43 px)
+2025-12-13 16:49:57,035 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:49:57,115 - WARNING - Shutdown complete
+2025-12-13 16:55:39,693 - WARNING - Loaded 10 guards
+2025-12-13 16:56:05,037 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-13 16:56:06,701 - WARNING - Waiting for IP camera stream...
+2025-12-13 16:56:06,701 - WARNING - IP camera stream ready!
+2025-12-13 16:56:06,711 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-13 16:56:17,277 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-13 16:56:18,661 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.524) + low confidence (0.476) - REJECT to prevent ghost
+2025-12-13 16:56:19,054 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.502, distance: 0.498, bbox: 36x36 px)
+2025-12-13 16:56:20,080 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-13 16:56:53,154 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:56:58,377 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-13 16:57:03,665 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.546, distance: 0.454, bbox: 62x63 px)
+2025-12-13 16:57:41,318 - WARNING - [TRACK ENDED] Rudresh: No face for 45 frames - guard likely left frame
+2025-12-13 16:57:45,018 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.535, distance: 0.465, bbox: 36x36 px)
+2025-12-13 16:57:57,136 - WARNING - Initiating graceful shutdown...
+2025-12-13 16:57:57,204 - WARNING - Shutdown complete
+2025-12-14 08:23:00,239 - WARNING - Loaded 10 guards
+2025-12-14 08:23:11,411 - WARNING - Camera 0 started successfully
+2025-12-14 08:23:18,679 - WARNING - Initiating graceful shutdown...
+2025-12-14 08:23:19,105 - WARNING - Shutdown complete
+2025-12-14 09:27:36,182 - WARNING - Loaded 10 guards
+2025-12-14 09:27:45,231 - WARNING - Camera 0 started successfully
+2025-12-14 09:27:53,518 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-14 09:27:54,199 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.639, distance: 0.361, bbox: 223x223 px)
+2025-12-14 09:27:55,155 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-14 09:29:07,300 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-14 09:29:12,455 - WARNING - [RESET] Rudresh: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-14 09:29:17,017 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.594, distance: 0.406, bbox: 155x155 px)
+2025-12-14 09:29:22,317 - WARNING - Initiating graceful shutdown...
+2025-12-14 09:29:22,761 - WARNING - Shutdown complete
+2025-12-15 13:25:01,004 - WARNING - Loaded 10 guards
+2025-12-15 13:25:10,385 - WARNING - Camera 0 started successfully
+2025-12-15 13:25:21,464 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 13:25:21,958 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.686, distance: 0.314, bbox: 166x166 px)
+2025-12-15 13:25:23,313 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 13:25:39,374 - WARNING - [IMPOSTER REJECT] Rudresh: Overlapping face is NOT guard (dist=0.561) - Ignoring IoU match
+2025-12-15 13:25:39,375 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 13:25:39,861 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.576, distance: 0.424, bbox: 100x100 px)
+2025-12-15 13:25:54,438 - WARNING - Initiating graceful shutdown...
+2025-12-15 13:25:54,864 - WARNING - Shutdown complete
+2025-12-15 14:12:49,278 - WARNING - Loaded 10 guards
+2025-12-15 14:13:04,697 - WARNING - Camera 0 started successfully
+2025-12-15 14:13:09,703 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-15 14:13:18,532 - WARNING - Switched to Camera 1 - Restarting video feed
+2025-12-15 14:13:31,185 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 14:13:35,485 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 14:13:36,235 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-15 14:14:17,820 - WARNING - Initiating graceful shutdown...
+2025-12-15 14:14:18,250 - WARNING - Shutdown complete
+2025-12-15 14:40:48,028 - WARNING - Loaded 10 guards
+2025-12-15 14:40:59,977 - WARNING - Camera 0 started successfully
+2025-12-15 14:41:04,401 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-15 14:41:12,435 - WARNING - Switched to Camera 1 - Restarting video feed
+2025-12-15 14:41:31,423 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 14:41:34,366 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 14:41:36,463 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-15 14:42:44,430 - WARNING - Initiating graceful shutdown...
+2025-12-15 14:42:44,846 - WARNING - Shutdown complete
+2025-12-15 14:51:48,532 - WARNING - Loaded 10 guards
+2025-12-15 14:51:59,685 - WARNING - Camera 1 started successfully
+2025-12-15 14:52:05,911 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 14:52:07,427 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 14:52:10,938 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-15 14:52:30,883 - WARNING - Initiating graceful shutdown...
+2025-12-15 14:52:31,217 - WARNING - Shutdown complete
+2025-12-15 14:56:44,147 - WARNING - Loaded 10 guards
+2025-12-15 14:57:05,444 - WARNING - Camera 1 started successfully
+2025-12-15 14:57:43,736 - WARNING - Camera 0 started successfully
+2025-12-15 14:57:49,155 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-15 14:57:49,662 - ERROR - Camera read error: Unknown C++ exception from OpenCV code
+2025-12-15 14:59:46,881 - WARNING - Loaded 10 guards
+2025-12-15 14:59:59,954 - WARNING - Camera 1 started successfully
+2025-12-15 15:00:10,987 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:00:12,524 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 15:00:16,010 - WARNING - [RESET] Rudresh: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-15 15:00:28,607 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.596, distance: 0.404, bbox: 108x108 px)
+2025-12-15 15:02:19,312 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-15 15:02:21,193 - WARNING - Stillness Alert ENABLED
+2025-12-15 15:03:24,650 - WARNING - [STILLNESS ALERT] !!! Rudresh - NO MOTION FOR 15.1 SECONDS - Triggering 15s alert!
+2025-12-15 15:03:25,737 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-15 15:04:32,716 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-15 15:04:48,978 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:04:50,442 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 15:04:54,048 - WARNING - [RESET] KD: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-15 15:05:26,415 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-15 15:06:07,638 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:06:09,827 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 15:06:12,655 - WARNING - [RESET] KD: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-15 15:08:04,744 - WARNING - PRO Mode DISABLED
+2025-12-15 15:08:23,436 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-15 15:08:32,720 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:08:33,991 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 15:08:37,892 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-15 15:09:08,942 - WARNING - Initiating graceful shutdown...
+2025-12-15 15:09:09,255 - WARNING - Shutdown complete
+2025-12-15 15:09:18,005 - WARNING - Loaded 10 guards
+2025-12-15 15:09:45,263 - WARNING - Camera 1 started successfully
+2025-12-15 15:10:06,785 - WARNING - Camera 0 started successfully
+2025-12-15 15:10:13,631 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-15 15:10:30,900 - WARNING - Switched to Camera 1 - Restarting video feed
+2025-12-15 15:11:14,482 - WARNING - Loaded 10 guards
+2025-12-15 15:11:34,821 - WARNING - Camera 1 started successfully
+2025-12-15 15:12:05,365 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:12:08,489 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 15:12:11,612 - WARNING - [RESET] KD: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-15 15:12:31,510 - WARNING - Initiating graceful shutdown...
+2025-12-15 15:12:31,838 - WARNING - Shutdown complete
+2025-12-15 15:14:58,019 - WARNING - Loaded 10 guards
+2025-12-15 15:15:14,782 - WARNING - Camera 0 started successfully
+2025-12-15 15:15:18,444 - ERROR - Camera frame failures: 11, scheduling reconnect...
+2025-12-15 15:18:55,111 - WARNING - Loaded 10 guards
+2025-12-15 15:19:38,434 - WARNING - Camera 0 started successfully
+2025-12-15 15:20:12,403 - WARNING - Camera 0 started successfully
+2025-12-15 15:20:28,526 - WARNING - Camera 1 started successfully
+2025-12-15 15:20:51,427 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:20:54,055 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 15:21:32,309 - WARNING - Initiating graceful shutdown...
+2025-12-15 15:21:32,637 - WARNING - Shutdown complete
+2025-12-15 15:27:02,974 - WARNING - Loaded 10 guards
+2025-12-15 15:27:36,004 - WARNING - Camera 1 started successfully
+2025-12-15 15:27:46,532 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:27:48,754 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 15:28:33,932 - WARNING - Camera frame failures: 16, attempting reconnect...
+2025-12-15 15:28:40,576 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-12-15 15:28:41,368 - WARNING - [GHOST PREVENTION] Rudresh -> face_0: High distance (0.526) + low confidence (0.474) - REJECT to prevent ghost
+2025-12-15 15:28:41,780 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.536, distance: 0.464, bbox: 114x114 px)
+2025-12-15 15:28:46,252 - WARNING - [IMPOSTER REJECT] Rudresh: Overlapping face is NOT guard (dist=0.552) - Ignoring IoU match
+2025-12-15 15:28:46,705 - WARNING - [IMPOSTER REJECT] Rudresh: Overlapping face is NOT guard (dist=0.553) - Ignoring IoU match
+2025-12-15 15:34:17,072 - WARNING - Loaded 10 guards
+2025-12-15 15:34:32,541 - WARNING - Camera 1 started successfully
+2025-12-15 15:34:51,813 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:34:53,724 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 15:36:10,636 - WARNING - Camera frame failures: 16, attempting reconnect...
+2025-12-15 15:36:18,822 - WARNING - Switched to Camera 0 - Restarting video feed
+2025-12-15 15:36:26,002 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.586, distance: 0.414, bbox: 85x85 px)
+2025-12-15 15:37:19,696 - WARNING - Camera 0 started successfully
+2025-12-15 15:37:27,541 - WARNING - [TRACKING STOP] Stopped monitoring: KD
+2025-12-15 15:37:50,034 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:37:51,132 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.626, distance: 0.374, bbox: 66x66 px)
+2025-12-15 15:37:51,174 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 15:38:07,170 - WARNING - Initiating graceful shutdown...
+2025-12-15 15:38:07,575 - WARNING - Shutdown complete
+2025-12-15 15:38:43,756 - WARNING - Loaded 10 guards
+2025-12-15 15:39:02,820 - WARNING - Camera 0 started successfully
+2025-12-15 15:39:22,656 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 15:39:23,186 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.660, distance: 0.340, bbox: 75x74 px)
+2025-12-15 15:39:25,534 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 15:39:28,979 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 15:39:29,923 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.597, distance: 0.403, bbox: 75x75 px)
+2025-12-15 15:41:07,607 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 15:41:08,155 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.536, distance: 0.464, bbox: 75x75 px)
+2025-12-15 15:42:36,035 - WARNING - Initiating graceful shutdown...
+2025-12-15 15:42:36,469 - WARNING - Shutdown complete
+2025-12-15 16:44:38,948 - WARNING - [PIPELINE] FastMTCNN/FaceNet not available, falling back to legacy detection
+2025-12-15 16:44:38,948 - ERROR - [TRACKER] DeepSORT initialization error: DeepSort.__init__() got an unexpected keyword argument 'model_prompt'
+2025-12-15 16:44:39,436 - WARNING - Loaded 10 guards
+2025-12-15 16:44:39,436 - WARNING - [EMBED] FaceNet not available, skipping embedding extraction
+2025-12-15 16:45:14,084 - WARNING - Initiating graceful shutdown...
+2025-12-15 16:45:14,154 - WARNING - Shutdown complete
+2025-12-15 16:52:36,130 - ERROR - [PIPELINE] Advanced pipeline initialization error: Torch not compiled with CUDA enabled
+2025-12-15 16:53:47,152 - ERROR - [PIPELINE] Advanced pipeline initialization error: Torch not compiled with CUDA enabled
+2025-12-15 16:53:47,153 - ERROR - [TRACKER] DeepSORT initialization error: DeepSort.__init__() got an unexpected keyword argument 'model_prompt'
+2025-12-15 16:53:47,699 - WARNING - Loaded 10 guards
+2025-12-15 16:53:47,700 - WARNING - [EMBED] FaceNet not available, skipping embedding extraction
+2025-12-15 16:54:18,161 - ERROR - [PIPELINE] Advanced pipeline initialization error: Torch not compiled with CUDA enabled
+2025-12-15 16:54:18,161 - ERROR - [TRACKER] DeepSORT initialization error: DeepSort.__init__() got an unexpected keyword argument 'model_prompt'
+2025-12-15 16:54:18,603 - WARNING - Loaded 10 guards
+2025-12-15 16:54:18,604 - WARNING - [EMBED] FaceNet not available, skipping embedding extraction
+2025-12-15 16:54:39,118 - WARNING - Camera 1 started successfully
+2025-12-15 16:54:46,243 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 16:54:46,720 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.697, distance: 0.303, bbox: 132x132 px)
+2025-12-15 16:54:48,075 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 16:54:58,348 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-15 16:55:05,207 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 16:55:06,309 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 16:55:09,952 - WARNING - [GHOST PREVENTION] KD -> face_1: High distance (0.533) + low confidence (0.467) - REJECT to prevent ghost
+2025-12-15 16:55:17,270 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.550, distance: 0.450, bbox: 104x104 px)
+2025-12-15 16:55:51,939 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.715) - Ignoring IoU match
+2025-12-15 16:55:51,940 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 16:55:56,010 - WARNING - [GHOST PREVENTION] KD -> face_1: High distance (0.542) + low confidence (0.458) - REJECT to prevent ghost
+2025-12-15 16:55:59,294 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.497, distance: 0.503, bbox: 78x78 px)
+2025-12-15 16:56:02,836 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.571) - Ignoring IoU match
+2025-12-15 16:56:03,314 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.594) - Ignoring IoU match
+2025-12-15 16:56:05,052 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.801) - Ignoring IoU match
+2025-12-15 16:56:05,054 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 16:56:11,705 - WARNING - [GHOST PREVENTION] KD -> face_1: High distance (0.537) + low confidence (0.463) - REJECT to prevent ghost
+2025-12-15 16:56:12,140 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.495, distance: 0.505, bbox: 74x74 px)
+2025-12-15 16:56:20,283 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.585) - Ignoring IoU match
+2025-12-15 16:56:20,762 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.598) - Ignoring IoU match
+2025-12-15 16:56:21,242 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.571) - Ignoring IoU match
+2025-12-15 16:56:21,243 - WARNING - [GHOST REMOVED + HARD RESET] KD: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 16:56:23,776 - WARNING - [GHOST PREVENTION] KD -> face_0: High distance (0.537) + low confidence (0.463) - REJECT to prevent ghost
+2025-12-15 16:56:36,051 - WARNING - [GHOST PREVENTION] KD -> face_2: High distance (0.534) + low confidence (0.466) - REJECT to prevent ghost
+2025-12-15 16:56:36,073 - WARNING - Initiating graceful shutdown...
+2025-12-15 16:56:36,451 - WARNING - Shutdown complete
+2025-12-15 16:56:51,357 - WARNING - Loaded 10 guards
+2025-12-15 16:57:55,243 - WARNING - Loaded 10 guards
+2025-12-15 16:58:11,500 - WARNING - Camera 1 started successfully
+2025-12-15 16:58:20,030 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 16:58:22,103 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-15 16:58:25,558 - WARNING - [RESET] Krunal: Missing for 5.0s — hard reset tracking, forcing immediate re-detection
+2025-12-15 16:58:26,441 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.568, distance: 0.432, bbox: 89x89 px)
+2025-12-15 16:58:39,296 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 16:58:39,836 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.533, distance: 0.467, bbox: 89x89 px)
+2025-12-15 16:58:51,821 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 16:58:53,049 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.547, distance: 0.453, bbox: 62x62 px)
+2025-12-15 16:59:20,342 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-15 16:59:21,074 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.484, distance: 0.516, bbox: 52x52 px)
+2025-12-15 16:59:42,642 - WARNING - Initiating graceful shutdown...
+2025-12-15 16:59:42,980 - WARNING - Shutdown complete
+2025-12-15 17:00:04,199 - ERROR - [PIPELINE] Advanced pipeline initialization error: Torch not compiled with CUDA enabled
+2025-12-15 17:00:04,200 - ERROR - [TRACKER] DeepSORT initialization error: DeepSort.__init__() got an unexpected keyword argument 'model_prompt'
+2025-12-15 17:00:04,627 - WARNING - Loaded 10 guards
+2025-12-15 17:00:04,627 - WARNING - [EMBED] FaceNet not available, skipping embedding extraction
+2025-12-15 17:01:21,591 - ERROR - [TRACKER] DeepSORT initialization error: DeepSort.__init__() got an unexpected keyword argument 'model_name'
+2025-12-15 17:05:44,119 - WARNING - Loaded 10 guards
+2025-12-15 17:05:44,170 - WARNING - [EMBED] No faces detected in profile image for abhiraj
+2025-12-15 17:05:44,201 - WARNING - [EMBED] No faces detected in profile image for ishan
+2025-12-15 17:05:44,264 - WARNING - [EMBED] No faces detected in profile image for kaka
+2025-12-15 17:05:44,303 - WARNING - [EMBED] No faces detected in profile image for KD
+2025-12-15 17:05:44,333 - WARNING - [EMBED] No faces detected in profile image for Krunal
+2025-12-15 17:05:44,362 - WARNING - [EMBED] No faces detected in profile image for Parth
+2025-12-15 17:05:44,398 - WARNING - [EMBED] No faces detected in profile image for Rudresh
+2025-12-15 17:05:44,428 - WARNING - [EMBED] No faces detected in profile image for sagar
+2025-12-15 17:05:44,459 - WARNING - [EMBED] No faces detected in profile image for SHambhu
+2025-12-15 17:05:44,489 - WARNING - [EMBED] No faces detected in profile image for tanish
+2025-12-15 17:06:08,861 - WARNING - Camera 1 started successfully
+2025-12-15 17:06:15,332 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 17:06:15,802 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.692, distance: 0.308, bbox: 123x123 px)
+2025-12-15 17:06:17,461 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2025-12-15 17:06:52,110 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2025-12-15 17:07:01,600 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 17:07:02,445 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.554, distance: 0.446, bbox: 88x88 px)
+2025-12-15 17:07:03,102 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-15 17:07:17,721 - WARNING - [IMPOSTER REJECT] Krunal: Overlapping face is NOT guard (dist=0.757) - Ignoring IoU match
+2025-12-15 17:07:18,204 - WARNING - [IMPOSTER REJECT] Krunal: Overlapping face is NOT guard (dist=0.739) - Ignoring IoU match
+2025-12-15 17:07:22,172 - WARNING - Initiating graceful shutdown...
+2025-12-15 17:07:22,540 - WARNING - Shutdown complete
+2025-12-15 17:10:38,866 - WARNING - [PIPELINE] FastMTCNN/FaceNet not available, falling back to legacy detection
+2025-12-15 17:11:25,577 - WARNING - Loaded 10 guards
+2025-12-15 17:11:25,621 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,621 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for abhiraj
+2025-12-15 17:11:25,654 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,654 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for ishan
+2025-12-15 17:11:25,710 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,710 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for kaka
+2025-12-15 17:11:25,748 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,749 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for KD
+2025-12-15 17:11:25,777 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,778 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for Krunal
+2025-12-15 17:11:25,797 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,798 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for Parth
+2025-12-15 17:11:25,837 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,837 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for Rudresh
+2025-12-15 17:11:25,861 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,861 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for sagar
+2025-12-15 17:11:25,885 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,885 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for SHambhu
+2025-12-15 17:11:25,909 - ERROR - [CROP] Selection error: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:1284: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvNamedWindow'
+
+2025-12-15 17:11:25,909 - WARNING - [CROP-INTERACTIVE] User cancelled face selection for tanish
+2025-12-15 17:13:48,745 - WARNING - [PIPELINE] FastMTCNN/FaceNet not available, falling back to legacy detection
+2025-12-15 17:15:17,875 - WARNING - Loaded 10 guards
+2025-12-15 17:15:17,914 - WARNING - [EMBED] No faces detected in profile image for abhiraj - use Manual Select button
+2025-12-15 17:15:17,943 - WARNING - [EMBED] No faces detected in profile image for ishan - use Manual Select button
+2025-12-15 17:15:18,004 - WARNING - [EMBED] No faces detected in profile image for kaka - use Manual Select button
+2025-12-15 17:15:18,055 - WARNING - [EMBED] No faces detected in profile image for KD - use Manual Select button
+2025-12-15 17:15:18,091 - WARNING - [EMBED] No faces detected in profile image for Krunal - use Manual Select button
+2025-12-15 17:15:18,119 - WARNING - [EMBED] No faces detected in profile image for Parth - use Manual Select button
+2025-12-15 17:15:18,164 - WARNING - [EMBED] No faces detected in profile image for Rudresh - use Manual Select button
+2025-12-15 17:15:18,191 - WARNING - [EMBED] No faces detected in profile image for sagar - use Manual Select button
+2025-12-15 17:15:18,221 - WARNING - [EMBED] No faces detected in profile image for SHambhu - use Manual Select button
+2025-12-15 17:15:18,252 - WARNING - [EMBED] No faces detected in profile image for tanish - use Manual Select button
+2025-12-15 17:15:35,492 - WARNING - Camera 1 opening timed out after 3s - may be unavailable
+2025-12-15 17:15:59,570 - WARNING - Camera 1 started successfully
+2025-12-15 17:17:25,023 - WARNING - Loaded 10 guards
+2025-12-15 17:17:25,060 - WARNING - [EMBED] No faces detected in profile image for abhiraj - use Manual Select button
+2025-12-15 17:17:25,085 - WARNING - [EMBED] No faces detected in profile image for ishan - use Manual Select button
+2025-12-15 17:17:25,136 - WARNING - [EMBED] No faces detected in profile image for kaka - use Manual Select button
+2025-12-15 17:17:25,177 - WARNING - [EMBED] No faces detected in profile image for KD - use Manual Select button
+2025-12-15 17:17:25,206 - WARNING - [EMBED] No faces detected in profile image for Krunal - use Manual Select button
+2025-12-15 17:17:25,226 - WARNING - [EMBED] No faces detected in profile image for Parth - use Manual Select button
+2025-12-15 17:17:25,262 - WARNING - [EMBED] No faces detected in profile image for Rudresh - use Manual Select button
+2025-12-15 17:17:25,285 - WARNING - [EMBED] No faces detected in profile image for sagar - use Manual Select button
+2025-12-15 17:17:25,311 - WARNING - [EMBED] No faces detected in profile image for SHambhu - use Manual Select button
+2025-12-15 17:17:25,334 - WARNING - [EMBED] No faces detected in profile image for tanish - use Manual Select button
+2025-12-15 17:18:39,799 - WARNING - Loaded 10 guards
+2025-12-15 17:18:39,833 - WARNING - [EMBED] No faces detected in profile image for abhiraj - use Manual Select button
+2025-12-15 17:18:39,857 - WARNING - [EMBED] No faces detected in profile image for ishan - use Manual Select button
+2025-12-15 17:18:39,908 - WARNING - [EMBED] No faces detected in profile image for kaka - use Manual Select button
+2025-12-15 17:18:39,948 - WARNING - [EMBED] No faces detected in profile image for KD - use Manual Select button
+2025-12-15 17:18:39,979 - WARNING - [EMBED] No faces detected in profile image for Krunal - use Manual Select button
+2025-12-15 17:18:40,001 - WARNING - [EMBED] No faces detected in profile image for Parth - use Manual Select button
+2025-12-15 17:18:40,040 - WARNING - [EMBED] No faces detected in profile image for Rudresh - use Manual Select button
+2025-12-15 17:18:40,067 - WARNING - [EMBED] No faces detected in profile image for sagar - use Manual Select button
+2025-12-15 17:18:40,092 - WARNING - [EMBED] No faces detected in profile image for SHambhu - use Manual Select button
+2025-12-15 17:18:40,115 - WARNING - [EMBED] No faces detected in profile image for tanish - use Manual Select button
+2025-12-15 17:19:22,000 - WARNING - Loaded 10 guards
+2025-12-15 17:19:22,035 - WARNING - [EMBED] No faces detected in profile image for abhiraj - use Manual Select button
+2025-12-15 17:19:22,057 - WARNING - [EMBED] No faces detected in profile image for ishan - use Manual Select button
+2025-12-15 17:19:22,109 - WARNING - [EMBED] No faces detected in profile image for kaka - use Manual Select button
+2025-12-15 17:19:22,150 - WARNING - [EMBED] No faces detected in profile image for KD - use Manual Select button
+2025-12-15 17:19:22,177 - WARNING - [EMBED] No faces detected in profile image for Krunal - use Manual Select button
+2025-12-15 17:19:22,197 - WARNING - [EMBED] No faces detected in profile image for Parth - use Manual Select button
+2025-12-15 17:19:22,234 - WARNING - [EMBED] No faces detected in profile image for Rudresh - use Manual Select button
+2025-12-15 17:19:22,257 - WARNING - [EMBED] No faces detected in profile image for sagar - use Manual Select button
+2025-12-15 17:19:22,281 - WARNING - [EMBED] No faces detected in profile image for SHambhu - use Manual Select button
+2025-12-15 17:19:22,304 - WARNING - [EMBED] No faces detected in profile image for tanish - use Manual Select button
+2025-12-15 17:19:34,364 - WARNING - Camera 1 opening timed out after 3s - may be unavailable
+2025-12-15 17:19:53,705 - WARNING - Camera 1 started successfully
+2025-12-15 17:20:20,033 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-15 17:20:21,110 - WARNING - [DETECTED] OK KD identified & tracking (confidence: 0.656, distance: 0.344, bbox: 93x93 px)
+2025-12-15 17:20:21,510 - WARNING - [TRACKING START] Identifying and tracking: KD | Action: Hands Up
+2025-12-15 17:20:37,370 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.646) - Ignoring IoU match
+2025-12-15 17:20:37,951 - WARNING - [IMPOSTER REJECT] KD: Overlapping face is NOT guard (dist=0.704) - Ignoring IoU match
+2025-12-15 17:21:04,144 - WARNING - Initiating graceful shutdown...
+2025-12-15 17:21:04,492 - WARNING - Shutdown complete
+2025-12-16 14:17:39,782 - WARNING - Loaded 10 guards
+2025-12-16 14:18:00,757 - WARNING - Connecting to IP camera with threaded grabber...
+2025-12-16 14:18:02,332 - WARNING - Waiting for IP camera stream...
+2025-12-16 14:18:02,334 - WARNING - IP camera stream ready!
+2025-12-16 14:18:02,350 - WARNING - Camera rtsp://admin:Demo12345678@192.168.1.111:554/stream1 started successfully
+2025-12-16 14:18:09,767 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2025-12-16 14:18:11,474 - WARNING - [TRACKING START] Identifying and tracking: Krunal | Action: Hands Up
+2025-12-16 14:18:15,059 - WARNING - [RESET] Krunal: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:18:24,946 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.508, distance: 0.492, bbox: 43x44 px)
+2025-12-16 14:18:34,795 - WARNING - Alert mode started - logging enabled
+2025-12-16 14:18:35,606 - WARNING - Alert mode stopped - logging saved
+2025-12-16 14:18:44,253 - WARNING - Alert interval changed to 60 seconds (0h 1m)
+2025-12-16 14:18:45,275 - WARNING - Alert mode started - logging enabled
+2025-12-16 14:19:03,765 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:19:08,876 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:19:23,464 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.482, distance: 0.518, bbox: 43x43 px)
+2025-12-16 14:19:24,314 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:19:26,279 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.497, distance: 0.503, bbox: 43x43 px)
+2025-12-16 14:19:33,445 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:19:38,630 - WARNING - [RESET] Krunal: Missing for 5.1s — hard reset tracking, forcing immediate re-detection
+2025-12-16 14:19:46,376 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-16 14:19:47,484 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.490, distance: 0.510, bbox: 43x43 px)
+2025-12-16 14:19:47,512 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-16 14:19:48,176 - WARNING - [GHOST REMOVED + HARD RESET] Krunal: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2025-12-16 14:19:48,178 - WARNING - [ALERT] Krunal MISSING - Alert triggered!
+2025-12-16 14:19:51,252 - WARNING - [DETECTED] OK Krunal identified & tracking (confidence: 0.506, distance: 0.494, bbox: 52x52 px)
+2025-12-16 14:21:01,928 - WARNING - Fugitive Added: 01_front
+2025-12-16 14:21:01,928 - WARNING - Fugitive Detection ENABLED - Searching for: 01_front
+2025-12-16 14:21:29,646 - WARNING - [FUGITIVE MATCH] Distance=0.521, Confidence=0.479 - FUGITIVE DETECTED!
+2025-12-16 14:21:29,647 - WARNING - [FUGITIVE ALERT] !!! FUGITIVE DETECTED - 01_front
+2025-12-16 14:21:29,667 - WARNING - Saved 6 log entries to logs\events.csv
+2025-12-16 14:21:29,667 - WARNING - [FUGITIVE DETECTED] 01_front FIRST APPEARANCE logged
+2025-12-16 14:21:45,634 - WARNING - [ALERT] Krunal: Action TIMEOUT - triggering alarm
+2025-12-16 14:21:45,637 - WARNING - [ALERT] Krunal: Restarting 15s alarm loop
+2025-12-16 14:21:51,861 - WARNING - Fugitive Removed
+2025-12-16 14:21:55,320 - WARNING - PRO Mode ENABLED - Advanced ReID and Stillness detection available
+2025-12-16 14:21:56,782 - WARNING - Stillness Alert ENABLED
+2025-12-16 14:22:32,728 - WARNING - [STILLNESS ALERT] !!! Krunal - NO MOTION FOR 15.0 SECONDS - Triggering 15s alert!
+2025-12-16 14:22:32,730 - WARNING - Saved 5 log entries to logs\events.csv
+2025-12-16 14:22:55,905 - WARNING - Initiating graceful shutdown...
+2025-12-16 14:22:55,905 - WARNING - Saved 1 log entries to logs\events.csv
+2025-12-16 14:22:55,975 - WARNING - Shutdown complete

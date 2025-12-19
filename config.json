@@ -1,0 +1,36 @@
+{
+  "detection": {
+    "min_detection_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "face_recognition_tolerance": 0.5,
+    "re_detect_interval": 15
+  },
+  "alert": {
+    "default_interval_seconds": 10,
+    "alert_cooldown_seconds": 2.5
+  },
+  "performance": {
+    "gui_refresh_ms": 30,
+    "pose_buffer_size": 12,
+    "frame_skip_interval": 2,
+    "enable_frame_skipping": false,
+    "min_buffer_for_classification": 5
+  },
+  "logging": {
+    "log_directory": "logs",
+    "max_log_size_mb": 10,
+    "auto_flush_interval": 50
+  },
+  "storage": {
+    "alert_snapshots_dir": "alert_snapshots",
+    "snapshot_retention_days": 30,
+    "guard_profiles_dir": "guard_profiles",
+    "capture_snapshots_dir": "capture_snapshots",
+    "audio_files_dir": "audio_files",
+    "pose_references_dir": "pose_references"
+  },
+  "monitoring": {
+    "mode": "pose",
+    "session_restart_prompt_hours": 8
+  }
+}
