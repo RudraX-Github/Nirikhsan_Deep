@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirkhan | Technical Operations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --bg-panel: #0a0a0f;
+            --primary: #00f3ff;
+            --primary-dim: rgba(0, 243, 255, 0.1);
+            --secondary: #ff9900; /* Changed to Orange/Amber for Nirkhan branding vibe */
+            --secondary-dim: rgba(255, 153, 0, 0.1);
+            --success: #00ff9d;
+            --text-main: #e0e0e0;
+            --text-muted: #8888aa;
+            --border: #1a1a2e;
+            --glass: rgba(10, 10, 16, 0.85);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(255, 153, 0, 0.05), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.05), transparent 25%);
+            color: var(--text-main);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-family: 'Rajdhani', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+        code, .mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 260px;
+            background: var(--bg-panel);
+            border-right: 1px solid var(--border);
+            height: 100vh;
+            position: fixed;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 3rem;
+            padding-left: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .brand span { color: var(--secondary); }
+
+        .nav-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            background: var(--primary-dim);
+            color: var(--primary);
+            border-left: 3px solid var(--primary);
+        }
+
+        .nav-links a::before { content: '//'; opacity: 0; transition: 0.3s; color: var(--primary); font-family: 'JetBrains Mono'; }
+        .nav-links a:hover::before { opacity: 1; }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 260px;
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 1600px;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #fff, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .status-pill {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--success);
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+        }
+
+        /* Cards & Grid */
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 0.75rem;
+        }
+
+        .card-title { font-size: 1.1rem; color: var(--primary); font-weight: 700; display: flex; align-items: center; gap: 0.5rem; }
+        .card-icon { font-size: 1.2rem; }
+
+        /* File List Style */
+        .file-list { list-style: none; }
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            font-size: 0.9rem;
+        }
+        .file-item:last-child { border-bottom: none; }
+        .file-icon { color: var(--secondary); margin-right: 0.75rem; font-family: 'JetBrains Mono'; }
+        .file-name { font-weight: 600; color: var(--text-main); margin-right: auto; }
+        .file-tag { font-size: 0.7rem; color: var(--text-muted); border: 1px solid var(--border); padding: 2px 6px; border-radius: 4px; }
+
+        /* Architecture Diagram */
+        .arch-diagram {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'JetBrains Mono';
+            position: relative;
+            overflow-x: auto;
+        }
+        
+        .flow-node {
+            background: var(--bg-panel);
+            border: 1px solid var(--primary);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            min-width: 140px;
+            color: var(--primary);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+        }
+
+        .flow-arrow { color: var(--text-muted); margin: 0 1rem; font-size: 1.2rem; }
+        .flow-stack { display: flex; flex-direction: column; gap: 1rem; }
+
+        /* Timeline */
+        .timeline { position: relative; padding-left: 2rem; border-left: 2px solid var(--border); margin-top: 2rem; }
+        .timeline-item { position: relative; margin-bottom: 2.5rem; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 0.2rem;
+            width: 12px;
+            height: 12px;
+            background: var(--bg-dark);
+            border: 2px solid var(--secondary);
+            border-radius: 50%;
+            z-index: 1;
+            transition: 0.3s;
+        }
+        .timeline-item:hover::before { background: var(--secondary); box-shadow: 0 0 15px var(--secondary); }
+        
+        .timeline-date { 
+            font-family: 'JetBrains Mono'; 
+            color: var(--secondary); 
+            font-size: 0.85rem; 
+            margin-bottom: 0.5rem; 
+            display: inline-block;
+            background: var(--secondary-dim);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .timeline-content h4 { color: var(--text-main); margin-bottom: 0.5rem; }
+        .timeline-content p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+        /* Feature Chips */
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+        .feature-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            padding: 1.25rem;
+            border-radius: 8px;
+        }
+        .feature-card h4 { color: var(--success); margin-bottom: 0.5rem; font-size: 0.9rem; }
+        .feature-card p { font-size: 0.85rem; color: var(--text-muted); }
+
+        /* Section Headings */
+        .section-title {
+            margin: 4rem 0 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-main);
+            font-size: 1.75rem;
+        }
+        .section-title::before {
+            content: '#';
+            color: var(--primary);
+            font-family: 'Rajdhani';
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar { transform: translateX(-100%); transition: 0.3s; }
+            .main-content { margin-left: 0; padding: 2rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="brand">
+            <span>//</span> Nirkhan<br>Systems
+        </div>
+        <ul class="nav-links">
+            <li><a href="#overview" class="active">Overview</a></li>
+            <li><a href="#files">File System</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#features">Capabilities</a></li>
+            <li><a href="#journey">Dev Log</a></li>
+            <li><a href="#best-practices">Protocols</a></li>
+        </ul>
+        <div style="margin-top: auto; padding: 1rem; border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--text-muted);">
+            v3.0.0 Production<br>
+            System Active
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero -->
+        <section id="overview" class="hero">
+            <div class="hero-meta">
+                <span class="status-pill">System Online</span>
+                <span>ID: NIRKHAN-2025</span>
+                <span>AI Surveillance Suite</span>
+            </div>
+            <h1>Nirkhan</h1>
+            <p style="color: var(--text-muted); max-width: 600px; line-height: 1.6; margin-top: 1rem;">
+                State-of-the-art security monitoring interface featuring multi-language support (Hindi/English/Marathi/Gujarati), 
+                threaded IP camera integration, and advanced low-light pose estimation.
+            </p>
+        </section>
+
+        <!-- Files Section -->
+        <section id="files">
+            <h2 class="section-title">File System Analysis</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span class="card-icon">⚡</span> Core Executables</div>
+                    </div>
+                    <ul class="file-list">
+                        <li class="file-item">
+                            <span class="file-icon">PY</span>
+                            <span class="file-name">Niraskhan_Done.py</span>
+                            <span class="file-tag">Main App</span>
+                        </li>
+                        <li class="file-item">
+                            <span class="file-icon">JSON</span>
+                            <span class="file-name">config.json</span>
+                            <span class="file-tag">Configuration</span>
+                        </li>
+                        <li class="file-item">
+                            <span class="file-icon">SH</span>
+                            <span class="file-name">setup_cuda_ubuntu.sh</span>
+                            <span class="file-tag">Install Script</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><span class="card-icon">📂</span> Data Directories</div>
+                    </div>
+                    <ul class="file-list">
+                        <li class="file-item">
+                            <span class="file-icon">DIR</span>
+                            <span class="file-name">logs/</span>
+                            <span class="file-tag">CSV & Session</span>
+                        </li>
+                        <li class="file-item">
+                            <span class="file-icon">DIR</span>
+                            <span class="file-name">guard_profiles/</span>
+                            <span class="file-tag">Face DB</span>
+                        </li>
+                        <li class="file-item">
+                            <span class="file-icon">DIR</span>
+                            <span class="file-name">audio_files/</span>
+                            <span class="file-tag">Alert Sounds</span>
+                        </li>
+                        <li class="file-item">
+                            <span class="file-icon">DIR</span>
+                            <span class="file-name">alert_snapshots/</span>
+                            <span class="file-tag">Evidence</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card" style="grid-column: span 2;">
+                    <div class="card-header">
+                        <div class="card-title"><span class="card-icon">🧩</span> Key Classes & Modules</div>
+                    </div>
+                    <div class="grid-3" style="gap: 1rem;">
+                        <div class="feature-card">
+                            <h4>PoseApp</h4>
+                            <p>Main CustomTkinter application class handling UI, video loop, and state management.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>ThreadedIPCamera</h4>
+                            <p>Optimized RTSP stream handler running in a separate daemon thread to prevent UI freeze.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>SafeLogger</h4>
+                            <p>ASCII-safe logging utility to prevent UnicodeEncodeErrors on Windows consoles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture">
+            <h2 class="section-title">System Architecture</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Processing Pipeline</div>
+                </div>
+                <div class="arch-diagram">
+                    <div class="flow-node">Cam/RTSP</div>
+                    <div class="flow-arrow">➜</div>
+                    <div class="flow-stack">
+                        <div class="flow-node" style="border-color: var(--secondary); color: var(--secondary);">Threaded Grabber</div>
+                        <div class="flow-arrow" style="transform: rotate(90deg); margin: 0.5rem;">⬇</div>
+                        <div class="flow-node" style="border-color: var(--secondary); color: var(--secondary);">Low-Light Enhancer</div>
+                    </div>
+                    <div class="flow-arrow">➜</div>
+                    <div class="flow-node">Face/Pose AI<br>(MediaPipe/dlib)</div>
+                    <div class="flow-arrow">➜</div>
+                    <div class="flow-stack">
+                        <div class="flow-node" style="border-color: var(--success); color: var(--success);">Tracker (MIL)</div>
+                        <div style="height: 10px;"></div>
+                        <div class="flow-node" style="border-color: #ff4757; color: #ff4757;">Multi-Lang UI</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-3" style="margin-top: 1.5rem;">
+                <div class="card">
+                    <div class="card-title">Input Layer</div>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Supports USB cameras and IP Cameras (RTSP). Threaded capture ensures the latest frame is always available without buffering lag.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Detection Core</div>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Hybrid pipeline using BlazeFace/HOG for faces and MediaPipe Pose for skeleton tracking. Includes Night Mode with CLAHE enhancement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">Logic & Alert</div>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">MIL Tracker for persistence. Action classification (Hands Up, Sit, Stand). Audio alerts via Pygame/Pydub with rate limiting.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2 class="section-title">Operational Capabilities</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Multi-Language UI</h4>
+                    <p>Real-time language switching between Hindi, English, Marathi, and Gujarati without restarting.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Night Mode</h4>
+                    <p>Adaptive CLAHE enhancement and lowered detection thresholds for low-light environments.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>IP Camera Support</h4>
+                    <p>Dedicated <code>ThreadedIPCamera</code> class for smooth RTSP streaming from security cameras.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Multi-Angle Onboarding</h4>
+                    <p>Captures Front, Left, Right, Back, and Top profiles for robust re-identification.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Stillness Detection</h4>
+                    <p>(Pro Mode) Detects lack of motion using skeleton keypoints over 15-second intervals.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Fugitive Mode</h4>
+                    <p>Dedicated scanning mode to detect and alert on specific target individuals in real-time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey">
+            <h2 class="section-title">Development Log</h2>
+            <div class="card">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">LATEST UPDATE</div>
+                        <div class="timeline-content">
+                            <h4>Nirkhan Finalization</h4>
+                            <p>Integrated multi-language support (Hindi/Marathi/Gujarati), unified IP camera threading, and "Nirkhan" rebranding. Added stillness detection and robust ghost removal logic.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">PHASE 4</div>
+                        <div class="timeline-content">
+                            <h4>Pro Mode & Stability</h4>
+                            <p>Implemented Multi-Scale Distance Detection, body silhouette matching, and ThreadPoolExecutor for parallel processing.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">EARLY BUILD</div>
+                        <div class="timeline-content">
+                            <h4>Core Detection</h4>
+                            <p>Established basic face recognition and pose estimation pipeline using MediaPipe and dlib.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices -->
+        <section id="best-practices">
+            <h2 class="section-title">Engineering Protocols</h2>
+            <div class="grid-2">
+                <div class="card" style="border-left: 3px solid var(--success);">
+                    <div class="card-title" style="color: var(--success);">Recommended</div>
+                    <ul class="file-list" style="margin-top: 1rem;">
+                        <li class="file-item">Use <b>config.json</b> for sensitivity tuning.</li>
+                        <li class="file-item">Ensure <b>audio_files/</b> contains 'siren.mp3'.</li>
+                        <li class="file-item">Use RTSP with TCP transport for stability.</li>
+                        <li class="file-item">Calibrate <b>Night Mode</b> thresholds on site.</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 3px solid #ff4757;">
+                    <div class="card-title" style="color: #ff4757;">Risks & Warnings</div>
+                    <ul class="file-list" style="margin-top: 1rem;">
+                        <li class="file-item">High CPU usage with multiple RTSP streams.</li>
+                        <li class="file-item">Avoid special chars in Guard Names (OS limits).</li>
+                        <li class="file-item">Windows Console Unicode errors (Use SafeLogger).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Active Navigation State
+        const sections = document.querySelectorAll("section");
+        const navLi = document.querySelectorAll(".nav-links li a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLi.forEach((li) => {
+                li.classList.remove("active");
+                if (li.getAttribute("href").includes(current)) {
+                    li.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
