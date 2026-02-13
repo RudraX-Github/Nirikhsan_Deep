@@ -4,7 +4,7 @@
 
 Niraakshan is a state-of-the-art AI surveillance suite designed for real-time security guard tracking and action monitoring. It combines computer vision, pose estimation, and face recognition to ensure guards are active, alert, and performing their duties.
 
-📹 Demo
+📹 Demo https://github.com/RudraX-Github/Nirikhsan_Deep/blob/main/Sunday%20Laggon/Testing.mp4
 
 Watch the Demo Video
 
