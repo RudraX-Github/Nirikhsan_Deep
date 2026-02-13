@@ -192,5 +192,5 @@ Distributed under the MIT License. See LICENSE for more information.
 
 📞 Contact & Support
 
-Project Lead: (Your Name)
+Project Lead: Rudresh Chovatiya
 Tech Stack: Python, CustomTkinter, OpenCV, MediaPipe
