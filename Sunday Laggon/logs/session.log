@@ -333,3 +333,36 @@
 2025-12-16 16:25:05,918 - WARNING - [FUGITIVE MATCH] Distance=0.522, Confidence=0.478 - FUGITIVE DETECTED!
 2025-12-16 16:25:05,974 - WARNING - Initiating graceful shutdown...
 2025-12-16 16:25:06,538 - WARNING - Shutdown complete
+2026-03-30 16:25:45,800 - WARNING - Loaded 10 guards
+2026-03-30 16:26:12,484 - WARNING - REAL-TIME language switched to: English (NO RESTART NEEDED)
+2026-03-30 16:26:39,901 - WARNING - Camera 0 started successfully
+2026-03-30 16:27:08,529 - WARNING - [OK] Tracking initialized for 1 targets (Pose Buffer: 12 frames)
+2026-03-30 16:27:10,767 - WARNING - [TRACKING START] Identifying and tracking: Rudresh | Action: Hands Up
+2026-03-30 16:27:14,115 - WARNING - [RESET] Rudresh: Missing for 5.3s — hard reset tracking, forcing immediate re-detection
+2026-03-30 16:27:17,129 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.492, distance: 0.508, bbox: 108x107 px)
+2026-03-30 16:27:26,350 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:27:27,030 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.504, distance: 0.496, bbox: 108x108 px)
+2026-03-30 16:27:49,504 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:27:52,700 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.527, distance: 0.473, bbox: 155x154 px)
+2026-03-30 16:28:08,598 - WARNING - Alert interval changed to 120 seconds (0h 2m)
+2026-03-30 16:28:14,943 - WARNING - Alert mode started - logging enabled
+2026-03-30 16:28:25,395 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:28:28,161 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.495, distance: 0.505, bbox: 62x62 px)
+2026-03-30 16:28:28,903 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:28:30,754 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.509, distance: 0.491, bbox: 62x62 px)
+2026-03-30 16:28:40,709 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:28:46,347 - WARNING - [RESET] Rudresh: Missing for 5.2s — hard reset tracking, forcing immediate re-detection
+2026-03-30 16:28:50,606 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.489, distance: 0.511, bbox: 89x90 px)
+2026-03-30 16:28:50,607 - WARNING - [DRIFT DETECTED] Rudresh: Tracker may be following unknown person (drift_count=1/3)
+2026-03-30 16:29:12,160 - WARNING - [DRIFT DETECTED] Rudresh: Tracker may be following unknown person (drift_count=2/3)
+2026-03-30 16:29:26,027 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:29:28,516 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.489, distance: 0.511, bbox: 74x75 px)
+2026-03-30 16:30:15,044 - WARNING - [ALERT] Rudresh: Action TIMEOUT - triggering alarm
+2026-03-30 16:30:16,095 - WARNING - [ALERT] Rudresh: Restarting 15s alarm loop
+2026-03-30 16:30:24,093 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:30:24,640 - WARNING - [DETECTED] OK Rudresh identified & tracking (confidence: 0.510, distance: 0.490, bbox: 63x62 px)
+2026-03-30 16:30:31,394 - WARNING - [GHOST REMOVED + HARD RESET] Rudresh: Body detected but no face in area + low pose confidence - HARD RESET triggered
+2026-03-30 16:30:33,999 - WARNING - [TRACKING STOP] Stopped monitoring: Rudresh
+2026-03-30 16:43:26,521 - WARNING - Initiating graceful shutdown...
+2026-03-30 16:43:26,794 - WARNING - Saved 6 log entries to logs\events.csv
+2026-03-30 16:43:26,860 - WARNING - Shutdown complete

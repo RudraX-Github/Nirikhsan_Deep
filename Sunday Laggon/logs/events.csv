@@ -154,3 +154,9 @@ Timestamp,Name,Action,Status,Image_Path,Confidence
 2025-12-16 16:24:14,KD,Standing,ALERT TRIGGERED,alert_snapshots\alert_KD_20251216_162414.jpg,0.57
 2025-12-16 16:24:17,KD,Standing,ALERT CONTINUED,N/A,0.57
 2025-12-16 16:24:21,KD,Standing,ALERT CONTINUED,N/A,0.57
+2026-03-30 16:30:15,Rudresh,'Hands Up' required,TIMEOUT,alert_snapshots\alert_Rudresh_20260330_163015.jpg,0.67
+2026-03-30 16:30:16,Rudresh,Standing,ALERT TRIGGERED,N/A,0.49
+2026-03-30 16:30:17,Rudresh,Standing,ALERT CONTINUED,N/A,0.49
+2026-03-30 16:30:20,Rudresh,Standing,ALERT CONTINUED,N/A,0.49
+2026-03-30 16:30:22,Rudresh,Standing,ALERT CONTINUED,N/A,0.49
+2026-03-30 16:30:24,Rudresh,'Hands Up' required,PERFORMED,N/A,0.52
