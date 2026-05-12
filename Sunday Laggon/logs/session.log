@@ -366,3 +366,7 @@
 2026-03-30 16:43:26,521 - WARNING - Initiating graceful shutdown...
 2026-03-30 16:43:26,794 - WARNING - Saved 6 log entries to logs\events.csv
 2026-03-30 16:43:26,860 - WARNING - Shutdown complete
+2026-04-02 11:28:35,028 - WARNING - Loaded 10 guards
+2026-04-02 11:28:41,221 - WARNING - REAL-TIME language switched to: Hindi (NO RESTART NEEDED)
+2026-04-02 11:28:45,652 - WARNING - REAL-TIME language switched to: English (NO RESTART NEEDED)
+2026-04-02 11:28:57,498 - WARNING - Camera 0 started successfully
